@@ -1,0 +1,5 @@
+# Dependencies for this teaching implementation, NOT the authors' environment.
+# Python >=3.10. Actually tested versions are in ../provenance/validation.json.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2

@@ -1,0 +1,68 @@
+{
+  "validation_date": "2026-09-11",
+  "scope": "Teaching implementation only; not a reproduction of paper data or biological validation",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  },
+  "unit_tests": {
+    "command": "python -m unittest discover -s code -p 'test_*.py' -v",
+    "tests_run": 28,
+    "failures": 0,
+    "errors": 0,
+    "status": "passed"
+  },
+  "demo": {
+    "command": "python code/demo.py --out demo_output",
+    "status": "passed",
+    "data_status": "SYNTHETIC_NOT_PAPER_DATA",
+    "seed": 42,
+    "n_cells": 3000,
+    "n_rois": 8,
+    "n_excluded": 0,
+    "n_factorial_biological_units": 12
+  },
+  "upstream_syntax_excerpt": {
+    "path": "Visium/02-visium_integration_decon.ipynb",
+    "cell_id": "cc1b0050",
+    "original_excerpt": "SyntaxError reproduced by isolated compile",
+    "proposed_minimal_fix": "Parses successfully; not an upstream notebook rerun"
+  },
+  "not_performed": [
+    "End-to-end network download via fetch_original_code.py",
+    "Full upstream notebook execution",
+    "Raw image registration and segmentation",
+    "Patient data reanalysis or cell2location model retraining",
+    "Recalculation of Fig. 5l coefficients, significance or R-squared",
+    "Biological validation of the proposed idea"
+  ],
+  "tested_local_files": {
+    "code/demo.py": {
+      "git_blob_sha": "9c3262cc7357d3d50ed299b7402ae32e2d32669c",
+      "sha256": "3ed5aaa66df45ea90314fe9882fabb618e1e665c09cf0bb607f5fb3371e8d6ba",
+      "bytes": 3342
+    },
+    "code/fetch_original_code.py": {
+      "git_blob_sha": "4af4bdfd4e034e62c94c7c64e16d0f92a7ef7096",
+      "sha256": "f5608f0987a10ff475435946f6290378949f10a68205cbb4db9ed502efdeaac3",
+      "bytes": 4517
+    },
+    "code/niche_idea.py": {
+      "git_blob_sha": "13965f967a6e0375f5031d379ba92ed996de0fba",
+      "sha256": "f7f41cb5a474699afeddcab0f28bcce326ae05f3fbce4e072d1ab1dfe0a71f6d",
+      "bytes": 13517
+    },
+    "code/test_fetch_original_code.py": {
+      "git_blob_sha": "ac07f47b783029c384de99663a178895ccbaa6b6",
+      "sha256": "17a41cfa19cf99908ea8cf74b05caf0d0400e9cdd8ee1af521d33bb80c80269b",
+      "bytes": 1773
+    },
+    "code/test_niche_idea.py": {
+      "git_blob_sha": "3f9409eb1d5cdf8675ed3f1dc41ee234845d25a9",
+      "sha256": "fd5994a716ad5c006211cc09aea414609d17303ac766886ffcd2c9c12a610a06",
+      "bytes": 7592
+    }
+  }
+}
