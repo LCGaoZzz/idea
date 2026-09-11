@@ -1,0 +1,16 @@
+test_batch_confounding_warning (test_check_project_manifest.ManifestTests.test_batch_confounding_warning) ... ok
+test_clean_crossed_design (test_check_project_manifest.ManifestTests.test_clean_crossed_design) ... ok
+test_duplicate_expected_stages_rejected (test_check_project_manifest.ManifestTests.test_duplicate_expected_stages_rejected) ... ok
+test_duplicate_section (test_check_project_manifest.ManifestTests.test_duplicate_section) ... ok
+test_empty_data (test_check_project_manifest.ManifestTests.test_empty_data) ... ok
+test_indirect_batch_overlap_connects_stages (test_check_project_manifest.ManifestTests.test_indirect_batch_overlap_connects_stages) ... ok
+test_missing_fields_and_unknown_stage (test_check_project_manifest.ManifestTests.test_missing_fields_and_unknown_stage) ... ok
+test_reused_animal_destructive (test_check_project_manifest.ManifestTests.test_reused_animal_destructive) ... ok
+test_reused_animal_longitudinal (test_check_project_manifest.ManifestTests.test_reused_animal_longitudinal) ... ok
+test_sample_animal_conflict (test_check_project_manifest.ManifestTests.test_sample_animal_conflict) ... ok
+test_sections_do_not_inflate_animals (test_check_project_manifest.ManifestTests.test_sections_do_not_inflate_animals) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK

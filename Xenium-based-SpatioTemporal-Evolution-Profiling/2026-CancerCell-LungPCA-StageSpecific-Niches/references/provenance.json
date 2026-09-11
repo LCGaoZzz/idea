@@ -1,0 +1,29 @@
+{
+  "artifact_type": "research_idea_and_evidence_commentary",
+  "created_date": "2026-09-11",
+  "language": "zh-CN",
+  "paper": {"doi": "10.1016/j.ccell.2025.10.004", "pmid": "41202811", "pmcid": "PMC12980502"},
+  "author_repository": "FuduanPeng/LungPCA_Code",
+  "author_commit": "fba87dbee8dbae497b15b81a4b0fa79edccd17b2",
+  "author_files_in_inventory": 14,
+  "main_figure_analysis_units": 27,
+  "author_analysis_units_executed": 0,
+  "user_data_analysis_executed": false,
+  "full_paper_and_supplement_pdf_visual_audit": false,
+  "supplementary_workbooks_inspected": false,
+  "author_data_objects_loaded": false,
+  "statement_classes": {"P": "paper_reported", "C": "code_observed", "I": "interpretation", "H": "proposal_or_hypothesis"},
+  "workflow_reference": "reconstruct-bioinfo-protocol-pr630-4bdc4d0.zip",
+  "strict_workflow_validator_rerun_for_this_package": false,
+  "traceability_schema": "reader_index_not_original_skill_schema",
+  "local_tests_scope": "synthetic_metadata_checker_only",
+  "author_source_code_redistributed": false,
+  "restricted_data_redistributed": false,
+  "novelty_systematic_search_performed": false,
+  "access_notes": [
+    "Primary article indexed text was used; direct PMC requests may trigger verification.",
+    "Zenodo17172149 record was readable but files were Restricted at check time.",
+    "Other archive file inventories remain incomplete; failure to retrieve does not mean absence.",
+    "Earlier generated report is a working artifact, not an independent primary source."
+  ]
+}

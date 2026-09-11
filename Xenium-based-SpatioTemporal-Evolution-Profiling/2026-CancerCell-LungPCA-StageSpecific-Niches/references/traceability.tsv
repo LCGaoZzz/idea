@@ -1,0 +1,28 @@
+analysis_id	figure	question	paper_method_locator	code_path	actual_code_coverage	expected_input	status	limitation
+F1_spatial_atlas	1B;1C;1D	病理区域与表达图谱	Visium analysis	Figure 1.R	读取表和对象后绘图	Data/Figure 1B.rda;Figure 1C.downsample_25_percent.rds;Figure 1D.rds	blocked_not_executed	QC聚类未公开完整实现;Data未取得
+F1_iStar	1E	预测表达的空间定位	Visium and iStar methods	Figure 1E 4F.py	mask加载与plot_super	Data/sample.gene.pickle;sample.png	blocked_not_executed	不是iStar训练推理;独立minmax
+F2_clone	2B;2C	病灶推断克隆关系	SpatialInferCNV analysis	Figure 2.R	加载树和CNA热图	Data/Figure 2B.rda;Figure 2C.P20.rda及其他病例	blocked_not_executed	推断参考和人工子树未恢复
+F2_spatial	2C	病理克隆状态空间对齐	SpatialInferCNV and trajectory methods	Figure 2C.py	plot_category;plot_continuous	Data/Figure 2C.pkl	blocked_not_executed	Clone和Pseudotime已预计算
+F2_WES	2D	变异与模式关系	WES analysis	Figure 2.R	oncoPrint预计算矩阵	Data/Figure 2D.rda	blocked_not_executed	无读段至变异完整流程
+F3_atlas	3A	上皮状态分布	snRNA analysis	Figure 3.R	DimPlot	Data/Figure 3A.rds	blocked_not_executed	注释和排除清单未取得
+F3_trajectory	3B;3C;3D	状态连续性	Trajectory and CytoTRACE methods	Figure 3.R L28-L40	plot_cells	Data/Figure 3B-D.downsample.rds	blocked_not_executed	未构图或确定root
+F3_programs	3E;3F;3G	共识表达程序	MP identification snRNA	Figure 3.R	加载MP矩阵和组成绘图	Data/Figure 3E.rda;Figure 3F.rds;Figure 3G.rds	blocked_not_executed	未拟合NMF;gene sets未完整取得
+F3_stage	3H;3I;3J;3L	阶段与程序组成	MP scoring and statistics	Figure 3.R	预计算比例绘图及部分检验	Data/Figure 3H.rds等	blocked_not_executed	组成约束和统计层级待查
+F3_maps	3K;3N	克隆病理程序对齐	Spatial program mapping	Figure 3K 3N.py	argmax及类别着色	Data/Figure 3K 3N.pkl	blocked_not_executed	不等于程序独立离散状态
+F3_RPII	3M	RPII克隆比例与KAC分数	Fig.3M caption	Figure 3.R	读取RP_clone_mat和KAC_mat检验绘图	Data/Figure 3M.rda	conflict_not_executed	变量与纵轴标签语义冲突
+F4_pathway	4A;4D	KAC通路与受体	Pathway analysis	Figure 4.R	预制富集表和IL1R1小提琴图	Data/Figure 4A.rds;Figure 4D.rds	blocked_not_executed	富集不等于直接通路测量
+F4_MP	4B;4C	程序组成和相关性	MP identification Visium;statistics	Figure 4.R	读取MPs_corr和Roe等	Data/Figure 4B.rda;Figure 4C.rda	blocked_not_executed	相关性未重算;family待核对
+F4_CytoSignal	4E	候选空间通信	Cell-cell interaction analysis	Figure 4.R	plotEdge GauEps-Raw	Data/Figure 4E.rda	blocked_not_executed	已有通信对象;未见完整求解
+F4_signal_maps	4F;4G	信号程序位置	Spatial map methods	Figure 1E 4F.py;Figure 4G.py	minmax和argmax图层	Data/sample.gene.pickle;Figure 4G.pkl	blocked_not_executed	不能用于未经确认的跨样本绝对强度
+F5_Xenium_states	5A;5B;5C	细胞状态识别	Xenium analysis	Figure 5.R	DimPlot与signature展示	Data/Figure 5A.rds;Figure 5B 5C.rds	blocked_not_executed	未执行分割QC注释
+F5_neighborhood	5D;5E	中心条件化局部关系	Neighborhood analysis 80um	Figure 5.R	读取组成和Myeloid_C15	Data/Figure 5D.rds;Figure 5E.rds	blocked_not_executed	未构建邻域;自身边界背景和统计层待核验
+F5_TMA	5G;5H;5J;5K	独立材料验证	Xenium TMA methods	Figure 5.R	预计算core表UMAP和邻域图	Data/Figure 5G.rds等	blocked_not_executed	core病灶患者映射与面板待取得
+F5_GUI	5F;5I;5L	组织和转录本定位	Xenium registration and ROI	Figure 5.R GUI comments	Xenium Explorer记录	Explorer项目和ROI	blocked_not_executed	GUI操作不可由注释复算
+F6_mouse_states	6B;6C;6D	小鼠对应状态	Mouse scRNA analysis	Figure 6.R	预制对象和富集表绘图	Data/Figure 6B 6D.rds;Figure 6C.rds	blocked_not_executed	未重新处理小鼠矩阵
+F6_overlay	6E;6F	炎症与KAC相对热点	Fig.6F;spatial maps	Figure 6E 6F 7D.py L55-L77	70/90分位分类和叠加	Data/Figure 6E 6F 7D.pkl	blocked_not_executed	相对阈值不能认证绝对强度
+F6_COMMOT	6G	候选方向摘要	Cell-cell interaction analysis	Figure 6G.py	communication_direction k5和流线	Data/Figure 6G.pkl	blocked_not_executed	未做完整COMMOT求解;X尺度未知
+F6_organoid	6J;6K	培养终点变化	Organoid methods;Fig.6J-K caption	Figure 6.R	Node_Number和Node_Size两两t检验	Data/Figure 6J 6K.rda	blocked_not_executed	每点一孔;来源批次和阈值前分布未取得
+F7_endpoints	7B;7C	干预病理和炎症终点	Animal models;Fig.7	Figure 7.R GUI comments	Prism记录	Prism原始统计项目	blocked_not_executed	未重做终点统计
+F7_Visium	7D	干预后的病理空间	Mouse Visium methods	Figure 6E 6F 7D.py	既有Histology图层	Data/Figure 6E 6F 7D.pkl	blocked_not_executed	无原始空间处理和标注
+F7_scRNA	7E;7F;7G	干预后的上皮状态	Mouse scRNA;Fig.7F	Figure 7.R	UMAP比例图和两两检验	Data/Figure 7E 7F 7G.rda	conflict_not_executed	mat_7mo标题仍为3 months
+F7_seqIF	7H;7I	巨噬细胞组织读出	Sequential IF;Fig.7I	Figure 7.R;ImageScope	预制macro.Frac及GUI记录	Data/Figure 7I.rds;图像项目	conflict_not_executed	此前图注core96与分组求和94待核实

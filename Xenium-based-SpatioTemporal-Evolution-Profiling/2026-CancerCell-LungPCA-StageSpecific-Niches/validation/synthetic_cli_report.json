@@ -1,0 +1,19 @@
+{
+  "scope": "metadata_only_not_biological_validation",
+  "valid_metadata": true,
+  "design": "destructive",
+  "expected_stages": ["early", "late"],
+  "rows_received": 2,
+  "rows_with_required_fields": 2,
+  "independent_animal_ids_by_stage": {"early": ["a1"], "late": ["a2"]},
+  "animal_counts_by_stage": {"early": 1, "late": 1},
+  "stage_components": {"batch_id": [["early", "late"]], "panel_id": [["early", "late"]]},
+  "errors": [],
+  "warnings": [
+    "ONE_ANIMAL: early; within-stage animal variability is not estimable.",
+    "ONE_ANIMAL: late; within-stage animal variability is not estimable."
+  ],
+  "not_checked": ["power", "expression", "cell_identity", "coordinates", "spatial_effects", "tissue_area", "causal_effects", "author_pipeline", "joint_design_rank"],
+  "manifest_sha256": "165324d16c8b902b1301eb3f510f161f16485bea30fdf2f714c92c39bec45c77",
+  "python_version": "3.13.5"
+}
