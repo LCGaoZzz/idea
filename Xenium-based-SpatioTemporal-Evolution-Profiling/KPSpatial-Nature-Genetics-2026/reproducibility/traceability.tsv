@@ -1,0 +1,16 @@
+analysis_id	正文主张	figure/panel	method与参数	code位置	输入/输出	复现状态	冲突或缺口
+A01_design	【论文报告】空间与谱系联合增加历史约束	Fig.1;标题和公开内容层面	P1 Abstract;P2 lineage processing;平台和观测单位分别记录	R2 Figure1目录已定位；完整panel活动链未取得	需要完整设计与样本映射→联合测量证据；未生成科学输出	受阻	完整终刊Results和全部主图未取得；不杜撰panel字母；不是Xenium普通分期
+A02_expression	【论文报告】表达QC与注释支撑空间状态分析	Fig.1;ED1;ED4	P2 GEX/annotation；103条登记按平台和scope使用	C7通用DE已读但不是全部预处理；Figure1/quality_control.ipynb仅定位	需要counts与库元数据→QC和注释；未重算	受阻	没有完整矩阵与各库活动参数；通用helper不能替代具体上游流程
+A03_lineage_qc	【论文报告】谱系reads经处理形成字符矩阵	Fig.1;ED2	P2 lineage processing；Slide-seq混合状态与Slide-tags不同	C2 create_character_matrix:L414-L438	需要allele table/AnnData/priors→非插补状态矩阵；未运行	材料冲突	spot/intBC阈值接线、PercentUncut覆盖及行级筛选语义须核对；上游过滤未知
+A04_imputation	【论文报告】空间插补及基准评估处理缺失	Fig.1;ED2	P2 imputation benchmarks；0.10遮盖、30μm及基准支持限制；不当作全部正式参数	C2 L504-L513;C3 impute_single_state:L147-L167	需要原始状态、图和留出真值→补值及性能；未运行	材料冲突	返回3接收2；真实运行链缺失；准确率不能替代所有下游结论验证
+A05_tree_reconstruction	【论文报告】平台特异树重建约束亲缘关系	Fig.1;ED2-3	P2 Greedy+NJ vs Greedy+ILP；参数见TREE各scope	C2各solver入口已读；所有活动调用未取得	需要状态矩阵和priors→树和不确定性；未生成	受阻	默认500与报告1000需查覆盖；缺矩阵/完整环境/种子；不把树当真实分裂录像
+A06_communities	【论文报告】表达communities组织空间状态	Fig.2;ED5	P2相应方法；C6为已给定模块评分而非全部发现	C6 score_consensus_hotspot.py；Figure2/community_analysis.ipynb仅定位	需要原始表达和共识模块→评分与空间图；未重算	受阻	完整发现链和基因集未取得；ED5共享基因对照已报告但未重算
+A07_fitness	【论文报告】扩增代理连接局部环境	Fig.3;ED6-7	P2 Phylogenetic fitness inference；C1 MLE/binary分支和LBI/max归一化	C1 score_fitness:L31-L102;C4 slidetags_fitness.py:L82	需要对应肿瘤树与metadata→分数及高低分组；未重算	材料冲突	L87反向集合差有活动调用；实际终刊影响未知；相对分数不是绝对速率
+A08_plasticity	【论文报告】谱系内状态差异提供塑性代理	Fig.3;ED6	P2 PDF17；tags简约性；seq谱系近邻community-L2	R2 Figure3/scripts/compute_slideseq_plasticities.py与compute_slidetags_plasticities.py已定位	需要树和状态／community→塑性量；未重算	受阻	完整活动实现和输入未齐；不能替换成空间邻居或称为实测转换次数
+A09_neighborhood	【论文报告】高低fitness周围环境可比较	Fig.3;ED7	P2 PDF17-18；seq30μm；tags20邻居；局部与背景分母分开	C5 score_neighborhood_abundances.py；RADIUS=28	需要坐标分数模块和样本→邻域计数比例及分数；未生成	材料冲突	单位转换链未闭合；字面路径、delimiter差异；共享邻域非独立
+A10_differential_expression	【论文报告】邻域中特定细胞类型存在表达差异	Fig.3;ED7	P2 t-test/FDR0.01/abslog2FC>1；ED7登记FDR0.05须对齐	C7是通用默认Wilcoxon工具；对应panel活动调用待补	需要相应类型表达与分组→DE及富集；未重算	材料冲突	默认不等于实际；方法与图注阈值作用域待核；没有完整底层表
+A11_ligand_receptor	【论文报告】空间LR候选联系细胞类型和状态	Fig.4;ED8	P2 LARIS各函数、邻居和mu分开；CellChatDB版本未知	Figure4/ligand_receptor_analysis.ipynb仅定位；未全cell审计	需要空间表达和数据库快照→LR候选；未运行	受阻	最新数据库不是固定版本；分数不是通量；培养干预不验证整张候选网络
+A12_metastasis	【论文报告】原发空间亚克隆与转移存在来源联系	Fig.5;ED9	P2 PDF19-20；非插补跨层与转移共识各自阈值	Figure5/map_metastasis.ipynb及register_curio_slideseq.ipynb已定位	需要非插补状态/共识/坐标/分割→来源候选；未重算	受阻	缺完整生成链；共识不是直接观测唯一founder；ED9a排除理由保留
+A13_external_validation	【论文报告】共培养和外部队列提供不同层次支持	Fig.4-5;ED7;ED10	P2培养背景/氧条件/观察时间；外部数据按物种器官配对分开	C8 qPCR读取和绘图source已读；C9小表已读；其他验证notebook仅定位	需要完整qPCR重复和终点链/外部矩阵→条件效应与验证；未重算	受阻	GitHub小表不等于完整终刊补充表；细胞来源纯度和独立重复未知；未检验交互
+A14_replication	【解释】观测数不等于独立生物学重复	跨分析；不是一个独立panel结论	P3设计报告；D1固定元数据；层级与分母需完整表	上游data/puck_meta.txt完整取得；本目录preflight仅计数	D1→49/44/5及MouseID计数已执行；完整科学统计尚未执行	受阻	公共文件计数通过不等于完整队列统计验证；tags单MouseID不得推广为整篇只一鼠
+A15_environment	【解释】版本和真实活动参数决定可归因复现	跨Fig.1-5	P2/P3软件版本记录；GitHub固定SHA；Zenodo版本待对照	R1/R2/CASS；作者完整执行环境未取得	需要归档/环境/输入哈希/运行记录→可审计科学流程；未执行	材料冲突	Scanpy与性别范围待澄清；归档未比对；本目录离线测试不是作者环境或原工作流验证

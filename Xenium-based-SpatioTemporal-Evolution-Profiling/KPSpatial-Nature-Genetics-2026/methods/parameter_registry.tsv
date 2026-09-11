@@ -1,0 +1,104 @@
+analysis	scope	parameter	value	provenance	source_id	locator	notes
+GEX	both	kb_python	0.27.3	reported	P2	Gene expression preprocessing	
+GEX	both	reference_genome	mm10	reported	P2	Gene expression preprocessing	不得与人数据合并gene_id空间
+GEX	Slide-seq	expression_UMI_min	150	reported	P2	PDF 8-9	表达UMI，不是谱系target-site UMI
+GEX	Slide-seq	normalization_target	per-library median total counts	reported	P2	PDF 8-9	不是所有模块通用1e4
+GEX	Slide-seq	scale_max_value	10	reported	P2	PDF 8-9	与C6默认scale调用不可无条件合并
+ENV	supplement	Scanpy	1.11.5	reported	P2	Gene expression preprocessing	与P3不同，未确认每分析实际环境
+ENV	reporting_summary	Scanpy	1.10.0	reported	P3	Software and code	与P2不同
+GEX	Slide-tags	CellBender	0.3.0	reported	P2	PDF 8-9	
+GEX	Slide-tags library 9	empty_drop_training_fraction	0.15	reported	P2	Slide-tags preprocessing	仅指定library例外
+GEX	Slide-tags library 9	total_droplets	20000	reported	P2	Slide-tags preprocessing	仅指定library例外
+GEX	Slide-tags library 9	learning_rate	0.0001	reported	P2	Slide-tags preprocessing	
+GEX	Slide-tags library 9	epochs	300	reported	P2	Slide-tags preprocessing	
+GEX	Slide-tags	mitochondrial_ribosomal_threshold	library-specific 5-15%	reported	P2	Slide-tags preprocessing	不是单一通用阈值
+LINEAGE	both	Cassiopeia	2.0.0	reported	P2	Lineage preprocessing	当前仓库master不能替代论文版本
+LINEAGE	Slide-seq	min_umi_per_cell	2	reported	P2	PDF 10	谱系UMI
+LINEAGE	Slide-seq	allow_allele_conflicts	True	reported	P2	PDF 10	混合spot；不按真正单细胞处理
+LINEAGE	Slide-seq	doublet_filter	disabled	reported	P2	PDF 10	
+LINEAGE	Slide-seq	max_hq_mismatches	3	reported	P2	PDF 10	UMI collapse
+LINEAGE	Slide-seq	max_indels	2	reported	P2	PDF 10	UMI collapse
+LINEAGE	Slide-tags	min_umi_per_cell	5	reported	P2	PDF 10	谱系UMI
+LINEAGE	Slide-tags	intBC_whitelist_distance	1	reported	P2	PDF 10	
+LINEAGE	Slide-tags	UMI_correction_distance	2	reported	P2	PDF 10	
+LINEAGE	Slide-tags	minimum_intBC_UMI	5	reported	P2	PDF 10	
+LINEAGE	Slide-tags	doublet_conflict_threshold	35%	reported	P2	PDF 10	
+TREE	Slide-seq	hybrid_solver	Greedy + NeighborJoining	reported	P2	PDF 11-12	
+TREE	Slide-seq	switch_subpopulation	1000	reported	P2	PDF 11-12	C2 NJ hybrid函数默认500；实际调用覆盖未知
+TREE	NJ hybrid utility default	cell_cutoff	500	code_default	C2	cassiopeia_hybrid_neighbor_joining signature	不是运行参数
+TREE	Slide-tags	hybrid_solver	Greedy + ILP	reported	P2	PDF 11-12	需要检查Gurobi与许可证
+TREE	Slide-tags	lca_cutoff	20	reported	P2	PDF 11-12	
+TREE	Slide-tags	maximum_potential_graph_layer_size	10000	reported	P2	PDF 11-12	
+TREE	Slide-tags	maximum_potential_graph_lca_distance	15	reported	P2	PDF 11-12	
+TREE	Slide-tags	convergence_time_limit_seconds	12600	reported	P2	PDF 11-12	这是上限，不是实测耗时
+IMPUTE	semi-synthetic benchmark	mask_fraction	0.10	reported	P2	Imputation validation	与正式运行参数分开
+IMPUTE	semi-synthetic benchmark	minimum_input_UMI	3	reported	P2	Imputation validation	
+IMPUTE	semi-synthetic benchmark	radius_um	30	reported	P2	Imputation validation	
+IMPUTE	semi-synthetic benchmark	concordance	0.8	reported	P2	Imputation validation	C2默认0.7不能直接替代
+IMPUTE	semi-synthetic benchmark	minimum_support_votes	5	reported	P2	Imputation validation	原caller未使用第三返回值检查支持数
+IMPUTE	semi-synthetic benchmark	replicates	5	reported	P2	Imputation validation	不是动物重复
+IMPUTE	create_character_matrix default	imputation_concordance	0.7	code_default	C2	create_character_matrix	不同scope，须找到最终调用
+IMPUTE	create_character_matrix default	imputation_hops	2	code_default	C2	create_character_matrix	
+IMPUTE	create_character_matrix default	num_imputation_iterations	1	code_default	C2	create_character_matrix	
+CNV	Slide-tags	Leiden_resolution	0.0005	reported	P2	Copy-number analysis	
+CNV	Slide-tags	HMM	True	reported	P2	Copy-number analysis	
+CNV	Slide-tags	BayesMaxPNormal	0.2	reported	P2	Copy-number analysis	
+CNV	Slide-tags	cutoff	0.1	reported	P2	Copy-number analysis	
+CNV	Slide-seq	spatial_bin_um	50	reported	P2	Copy-number analysis	CNV支路，非所有空间分析分辨率
+CNV	Slide-seq	window_length	201	reported	P2	Copy-number analysis	
+CNV	Slide-seq	BayesMaxPNormal	0.5	reported	P2	Copy-number analysis	
+CNV	Slide-seq	cutoff	0.2	reported	P2	Copy-number analysis	
+CNV	tree versus CNV purity	minimum_cluster_size	20	reported	P2	Copy-number benchmark	
+CNV	tree versus CNV purity	permutations	1000	reported	P2	Copy-number benchmark	
+ANNOTATION	reference transfer	HVG	4750	reported	P2	Cell annotation	seurat_v3 on counts
+ANNOTATION	reference transfer	scVI_n_layers	3	reported	P2	Cell annotation	
+ANNOTATION	reference transfer	scVI_latent_dimensions	70	reported	P2	Cell annotation	
+ANNOTATION	reference transfer	scVI_epochs	1000	reported	P2	Cell annotation	
+ANNOTATION	reference transfer	scANVI_epochs	100	reported	P2	Cell annotation	
+ANNOTATION	reference transfer	scANVI_samples_per_label	200	reported	P2	Cell annotation	
+ANNOTATION	reference transfer	Leiden_resolution	1.2	reported	P2	Cell annotation	不是树的Leiden/CNV参数
+COMMUNITY	consensus module score	min_cells	10	active_code	C6	sc.pp.filter_genes	
+COMMUNITY	consensus module score	ctrl_size	100	active_code	C6	sc.tl.score_genes	
+COMMUNITY	consensus module score	n_bins	30	active_code	C6	sc.tl.score_genes	
+COMMUNITY	discovery	Hotspot original graph parameters		unverified	R2	Figure2/community_analysis.ipynb	未逐cell取得，不猜
+LR	LARIS	target_sum	10000	reported	P2	PDF 15-16	只有该支路，不改写其他支路normalize
+LR	calculateLigandReceptorIntegrationScore	k	20	reported	P2	PDF 15-16	
+LR	runZoneTalk	k	20	reported	P2	PDF 15-16	
+LR	runZoneTalk	mu	0.2	reported	P2	PDF 15-16	与其他函数mu不可混用
+LR	runZoneTalk	sigma	100	reported	P2	PDF 15-16	
+LR	calculateZoneTalkScoreByCellType	mu	100	reported	P2	PDF 15-16	
+LR	calculateZoneTalkScoreByCellType	expressed_pct	0.05	reported	P2	PDF 15-16	
+LR	calculateZoneTalkScoreByCellType	mask_threshold	1e-8	reported	P2	PDF 15-16	
+LR	COSG	mu	1000	reported	P2	PDF 15-16	
+LR	COSG	expressed_pct	0.15	reported	P2	PDF 15-16	
+LR	database	mouse_CellChatDB_version		unverified	P2	PDF 15-16	文中latest不能变成可复现版本号
+FITNESS	Slide-tags	branch_length_estimator	IIDExponentialMLE	reported	P2	PDF 17	
+FITNESS	score_fitness code	minimum_branch_length	0.01	active_code	C1	_fitness_wrapper	
+FITNESS	score_fitness code	fitness_estimator	LBIJungle	active_code	C1	_fitness_wrapper	需核对论文版本API映射
+FITNESS	Slide-seq	branch_lengths	0 if mutationless else 1	reported	P2	PDF 17	不是按天校准的时间
+FITNESS	high/low comparison	minimum_tumor_observations	200	reported	P2	PDF 17-18	细胞/spot不是独立动物
+NEIGHBORHOOD	Slide-seq fitness analysis	radius_um	30	reported	P2	PDF 17-18	
+NEIGHBORHOOD	Figure3 scoring script	RADIUS	28	active_code	C5	RADIUS=28	坐标尺度或版本解释缺失，不能判等
+NEIGHBORHOOD	Slide-tags fitness analysis	n_nearest_cells	20	reported	P2	PDF 17-18	不是20微米
+DE	fitness-neighborhood macrophage/fibroblast	test	t-test	reported	P2	PDF 17-18	C7通用工具默认Wilcoxon不证明本分析用它
+DE	fitness-neighborhood macrophage/fibroblast	FDR_threshold	0.01	reported	P2	PDF 17-18	ED7图注0.05须对齐具体比较
+DE	Extended Data Fig7 b/c caption	FDR_threshold	0.05	reported	P1	Extended Data Fig.7	不静默选一个
+DE	fitness-neighborhood macrophage/fibroblast	abs_log2FC	>1	reported	P2	PDF 17-18	图注边界>=1，另需核对
+DE	fitness-neighborhood macrophage/fibroblast	gene_min_cells	50	reported	P2	PDF 17-18	
+DE	fitness-neighborhood macrophage/fibroblast	n_top_genes	10000	reported	P2	PDF 17-18	
+DE	generic utility default	de_method	wilcoxon	code_default	C7	differential_expression signature	没有连接到对应panel调用
+DE	generic utility default	n_top_genes	2000	code_default	C7	differential_expression signature	不是P2默认
+ENRICHMENT	fitness DE	gseapy	1.1.3	reported	P2	PDF 18	
+PLASTICITY	Slide-tags	method	normalized subtree small parsimony, averaged per leaf	reported	P2	PDF 17	meta_item=cell_type
+PLASTICITY	Slide-seq	method	mean L2 community-score distance to nearest phylogenetic neighbors	reported	P2	PDF 17 screenshot	非空间最近邻
+PLASTICITY	neighborhood contrasts	high_low_percentiles	>60th / <40th	reported	P2	PDF 18	不当成fitness阈值
+COUPLING	cross-layer nonimputed	spot_UMI_min	7	reported	P2	PDF 19	与metastasis支路不同
+COUPLING	cross-layer nonimputed	allele_UMI_min	5	reported	P2	PDF 19	
+COUPLING	cross-layer	max_missingness	0.7	reported	P2	PDF 19	
+COUPLING	cross-layer	min_prop	0.0002	reported	P2	PDF 19	
+COUPLING	cross-layer	n_shuffles	100	reported	P2	PDF 19	
+METASTASIS	source mapping	spot_UMI_min	2	reported	P2	PDF 19-20	
+METASTASIS	source mapping	allele_UMI_min	2	reported	P2	PDF 19-20	
+METASTASIS	source mapping	consensus_prevalence	0.6	reported	P2	PDF 19-20	
+METASTASIS	source mapping	related_distance_threshold	<0.8	reported	P2	PDF 19-20	使用文中0-2尺度，勿换一般欧氏距离
+SEGMENTATION	metastasis analysis	Gaussian_sigma	1.5	reported	P2	PDF 19-20	Otsu/dilation/EDT/watershed相关支路

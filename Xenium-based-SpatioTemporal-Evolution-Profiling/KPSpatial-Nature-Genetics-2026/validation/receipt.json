@@ -1,0 +1,77 @@
+{
+  "kind": "idea_document_support_checks",
+  "date": "2026-09-11",
+  "python": "3.13.5",
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_run": 13,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "command": "python scripts/preflight.py --puck-meta evidence/puck_meta.txt --output validation/metadata_check.json",
+      "exit_code": 0
+    }
+  ],
+  "scientific_execution_records": [],
+  "scientific_reproduction": false,
+  "tested_scope": [
+    "synthetic data contracts and Python logic",
+    "byte-verified public array metadata"
+  ],
+  "not_tested": [
+    "real Cassiopeia execution",
+    "paper figures or effect sizes",
+    "all notebooks",
+    "user Xenium data",
+    "whole original-workflow schema validation for this new documentation tree"
+  ],
+  "hashes": {
+    "scripts/preflight.py": "4b740ce33f4b4e604178e0722d98cfae0d9a4a66ddc1d764df6808623bb00600",
+    "tests/test_preflight.py": "c9add212e1af910d5b2d3787729b3d5888247f8c614afafce2b77a9b608d99f7",
+    "evidence/puck_meta.txt": "f7aa374c7ead061592e4276bd827f54951da598a55b58915a00bb75f6e8e1e09"
+  },
+  "metadata": {
+    "scope": "puck_meta.txt only; not the complete paper cohort",
+    "bytes": 2043,
+    "git_blob_sha1": "75b5f677202c1655fba4a7281df9cdd82261d403",
+    "sha256": "f7aa374c7ead061592e4276bd827f54951da598a55b58915a00bb75f6e8e1e09",
+    "arrays": 49,
+    "platform_counts": {
+      "Slide-seq": 44,
+      "Slide-tags": 5
+    },
+    "unique_mouse_ids": 24,
+    "slide_tags_mouse_ids": [
+      "SPC-11"
+    ],
+    "arrays_per_mouse": {
+      "M-1": 1,
+      "M-10": 1,
+      "M-11": 1,
+      "M-12": 1,
+      "M-13": 1,
+      "M-14": 1,
+      "M-15": 1,
+      "M-16": 1,
+      "M-17": 1,
+      "M-2": 1,
+      "M-3": 1,
+      "M-4": 1,
+      "M-5": 1,
+      "M-6": 1,
+      "M-7": 1,
+      "M-8": 1,
+      "M-9": 1,
+      "NT-1": 1,
+      "SPC-10": 1,
+      "SPC-11": 26,
+      "SPC-12": 1,
+      "SPC-13": 1,
+      "SPC-2": 1,
+      "SPC-7": 1
+    }
+  }
+}

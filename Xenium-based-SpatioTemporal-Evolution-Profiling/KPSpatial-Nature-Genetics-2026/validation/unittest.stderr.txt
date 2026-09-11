@@ -1,0 +1,18 @@
+test_batch_nesting_warning (test_preflight.PreflightTests.test_batch_nesting_warning) ... ok
+test_duplicate_leaf_rejected (test_preflight.PreflightTests.test_duplicate_leaf_rejected) ... ok
+test_duplicate_sample_rejected (test_preflight.PreflightTests.test_duplicate_sample_rejected) ... ok
+test_empty_group_rejected (test_preflight.PreflightTests.test_empty_group_rejected) ... ok
+test_empty_identity_rejected (test_preflight.PreflightTests.test_empty_identity_rejected) ... ok
+test_header_only_rejected (test_preflight.PreflightTests.test_header_only_rejected) ... ok
+test_keep_complement (test_preflight.PreflightTests.test_keep_complement) ... ok
+test_public_metadata (test_preflight.PreflightTests.test_public_metadata) ... ok
+test_reverse_difference_is_empty (test_preflight.PreflightTests.test_reverse_difference_is_empty) ... ok
+test_shared_batch_not_complete_nesting (test_preflight.PreflightTests.test_shared_batch_not_complete_nesting) ... ok
+test_three_values_do_not_unpack_into_two (test_preflight.PreflightTests.test_three_values_do_not_unpack_into_two) ... ok
+test_tumor_parent_conflict (test_preflight.PreflightTests.test_tumor_parent_conflict) ... ok
+test_unknown_leaf_rejected (test_preflight.PreflightTests.test_unknown_leaf_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

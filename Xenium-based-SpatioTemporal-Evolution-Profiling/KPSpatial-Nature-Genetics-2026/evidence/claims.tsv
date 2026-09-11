@@ -1,0 +1,25 @@
+claim_id	evidence_type	claim	source_ids	locator	accurate_support	unresolved_or_not_supported	reading_path
+P01	论文报告	空间表达与独立谱系记录联合研究肿瘤生长和转移	P1;P2	Abstract;Fig.1;lineage processing	本文使用Slide-seq和Slide-tags等与谱系信息联合	不是普通Xenium分期比较；不是完整真实分裂史	docs/01-story-and-identifiability.md
+P02	论文报告	作者报告扩增亚克隆与低氧免疫抑制纤维化局部环境相关	P1;P2	Abstract;Fig.3;fitness neighbourhood methods	作者公开报告的模型与关联	未取得完整Results；未重算效应；不等于唯一因果方向	docs/01-story-and-identifiability.md
+P03	论文报告	共培养交叉改变氧条件和细胞背景	P2	PDF8;Establishing lung organoid co-cultures	既有背景与处理组合增加条件效应比较能力	终点细胞来源及独立重复未闭合；不证明特定LR中介必要性	insights/02-context-dependent-effects.md
+P04	论文报告	插补包含模拟及已观测状态留出验证	P1;P2;P3	ED2;imputation benchmarks;Spatial imputation	作者已有方法验证，不能描述为完全未验证	不是全部下游结论与跨动物泛化都已独立验证	insights/03-information-reuse.md
+P05	论文报告	模块分析包含去除共享基因后的检查	P1	ED5 caption	作者已关注共享基因对模块关联的贡献	未重算结果；不是所有选择偏倚均已排除	insights/03-information-reuse.md
+P06	论文报告	跨层分析使用非插补谱系数据	P2	PDF19;Coarse-grained alignment of Slide-seq data	跨层支路的输入不使用空间插补结果	不代表所有主树支路都不插补	docs/03-computational-protocol.md
+P07	论文报告	ED9a排除两处未发现与重点原发灶相关的淋巴结病灶	P1	ED9a caption	来源限定先于对应病灶比较	未检出关系不等于任何精度下绝无关系	docs/02-design-and-evidence.md
+P08	论文报告	Slide-seq塑性基于谱系近邻community向量平均L2距离	P2	PDF17;Single-cell clonal plasticity quantification	定义的是亲缘近邻状态差异代理	不是空间邻居异质性或实测转换次数	docs/03-computational-protocol.md
+P09	论文报告	作者承认取样缺失树分辨率和高迁移等限制	P2	PDF4;extended discussion	这些限制不是本整理首次揭示	各限制在本数据的实际效应未独立量化	docs/01-story-and-identifiability.md
+C01	代码事实	公共metadata有49阵列44Slide-seq5Slide-tags且tags均SPC-11	D1	data/puck_meta.txt;lines2-50	精确固定文件的字节校验与计数	不是终刊全部实验与外部队列普查	docs/02-design-and-evidence.md
+C02	代码事实	插补函数返回三个值而caller接收两个	C2;C3	reconstruct.py:L504-L513;target_site_utilities.py:L147-L167	该源代码分支存在解包不匹配	没有执行真实插补；未证实终刊使用此路径	docs/04-code-atlas-and-audit.md#i01
+C03	代码事实	fitness分组剪枝集合差方向相反	C1;C4	phylodynamics.py:L87;slidetags_fitness.py:L82	存在实际分组调用；query为叶子子集时删除差集为空	终刊受影响程度需版本及重算比较	docs/04-code-atlas-and-audit.md#i02
+C04	代码事实	spot总UMI过滤使用intBC阈值变量	C2	reconstruct.py:L414-L419	日志中的spot阈值不等于该步实际比较阈值	更上游是否已筛选未知	docs/04-code-atlas-and-audit.md#i03
+C05	代码事实	PercentUncut筛选集合被重新赋值覆盖	C2	reconstruct.py:L421-L438	这段路径未保留第一步条件	不证明全部作者输入都未经相关过滤	docs/04-code-atlas-and-audit.md#i04
+C06	代码事实	邻域脚本有字面HOMEDIR路径和与生产者不同分隔符	C5;C6	score_neighborhood_abundances.py;score_consensus_hotspot.py	源码存在可定位接口差异	中间人工转格式和最终输入未取得	docs/04-code-atlas-and-audit.md#i06
+C07	代码事实	qPCR热图第四列数据名和显示标签分母不同	C8;C9	selection cell8ccaef73-353a-465e-afd2-3cdda91e321b;plot cell86138f88-8f08-4ba7-9eb0-6e26b7e9cdc9	显示标签与被选列文本不同	不直接证明底层数值错误或终刊图错误	docs/04-code-atlas-and-audit.md#i09
+C08	代码事实	fitness归一化除以当前树中最大值	C1	phylodynamics.py:L31-L60	指标参照依赖当前树与叶子集合	不是跨肿瘤绝对增殖速率	insights/04-units-and-reference-sets.md
+I01	解释	终点空间共存允许内在变化环境选择反馈共同原因与处理贡献	P1;P2	本整理竞争模型M1-M5	用于重建识别逻辑的竞争解释	不是声称作者预先登记了这些模型	docs/01-story-and-identifiability.md
+I02	解释	组成变化与同类型状态变化应分开	C6;P1	community scoring;Fig.2	混合区域表达有多个来源	未在用户或作者完整数据上完成分解	docs/03-computational-protocol.md
+T01	迁移建议	为每条演进箭头标记相应证据资格	P1;P2	由历史与状态的区分抽象	可先用现有提纲完成决策审查	不创造缺失的历史信息	insights/01-history-versus-state.md
+T02	迁移建议	比较因素在不同背景的条件效应而非两个P值	P2;C8	由交叉培养设计抽象	可用于选择后续交叉干预	观察交互不是因果；需组合覆盖与响应同义	insights/02-context-dependent-effects.md
+T03	迁移建议	共同对象上比较原始完整和独立验证分支	P1;P2;C2;C3	由空间先验和已有验证范围抽象	针对信息重复使用的结论级敏感性	原始分支也可能有缺失选择偏倚	insights/03-information-reuse.md
+T04	迁移建议	逐样本效应与集合断言先于合并显著性	D1;C1;C4	由层级元数据和分组实现抽象	明确参照及外推单位	检查通过不保证功效因果识别或跨项目生物学成立	insights/04-units-and-reference-sets.md
+T05	迁移建议	分期Xenium优先构建阶段锚定生态位重组与候选状态模型	用户此前描述;P1;P2	单一起始来源;早中晚期;额外谱系条件未知	可组织现有设计与分析优先级	不是已完成用户数据分析；不能预设精细后代路径	project/01-xenium-translation.md
