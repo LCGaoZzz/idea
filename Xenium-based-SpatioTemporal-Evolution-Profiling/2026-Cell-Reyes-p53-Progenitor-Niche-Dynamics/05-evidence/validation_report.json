@@ -1,0 +1,28 @@
+{
+  "schema": "new_tool_unit_test_report_v1",
+  "date": "2026-09-11",
+  "scope": "new descriptive tool only; not the bioinformatics reconstruction protocol validator",
+  "command": "python -m unittest -v",
+  "working_directory": "code",
+  "python_version_observed": "3.13.5",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "result": "OK",
+  "input_kind": "synthetic arithmetic and temporary TSV fixtures",
+  "paper_data_used": false,
+  "user_data_used": false,
+  "scientific_reproduction_status_changed": false,
+  "log": "../code/unit_test_log.txt",
+  "tested_code": [
+    {"path": "../code/mixture_decomposition.py", "sha256": "06bdbe548ce59193c31e66c14efdae05d5d0517a58507e24cc8403b12ce53285", "git_blob": "2b5f446a2ebe94e6d6cc73ee3b0455a582a7a194"},
+    {"path": "../code/test_mixture_decomposition.py", "sha256": "012781cb21b622dafb06445e60d15704734bd331e615b006a9b6c7b620ec5bc5", "git_blob": "a874fba5ba0ea5f320e448a1ae0dc7fafcd0889d"}
+  ],
+  "not_validated": [
+    "Author scientific workflow and data results",
+    "Original paper figures or numerical effect sizes",
+    "Causal identification, significance, and confidence intervals",
+    "User Xenium data or independent biological replication",
+    "Full reconstruction protocol schema and execution adjudication"
+  ]
+}

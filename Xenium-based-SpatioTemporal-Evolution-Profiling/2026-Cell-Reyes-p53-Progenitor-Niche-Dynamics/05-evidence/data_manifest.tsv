@@ -1,0 +1,14 @@
+resource	url	provenance	status	verification_needed
+KPLOH_h5ad	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_KPLOH_SUBSET_pretumor_PDAC__annotated.h5ad	C1 README	not_downloaded	样本/基因型/表达尺度/哈希
+injury_h5ad	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_injury_SUBSET_all__annotated.h5ad	C1 README	not_downloaded	时间/独立重复/状态定义/哈希
+Krasi_h5ad	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_Krasi_SUBSET_all__annotated.h5ad	C1 README	not_downloaded	处理/时间/独立动物/哈希
+FLEX_all	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_FLEX_SUBSET_all__integrated.h5ad	C1 README	not_downloaded	counts与整合表征的槽位/哈希
+FLEX_TAM	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_FLEX_SUBSET_TAM_all__integrated.h5ad	C1 README	not_downloaded	髓系子集/注释/表达尺度/哈希
+Xenium_annotated	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_Xenium_TIER_all_SUBSET_all__annotated.h5ad	C1 README	not_downloaded	2026-05-14更新后淋巴结注释/条码/哈希
+Xenium_graph	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_Xenium_TIER_all_SUBSET_all__spatial_neighborhood.h5ad	C1 README	not_downloaded	条码顺序/自环/半径/矩阵键/哈希
+Xenium_Premalignant0	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes_Xenium_TIER_tier3_SUBSET_Premalignant0.h5ad	C1 README	not_downloaded	tier样本含义/层/坐标/哈希
+transcriptomics_bundle	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes2026_transcriptomics.tar.gz	C1 README	not_downloaded	更新后版本/安全解压/内容与哈希
+Krasi4h_imaging	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes2026_imaging_kras_inhibition_4h_FigS5.tar.gz	C1 README	not_downloaded	4小时队列；不与48/72小时混合
+progenitor_imaging	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes2026_imaging_progenitor_niche_Fig3_FigS2.tar.gz	C1 README	not_downloaded	分割/通道/元数据/哈希
+multiome_bundle	https://dp-lab-data-public.s3.us-east-1.amazonaws.com/p53-niche-dynamics/Reyes2026_multiome_Fig7_FigS6.tar.gz	C1 README	not_downloaded	customQC/前置参考/样本/哈希
+Zenodo_record	https://zenodo.org/records/18892592	Z1	directory_verified_not_downloaded	代码与固定Git提交未全量比较

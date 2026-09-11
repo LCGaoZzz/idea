@@ -1,0 +1,17 @@
+{
+  "scope": "Current-turn retrieval summary plus explicitly inherited evidence; not a full transport archive",
+  "date": "2026-09-11",
+  "attempts": [
+    {"source": "PubMed 41990751", "method": "web open", "status": "success", "scope": "metadata, abstract and visible main figure captions", "local_full_text_capture": false},
+    {"source": "PMC13173668", "method": "web direct open", "status": "browser_challenge", "scope": "direct content unavailable"},
+    {"source": "PMC13173668", "method": "web indexed search", "status": "partial_success", "scope": "Results/Discussion and selected captions", "local_full_text_capture": false},
+    {"source": "https://doi.org/10.5281/zenodo.188925921", "method": "web open", "status": "failed"},
+    {"source": "https://zenodo.org/records/18892592", "method": "web search", "status": "directory_verified", "archive_downloaded": false},
+    {"source": "https://repository.cshl.edu/id/eprint/42207/", "method": "web open", "status": "metadata_verified", "pdf_downloaded": false},
+    {"source": "LCGaoZzz/idea target directory", "method": "GitHub connector fetch", "status": "success", "scope": "existing contents inspected; no overwrite intended"},
+    {"source": "dpeerlab/p53-niche-dynamics utils/neighborhood_utils.py", "commit": "a97d1a42cede4c12416875a4aa50d3d63ee1fffd", "method": "GitHub fetch_file", "status": "success", "range": "100-151", "scope": "k helper reread"},
+    {"source": "dpeerlab/p53-niche-dynamics pinned tree", "commit": "a97d1a42cede4c12416875a4aa50d3d63ee1fffd", "method": "container HTTPS attempted", "status": "failed", "reason": "DNS resolution failure; no new repository files obtained"},
+    {"source": "prior uploaded code captures C0/C5", "method": "local read and Git blob recomputation", "status": "identity_verified", "scope": "complete input notebook and complete ATAC initial R script; no execution"}
+  ],
+  "inherited_evidence_note": "C2/C3 and other previously read source ranges are inherited from this conversation and its uploaded audit bundle. The large Injury matching notebook remained a located-only source after earlier connector/raw retrieval failures."
+}

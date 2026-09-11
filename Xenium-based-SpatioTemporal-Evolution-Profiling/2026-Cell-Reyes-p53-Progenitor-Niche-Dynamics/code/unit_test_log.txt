@@ -1,0 +1,15 @@
+test_cli_and_no_overwrite (test_mixture_decomposition.DecompositionTests.test_cli_and_no_overwrite) ... ok
+test_duplicate_is_rejected (test_mixture_decomposition.DecompositionTests.test_duplicate_is_rejected) ... ok
+test_equal_animals_not_equal_cells (test_mixture_decomposition.DecompositionTests.test_equal_animals_not_equal_cells) ... ok
+test_group_exclusive_state_is_rejected (test_mixture_decomposition.DecompositionTests.test_group_exclusive_state_is_rejected) ... ok
+test_identity_and_reversal (test_mixture_decomposition.DecompositionTests.test_identity_and_reversal) ... ok
+test_incomplete_profiles_are_rejected (test_mixture_decomposition.DecompositionTests.test_incomplete_profiles_are_rejected) ... ok
+test_nonfinite_and_zero_counts (test_mixture_decomposition.DecompositionTests.test_nonfinite_and_zero_counts) ... ok
+test_pure_mixture (test_mixture_decomposition.DecompositionTests.test_pure_mixture) ... ok
+test_pure_within (test_mixture_decomposition.DecompositionTests.test_pure_within) ... ok
+test_same_animal_across_groups_is_rejected (test_mixture_decomposition.DecompositionTests.test_same_animal_across_groups_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.271s
+
+OK

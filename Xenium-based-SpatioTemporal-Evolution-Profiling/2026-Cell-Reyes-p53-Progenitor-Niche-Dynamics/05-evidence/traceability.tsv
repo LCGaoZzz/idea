@@ -1,0 +1,13 @@
+analysis_id	正文主张	figure/panel	method与参数	code位置	输入/输出	复现状态	冲突或缺口
+A01	作者报告p53依赖输出集中于特定癌前上皮状态	Figure 1A-L	LOH报告分组、scRNA状态内比较及原位检查；全套预处理未核验	KPLOH_GenerateFigure_Fig1_FigS1_DataS1_1_locked20260128.ipynb（仅定位）	分选/样本元数据与表达→状态/靶基因及原位证据	受阻	未运行；原始输入、全部Methods与活动调用链未恢复
+A02	表达连续性具有组织形态对应	Figure 2F-K	G-P扩散坐标；形态指标各自定义	Step08关键cell 5/10/12/13/15；Xenium_Precompute_Fig2_morphology_locked20260205.ipynb仅定位	表达KNN→扩散轴；图像/分割→lumen和病灶指标	受阻	扩散代码部分核验；形态公式未完整取得；不以常见方法补写
+A03	作者用物理邻域组织局部系统	Figure 3C	70um候选查询后精确裁剪至60um；按slide_id构图	Xenium_Preprocessing_step03_compute_neighborhoods_simplified_locked20260410.ipynb cell 11	坐标与slide→CSR空间图	受阻	科学对象未下载；自环/条码/实际边距离未在产物核验
+A04	非上皮变化与上皮标定的局部状态对应	Figure 3D-G	上皮状态均值和区室内表达；分母必须分别定义	utils/neighborhood_utils.py get_average_neighborhood_expression；主图完整调用未核验	空间图+状态+区室表达→局部聚合/样本比较	受阻	具体X尺度、平滑/分箱/完整统计实现未核验
+A05	人组织存在相似局部结构	Figure 4	KRT17相关锚点、成像与径向比较；面板统计单位分别核验	imaging_human_TMA_Fig4/notebooks/（目录定位）	人表达/图像/患者映射→局部组成与径向信号	受阻	患者-芯-ROI映射及全部图像未取得；非人体因果验证
+A06	空间通讯具有区室共定位约束	Figure 5A-D、S7G-H	局部LR表达；Calligraphy候选模块；类器官响应	Xenium_GenerateFigure_Fig3_Fig5_locked20260503.ipynb；FLEX_Calligraphy系列（仅定位）	表达/区室/配对表→候选通讯	受阻	完整LR表、显著性参数和培养背景未核验；不等于信号传递测量
+A07	髓系区室干预伴随上皮状态改变	Figure 5E-H	anti-CSF1R与IgG；覆盖形成前后的处理窗口	主要为实验图注；相应成像完整活动链未恢复	干预与成像→髓系/上皮及簇大小	受阻	未重算；不能单独识别纯维持依赖或特定信号中介
+A08	急性KRAS抑制伴随跨区室改变	Figure 6A-F、S5	急性干预；Milo转录邻域差异丰度与空间解释	Xenium_GenerateFigure_Fig6_FigS5_milo_locked20260206.ipynb（仅定位）	表达图+样本计数+空间图→差异状态位置	受阻	完整设计公式/参数未核验；不以物理图替代表达图
+A09	短程处理具有长期疾病后果	Figure 6G-H	短程干预后观察长期结局；不同于急性取材队列	实验图注/正文；本次未获得完整生存数据	处理与随访→肿瘤相关生存曲线	受阻	未重算；中介路径未单独识别；不外推人群预防
+A10	p53抑制与后期状态持续及组织重组相关	Figure 7A-F/H、S7	可诱导p53抑制与对照；较晚损伤后观察	Injury_shp53_GenerateFigure_Fig7_FigS6_locked20260204.ipynb（仅定位）	表达/组织/时间→状态持续与环境变化	受阻	源Notebook正文获取失败；群体持续不等于同一细胞存活
+A11	匹配状态后身份差异与经典靶基因差异可分离	Figure S6D-F	总体比较与可比G-P位置比较	Injury_shp53_GenerateFigure_Fig7_FigS6_locked20260204.ipynb（仅定位）	组别+状态+表达→总体/条件差异	受阻	匹配宽度/权重/协变量未核验；不能称直接因果效应已识别
+A12	多组学支持筛选p53候选输出	Figure 7G、S6G-I、Data S4	RNA-ATAC与外部证据；mm10；Arrow初始QC与最终QC区分	multiome_ATAC_step00_archR_preprocessing_locked20260318.R（完整）；后续代码仅定位	fragments+RNA+customQC+参考注释→候选靶基因	受阻	自定义QC与后续链不完整；motif可及性不是当前内源占位

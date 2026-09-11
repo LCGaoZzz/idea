@@ -1,0 +1,26 @@
+parameter	value	evidence_class	locator	scope	warning
+selected_tier	tier3	active_config	C3 cell 10	Step08	不是生物学阶段；需manifest
+selected_subset	Premalignant0	active_config	C3 cell 10	Step08	特定上皮集合；不是全部细胞
+selected_layer	raw_in_nucleus	active_config	C3 cell 10	Step08	层名不能替代上游尺度审计
+use_log	False	active_config	C3 cell 10	Step08	不等于全文所有步骤不归一化
+explained_var	0.75	active_config	C3 cell 10	Step08	不是固定PC数
+cluster_n_neighbors	30	active_config	C3 cell 10	表达KNN	不是空间细胞数
+umap_n_neighbors	10	active_config	C3 cell 10	读取UMAP产物	不是扩散图参数的替代
+umap_min_dist	0.1	active_config	C3 cell 10	读取UMAP产物	可视化配置
+n_components	10	function_default	C3 getDiffusionComponents_cpu	默认定义	活动调用覆盖；不得当最终值
+n_components	20	active_call	C3 cell 12	扩散特征求解	未执行
+n_DCs	7	active_config	C3 cell 13/15	输出截取	切片1:7实际六列非平凡组件
+eigs_tol	1e-4	active_call	C3 getDiffusionComponents_cpu	特征求解	其他未显式参数依赖库版本
+eigs_maxiter	1000	active_call	C3 getDiffusionComponents_cpu	特征求解	不是运行收敛证明
+numpy_seed	0	active_config	C3 getDiffusionComponents_cpu	初始向量	不覆盖Python random或其他分支
+outer_radius_expanded	70 um	active_config	C2 cell 11	几何候选搜索	不是最终半径
+outer_radius	60 um	active_config	C2 cell 11	精确距离裁剪	不是通用生物学常数
+min_radius	0	active_call	C2 cell 11	精确距离裁剪	未显式删除自环；实际图未检查
+archr_genome	mm10	active_call	C5 addArchRGenome	ATAC初始脚本	其他参考映射须分别核验
+archr_threads	1	active_call	C5 addArchRThreads	该脚本	不代表论文完整硬件配置
+arrow_minTSS	1	active_call	C5 createArrowFiles	导入门槛	不是最终QC
+arrow_minFrags	100	active_call	C5 createArrowFiles	导入门槛	后续custom_QC外部表
+arrow_maxFrags	1000000	active_call	C5 createArrowFiles	导入门槛	不是全项目统一阈值
+doublet_k	10	active_call	C5 addDoubletScores	双细胞分数	记录候选不等于最终删除
+state_matching_bandwidth	未确认	unavailable	A11	S6D-F	不能用新工具或常见做法补写
+milo_design_formula	未确认	unavailable	A08	Figure6D	只确认转录邻域语义
