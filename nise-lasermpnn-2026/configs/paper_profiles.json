@@ -1,0 +1,56 @@
+{
+  "purpose": "Evidence records, NOT executable full reproduction configurations",
+  "paper_doi": "10.1038/s41586-026-10670-w",
+  "exatecan_main": {
+    "source": "S1, Design of exatecan binders using NISE",
+    "fold": "four_helix_bundle",
+    "predictor": "RFAA",
+    "selected_structures_per_round": 3,
+    "sequences_per_selected_structure_next_round": 1000,
+    "all_historical_filter_thresholds": null,
+    "final_polar_atom_penalty_formula": null,
+    "status": "blocked_missing_supplement_and_historical_inputs"
+  },
+  "figure_1c_comparison": {
+    "source": "S1, Fig. 1c caption",
+    "iterations": 35,
+    "first_round_designs": 500,
+    "later_round_designs": 1500,
+    "status": "paper_report_not_executed"
+  },
+  "apixaban_prescreen": {
+    "source": "S1, apixaban design text",
+    "fold": "NTF2",
+    "n_backbones": 50,
+    "predictor": "Boltz-2",
+    "first_pass_sequences_per_pose": 3,
+    "protein_rmsd_strict_max_A": 2.0,
+    "ligand_rmsd_strict_max_A": 2.0,
+    "next_pass_sequences_per_survivor": 5,
+    "scope": "prescreen only; do not infer every later-stage threshold"
+  },
+  "apixaban_main": {
+    "source": "S1, Fig. 6 and main text",
+    "reported_iterations_range": [14, 28],
+    "exact_composite_score_weights": null,
+    "per_trajectory_sampling_config": null,
+    "status": "blocked_missing_supplement_and_design_archive"
+  },
+  "public_nise_example": {
+    "source": "S2, run_nise_boltz2x.py",
+    "commit": "61b7500e99ab37295ae9510b3db05aefe6a5fdfb",
+    "laser_submodule_commit": "d7b6d2878391f91865fde524c941f661e84050f3",
+    "iterations": 35,
+    "top_backbones": 3,
+    "sequences_per_backbone": 64,
+    "batch_size": 30,
+    "boltz_sampling_steps": 200,
+    "objective": "ligand_plddt",
+    "status": "public_example_not_paper_unified_config"
+  },
+  "demo_gate_policy": {
+    "source": "this project's illustrative test configuration",
+    "file": "demo_gate_policy.json",
+    "is_paper_parameter_set": false
+  }
+}

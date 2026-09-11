@@ -1,0 +1,6 @@
+{
+  "protein_max_A": 2.5,
+  "ligand_max_A": 2.5,
+  "ligand_plddt_min": 0.8,
+  "min_pbind": null
+}

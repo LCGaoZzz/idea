@@ -1,0 +1,4 @@
+# Lightweight analysis only; NOT the LASErMPNN / NISE GPU environment.
+# Tested here: Python 3.13.5, numpy 2.3.5, scipy 1.17.0.
+numpy>=1.26,<3
+scipy>=1.11,<2

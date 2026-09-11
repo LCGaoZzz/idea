@@ -1,0 +1,37 @@
+test_competition_global_fit (test_methods.BindingTests.test_competition_global_fit) ... ok
+test_competitive_conservation (test_methods.BindingTests.test_competitive_conservation) ... ok
+test_competitor_reduces_occupancy (test_methods.BindingTests.test_competitor_reduces_occupancy) ... ok
+test_direct_fit_recovers_synthetic_kd (test_methods.BindingTests.test_direct_fit_recovers_synthetic_kd) ... ok
+test_invalid_ligand (test_methods.BindingTests.test_invalid_ligand) ... ok
+test_mass_conservation (test_methods.BindingTests.test_mass_conservation) ... ok
+test_mutant_cycle_additive_case (test_methods.BindingTests.test_mutant_cycle_additive_case) ... ok
+test_no_competitor_matches_quadratic (test_methods.BindingTests.test_no_competitor_matches_quadratic) ... ok
+test_probability_delta (test_methods.BindingTests.test_probability_delta) ... ok
+test_shape_mismatch_rejected (test_methods.BindingTests.test_shape_mismatch_rejected) ... ok
+test_tight_binding_depletion (test_methods.BindingTests.test_tight_binding_depletion) ... ok
+test_wilson_not_certainty (test_methods.BindingTests.test_wilson_not_certainty) ... ok
+test_zero_probability_rejected (test_methods.BindingTests.test_zero_probability_rejected) ... ok
+test_zero_protein (test_methods.BindingTests.test_zero_protein) ... ok
+test_allowed_atom_permutation (test_methods.GeometryTests.test_allowed_atom_permutation) ... ok
+test_collinear_alignment (test_methods.GeometryTests.test_collinear_alignment) ... ok
+test_invalid_mapping (test_methods.GeometryTests.test_invalid_mapping) ... ok
+test_joint_rigid_transform (test_methods.GeometryTests.test_joint_rigid_transform) ... ok
+test_ligand_translation_is_not_erased (test_methods.GeometryTests.test_ligand_translation_is_not_erased) ... ok
+test_nonfinite_coordinates (test_methods.GeometryTests.test_nonfinite_coordinates) ... ok
+test_reflection_excluded (test_methods.GeometryTests.test_reflection_excluded) ... ok
+test_bad_policy (test_methods.ScreeningTests.test_bad_policy) ... ok
+test_boolean_string_rejected_in_api (test_methods.ScreeningTests.test_boolean_string_rejected_in_api) ... ok
+test_debug_rejected (test_methods.ScreeningTests.test_debug_rejected) ... ok
+test_duplicate_id (test_methods.ScreeningTests.test_duplicate_id) ... ok
+test_missing_field (test_methods.ScreeningTests.test_missing_field) ... ok
+test_nan (test_methods.ScreeningTests.test_nan) ... ok
+test_pbind_missing_when_required (test_methods.ScreeningTests.test_pbind_missing_when_required) ... ok
+test_scales (test_methods.ScreeningTests.test_scales) ... ok
+test_threshold_is_strict (test_methods.ScreeningTests.test_threshold_is_strict) ... ok
+test_valid (test_methods.ScreeningTests.test_valid) ... ok
+test_wrong_scale (test_methods.ScreeningTests.test_wrong_scale) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.103s
+
+OK

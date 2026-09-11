@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-11",
+  "scope": "CPU lightweight mathematical and input-validation tests; NOT paper model or experimental reproduction",
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests_run": 32,
+    "failures": 0,
+    "errors": 0,
+    "log": "unit_tests.txt",
+    "log_sha256": "68598adefefbb2fb6eb3364272a687c9fae65f178ef2c365998027d412161c36"
+  },
+  "synthetic_demo": {
+    "seed": 20260911,
+    "command": "python scripts/run_demo.py --output results/verified_demo",
+    "exit_code": 0,
+    "concentration_unit": "nM",
+    "direct_true_kd": 3.5,
+    "direct_fitted_kd": 3.50369614517768,
+    "competition_true_kds": [1.4, 0.23],
+    "competition_fitted_kds": [1.4000493079933822, 0.22971181756295864],
+    "geometry_same_complex": {
+      "protein_rmsd_A": 8.040438632824613e-16,
+      "ligand_rmsd_A": 1.046769192815069e-15,
+      "mapping_index": 0,
+      "rotation_determinant": 1.0,
+      "alignment_scope": "supplied_protein_atoms",
+      "chemical_mapping_checked_here": false
+    },
+    "geometry_moved_ligand": {
+      "protein_rmsd_A": 8.325535399409499e-16,
+      "ligand_rmsd_A": 3.0000000000000013,
+      "mapping_index": 0,
+      "rotation_determinant": 1.0000000000000016,
+      "alignment_scope": "supplied_protein_atoms",
+      "chemical_mapping_checked_here": false
+    }
+  },
+  "screening_cli": {
+    "command": "python scripts/screen.py --input results/verified_demo/candidates.synthetic.csv --config results/verified_demo/gate_policy.json --output results/verified_screen --data-origin synthetic_demo",
+    "exit_code": 0,
+    "n_input": 8,
+    "n_passed": 2,
+    "data_origin": "synthetic_demo"
+  },
+  "published_center_value_math": {
+    "source": "https://doi.org/10.1038/s41586-026-10670-w, Figs. 3-4, point estimates only",
+    "kd_unit": "nM",
+    "kd_wt_a_b_ab": [120.0, 8.0, 7.4, 1.2],
+    "mutant_cycle": {
+      "independent_expected_kd": 0.4933333333333337,
+      "ddg_a_kcal_mol": -1.60447898722239,
+      "ddg_b_kcal_mol": -1.6506700271996795,
+      "ddg_ab_kcal_mol": -2.7284940260684767,
+      "coupling_kcal_mol": 0.5266549883535921,
+      "temperature_K_assumed": 298.15,
+      "uncertainty_assessed": false
+    },
+    "temperature_note": "298.15 K is illustrative, not a recovered binding-assay temperature",
+    "wilson_4_of_4": [0.5101091635454027, 1.0],
+    "wilson_5_of_6": [0.43649717781352987, 0.9699466302516935],
+    "interval_note": "Descriptive independent-binomial approximation; ignores pose/lineage clustering"
+  },
+  "code_identity": {
+    "checked_against_git_tree": "517a0fc8e780c51c33d7cc61433826d3fea72c2a",
+    "all_five_git_blobs_match_tested_local_bytes": true,
+    "files": {
+      "scripts/binding.py": {
+        "bytes": 6210,
+        "git_blob_sha1": "9b5919e1816780e5ac5790c2dc8724f998db9220",
+        "sha256": "99386c7647fa7bc8160d7c1c42c6cf3202fc639b0be62c420806403377ba4305"
+      },
+      "scripts/geometry.py": {
+        "bytes": 2795,
+        "git_blob_sha1": "200b507505c71d62ab4227a40908b9fb752be2a3",
+        "sha256": "d28251219a90fb8cc5e7b469869b0a6a80ed6d64b0ba190731b8137b6f328b1e"
+      },
+      "scripts/run_demo.py": {
+        "bytes": 5368,
+        "git_blob_sha1": "594658a58f9a7b99705ef4bff66dc6d4dc88c2a9",
+        "sha256": "e1b3463189c39edca1853a31b183ba4d850e1c08a35c9bdab7da233602685357"
+      },
+      "scripts/screen.py": {
+        "bytes": 5501,
+        "git_blob_sha1": "41cab2ff5910e9fae7c941e826690dbbd6b65ab0",
+        "sha256": "b1b121eeb7a1fc0af73cf4a4c9c6fed9632a5422494a1e04c1c27fa44ff6aada"
+      },
+      "tests/test_methods.py": {
+        "bytes": 6941,
+        "git_blob_sha1": "dedc8b93c0d8b76ab9bb17ef062da48917bec81f",
+        "sha256": "24a024e2b4ec57f0181f445a30440aed87aec207294f483f22ed3d73ad014949"
+      }
+    }
+  },
+  "not_run": [
+    "LASErMPNN inference or training",
+    "RFAA/Boltz inference",
+    "original-data fits",
+    "wet experiments",
+    "Complete SI/Zenodo raw-data audit",
+    "PDB crystal comparison or electron-density analysis"
+  ],
+  "test_interpretation": "Passing tests validates only the stated mathematical fixtures, fit recovery on synthetic data, and input checks. New scientific hypotheses remain untested."
+}
