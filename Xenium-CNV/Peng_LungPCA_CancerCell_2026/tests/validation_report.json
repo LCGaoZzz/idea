@@ -1,0 +1,33 @@
+{
+  "scope": "synthetic_unit_tests_only",
+  "paper_analyses_executed": false,
+  "real_user_data_analyzed": false,
+  "tests_run": 30,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "files": {
+    "scripts/sensitivity_checks.py": {
+      "sha256": "5e370995e02ac012ea0296ab6ce833a048589796d2c541f2c4c2dcd1b047ed7b",
+      "git_blob_sha": "5cf41997744d88ff668e5514f70c97fb84fee470",
+      "bytes": 9943
+    },
+    "tests/test_sensitivity_checks.py": {
+      "sha256": "b39e84d2ca0a12dab4affd4a970b7387f2cdcb7f39555ec63bd93f9a0664db99",
+      "git_blob_sha": "eac0fbdaadd825186239b0fbc02382f47e47b584",
+      "bytes": 6878
+    }
+  },
+  "limitations": [
+    "Not a reproduction of LungPCA scientific results",
+    "No author data objects loaded",
+    "No real-data FDR, coverage, power or causal validation",
+    "No edge correction or matched spatial inference in radius_counts"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "project": "Peng_LungPCA_CancerCell_2026",
+  "review_date": "2026-09-12",
+  "evidence_lanes": {"P": "paper report", "C": "active fixed-version code", "I": "interpretation or mathematical derivation", "T": "proposed transfer or newly authored code"},
+  "paper": {
+    "title": "Multimodal spatial-omics reveal co-evolution of alveolar progenitors and proinflammatory niches in progression of lung precursor lesions",
+    "doi": "10.1016/j.ccell.2025.10.004",
+    "pmid": "41202811",
+    "pmcid": "PMC12980502",
+    "online_date": "2025-11-06",
+    "issue_date": "2026-02-09",
+    "citation": "Cancer Cell 44(2):321-339.e13",
+    "sources": [
+      {"url": "https://doi.org/10.1016/j.ccell.2025.10.004", "kind": "publisher", "access": "retrievable indexed text; no full PDF downloaded"},
+      {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12980502/", "kind": "primary manuscript", "access": "indexed text; direct-page verification challenge encountered"},
+      {"url": "https://pubmed.ncbi.nlm.nih.gov/41202811/", "kind": "official bibliographic record and main-figure captions", "access": "read"}
+    ],
+    "not_acquired": ["full article PDF", "supplementary figure PDF", "supplementary workbooks", "author Data objects", "full expression matrices"]
+  },
+  "author_code": {
+    "repository": "FuduanPeng/LungPCA_Code",
+    "commit": "fba87dbee8dbae497b15b81a4b0fa79edccd17b2",
+    "url": "https://github.com/FuduanPeng/LungPCA_Code/tree/fba87dbee8dbae497b15b81a4b0fa79edccd17b2",
+    "mode": "static review, not scientific execution",
+    "license_file_in_tree": false,
+    "data_directory_in_tree": false,
+    "files": [
+      {"path": "Figure 1.R", "blob_sha": "e0a22a0b123d3ce0c6282dd066b15d8fd7dc0ef6", "bytes": 4133},
+      {"path": "Figure 1E 4F.py", "blob_sha": "00108269da6c13f8a61537ed6f3b3195f113b62b", "bytes": 2261},
+      {"path": "Figure 2.R", "blob_sha": "e54718045373bb9035e2e3b2154761eff8263af3", "bytes": 5446},
+      {"path": "Figure 2C.py", "blob_sha": "497c50bb55b178ed61bd2dbe4709c4a9fe6ac156", "bytes": 4591},
+      {"path": "Figure 3.R", "blob_sha": "8bb87962a841a3d5437318163422f07401ea3e7c", "bytes": 9853},
+      {"path": "Figure 3K 3N.py", "blob_sha": "2ac9f5ea2a9bace34e97191fbcadb19053f8a201", "bytes": 3427},
+      {"path": "Figure 4.R", "blob_sha": "55219000b11b1957acb6178ea1d2c2d6af09836a", "bytes": 4452},
+      {"path": "Figure 4G.py", "blob_sha": "61e8a39a0d78c71d504861e01b91aca74e62b43b", "bytes": 2822},
+      {"path": "Figure 5.R", "blob_sha": "fc1fb907dddd5a84969b490982b470542d6e17a1", "bytes": 6220},
+      {"path": "Figure 6.R", "blob_sha": "a7b7d5420f58131b8a422040ce77e9f1e4e5b591", "bytes": 3878},
+      {"path": "Figure 6E 6F 7D.py", "blob_sha": "9c50c10e1c23459a736f4965fba5e616303f5d27", "bytes": 3878},
+      {"path": "Figure 6G.py", "blob_sha": "d4a929b146abadbdbf74323813561933c59e1b73", "bytes": 862},
+      {"path": "Figure 7.R", "blob_sha": "3fe901d74e78c2131e0bc2948872fca91911323d", "bytes": 5907},
+      {"path": "README.md", "blob_sha": "eb00ce8bc58fa03c4bfa1e750f70ec4d82903dcb", "bytes": 450}
+    ]
+  },
+  "data_registry": [
+    {"id": "zenodo.17172149", "url": "https://zenodo.org/records/17172149", "status": "record read; files restricted; not downloaded"},
+    {"id": "zenodo.15670280", "url": "https://doi.org/10.5281/zenodo.15670280", "status": "paper-declared; full record and access not confirmed this run"},
+    {"id": "GSE222901", "role": "paper-declared mouse data", "status": "not downloaded or mapped per GSM"},
+    {"id": "GSE300288", "role": "paper-declared mouse data", "status": "not downloaded or mapped per GSM"},
+    {"id": "GSE300293", "role": "paper-declared mouse data", "status": "not downloaded or mapped per GSM"},
+    {"id": "GSE307534", "role": "paper-declared processed human data", "status": "not downloaded or mapped per GSM"},
+    {"id": "GSE308103", "role": "paper-declared processed human data", "status": "not downloaded or mapped per GSM"},
+    {"id": "GSE307529", "role": "paper-declared processed human data", "status": "not downloaded or mapped per GSM"}
+  ],
+  "additional_method_sources": [
+    {"url": "https://www.nature.com/articles/s41467-021-21038-1", "use": "external primary methodological source for pseudoreplication; not a LungPCA result"},
+    {"url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.query_ball_point.html", "use": "official API documentation for new radius-counting helper"}
+  ],
+  "new_code": {
+    "path": "scripts/sensitivity_checks.py",
+    "status": "new teaching implementation; synthetic tests only",
+    "author_pipeline_reproduced": false,
+    "real_data_reanalysis": false,
+    "test_report": "tests/validation_report.json"
+  },
+  "prior_work": {
+    "role": "earlier conversation reconstruction used as working notes, not a primary scientific source",
+    "workflow": "reconstruct-bioinfo-protocol-pr630-4bdc4d0.zip",
+    "scope": "evidence mapping and explicit unknowns retained; no claim of complete upstream execution"
+  }
+}

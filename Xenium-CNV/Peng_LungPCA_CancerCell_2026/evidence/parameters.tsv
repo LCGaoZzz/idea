@@ -1,0 +1,47 @@
+parameter_id	module	parameter	value	identity	source_locator	verification_limit
+K01	Visium	nUMI threshold	500	paper_reported	Visium data analysis	QC布尔组合未由活动代码确定
+K02	Visium	nFeature threshold	200	paper_reported	Visium data analysis	过滤方向与组合需完整语句
+K03	Visium	mitochondrial threshold	15%	paper_reported	Visium data analysis	不自动写成三项OR
+K04	Visium	HVGs	3000	paper_reported	Visium data analysis	未重算
+K05	Visium	PCs	30	paper_reported	Visium data analysis	只限所述模块
+K06	Visium	cluster resolution	0.8	paper_reported	Visium data analysis	不推广所有子集
+K07	RNA-CNA	cutoff	0.1	paper_reported	Analysis of spatial copy number alterations	输入尺度/参考仍需恢复
+K08	RNA-CNA	cluster_by_groups	TRUE	paper_reported	Analysis of spatial copy number alterations	没有活动上游脚本
+K09	RNA-CNA	HMM	TRUE	paper_reported	Analysis of spatial copy number alterations	不补HMM内部默认
+K10	RNA-CNA	denoise	TRUE	paper_reported	Analysis of spatial copy number alterations	不补噪声参数
+K11	clone	other lesion count	strictly <25	paper_reported	空间CNA Methods	取样量敏感;新增脚本仅形式化文字
+K12	clone	within lesion fraction	strictly >0.95	paper_reported	空间CNA Methods	不把95%边界改为>=
+K13	clone	subtree ancestors	UNKNOWN	missing	SelectingSubTreeData	手工节点与选择记录未取得
+K14	clone	final reference IDs	UNKNOWN	missing	空间CNA Methods	参考策略已知;最终ID未取得
+K15	snRNA	doublet tool	Scrublet	paper_reported	snRNA data analysis	非DoubletFinder;具体阈值未恢复
+K16	snRNA	gene/reads/MT thresholds	500/1000/20%	reconstructed_note	snRNA data analysis;既有Methods审读	完整顺序与活动代码未复核
+K17	snRNA	HVG/PC	3000/50	reconstructed_note	snRNA data analysis	不能称本次已执行
+K18	Visium NMF	rank range	2-18	reconstructed_note	NMF meta-program Methods	筛选顺序和随机种子缺失
+K19	snRNA NMF	rank range	2-11	reconstructed_note	NMF meta-program Methods	不与Visium rank混用
+K20	NMF	genes per program	50	reconstructed_note	NMF meta-program Methods	程序原始集合未取得
+K21	NMF	overlap count	35	reconstructed_note	Visium稳健程序步骤	不是Jaccard0.7;阈值角色不能互换
+K22	NMF	cross-sample filtering	10%/20% at distinct steps	reconstructed_note	NMF meta-program Methods	完整筛选链未恢复;不生成替代作者代码
+K23	Xenium discovery	panel	5K Prime +100 custom	paper_reported	Xenium methods	panel基因列表未下载
+K24	Xenium validation	panel	298 lung +100 custom	paper_reported	Xenium methods	与发现add-on不是默认相同
+K25	Xenium discovery	gene threshold	<30 excluded	paper_reported	Xenium data analysis	不改成UMI30
+K26	Xenium TMA	QC	UMI<20 OR genes<10 excluded	paper_reported	Xenium data analysis	原始QC细胞表未取得
+K27	Xenium	PC number	selected using ElbowPlot; exact per subset UNKNOWN	paper_reported	Xenium data analysis	不补统一PC30/50
+K28	neighborhood	radius	80 micrometres	paper_reported	Cellular neighborhood analysis	仅原文尺度;新项目需显式选择
+K29	neighborhood	include centre	UNKNOWN	missing	邻域上游代码缺失	新增代码强制显式self policy
+K30	neighborhood	edge correction	UNKNOWN	missing	邻域上游代码缺失	新增代码明确not_corrected
+K31	image alignment	landmark pairs	at least30	paper_reported	Xenium histology alignment	变换矩阵/landmarks未取得
+K32	COMMOT direction	k	5	active_code	Figure 6G.py;communication_direction	不是Xenium半径
+K33	COMMOT plotting	normalize_v	True	active_code	Figure 6G.py;plot_cell_communication	显示归一化不等于生物真值
+K34	COMMOT plotting	normalize_v_quantile	0.995	active_code	Figure 6G.py	只限所述显示
+K35	COMMOT input	X/counts identity	UNKNOWN	missing	Figure 6G.py assigns counts=X	命名不证明原始计数
+K36	COMMOT	remaining settings	defaults, versions unresolved	unpinned_default	COMMOT Methods	不能替换为当前版本默认
+K37	iStar display	min-max	per input image	active_code	Figure 1E 4F.py;plot_super	不能跨图比较绝对强度
+K38	iStar display	truncate	None in active calls	dormant_branch	Figure 1E 4F.py;plot_super	条件分支未启用
+K39	MP display	ties	first maximum index	active_code	Figure 3K 3N.py;Figure 4G.py	硬标签非校准概率
+K40	mouse score overlay	quantiles	0.7/0.9 per score and sample	active_code	Figure 6E 6F 7D.py	both<q70 black;both>q90 overlap
+K41	organoid	counted diameter	strictly >100 micrometres	paper_reported	Organoid Methods;Fig6J-K	阈值前尺寸分布缺失
+K42	genetic model	Cre context	CCSP-Cre related background	paper_reported	Animal models;FigS8G-I	不是KAC专一诱导敲除
+K43	statistics	pairwise method	t.test	active_code	Figure 6.R Fig6J-K;Figure 7.R Fig7F/I	不代表完整统计族与上游单位已核验
+K44	new spatial helper	radius/self	mandatory explicit arguments	proposed	scripts/sensitivity_checks.py;radius_counts	不是作者已恢复参数
+K45	new helper	chunk_size	4096	proposed	scripts/sensitivity_checks.py;radius_counts	工程查询分块;非生物尺度
+K46	new tests	runtime	Python3.13.5 NumPy2.3.5 SciPy1.17.0	tested_runtime	tests/validation_report.json	只是新增合成测试环境

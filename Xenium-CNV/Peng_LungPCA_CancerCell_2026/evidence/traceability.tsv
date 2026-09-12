@@ -1,0 +1,29 @@
+analysis_id	正文主张	figure/panel	method与参数	code位置	输入/输出	复现状态	冲突或缺口
+P01	[P]病理谱系与配对队列提供宿主内比较	Fig.1A;Patient samples	25患者56Visium组织;23患者75snRNA组织	Figure 1.R的Figure 1B段	组织manifest/组成展示	受阻	Table S1和完整层级映射未下载;配对不是直接谱系
+P02	[P]不同病理区域表达存在差异	Fig.1B-D	Visium;SCTransform;3000HVG;30PC;res0.8	Figure 1.R	预计算RDA/RDS/UMAP和热图	受阻	上游QC布尔组合与assay未完整恢复
+P03	[P/C]iStar相关结果可在更细尺度展示	Fig.1E;4F	iStar预测;逐图min-max是绘图行为	Figure 1E 4F.py::plot_super	mask及基因pickle/PNG	受阻	没有iStar模型推断脚本;superpixel非独立实测细胞
+P04	[P]患者内RNA-CNA支持不同推断克隆结构	Fig.2A-C;S2A-B	SpatialInferCNV;cutoff0.1;HMM/denoise/cluster_by_groups TRUE	Figure 2.R的Figure 2C段	表达参考/预计算PhyloTree和CNA	受阻	最终参考、人工子树、完整推断代码未取得
+P05	[P]存在共享与病灶特异类别	Fig.2B-C;空间CNA Methods	对侧<25 spots且本侧>95%;其余shared	作者上游分类代码未获得;本项目classify_clone为新增形式化	spot clone计数/操作性标签	受阻	抽样量依赖;零观测防护是新增而非作者实现
+P06	[P]WES为样本级遗传旁证	Fig.2D;S2B	WES比对与体细胞变异过滤	Figure 2.R的Figure 2D段	预计算变异矩阵/oncoPrint	受阻	未取得FASTQ/BAM/VCF;不是逐Xenium细胞DNA真值
+P07	[P]KAC与其他上皮状态可区分	Fig.3A	核QC;Scrublet;Harmony;细胞注释	Figure 3.R的Figure 3A段	Seurat对象/UMAP	受阻	细分标签规则与上游对象缺失
+P08	[P]状态可按轨迹与分化分数排序	Fig.3B-D	Monocle3;CytoTRACE	Figure 3.R::plot_cells	已保存轨迹对象/图	受阻	根节点与图学习未复算;不能等同真实时间或命运
+P09	[P]表达程序形成9个上皮MP	Fig.3E-G	NMF;168稳健程序;上皮MP词典	Figure 3.R的Figure 3E-G段	MP矩阵/热图和分布	受阻	原始程序筛选顺序、种子与完整gene lists未获得
+P10	[P]程序与病理和克隆位置可并置	Fig.3H-N	程序映射;RPII分母;最高分显示	Figure 3.R;Figure 3K 3N.py	预计算比例与stacked_MPs/图	材料冲突	Figure3M轴标签冲突;最大值标签非概率
+P11	[P]KAC中存在炎症相关表达	Fig.4A;6C	差异/富集	Figure 4.R的Figure 4A段;Figure 6.R的Figure 6C段	预计算enrichment/条形图	受阻	背景基因、筛选集合与统计族未完全复算
+P12	[P]全Visium的11个MP与病理相关	Fig.4B	样本层面相关;Ro/e	Figure 4.R的Figure 4B段	MPs_corr与Roe矩阵/图	受阻	矩阵生成与组成约束影响未重估
+P13	[P]存在候选髓系-上皮LR联系	Fig.4C-D	LR候选与IL1R1表达	Figure 4.R的Figure 4C-D段	频率表/Seurat对象/图	受阻	转录本不是蛋白活性;来源与接收不唯一
+P14	[P/C]空间信号关系在P24示例中展示	Fig.4E-F	CytoSignal;slot GauEps-Raw;iStar绘图	Figure 4.R::plotEdge;Figure 1E 4F.py	预计算通信对象及基因图/图	受阻	没有全流程CytoSignal与iStar生成材料
+P15	[P/C]上皮与髓系程序具有空间并置	Fig.4G	最高程序得分硬标签	Figure 4G.py	stacked_MPs/颜色图	受阻	tie取首索引;分数字典和不确定性未复算
+P16	[P]Xenium发现队列提供细胞级验证	Fig.5A-C	5K Prime+100;QC/注释/整合	Figure 5.R的Figure 5A-C段	已注释Seurat/UMAP和评分	材料冲突	Results4598777与Methods4760267冲突;单位6samples与12组织歧义
+P17	[P]中心状态周围存在不同局部组成	Fig.5D-E	80um质心邻域	Figure 5.R的Figure 5D-E段	预计算neighborhood表/图	受阻	self、edge、空间域隔离和宿主汇总上游未取得
+P18	[P]独立TMA检验局部关系	Fig.5G-L	298+100面板;188cores;19患者36病变	Figure 5.R的Figure 5G-L段	TMA与邻域表/图	受阻	面板与标签不同;5I/5L用Explorer;未逐core重算
+P19	[P]小鼠存在相容状态和表达	Fig.6A-D	小鼠scRNA;细胞注释与分数	Figure 6.R的Figure 6B-D段	预计算Seurat/UMAP及基因图	受阻	独立批次及QC过程未复算
+P20	[P/C]小鼠空间状态和炎症可叠加显示	Fig.6E-F	样本内70/90百分位规则	Figure 6E 6F 7D.py的Figure 6F段	预计算score arrays/叠加图	受阻	分位色块不等于跨样本绝对强度或显著交互
+P21	[P/C]IL1相关方向摘要被绘制	Fig.6G	communication_direction k5;normalize_v;quantile0.995	Figure 6G.py:8-19	预计算通信对象/方向摘要和流线	材料冲突	Methods数据库类别对应不清;底层矩阵未重算;X不保证原始counts
+P22	[P]培养条件改变类器官数量和大小	Fig.6H-K	支持性培养;重组因子/巨噬细胞;直径>100um	Figure 6.R的Figure 6J-6K段	number_mat/size_mat/比较图	受阻	well与供体映射、阈值前尺寸分布未取得
+P23	[P]接收端遗传扰动提供功能支持	Fig.S8G-I	CCSP-Cre/Kras/Il1r1背景	该补充分支生成代码未取得	动物终点/病变与细胞变化	受阻	非KAC专一诱导敲除;唯一来源和中介未确定
+P24	[P]另一模型未出现相同生长抑制	Fig.S8J	344SQ同系皮下模型	生成代码未取得	肿瘤生长记录/阴性比较	受阻	不只是时间不同;精确效应上限与功效未重估
+P25	[P]药理干预影响病变与炎症终点	Fig.7A-C	两个癌前窗口;四组	Figure 7.R注释Prism	原始终点表/比较图	受阻	未取得Prism工程;联合优于单药不等同协同检验
+P26	[P]KAC上皮内比例随处理改变	Fig.7E-G	样本比例;图注n通常4;3mo抗IL1组n3	Figure 7.R的Figure 7E-G段	预计算percentage/UMAP和比较	材料冲突	7mo代码标题3months;不能由比例确定绝对细胞清除
+P27	[P]seq-IF核心样本中巨噬细胞比例不同	Fig.7H-I	core层面计数与比例;unpaired t	Figure 7.R的Figure 7I段	macro.Frac/比较图	材料冲突	图注96与分组数合计94;core到animal完整映射未取得
+P28	[P]论文声明多数据登记与代码开放入口	Data and code availability	GEO与Zenodo官方登记	README.md与仓库目录	登记链接/输入可得性清单	受阻	Zenodo17172149文件restricted;其他数据未下载验证
