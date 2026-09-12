@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-09-12",
+  "paper": {
+    "title": "Ecotypes of triple-negative breast cancer in response to chemotherapy",
+    "doi": "10.1038/s41586-026-10469-9",
+    "pmid": "42129561",
+    "url": "https://www.nature.com/articles/s41586-026-10469-9",
+    "read_scope": "HTML main text, Methods and figure captions; not complete image/source-data audit",
+    "publisher_pdf_obtained": false,
+    "all_supplementary_tables_obtained": false
+  },
+  "code": {
+    "repository": "navinlabcode/tnbc-chemo",
+    "commit": "fbe1dd3b1db05dd5e9f02485a45fdd438d6af9fb",
+    "full_repository_execution": false,
+    "evidence_scope": "Selected fixed-version connector reads plus inherited selected snapshots; per-file distinctions in sources/README.md",
+    "new_current_reads": [
+      {"path": "analysis/scripts/metamodule_fnmf.s2a.R", "lines": "70-106", "blob_sha": "3d1a1afd9606340f92ca21c8f96cb1429d5de218"},
+      {"path": "data/README.md", "lines": "complete", "blob_sha": "d185bdbb6afb9f54f79dca062a07b9b9d8f3ed67"}
+    ]
+  },
+  "inherited_materials": [
+    {"name": "TNBC_Ecotypes_Deep_Dossier_ZH.md", "sha256": "ec3c226f78f6798f15aa3763351e6dc80bf5102f1944dd83ae66d984cc15d32b", "role": "secondary reconstruction, not primary article"},
+    {"name": "tnbc-chemo-reconstruction-2026-08-07.zip", "sha256": "d6f1ecd3a5aeec36125f03b82a550762f114f4482beceac99bcd5a9f74750407", "role": "selected historical snapshots and notes"},
+    {"name": "reconstruct-bioinfo-protocol-pr630-4bdc4d0.zip", "sha256": "66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f", "role": "user-selected evidence-contract workflow"}
+  ],
+  "patient_data_downloaded": false,
+  "final_author_model_recovered": false,
+  "source_claim_registry": "traceability.tsv"
+}

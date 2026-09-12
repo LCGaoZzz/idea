@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-09-12",
+  "checkpoint_subtree_sha": "0a0eb19fbb29ef2da511fab0606ac24b64af3502",
+  "checkpoint_files": 28,
+  "checkpoint_total_bytes": 179025,
+  "main_chapters": 12,
+  "analysis_cards": 25,
+  "insights_with_eight_part_structure": 5,
+  "audit_issues": 21,
+  "verification_method": "Git tree inventory and targeted local-versus-remote Git blob identity comparisons; entry-page file targets checked against inventory",
+  "all_readme_file_targets_present": true,
+  "code_blob_checks": [
+    {"path": "code/audit_inputs.py", "local_git_blob_sha1": "364ec0c3b202b3ddef65b857236a056ffb933726", "remote_git_blob_sha1": "364ec0c3b202b3ddef65b857236a056ffb933726", "match": true},
+    {"path": "code/toy_checks.py", "local_git_blob_sha1": "364630e4eb83e4fad054fb3ade2b9f83bd084c6e", "remote_git_blob_sha1": "364630e4eb83e4fad054fb3ade2b9f83bd084c6e", "match": true},
+    {"path": "validation/toy_results.json", "local_git_blob_sha1": "31399c04ee69dbbb8102425ac1569e3faacae544", "remote_git_blob_sha1": "31399c04ee69dbbb8102425ac1569e3faacae544", "match": true}
+  ],
+  "executed_checks": {"synthetic_unit_tests_passed": 20, "py_compile_passed": true, "synthetic_cli_success": true, "existing_output_rejection_exit_code": 2},
+  "not_claimed": ["Exhaustive external URL and fragment validation", "Browser rendering of every page", "Author R pipeline execution", "Patient or animal result reproduction", "Validation against original reconstruction-framework JSON schemas"],
+  "concurrent_repository_changes": "Main advanced while content was prepared. Publication must add only this subtree onto the newly read main tree; preserve the Mo2024 subfolder and other existing files."
+}

@@ -1,0 +1,17 @@
+{
+  "synthetic_only": true,
+  "patient_analysis_runs": 0,
+  "animal_analysis_runs": 0,
+  "python_version": "3.13.5",
+  "tests_run": 20,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "script_sha256": {
+    "toy_checks.py": "739c64cff78882a9242f92c2f6801d808a6160b3d91087166bb036969553ac65",
+    "audit_inputs.py": "c7dd420ec2f07b5b0c8a66097090641d12dd5f5729f7054f2bb761009af16774"
+  },
+  "failed_test_ids": [],
+  "scope": "Synthetic identities, counterexamples and input contracts; no author model execution"
+}

@@ -1,0 +1,16 @@
+{
+  "project": "TNBC-Ecotypes-Nature-2026",
+  "purpose": "Readable research idea with paper/code/inference/transfer separation",
+  "literature_and_selected_code_review": "completed_with_explicit_gaps",
+  "empirical_reproduction": "not_run_blocked_by_inputs_and_unresolved_provenance",
+  "patient_analysis_runs": 0,
+  "animal_analysis_runs": 0,
+  "new_synthetic_unit_tests": {"run": 20, "passed": 20, "failed": 0, "receipt": "validation/toy_results.json"},
+  "analysis_ids": ["A01", "A02", "A03", "A04", "A05", "A06", "A07", "A08", "A09", "A10", "A11", "A12", "A13", "A14", "A15", "A16", "A17", "A18", "A19", "A20", "A21", "A22", "A23", "A24", "A25"],
+  "known_mouse_project": "Pure starting tumor clone, mouse models, early/middle/late Xenium samples",
+  "unknown_mouse_project_fields": ["cancer_type", "independent_animals_per_stage", "repeated_sampling_design", "actual_times", "panel", "batch_layout", "DNA_or_lineage_evidence"],
+  "branch_policy": "Only add a new subdirectory; preserve unrelated repository content; no force push",
+  "framework_schema_validation_claimed": false,
+  "blocking_materials": ["patient eligibility and treatment table", "final malignant labels", "NMF input cache", "manual program/state decisions", "final network objects", "complete spatial geometry and votes", "split/model objects", "13-gene frozen coefficients and transforms"],
+  "issue_registry": "audits/ISSUES.md"
+}

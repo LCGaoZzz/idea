@@ -1,0 +1,60 @@
+analysis_id	parameter	paper_reported	code_observed	location	status	interpretation_limit
+A01	clinical_cohort	108; pCR50; RD39; switched19	NA	P1 ARTEMIS Methods; Fig1	paper_reported	Not every analysis has these same denominators
+A01	matched_scRNA_spatial	39 in design; 46 in archetype section	NA	P1 Study design / Tumour archetypes	unresolved_text_difference	Need patient/platform inclusion table; do not call 46 Xenium patients
+A02	QC_min_UMI	500	NA	P1 Filtering of scRNA-seq data	paper_reported	Not a general recommended threshold
+A02	QC_min_genes	150	NA	P1 Filtering of scRNA-seq data	paper_reported	Final cell manifest not recovered
+A02	QC_mito_percent	<40	NA	P1 Filtering of scRNA-seq data	paper_reported	Processing and biological stress may both contribute
+A02	genome	hg38	NA	P1 Data preprocessing	paper_reported	Exact reference bundle and run binding still required
+A03	CopyKAT_version	1.0.8	NA	P1 Identification of aneuploid cells	paper_reported	Not actual local runtime
+A03	normal_reference_cells	approximately800	NA	P1 Identification of aneuploid cells	paper_reported	Need reference cell IDs
+A03	score_scaling_quantiles	0.05;0.995	0.005;0.995	C1:160-235;P1 CNA Methods	paper_code_difference	Lower-bound difference alone need not change calls with floor
+A03	score_decision_quantile	0.99	0.99 followed by floor at1	C1:160-235	paper_code_difference	Finite nondegenerate rule implies raw score >Q0.995
+A03	ACC_quantile	0.99	0.99	C1:160-235	declared_and_code	Final labels not recovered
+A03	ACC_invalid_fallback	NA	0.5	C1:219-225	code_branch	Do not promote fallback to universal paper threshold
+A03	query_profile_fraction	0.01	0.01	C1:181-190	declared_and_code	May emphasize dominant CNA profile; impact not measured
+A04	final_identity	Leiden AND Tirosh; epithelial	multiple intermediate columns exist	P1 CNA/filtering Methods;C1:350-475	final_binding_missing	Must recover actual final cell IDs and chosen columns
+A05	pseudobulk	Sum raw UMI by target cells and patient; VST	psbulk.prepare.R	P1 Creating pseudo-bulk;C3	input_missing	Not mean log-expression or whole-tissue bulk
+A06	gene_filter	Top75% by mean and variance	last idx uses mean and variance above own means	C2:54-80	paper_code_difference	Existing input.matrix cache bypasses filter
+A06	rank_scan	2-10	2:10	C2:88-109	declared_and_code	Chosen rank needs actual selection evidence
+A06	centering	gene center then truncate negative	implemented	C2:72-80	declared_and_code	Learned reference depends on cohort
+A06	NMF_tolerance	1e-5	1e-5	C2:88-109	declared_and_code	Does not validate biological interpretation
+A06	L1	0.05	c(0.05,0.05)	C2:88-109	declared_and_code	Separate from other NMF branches
+A07	top_two_ratio	largest / second largest	largest / next distinct value	C2:23-35	boundary_behavior	Ties create counterexample; patient impact unknown
+A07	specificity_threshold	Two-component Gaussian mixtures	final fitted objects unavailable	P1 Identifying archetypes	object_missing	No arbitrary fixed tau threshold filled in
+A09	min_cancer_cells	20	NA	P1 Identifying metaprograms	paper_reported	Per-patient NMF driver still to bind
+A09	gene_mean_log_filter	>0.05	NA	P1 Identifying metaprograms	paper_reported	Assay transformation must be specified
+A09	rank_scan	Even ranks2-30; rank<=cell count	driver binding unavailable	P1 Performing NMF / Identifying metaprograms	paper_reported	s1.R is factor QC, not raw NMF driver
+A10	nearest_program_Jaccard	>=0.25	max(x[x!=1]) >=0.25	C5:76-99	boundary_behavior	Removes all exact1 values, not only diagonal
+A10	program_merge	Ward.D2; even cuts10-30; intra>=0.1; inter>0.2	multiple merge scripts and manual steps	P1 Identifying metaprograms;C5,C6	partial_code_and_missing_decisions	Final membership and distance transform need binding
+A10	Jaccard_cache	NA	cold filters and saves in_use; hot reads base in inspected block	C5:76-99	cache_branch_difference	Downstream full impact not established
+A11	module_scoring	AddModuleScore	AddModuleScore with top20 markers in inspected path	C7;P1 Module score	partial_code	Do not substitute AUCell or a different marker truncation silently
+A11	MP_positive_score	>=0.1	>=0.1 in inspected score branch	P1 Cell frequency;C7	declared_and_code	Dataset/assay-specific, not calibrated probability
+A11	MP_denominator	Cancer cells in each patient; no cancer=NA	multiple display branches	P1 Cell frequency;C7	paper_reported	MP positivity may overlap; sum may exceed1
+A12	TME_state_count	49	final annotation table unavailable	P1 Fig4;ED4-7	paper_reported	Do not force 49 states in a new dataset
+A14	frequency_test	Methods signed-rank; captions rank-sum	actual final calls not bound	P1 Cell frequency;Fig3/4 captions	unresolved_text_difference	Need pairing, patient IDs and actual paired argument
+A15	correlation	Spearman	Spearman; pairwise.complete.obs	C8:15-23	declared_and_code	Effective N differs by edge
+A15	p_adjustment	P<0.05 described for selection	p.adjust.method=NULL passed to helper	C8:19-23	implementation_scope	Helper and final p/q objects still need recovery
+A16	graph_filter	Significant positive correlations	positive edges; siglist not used in inspected construction	C9:12-28	paper_code_difference	Does not identify historical graph used for publication
+A16	resolution_selection	scan crossing of community number and median size	0.01-10 scan; manually1.8	C9:31-76	selection_provenance_missing	1.8 alone is not an error
+A16	consensus_runs	1000	1000; seed42	C9:63-76	declared_and_code	Fixed graph repeats not patient bootstrap
+A17	RCOP	Nonnegative group z-mean geometric mean	co_geometric_mean helper call; NA0	P1 RCOP;C10	formula_known_helper_partial	Not group correlation or communication intensity
+A18	CellChat_subsample	approximately20% per state/program	complete final runtime unavailable	P1 Ligand-receptor Methods;C16	paper_reported	Patient pooling and repeated cells must be checked
+A19	gene_folds	10 gene groups; 9 used per run	gene portion files	C13:83-125	declared_and_code	Not ten independent patient folds
+A19	transfer_dimensions	See actual run	30 in inspected script	C13:39-50	code_observed	Do not call universal published parameter without run binding
+A19	gene_expression_prediction	NA	param.run_TransferData_genes=FALSE	C13:39-50	disabled_branch	Script name EvalMode does not prove expression evaluation ran
+A20	major_label_votes	10/10	consensus decision path	P1 Xenium Methods;C14	paper_and_route	State thresholds differ from major types
+A20	state_vote_threshold	QC-informed; manual lower floor5	final per-state thresholds unavailable	P1 Xenium Methods;C14	partial_definition	Do not fill one universal threshold
+A21	neighborhood_radius_um	30	author spatial_niche route	P1 Spatial niche;C15	paper_reported	Center, boundary, ROI and unknown details not all bound
+A21	cancer_spatial_label	Highest program score >0.1	winner route	P1 Spatial niche;C15	paper_and_route	Lossy compression of overlapping programs
+A21	recurring_niches	10	final objects unavailable	P1 Fig5	paper_reported	Not a universal K
+A21	sketch_cells	200000 per sample stated	final invocation not independently executed	P1 Spatial niche	paper_reported	Actual handling of smaller samples must follow code
+A22	VisiumHD_bin_um	32	complete run not recovered	P1 VisiumHD Methods	paper_reported	Not a directly measured single cell
+A22	spatial_signature_score	AUCell; aucMaxRank top20%	branch-specific	P1 spatial Methods	paper_reported	Not interchangeable with AddModuleScore0.1
+A23	feature_missing_filter	Remove features detected in <=10 samples	keep features with <=10 NAs	P1 Cell-based classifier;C11:95-110	paper_code_difference	Different rules; final feature list needed
+A23	train_fraction	0.7	0.7	C11:121-129	declared_and_code	Split after full-data imputation
+A23	supervised_screen	p<0.1	glm(data=df) on full known-outcome data	C11:133-151	confirmed_information_flow	Holdout outcomes influence feature selection
+A23	training_resampling	multiple model comparison	repeated5fold5;ROSE in used control	C11 training block	code_observed	Other unused trainControl objects not actual parameters
+A23	reported_AUC	Results0.84;Discussion0.883	final prediction objects unavailable	P1 Predicting NAC response / Discussion	unresolved_context	Do not choose larger value as deployment performance
+A24	candidate_gene_choices	single-cell-informed candidate sets	top30 markers;archetype100;numeric indices; p0.01 overrides0.05	C12:1-275	partial_code	Final13 genes/coefs not reconstructed
+A25	external_scaling	Map each external gene range to training range	model objects unavailable	P1 Gene-based classifier and overall survival	paper_reported	Cohort-dependent; single-sample external min=max degenerates
+A25	risk_cutoff	External cohort mean predicted risk	model objects unavailable	P1 Gene-based classifier and overall survival	paper_reported	Not a frozen deployment threshold

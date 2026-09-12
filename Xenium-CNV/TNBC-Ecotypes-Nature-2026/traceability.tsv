@@ -1,0 +1,26 @@
+analysis_id	正文主张	figure/panel	method与参数	code位置	输入/输出	复现状态	冲突或缺口
+A01	界定目标患者和结局	Fig1a	ARTEMIS;转轨19;不同分析分母	完整临床代码未取得	临床表/纳入清单	未运行	39与46匹配分母待仲裁
+A02	建立单细胞图谱	Fig1;ED1	UMI>=500;genes>=150;mito<40	完整预处理驱动未取得	counts/QC manifest	未运行	最终QC和人工删除清单缺失
+A03	CNA支持恶性身份	ED1;Fig2	Leiden与Tirosh;score/ACC	C1 copykat_mix.R:160-235	CNA矩阵/判定表	未运行;局部数学测试	Methods下界与代码floor差异
+A04	上皮与恶性条件合并	Fig1-2	最终身份组合	C1:350-475	各预测列/最终cells	未运行	中间列不等于最终标签
+A05	癌细胞患者表达背景	Fig2	原始UMI聚合;VST	C3 psbulk.prepare.R	counts/pseudobulk	未运行	实际对象与assay缺失
+A06	archetype分解	Fig2;ED2	rank2-10;L1=.05;中心化截断	C2:45-115	VST/WdH	未运行	筛选覆盖和缓存
+A07	区分混合与主导患者	ED2	Tau和top2;混合阈值	C2:23-35	H/专一性	未运行;合成反例	下一不同值不等第二负载
+A08	表达背景外部映射	Fig2;ED2	外部与内部锚点再NMF	作者archetype_prediction路由	外部bulk/因子映射	未运行	传导式而非冻结单人预测
+A09	患者内程序	Fig3a-c	rank偶数2-30;样本>=20癌细胞	C17 fastnmf.R;C4是QC	患者表达/程序候选	未运行	实际driver调用缺失
+A10	跨患者重复程序	Fig3a-c	Jaccard;Ward.D2;人工合并	C5:76-99;C6	候选/最终MP	未运行;合成反例	排除值1;缓存;合并日志
+A11	频率与强度不同	Fig3e-f	AddModuleScore>=.1;多标签	C7 metamodule_cell_frequency.R	MP/患者量	未运行	assay与缓存绑定;NA
+A12	TME谱系内部状态	Fig4;ED4-7	子聚类;marker;人工合并	TME教程路由	谱系对象/49状态字典	未运行	完整人工决策缺失
+A13	相对健康参考偏移	Fig4;ED4-7	HBCA正常比较	TME_freq_test路由	供者频率/效应	未运行	参考批次;非同人转化
+A14	状态与应答关联	Fig3-4	Methods signed-rank;图注rank-sum	最终调用未绑定	频率评分/效应p和q	未运行	配对性和检验家族待仲裁
+A15	跨患者状态共现	Fig5a;ED8	Spearman;pairwise complete	C8:15-23	患者频率/rho,p,N	未运行	NA;helper校正;有效N
+A16	ecotype社区	Fig5a	正相关;Louvain/Infomap共识	C9:12-76	图/membership	未运行	siglist未接入当前图
+A17	组间相对共丰富	Fig5b-c;ED9	RCOP非负组均值几何平均	C10 ecotype_3_contexts.response.R	频率/RCOP	未运行;定义反例	非相关强度;helper与参照
+A18	候选通讯	ED8d	CellChat;约20%下采样	C16作者路由	表达/LR候选	未运行	患者混合和数据库缺口
+A19	靶向空间标签	Fig1;Fig5	十组基因留出	C13:39-50,83-125	参考目标/每run标签	未运行	不是患者CV;评估开关关闭
+A20	标签共识与unknown	Fig5;Xenium Methods	大类10/10;细类另定	C14共识脚本	votes/最终标签	未运行	完整门槛和helper缺失
+A21	局部组织与niche	Fig5d-k;ED8	30μm;样本内和跨样本合并	C15空间step路由	坐标标签/niche	未运行	中心点;边界;unknown;独立单位
+A22	辅助空间来源支持	Fig2;Fig3d	平台专用CNA;AUCell;HD32μm	平台Methods与作者教程	spot/bin/分数	未运行	混合单位;完整对象缺失
+A23	细胞频率预测	ED10a-c	glm/LDA/RF;70/30;筛选	C11:95-151	患者特征/预测概率	未运行	全数据筛选;缺失规则;AUC上下文
+A24	小基因面板压缩	ED10d-g	候选marker/DEG;回归	C12:1-275	候选/系数合同	未运行	最终13基因系数未取得
+A25	外部生存和预测	ED10d-g	外部范围缩放;均值cut	P1外部模型Methods	外部表达/风险和生存	未运行	队列依赖;预后不等治疗获益

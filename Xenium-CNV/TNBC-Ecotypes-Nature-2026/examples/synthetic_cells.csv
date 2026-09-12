@@ -1,0 +1,4 @@
+individual_id,sample_id,stage,cell_id,lineage,state,x_um,y_um
+SYNTHETIC_MOUSE_1,SYNTHETIC_SECTION_1,early,cell1,Cancer,ProgramA,0,0
+SYNTHETIC_MOUSE_1,SYNTHETIC_SECTION_1,early,cell2,Myeloid,StateB,10,0
+SYNTHETIC_MOUSE_2,SYNTHETIC_SECTION_2,late,cell1,Cancer,ProgramA,0,0
