@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "checks_run": 7,
+  "patient_analysis_runs": 0,
+  "animal_analysis_runs": 0,
+  "input_kind": "hand_constructed_synthetic_examples",
+  "python_version": "3.13.5",
+  "script_sha256": "32eafa0c6d7c8904e3f3b9e878eafc89f57201d916ffb81e84cdd2aee8f9c29e",
+  "checks": [
+    {
+      "id": "D01",
+      "passed": true,
+      "baseline": 2.8,
+      "followup": 5.4,
+      "composition_symmetric": 2.0,
+      "within_symmetric": 0.6000000000000001
+    },
+    {
+      "id": "D02",
+      "passed": true,
+      "composition_reference": 1.7999999999999998,
+      "within_reference": 0.8,
+      "same_total_not_unique_attribution": true
+    },
+    {
+      "id": "D03",
+      "passed": true,
+      "within_parent_fractions": [
+        0.5,
+        0.25
+      ],
+      "target_density_both_per_mm2": 50.0,
+      "assumption": "equal fully observed areas and equal target counts"
+    },
+    {
+      "id": "D04",
+      "passed": true,
+      "radius_mm": 0.03,
+      "target_density_per_mm2": [
+        100.0,
+        400.0
+      ],
+      "at_least_one_neighbor_probability": [
+        0.24628678804353288,
+        0.677281016732951
+      ],
+      "assumption": "homogeneous Poisson process on an unbounded plane; not a tissue null"
+    },
+    {
+      "id": "D05",
+      "passed": true,
+      "true_proportions_both": [
+        0.5,
+        0.5
+      ],
+      "observed_baseline": [
+        0.5,
+        0.5
+      ],
+      "observed_followup": [
+        0.35,
+        0.65
+      ]
+    },
+    {
+      "id": "D06",
+      "passed": true,
+      "final_proportions": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ],
+      "fraction_switching": [
+        0.0,
+        1.0
+      ],
+      "marginals_do_not_identify_transitions": true
+    },
+    {
+      "id": "D07",
+      "passed": true,
+      "upper_raw_quantile": 99.505,
+      "queries": [
+        50.0,
+        99.0,
+        99.505,
+        100.0,
+        101.0
+      ],
+      "raw_threshold_labels": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "scaled_results": [
+        {
+          "lower_quantile": 0.005,
+          "scaled_threshold": 1.0,
+          "labels": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "lower_quantile": 0.05,
+          "scaled_threshold": 1.0,
+          "labels": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "scope": "score gate only; no ACC, malignant labels, or real CNA data"
+    }
+  ]
+}
