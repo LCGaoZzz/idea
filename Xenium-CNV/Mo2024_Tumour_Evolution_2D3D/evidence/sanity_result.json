@@ -1,0 +1,10 @@
+{
+  "scope": "synthetic_mathematical_checks_only",
+  "python": "3.13.5",
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "success": true,
+  "author_pipeline_executed": false,
+  "patient_data_used": false
+}

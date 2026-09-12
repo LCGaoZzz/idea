@@ -1,0 +1,6 @@
+source_id	repository	inspected_ref	commit_sha	commit_date_utc	permalink	scope	publication_runtime_confirmed
+C1	ding-lab/ST_subclone_publication	main snapshot	7067cd16f06ec4aa2500aa1e5c9a6eb1e6e42cfa	2025-01-23	https://github.com/ding-lab/ST_subclone_publication/tree/7067cd16f06ec4aa2500aa1e5c9a6eb1e6e42cfa	README、主要入口与部分活动函数；其他路径逐条标记	false
+C2	ding-lab/mushroom	subclone-resubmission	fde4dd8c91636629b1acab4473e1773468dcc1d8	2024-04-04	https://github.com/ding-lab/mushroom/tree/fde4dd8c91636629b1acab4473e1773468dcc1d8	README、mushroom.py配置段、训练notebook关键段；非完整模型源码审计	false
+C3	estorrs/multiplex-imaging-pipeline	default-branch snapshot	c351da1d41e284eef2f732b3553e5602438ed978	2025-09-08	https://github.com/estorrs/multiplex-imaging-pipeline/tree/c351da1d41e284eef2f732b3553e5602438ed978	README与segmentation.py；该快照晚于论文	false
+C4	ding-lab/morph	default-branch snapshot	ba1db03976a72f0da0558e87207054ef9404309b	2025-10-24	https://github.com/ding-lab/morph/tree/ba1db03976a72f0da0558e87207054ef9404309b	README；不以新版示例补写历史实验实现	false
+C4H	ding-lab/morph	date-query historical candidate	c284634abdeebc567c39a6367515d8decbf13af3	2023-11-13	https://github.com/ding-lab/morph/tree/c284634abdeebc567c39a6367515d8decbf13af3	默认历史线候选，README与薄operators；不代表当时所有分支	false

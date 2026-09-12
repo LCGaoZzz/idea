@@ -1,0 +1,62 @@
+parameter_id	module	parameter	value	evidence_class	source_locator	final_run_independently_confirmed	caveat
+P01	WES	TrimGalore minimum length	36	paper_reported	P:Methods/WES data processing	false	历史方法声明，未运行原始FASTQ
+P02	WES	BWA option	-M	paper_reported	P:Methods/WES data processing	false	需结合GRCh38.d1.vd1及实际比对命令
+P03	WES	minimum tumour/normal coverage	14x / 8x	paper_reported	P:Methods/Mutation calling using WES	false	候选过滤的部分条件，不能代替完整规则
+P04	WES	general tumour/normal VAF cutoff	>=0.05 / <=0.02	paper_reported	P:Methods/Mutation calling using WES	false	原文另有候选救回等分支，不把一般阈值写成唯一规则
+P05	WES	variant caller agreement	at least 2 callers	paper_reported	P:Methods/Mutation calling using WES	false	未闭合每个最终候选的caller来源
+P06	WES	GATK version	4.1.9.0	paper_reported	P:Methods/CNV calling using WES	false	未核实际环境和正常参考panel
+P07	ST	Space Ranger versions	1.3.0; 2.0.0; 2.1.0	paper_reported	P:Methods/ST data processing	false	与仓库2.1.1文件名不能直接合并为全样本运行版本
+P08	ST	reference	GRCh38 reference 2020-A	paper_reported	P:Methods/ST data processing	false	基因ID和参考文件本体未全部取得
+P09	ST	principal components for clustering	30	paper_reported	P:Methods/ST data processing	false	不是所有下游模型的统一PC数
+P10	microregion	malignant morphology pixel coverage	at least one half of spot pixels	paper_reported	P:Methods/Tumour microregion annotation and layer determination	false	病理判断和后续人工拆分不能由阈值完全替代
+P11	microregion	small region relabelling	<=3 spots to stroma	paper_reported	P:Methods/Tumour microregion annotation and layer determination	false	应保存过滤前标签
+P12	geometry	average area per spot	8660 square micrometres	paper_reported	P:Methods/Average spot area and microregion size calculation	false	六角格网覆盖面积，不是55μm捕获圆面积
+P13	inferCNV	package version	1.10.1	paper_reported	P:Methods/InferCNV and CalicoST for CNV calling on Visium ST data	false	版本声明不等于当前可安装性或所有样本环境已确认
+P14	inferCNV	Visium reference selection	200 lowest-purity non-malignant spots	paper_reported	P:Methods/InferCNV and CalicoST for CNV calling on Visium ST data	false	参考名单与并列/回退触发情况未知
+P15	inferCNV	smoothing window	151	paper_reported	P:Methods/InferCNV and CalicoST for CNV calling on Visium ST data	false	需绑定具体样本命令
+P16	inferCNV	Visium analysis mode	sample	paper_reported	P:Methods/InferCNV and CalicoST for CNV calling on Visium ST data	false	与CLI默认subcluster分开
+P17	inferCNV	cluster_by_groups / denoise / HMM	TRUE / TRUE / TRUE	paper_reported	P:Methods/InferCNV and CalicoST for CNV calling on Visium ST data	false	不补写未报告的其余默认设置
+P18	inferCNV	CLI mode / reference count / Bayes normal probability	subcluster / -1 / 0.5	code_cli_default	C1:Figure2/1_inferCNV_run.R::option_list	false	解析后覆盖顶部示例；最终命令未知
+P19	inferCNV	top-of-file illustrative mode / normal count / Bayes cutoff	sample / 200 / 0.3	code_example_overwritten	C1:Figure2/1_inferCNV_run.R::initial assignments	false	不能当最终参数；随后parse_args重新赋值
+P20	inferCNV	cutoff / mask_nonDE_genes / resume_mode / threads	0.1 / TRUE / FALSE / 8	code_active	C1:Figure2/1_inferCNV_run.R::infercnv::run	false	活动调用内容已见，但未运行或绑定论文面板
+P21	CalicoST	minimum analysis unit	microregion ID	paper_reported	P:Methods/InferCNV and CalicoST for CNV calling on Visium ST data	false	本研究运行md仅上游链接；最终配置未取得
+P22	CNV similarity	state encoding	gain +1; neutral 0; loss -1	paper_reported	P:Methods/Copy number profile similarity score calculation	false	有符号长度加权乘积，不等于公开概率函数
+P23	CNV clustering	linkage / cut height	ward.D2 / 0.8 times max height	paper_reported	P:Methods/Spatial subclone identification based on CNV profile similarity	false	存在人工复核；与公开活动K探索未闭合
+P24	CNV clustering	selected matrix / K exploration	jac_pred_mat / 2..MAX_K with MAX_K=10	code_active	C1:Figure2/3_CNV_jaccard_similarity.R::distmat_selected,cutree	false	不能由探索循环确定最终论文K
+P25	CNV clustering	kgs alpha	2	code_active	C1:Figure2/3_CNV_jaccard_similarity.R::maptree::kgs	false	不等于最终选择规则已确认
+P26	mutation mapping	Visium BAM tag filter	xf:i:25	paper_reported	P:Methods/Mutation mapping to snRNA-seq and ST data	false	未核原始read/UMI去重实现
+P27	mutation test	spatial total coverage	>30 reads	paper_reported	P:Methods/Spatial mutation VAF statistical test	false	read不是独立患者或必然独立分子
+P28	blacklist	marker log2FC / pct / adjusted P	>2 / >0.4 / <0.01	paper_reported	P:Methods/Organ-specific gene blacklist for non-malignant cell types	false	器官和细胞类别分支不同
+P29	transcriptional similarity	variable genes used	500	paper_reported	P:Methods/Microregion transcriptional profile analysis	false	作者比较250至1500的稳定性后选择；未独立复算
+P30	heterogeneity	index	1 minus ROGUE	paper_reported	P:Methods/Microregion transcriptional profile analysis	false	不是遗传多样性或细胞谱系数
+P31	depth	region eligibility	>=3 layers and >=50 spots	paper_reported	P:Methods/Spot-depth correlation analysis	false	适用总体由区域大小和深度筛选决定
+P32	depth	gene detection eligibility	>=1 transcript in >50 percent of spots	paper_reported	P:Methods/Spot-depth correlation analysis	false	未检验与无效应必须分开
+P33	depth	published normalized coordinate	layer / max_layer	paper_reported	P:Methods/Spot-depth correlation analysis	false	需核对上游实际统计实现
+P34	depth	coordinate in inspected object	(FC-1)/(FC_max-1)	code_active	C1:Figure3/4_Layer/2_layer_DEG_correlation.R#L79-L104	false	该文件读取预生成TSV，不能证明统计TSV用了同一公式
+P35	depth	purity estimate	RCTD tumour fraction or ESTIMATE	paper_reported	P:Methods/Spot-depth correlation analysis	false	不是全样本统一独立纯度金标准
+P36	depth aggregation	unavailable or nonsignificant rho	set to zero before summary	paper_reported	P:Methods/Spot-depth GSEA pathway enrichment analysis	false	定义共识量，不证明未评估基因效应为零
+P37	GSEA	clusterProfiler / msigdbr	3.18.1 / 7.5.1	paper_reported	P:Methods/Spot-depth GSEA pathway enrichment analysis	false	版本及基因集文件应单独保存
+P38	GSEA	call pvalueCutoff / retained pathway P	0.5 / <0.1	paper_reported	P:Methods/Spot-depth GSEA pathway enrichment analysis	false	调用阈值与展示筛选不同，不自行改成常用FDR
+P39	RCTD	mode	multi	paper_reported_and_code_active	P:Methods/ST cell-type decomposition; C1:Figure4/1_RCTD_devolution.R::run.RCTD	false	存在配对参考及过滤规则
+P40	RCTD	reference cell-type minimum	strictly >50 cells	code_active	C1:Figure4/1_RCTD_devolution.R::cell_types_big	false	常量为50但谓词是>，不能写>=
+P41	RCTD	create.RCTD max_cores	1	code_active	C1:Figure4/1_RCTD_devolution.R::create.RCTD	false	不要由BLAS线程20推定RCTD本身使用20进程
+P42	boundary DEG	top WIDTH / CLI width	2 / 4	code_example_and_cli_default	C1:Figure4/4_border_DEG.R#L14-L111	false	WIDTH由opt覆盖，存在1/2/4活动分支
+P43	boundary DEG	paper adjusted P text	0.25 with comparator unclear	paper_text_ambiguous	P:Methods/boundary differential expression description	false	网页文字缺比较符，不能自行补<或<=
+P44	COMMOT	database / physical distance	CellChat / 1000 micrometres	paper_reported	P:Methods/Spatial cell–cell interaction at tumour boundary	false	代码输入坐标单位和阈值类型尚未核清
+P45	COMMOT	LR minimum expression proportion	0.05	code_active	C1:Figure4/5_CCI_COMMOT.py::filter_lr_database	false	不等同于深度分析的基因资格规则
+P46	COMMOT	heteromeric / pathway_sum	TRUE / TRUE	code_active	C1:Figure4/5_CCI_COMMOT.py::spatial_communication	false	活动推理未执行
+P47	COMMOT	differential signal / FDR	>0.1 / <0.05	paper_reported	P:Methods/Spatial cell–cell interaction at tumour boundary	false	候选空间通信，不是功能效应阈值
+P48	PASTE2 topology	cross-section region connection	>3 shared or linked spots	paper_reported	P:Methods/Serial section alignment and branching factor calculation	false	N_min_3目录名不能代替活动谓词
+P49	registration	downsample factor / landmarks	5 / 4–20	paper_reported	P:Methods/Registration of Visium, CODEX and H&E serial sections	false	未取得实际landmark和变形场
+P50	Mushroom preprocessing	gene detection / transform	at least 5 percent / log2	paper_reported	P:Methods/Neighbourhood identification input preprocessing	false	局部patch不是原始细胞测量
+P51	Mushroom architecture	hierarchical capacities	8; 32; 64	paper_reported	P:Methods/Neighbourhood identification model architecture	false	与代码每层分支数8,4,2区分
+P52	Mushroom loss	MSE weight / neighbour maximum	1.0 / 0.01 with ramp	paper_reported	P:Methods/Model loss function	false	未审完整loss源代码，不补写未经确认KL/VAE实现
+P53	Mushroom library	batch_size / learning rate	128 / 0.0001	code_library_default	C2:mushroom/mushroom.py#L29-L74	false	不是Supplementary Table 4中的最终病例超参数
+P54	Mushroom library	num_clusters	8,4,2	code_library_default	C2:mushroom/mushroom.py#L29-L74	false	每层配置的含义需和实现共同解释
+P55	Mushroom scale	paper unit wording	50 pixels per micrometre versus 50-micrometre-wide patch	paper_text_ambiguous	P:Methods/Neighbourhood identification preprocessing and construction	false	倒数单位冲突，需metadata和转换源码，不自行静默修复
+P56	TME neighbourhood	tumour overlap / support exclusion	>50 percent overlap or <10 spots excluded	paper_reported	P:Methods/Analysis and quantification of 3D neighbourhoods	false	分母和筛选应保留，不能忽略被排除邻域
+P57	CODEX	marker positive fraction	>5 percent pixels above manually chosen threshold	paper_reported	P:Methods/Cell-type annotation of CODEX imaging data	false	阈值逐图定义且门控随可用通道改变
+P58	tumour mesh	neighbourhood tumour selection	>60 percent clone-labelled spots or epithelial cells, depending on case	paper_reported	P:Methods/3D tumour volume reconstruction and location quantification	false	病例判据不同，上皮比例不自动是恶性比例
+P59	tumour mesh	Gaussian sigma	1.0	paper_reported	P:Methods/3D tumour volume reconstruction and location quantification	false	需实际体素尺度解释平滑物理范围
+P60	expression decomposition	reference type filtering	below 5 percent of gene maximum mean excluded	paper_reported	P:Methods/Spatial expression deconvolution	false	参考驱动分配，不是直接细胞内测量
+P61	LINCS	DEG adjusted P / log2FC / pct	<0.01 / >1 / >0.4	paper_reported	P:Methods/Spatial subclone-specific treatment response analysis	false	签名筛选不等于药物疗效测定

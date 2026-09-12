@@ -1,0 +1,14 @@
+test_all_neutral (__main__.SanityTests.test_all_neutral) ... ok
+test_geometry_dilution (__main__.SanityTests.test_geometry_dilution) ... ok
+test_geometry_limits (__main__.SanityTests.test_geometry_limits) ... ok
+test_hard_asymmetry (__main__.SanityTests.test_hard_asymmetry) ... ok
+test_invalid_input (__main__.SanityTests.test_invalid_input) ... ok
+test_paper_opposite (__main__.SanityTests.test_paper_opposite) ... ok
+test_paper_same (__main__.SanityTests.test_paper_same) ... ok
+test_selected_pred_vs_paper (__main__.SanityTests.test_selected_pred_vs_paper) ... ok
+test_uncertain_self_score (__main__.SanityTests.test_uncertain_self_score) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK

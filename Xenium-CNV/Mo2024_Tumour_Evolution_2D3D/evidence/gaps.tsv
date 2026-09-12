@@ -1,0 +1,30 @@
+issue_id	type	source	observation	impact	status	needed_to_resolve
+G01	material_conflict	P:CNV similarity Methods; C1:Figure2/3_CNV_jaccard_similarity.R	论文有符号长度加权乘积与活动概率相似度不同	无法把所读函数直接当论文公式实现	open	作者最终相似度定义、矩阵、脚本版本及面板绑定
+G02	static_logic_risk	C1:Figure2/3_CNV_jaccard_similarity.R::CNV_profile_jaccard	硬调用分母含A非中性及B缺失，未对称包含B扩增	简化反例显示不对称；不能直接归因于选中的jac_pred_mat	open	原R函数最小测试、实际调用去向、相关结果是否使用hard矩阵
+G03	material_conflict	P:clustering Methods; C1:distmat_selected,cutree	论文声明0.8×最大高度；活动脚本选择jac_pred并探索K2..10	最终标签生成链未闭合	open	最终切树命令、人工复核及标签版本
+G04	missing_input	C1:helper_global.R and server paths	外部helper、tracking表、黑白名单和对象依赖未完整公开取得	不能只改路径就声称可运行	open	只读输入包、helper源码、样本对应表与哈希
+G05	parameter_binding	C1:Figure2/1_inferCNV_run.R	顶部、CLI默认及实际参数有覆盖关系	示例值不等于最终运行值	open	逐样本完整命令和解析参数日志
+G06	input_semantics	C1:inferCNV count extraction and references	counts未显式指定assay；正常参考有不足回退/并列阈值	矩阵和参考影响CNV解释	open	实际DefaultAssay、count矩阵及参考ID和触发日志
+G07	missing_config	C1:Figure2/2_CalicoST_run.md	只有上游链接	未恢复本研究CalicoST运行入口	open	固定版本、样本配置、BAF覆盖与人工审查记录
+G08	missing_upstream	C1:Figure3/4_Layer/2_layer_DEG_correlation.R	读取预计算layer DEG TSV	未恢复产生纯度调整检验的完整实现	open	生成TSV的源码、输入及统计参数
+G09	coordinate_definition	P:depth Methods; C1:depth object construction	layer/max_layer与(FC-1)/(FC_max-1)不同	混合不同大小区域时非同一全局变换	open	上游实际使用的坐标和样本级敏感性分析
+G10	parameter_binding	C1:Figure4/4_border_DEG.R	WIDTH=2被CLI默认4等解析结果覆盖	最终边界定义不能从顶部推断	open	调用命令、输出目录及每图边界ID
+G11	runtime_safety	C1:Figure4/4_border_DEG.R	输出路径重写且已有样本目录递归删除	迁移运行可能删除已有输出	open	隔离workdir、关闭无条件删除并保存补丁与测试
+G12	cli_interface	C1:Figure4/5_CCI_COMMOT.py	距离选项无显式数值type	显式CLI值可能为字符串	open	小输入测试、明确转换/报错，不只测试默认调用
+G13	physical_units	P:COMMOT Methods; C1:COMMOT input	论文物理距离和代码坐标未见局部显式转换闭合	数值1000不能直接等同1000μm	open	实际AnnData坐标、尺度因子及有效距离验证
+G14	optional_path	C1:COMMOT plotting and cwd	可选数据库存在固定cellchat键；相对路径和Leiden赋值时序风险	非默认分支或首次作图可能失败	open	各分支小输入测试、绝对路径和元数据校验
+G15	incomplete_training_entry	C2:step3_train_mushroom_cancer_v2.ipynb	cases全部注释；依赖外部metadata.yaml	不能开箱训练最终病例	open	最终病例清单、metadata、训练配置和权重
+G16	partial_source_audit	C2:model loss and step7	未通读所有模型/loss及最终邻域分析notebook	不能宣称模型数学实现已全面审计	open	完整固定源码、最终配置、损失与后处理测试
+G17	unit_text_conflict	P:Mushroom Methods	pixels/μm与μm-wide patch表述互为倒数	无法仅由网页文字确定物理网格尺度	open	原PDF、Supplementary Table4、metadata及单位转换实现
+G18	measurement_definition	P:CODEX Methods; C3:segmentation.py	当前默认通道与论文实际通道不同；门控逐图变化	不能以新版默认补写历史测量	open	原始通道、阈值、门控顺序、分割与标签版本
+G19	historical_version	C4 and C4H	当前Morph README晚于论文；历史候选仅薄实现	未确认论文真实运行分支/提交	open	作者确认的运行快照及原始几何参数
+G20	cohort_denominator	P:cohort sections and 3D descriptions	50+82与131、16samples/15blocks/11specimens等口径未闭合	不能为所有模块使用同一个n	open	Supplementary Table1及模块级样本清单
+G21	cohort_denominator	P:COMMOT results and Fig3e caption	18cases39sections与25cases表述不同	通信模块样本量需分输出核查	open	图3e输入样本表及不同分析子集定义
+G22	threshold_text	P:boundary DEG Methods	网页adjusted P value 0.25缺明确比较符	不擅自补常用阈值	open	原PDF、最终结果筛选脚本或作者确认
+G23	retrieval_failure	P:supplementary PDF and tables	补充PDF、Table4及主PDF本轮获取失败	未核完整补充图和最终超参数	open	可访问文件或作者提供的原件
+G24	incomplete_snapshot	C1–C4	连接器取得文本/目录；容器网络获取失败	没有完整本地仓库及依赖审计	open	固定源码快照及许可信息；不得将文本审读冒充运行
+G25	statistical_dependence	P:pairwise correlations, spot-level tests	区域对重复共享区域；spot/细胞嵌套于患者	有效重复和外推需要明确；本次未评估原数值偏差	open	患者级输入、模型/重采样单位及敏感性分析
+G26	missingness_and_selection	P:depth eligibility and zeroing	小/浅区域被排除，未测与不显著可被汇总为零	检验机会改变统计目标及适用总体	open	资格表、共同可测集合及替代汇总的真实数据比较
+G27	validation_dependency	P:WES filtering and Mushroom loss	部分验证信息参与筛选或跨层一致性约束	一致性不是完全独立外部确认	open	留出完整样本/指标、弱约束对照及实际消融
+G28	biological_scope	P:COMMOT, LINCS, serial sections	关联、签名匹配和空间连接分别不是功能干预、药效和谱系	不能升级因果或治疗结论	open	与具体主张匹配的独立/功能/时间证据
+G29	user_project_unknown	User-described mouse timecourse	每期动物数、panel、batch、终点遗传与同体追踪未知	不能预设统计可辨识或遗传一致	open	填写sample_manifest与measurement_status后确定可检验问题

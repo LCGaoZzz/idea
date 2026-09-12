@@ -1,0 +1,47 @@
+{
+  "schema": "idea-review-scope-v1",
+  "review_date": "2026-09-12",
+  "paper_doi": "10.1038/s41586-024-08087-4",
+  "purpose": "research_story_methods_code_audit_and_transferable_design",
+  "evidence_classes": ["paper_reported", "code_observed", "reviewer_interpretation", "transfer_proposal", "local_synthetic_check"],
+  "paper_access": {
+    "main_text": "read",
+    "methods": "read",
+    "figure_captions": "read_for_cited_panels",
+    "all_high_resolution_figures": "not_independently_quantified",
+    "supplementary_pdf": "retrieval_failed",
+    "supplementary_tables": "not_fully_retrieved_or_verified"
+  },
+  "repository_access": {
+    "mode": "pinned_file_and_directory_reads_via_github_connector",
+    "complete_local_snapshots": false,
+    "full_dependency_audit": false,
+    "publication_runtime_commit_confirmed": false
+  },
+  "author_pipeline_execution": {
+    "executed": false,
+    "patient_data_used": false,
+    "infercnv_run": false,
+    "calicost_run": false,
+    "rctd_run": false,
+    "commot_run": false,
+    "mushroom_training": false,
+    "codex_segmentation": false,
+    "final_paper_panels_recomputed": false
+  },
+  "local_check": {
+    "script": "scripts/evidence_sanity.py",
+    "scope": "synthetic_mathematical_checks_only",
+    "tests_run": 9,
+    "passed": 9,
+    "python": "3.13.5",
+    "randomness": "none",
+    "source_sha256": "c4545da44f825a4cfabc6e6edee8fcb3e2ea108ba23fb0d247ef84d489b92380",
+    "author_R_functions_executed": false
+  },
+  "scientific_reconstruction_status": "材料冲突",
+  "status_reason": "Published CNV similarity and clustering description differ from the inspected active script; other analysis lanes remain blocked by missing inputs/configuration/runtime linkage.",
+  "user_project_known": ["relatively_pure_starting_tumour_clone", "mouse_model", "early_middle_late_xenium_sampling", "multiple_samples"],
+  "user_project_unknown": ["independent_animals_per_timepoint", "longitudinal_vs_sacrificial_sampling", "panel", "batch_structure", "endpoint_genotyping", "lineage_tracing", "serial_section_spacing"],
+  "full_protocol_validator_claimed": false
+}
