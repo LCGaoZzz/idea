@@ -1,0 +1,35 @@
+{
+  "title": "Mo2024 complete research idea dossier",
+  "date": "2026-09-12",
+  "paper_doi": "10.1038/s41586-024-08087-4",
+  "evidence_classes": {
+    "P": "paper-reported fact",
+    "C": "fixed-snapshot source observation",
+    "I": "independent interpretation or mathematical derivation",
+    "H": "transfer proposal or untested hypothesis"
+  },
+  "tasks": [
+    {"task": "paper_data_reproduction", "status": "受阻", "reason": "Patient inputs, final runtime configuration, full supplements and upstream dependencies not recovered", "executed": false},
+    {"task": "cnv_formula_and_public_script_agreement", "status": "材料冲突", "scope": "Paper signed formula versus reviewed helper definitions and candidate clustering branch", "patient_impact": "not_quantified"},
+    {"task": "mushroom_loss_semantics", "status": "材料冲突", "scope": "Reviewed SAE passes softmax probabilities as cross_entropy input; not confirmed final paper training version", "patient_impact": "not_quantified"},
+    {"task": "independent_synthetic_math", "status": "已执行验证", "tests_run": 24, "failures": 0, "errors": 0, "skipped": 0, "scope": "Deterministic original NumPy tests only", "record": "validation/synthetic_checks.json"}
+  ],
+  "author_code_executed": false,
+  "paper_data_analyzed": false,
+  "torch_model_executed": false,
+  "r_genomicranges_executed": false,
+  "full_repositories_cloned": false,
+  "supplementary_pdf_acquired": false,
+  "supplementary_xlsx_acquired": false,
+  "all_figure_panels_numerically_recomputed": false,
+  "novelty_search_performed": false,
+  "protocol_skill_full_validator_run_for_this_dossier": false,
+  "scope_note": "This is an evidence-labeled research dossier with original diagnostic checks, not a one-command reconstruction of the authors' entire pipeline. Earlier archive status does not certify this expanded analysis.",
+  "source_pins": {
+    "ding-lab/ST_subclone_publication": "7067cd16f06ec4aa2500aa1e5c9a6eb1e6e42cfa",
+    "ding-lab/mushroom/subclone-resubmission": "fde4dd8c91636629b1acab4473e1773468dcc1d8",
+    "ding-lab/morph/current_reviewed": "ba1db03976a72f0da0558e87207054ef9404309b",
+    "ding-lab/morph/historical_default_candidate": "c284634abdeebc567c39a6367515d8decbf13af3",
+    "estorrs/multiplex-imaging-pipeline": "c351da1d41e284eef2f732b3553e5602438ed978"
+  }
+}

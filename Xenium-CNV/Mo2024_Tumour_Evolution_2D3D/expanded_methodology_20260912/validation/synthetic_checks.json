@@ -1,0 +1,22 @@
+{
+  "scope": "independent_synthetic_mathematical_checks",
+  "paper_data_analyzed": false,
+  "author_code_executed": false,
+  "utc_time": "2026-09-12T15:00:45.335467+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "source_sha256": "9912a3803abf5af5884e5b6181473c71c890eb62c0cc639179c23ab3c4e47572",
+  "tests_run": 24,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "seed": "not_applicable_deterministic_inputs",
+  "examples": {
+    "legacy_A_B": 1.0,
+    "legacy_B_A": 0.5,
+    "signed_opposite": -1.0,
+    "ce_probability_as_logits": 0.3711006659477777,
+    "categorical_nll": 0.10536051565782628
+  }
+}

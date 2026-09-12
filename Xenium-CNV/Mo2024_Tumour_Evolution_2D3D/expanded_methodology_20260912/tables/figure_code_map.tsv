@@ -1,0 +1,12 @@
+published_figure	research_question	paper_locator	code_location	read_scope	boundary
+Fig.1a-b	队列和分析对象是什么	Spatial microregions across cancers	Figure1; README.md	README与目录及原文图注	不是所有病例全模态配对
+Fig.1c	微区域大小与来源如何分布	Fig.1c legend	Figure1/1_Calculate_metrics/script/1_get_size.r	路径定位; 未完整审读脚本	按最终图注; 正文部分c/d交叉引用需核对
+Fig.1d	肿瘤与间质比例如何分布	Fig.1d legend	Figure1	主题映射	比例分母和病例/切片单位不能混合
+Fig.2a-g	空间区域是否有遗传分化	CNV and spatial subclone methods	Figure2/1_inferCNV_run.R; Figure2/3_CNV_jaccard_similarity.R	关键活动代码已读	当前公开快照不等于最终运行版本
+Fig.2h-j	总表达与变异定位是否不同	Mutation mapping; Spatial mutation VAF statistical test; Xenium probe design	Figure2/6_mutation_mapping.sh	代码路径定位; 原文与图注	选定位点原位支持; 非无偏全基因组测量
+Extended Data Fig.6-8	遗传身份与位置如何关联转录状态	Microregion transcriptional profile analysis; Spot-depth correlation analysis	Figure3/4_Layer/2_layer_DEG_correlation.R	全文及79-110重点读取	该脚本消费预计算TSV; 未闭合上游偏相关
+Fig.3a-c	细胞组成与界面位置如何对应	Cellular composition deconvolution	Figure4/1_RCTD_devolution.R; Figure4/3_celltype_layer.R	RCTD已读; layer其余仅定位	来源推断及空间分布不直接证明募集
+Fig.3d	边界程序及细胞来源是什么	Gene expression at the tumour boundary	Figure4/4_border_DEG.R	前225行及重点复读	不同WIDTH分支; 最终argv未知
+Fig.3e	边界有哪些通信候选	Spatial cell-cell interaction at tumour boundary	Figure4/5_CCI_COMMOT.py; Figure4/6_CCI_border.R	前者已读; 后者仅定位	通信推断不是功能干预
+Fig.4	二维分离是否在三维仍分离	Serial section alignment and branching factor calculation	Figure5/README.md; Figure5/2_PASTE2_analysis/	README路线; 非全部下游代码	连接图不是时间谱系
+Fig.5	三维邻域与表面接触关系	Registration; Neighbourhood identification; 3D neighbourhood construction and integration	Figure6/README.md; mushroom training notebook; mushroom/model/sae.py	训练notebook部分; SAE全文; 最终邻域notebook仅定位	概率/插值/阈值/平滑不等于连续单细胞实测

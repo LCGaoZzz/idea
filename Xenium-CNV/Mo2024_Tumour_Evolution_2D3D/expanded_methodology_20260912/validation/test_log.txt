@@ -1,0 +1,29 @@
+test_all_neutral_undefined (__main__.Checks.test_all_neutral_undefined) ... ok
+test_allocation_conservation (__main__.Checks.test_allocation_conservation) ... ok
+test_asymmetric_distance_rejected (__main__.Checks.test_asymmetric_distance_rejected) ... ok
+test_cross_entropy_input_semantics (__main__.Checks.test_cross_entropy_input_semantics) ... ok
+test_disconnected_cycle (__main__.Checks.test_disconnected_cycle) ... ok
+test_duplicate_edge_rejected (__main__.Checks.test_duplicate_edge_rejected) ... ok
+test_euclidean_distance (__main__.Checks.test_euclidean_distance) ... ok
+test_geometry_dilution (__main__.Checks.test_geometry_dilution) ... ok
+test_invalid_fractions (__main__.Checks.test_invalid_fractions) ... ok
+test_invalid_geometry (__main__.Checks.test_invalid_geometry) ... ok
+test_invalid_lengths (__main__.Checks.test_invalid_lengths) ... ok
+test_invalid_states (__main__.Checks.test_invalid_states) ... ok
+test_legacy_asymmetry (__main__.Checks.test_legacy_asymmetry) ... ok
+test_legacy_opposite_no_penalty (__main__.Checks.test_legacy_opposite_no_penalty) ... ok
+test_non_euclidean_counterexample (__main__.Checks.test_non_euclidean_counterexample) ... ok
+test_partial_r_not_slope (__main__.Checks.test_partial_r_not_slope) ... ok
+test_probability_opposite (__main__.Checks.test_probability_opposite) ... ok
+test_probability_self_confidence (__main__.Checks.test_probability_self_confidence) ... ok
+test_signed_identity (__main__.Checks.test_signed_identity) ... ok
+test_signed_opposite (__main__.Checks.test_signed_opposite) ... ok
+test_signed_partial (__main__.Checks.test_signed_partial) ... ok
+test_tree_has_no_cycle (__main__.Checks.test_tree_has_no_cycle) ... ok
+test_triangle_cycle (__main__.Checks.test_triangle_cycle) ... ok
+test_zero_allocation_denominator (__main__.Checks.test_zero_allocation_denominator) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.003s
+
+OK

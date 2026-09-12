@@ -1,0 +1,78 @@
+module	parameter	value	unit	provenance_status	locator	interpretation_limit
+cohort	sections	131	section	reported	P Abstract; Fig.1	不是独立病例数
+cohort	blocks	98	block	reported	P Spatial microregions across cancers	一个block可有多张切片
+cohort	cases	78	case	reported	P Abstract	部分图注口径未闭合
+cohort	matched_snRNA	48	dataset	reported	P Abstract	不是每张切片一个独立配对
+cohort	CODEX	22	sample	reported	P Abstract	需样本表确认对应关系
+cohort	3d_sections	48	section	reported	P Abstract; Results	16samples与15blocks口径未调和
+region	malignant_coverage	at_least_half	spot_pixels	reported	P Tumour microregion annotation and layer determination	初始病理标注不是自动恶性鉴定
+region	minimum_region	remove_le_3	spots	reported	P Tumour microregion annotation and layer determination	不同于深度分析纳入阈值
+region	area_per_spot	8660	um2	reported	P Average spot area and microregion size calculation	晶格覆盖面积; 非55um捕获圆
+infercnv	version	1.10.1	version	reported	P InferCNV and CalicoST for CNV calling on Visium ST data	未安装
+infercnv	visium_reference_count	200	spots	reported	P 同上	需实际参考ID与纯度排序
+infercnv	window_length	151	genes	reported	P 同上	不得直接迁移靶向面板
+infercnv	visium_analysis_mode	sample	mode	reported	P 同上	不是CLI默认值
+infercnv	cli_analysis_mode	subcluster	mode	implemented_default	C01 option_list	可被实际argv覆盖; 版本枚举需核对
+infercnv	cli_num_normal	-1	spots	implemented_default	C01 option_list	不是论文报告的200
+infercnv	cli_BayesMaxPNormal	0.5	probability	implemented_default	C01 option_list	顶部0.3被覆盖
+infercnv	cutoff	0.1	input_scale	implemented_literal	C01 infercnv::run	活动调用未执行
+infercnv	denoise	TRUE	boolean	implemented_literal	C01 infercnv::run	未执行
+infercnv	HMM	TRUE	boolean	implemented_literal	C01 infercnv::run	未执行
+infercnv	cluster_by_groups	TRUE	boolean	implemented_literal	C01 infercnv::run	受输入annotation约束
+infercnv	num_threads	8	threads	implemented_literal	C01 infercnv::run	不是端到端耗时证据
+infercnv	counts_assay	DefaultAssay_dependent	assay	unresolved	C01 GetAssayData	slot=counts不能确认Spatial
+calicost	study_run_configuration	unknown	configuration	unresolved	C02	仅工具指针
+cnv_similarity	paper_definition	signed_length_weighted_product_over_nonneutral_union	score	reported	P Copy number profile similarity score calculation	允许负值; 全中性分母为零
+cnv_similarity	legacy_denominator	A_nonneutral_union_B_deletion	intervals	implemented_literal	C06 CNV_profile_jaccard	不对称; 与论文公式不同
+cnv_similarity	probability_definition	statewise_union_with_confidence_product	score	implemented_literal	C06 CNV_profile_jaccard_prob	非负; 与有符号公式不同
+cnv_similarity	terminal_matrix	jac_pred_mat	matrix	implemented_literal	C06 distmat_selected	不把无概率分支缺陷直接归给此分支
+cnv_cluster	linkage	ward.D2	method	reported	P Spatial subclone identification based on CNV profile similarity	须检查实际距离性质
+cnv_cluster	paper_cut	0.8_times_max_height	height	reported	P 同上	还有人工检查; 需最终决策记录
+cnv_cluster	code_K_candidates	2_through_10	clusters	implemented_literal	C06 MAX_K; cutree loop	候选脚本不等于最终切分
+cnv_cluster	code_kgs_alpha	2	parameter	implemented_literal	C06 maptree::kgs	不能当最终K证明
+depth	minimum_spots	50	spots	reported	P Spot-depth correlation analysis	限定可检验总体
+depth	minimum_layers	3	layers	reported	P 同上	浅小区域不回答相同核心问题
+depth	gene_detection_fraction	greater_than_0.5	fraction	reported	P 同上	未检验与无效应不同
+depth	paper_normalization	layer_div_max_layer	fraction	reported	P 同上	与端点归一化不可全局自动等同
+depth	code_normalization	(FC-1)/(FC_max-1)	fraction	implemented_literal	C07 FC_frac	这是已读对象; 不证明上游TSV采用它
+depth	purity_source	RCTD_or_ESTIMATE	covariate	reported	P 同上	不是同一个无误差金标准
+depth	statistics_generation	precomputed_TSV_upstream_unresolved	pipeline	unresolved	C07 read_tsv	文件名不证明完整偏相关计算
+gsea	package	clusterProfiler_3.18.1	version	reported	P Spot-depth GSEA pathway enrichment analysis	未安装
+gsea	gene_set_package	msigdbr_7.5.1	version	reported	P 同上	需实际gene set快照
+gsea	initial_pvalueCutoff	0.5	P	reported	P 同上	不是最终结论阈值
+gsea	untested_or_nonsignificant	zero_contribution	ranking	reported	P 同上	共识排序不等于平均效应
+rctd	mode	multi	mode	implemented_literal	C03 run.RCTD	与论文描述一致; 未执行
+rctd	minimum_reference_cells	strictly_greater_than_50	cells_per_type	implemented_literal	C03 celltype_count	不是大于等于50
+rctd	label_edit	remove__reg_substring	label	implemented_literal	C03 gsub	可能合并Treg标签
+rctd	seed	1234	seed	implemented_literal	C03 set.seed	不是全流程统一种子
+rctd	max_cores	1	cores	implemented_literal	C03 create.RCTD	BLAS另设线程
+boundary	paper_band	T1_plus_E1	layers	reported	P Gene expression at the tumour boundary	不等于所有脚本默认分支
+boundary	cli_width	4	layers	implemented_default	C05 option_list	顶部2被覆盖; 最终argv未知
+boundary	output_behavior	override_and_recursive_delete	filesystem	implemented_literal	C05 output_dir; unlink	未执行; 必须隔离
+commot	version	1.0.0	version	reported	P Spatial cell-cell interaction at tumour boundary	未安装
+commot	database	CellChat	database	reported	P 同上; C04	数据库条目快照未闭合
+commot	paper_distance	1000	um	reported	P 同上	实际坐标尺度需核对
+commot	cli_distance	1000	input_coordinate_units	implemented_default	C04 OptionParser	无显式数值type; 默认与argv类型可能不同
+commot	lr_min_pct	0.05	fraction	implemented_literal	C04 filter_lr_database	全基因通信对象先于HVG复制
+commot	cluster_permutations	100	permutations	implemented_literal	C04 cluster_communication	不是所有下游检验的统一重复数
+commot	cache_identity	fixed_filename_without_visible_hash_check	cache	implemented_snapshot	C04 cache branch	仅指出已读段风险
+3d_graph	connection_rule	greater_than_3	matched_spots	reported	P Serial section alignment and branching factor calculation	目录N_min_3不能确认比较符
+3d_graph	connected_cycle_rank	E-V+1	per_component	reported	P 同上	不连通图应加组件数C
+mushroom	registration	manual_landmark_assisted	method	reported	P Registration	landmarks与最终变换未取得
+mushroom	cumulative_clusters	8_32_64	clusters	reported	P Model architecture	与分支8_4_2并不冲突
+mushroom	branch_factors	8_4_2	branches	implemented_default	C10 DEFAULT_CONFIG; C18 _to_quantized	不冒充逐样本配置
+mushroom	max_neighbour_loss_weight	0.01	weight	reported	P Model loss function	需最终warm-up与配置
+mushroom	cross_entropy_input	softmax_probabilities	input_semantics	implemented_literal	C18 quantize; forward	数学不等价; 未量化患者结果影响
+mushroom	paper_log_base	2	base	reported	P Model inputs and preprocessing	最终输入处理需配置
+mushroom	default_log_base	np.e	base	implemented_default	C10 DEFAULT_CONFIG	不能排除外部覆盖
+mushroom	notebook_cases	empty_list	state	implemented_snapshot	C09 f7768f25	不是历史未训练证据
+mushroom	steps_per_epoch	1000_or_2000_or_4000	steps	implemented_literal	C09 get_n_steps	由切片数选择; 不是通用最终值
+mushroom	target_resolution_variables	50_and_visium_100	unit_unresolved	implemented_snapshot	C09 9a0b2e7c	须核对metadata单位
+mushroom	final_hyperparameters	unretrieved	configuration	unresolved	P Supplementary_Table_4	该表不是已确认CODEX门控表
+mesmer	split_size	25000	pixels	implemented_default	C12 segment_cells	发表后代码默认
+mesmer	overlap_padding	200	pixels	implemented_default	C12 segment_cells	不是论文最终传参
+codex	positive_pixel_fraction	greater_than_0.05	fraction	reported	P Cell-type annotation of CODEX imaging data	像素强度阈值另行定义
+codex	per_sample_gating	unretrieved	configuration	unresolved	P Cell-type annotation of CODEX imaging data	不能用当前默认替代
+own_checks	python	3.13.5	version	own_test	validation/synthetic_checks.json	仅原创合成检查
+own_checks	numpy	2.3.5	version	own_test	validation/synthetic_checks.json	不是作者环境锁定
+own_checks	tests	24	unit_tests	own_test	validation/test_log.txt	全部确定性合成输入; 无患者数据
