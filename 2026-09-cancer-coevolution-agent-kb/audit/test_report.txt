@@ -1,0 +1,53 @@
+test_cli_fail_exit_code (test_kb.InterfaceTests.test_cli_fail_exit_code) ... ok
+test_cli_json (test_kb.InterfaceTests.test_cli_json) ... ok
+test_interactive_claim_read (test_kb.InterfaceTests.test_interactive_claim_read) ... ok
+test_jsonl_multiple_requests_and_error_recovery (test_kb.InterfaceTests.test_jsonl_multiple_requests_and_error_recovery) ... ok
+test_malformed_json (test_kb.InterfaceTests.test_malformed_json) ... ok
+test_tools_contract (test_kb.InterfaceTests.test_tools_contract) ... ok
+test_composition_confounding (test_kb.MathTeachingTests.test_composition_confounding) ... ok
+test_dropout (test_kb.MathTeachingTests.test_dropout) ... ok
+test_dropout_invalid (test_kb.MathTeachingTests.test_dropout_invalid) ... ok
+test_exact_moran_permutation (test_kb.MathTeachingTests.test_exact_moran_permutation) ... ok
+test_invalid_transition (test_kb.MathTeachingTests.test_invalid_transition) ... ok
+test_moran_bad_weights (test_kb.MathTeachingTests.test_moran_bad_weights) ... ok
+test_moran_constant_rejected (test_kb.MathTeachingTests.test_moran_constant_rejected) ... ok
+test_normal_tail_arithmetic (test_kb.MathTeachingTests.test_normal_tail_arithmetic) ... ok
+test_same_marginals_distinct_dynamics (test_kb.MathTeachingTests.test_same_marginals_distinct_dynamics) ... ok
+test_stationary_invariance (test_kb.MathTeachingTests.test_stationary_invariance) ... ok
+test_transition_rows (test_kb.MathTeachingTests.test_transition_rows) ... ok
+test_transition_t_zero_identity (test_kb.MathTeachingTests.test_transition_t_zero_identity) ... ok
+test_vaf_dependency (test_kb.MathTeachingTests.test_vaf_dependency) ... ok
+test_absolute_units_and_calibration (test_kb.PlanningTests.test_absolute_units_and_calibration) ... ok
+test_bad_types_rejected (test_kb.PlanningTests.test_bad_types_rejected) ... ok
+test_contradictory_inputs_rejected (test_kb.PlanningTests.test_contradictory_inputs_rejected) ... ok
+test_leaf_mismatch_blocks (test_kb.PlanningTests.test_leaf_mismatch_blocks) ... ok
+test_missing_is_unknown (test_kb.PlanningTests.test_missing_is_unknown) ... ok
+test_no_claim_of_execution (test_kb.PlanningTests.test_no_claim_of_execution) ... ok
+test_rna_only_blocked (test_kb.PlanningTests.test_rna_only_blocked) ... ok
+test_single_donor_warning (test_kb.PlanningTests.test_single_donor_warning) ... ok
+test_spatial_does_not_imply_lineage (test_kb.PlanningTests.test_spatial_does_not_imply_lineage) ... ok
+test_uncalibrated_absolute_blocked (test_kb.PlanningTests.test_uncalibrated_absolute_blocked) ... ok
+test_unsupported_fields_rejected (test_kb.PlanningTests.test_unsupported_fields_rejected) ... ok
+test_alias_expansion (test_kb.RetrievalTests.test_alias_expansion) ... ok
+test_chinese_retrieval (test_kb.RetrievalTests.test_chinese_retrieval) ... ok
+test_chinese_tokenization (test_kb.RetrievalTests.test_chinese_tokenization) ... ok
+test_claim_schema (test_kb.RetrievalTests.test_claim_schema) ... ok
+test_code_retrieval (test_kb.RetrievalTests.test_code_retrieval) ... ok
+test_context_is_not_model_answer (test_kb.RetrievalTests.test_context_is_not_model_answer) ... ok
+test_empty_query_rejected (test_kb.RetrievalTests.test_empty_query_rejected) ... ok
+test_english_retrieval (test_kb.RetrievalTests.test_english_retrieval) ... ok
+test_expected_claims (test_kb.RetrievalTests.test_expected_claims) ... ok
+test_expected_sources (test_kb.RetrievalTests.test_expected_sources) ... ok
+test_integrity (test_kb.RetrievalTests.test_integrity) ... ok
+test_limit_validation (test_kb.RetrievalTests.test_limit_validation) ... ok
+test_path_traversal_rejected (test_kb.RetrievalTests.test_path_traversal_rejected) ... ok
+test_read_claim (test_kb.RetrievalTests.test_read_claim) ... ok
+test_read_document (test_kb.RetrievalTests.test_read_document) ... ok
+test_source_code_pinned (test_kb.RetrievalTests.test_source_code_pinned) ... ok
+test_unknown_claim_rejected (test_kb.RetrievalTests.test_unknown_claim_rejected) ... ok
+test_unknown_no_hits (test_kb.RetrievalTests.test_unknown_no_hits) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 3.132s
+
+OK

@@ -1,0 +1,23 @@
+{
+  "project_id": "spatial_stage_example",
+  "modalities": [
+    "targeted_spatial_RNA"
+  ],
+  "goals": [
+    "spatial_niche_association",
+    "lineage_heritability",
+    "absolute_transition_rates"
+  ],
+  "has_genotype": false,
+  "has_allele_counts": false,
+  "has_scDNA": false,
+  "has_tree": false,
+  "tree_leaf_ids_matched": null,
+  "time_calibrated": false,
+  "has_patient_id": true,
+  "has_spatial": true,
+  "genotype_origin": "none",
+  "branch_unit": "unknown",
+  "independent_units": 9,
+  "longitudinal_design": "independent_stage_groups"
+}

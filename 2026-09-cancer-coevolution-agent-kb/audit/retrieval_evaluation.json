@@ -1,0 +1,546 @@
+{
+  "evaluation_type": "author_curated_lexical_retrieval_smoke_test",
+  "independent_benchmark": false,
+  "llm_answer_quality_evaluated": false,
+  "case_count": 24,
+  "hit_at_5": 0.9583333333333334,
+  "hit_at_10": 0.9583333333333334,
+  "MRR_at_10": 0.8680555555555555,
+  "cases": [
+    {
+      "question_id": "Q01",
+      "question": "没有突变 reads 就是野生型吗？",
+      "expected_claim_ids": [
+        "C025",
+        "C026"
+      ],
+      "top10_ids": [
+        "C025",
+        "D6e12549d784c",
+        "D3e5ab183cc9c",
+        "D770b07e18cac",
+        "D6dbdf258cce9",
+        "D956e39982f06",
+        "Dd844cfde09c1",
+        "Dda87eb53a83e",
+        "C031",
+        "C013"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q02",
+      "question": "PATH 的遗传性等于基因决定吗？",
+      "expected_claim_ids": [
+        "C032",
+        "C033"
+      ],
+      "top10_ids": [
+        "C032",
+        "Dd5fe487f13ad",
+        "C015",
+        "C014",
+        "C060",
+        "Db19345129ed8",
+        "D67b2795b7e35",
+        "Dc1972e079d53",
+        "D45c52e13aedf",
+        "C033"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q03",
+      "question": "TreeAlign 是同细胞实验共测吗？",
+      "expected_claim_ids": [
+        "C008"
+      ],
+      "top10_ids": [
+        "C008",
+        "D94dd14eac0c1",
+        "Dd432598142b7",
+        "Dd844cfde09c1",
+        "D40c41ece3cfb",
+        "Dd009f60350e7",
+        "C002",
+        "C009",
+        "D72828f365565",
+        "Df16d5594b00b"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q04",
+      "question": "GoT–ChA 的 DOGMA 扩展都是直接分型吗？",
+      "expected_claim_ids": [
+        "C006"
+      ],
+      "top10_ids": [
+        "C006",
+        "D068f8fafc78b",
+        "D7fb64b608e96",
+        "C003",
+        "D40c41ece3cfb",
+        "C045",
+        "D5e616990272b",
+        "Dd844cfde09c1",
+        "D59ff7017655f",
+        "D50d95d1a63d7"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q05",
+      "question": "只有拟时序可以计算真实谱系遗传性吗？",
+      "expected_claim_ids": [
+        "C029"
+      ],
+      "top10_ids": [
+        "C032",
+        "C029",
+        "Dd5fe487f13ad",
+        "C015",
+        "C014",
+        "Dad571d2e1427",
+        "Dc1972e079d53",
+        "D98938afa4376",
+        "De0929fa11607",
+        "D1c6abae3e99e"
+      ],
+      "first_expected_rank": 2,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q06",
+      "question": "50/50 状态比例能判断切换速度吗？",
+      "expected_claim_ids": [
+        "C035"
+      ],
+      "top10_ids": [
+        "C035",
+        "D6dbdf258cce9",
+        "D9a09d1f4af4c",
+        "D564080e6a513",
+        "C061",
+        "D4b824f496eb0",
+        "Ddb6877367702",
+        "Df6e387db39ae",
+        "Dc1972e079d53",
+        "Dff7856287f58"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q07",
+      "question": "PATH gamma=0 表示某状态不增殖吗？",
+      "expected_claim_ids": [
+        "C020"
+      ],
+      "top10_ids": [
+        "C020",
+        "Dcd7e4597ecbc",
+        "C014",
+        "De0f98aa4c181",
+        "Db1cf49d40d15",
+        "D98938afa4376",
+        "Dc1972e079d53",
+        "Da472562372d8",
+        "D13cce143fd3a",
+        "C036"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q08",
+      "question": "one.sided.pvalue 真的是单侧吗？",
+      "expected_claim_ids": [
+        "C017"
+      ],
+      "top10_ids": [
+        "C017",
+        "D95cfa0fdae16",
+        "D79fef1e1bbd3",
+        "Daef346de2b5a",
+        "D4b824f496eb0",
+        "D1a78c8c84b91",
+        "D45c52e13aedf",
+        "D73ed42b6f91d",
+        "De0929fa11607",
+        "D74067ca3cf8d"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q09",
+      "question": "十万细胞来自一个患者有十万个生物重复吗？",
+      "expected_claim_ids": [
+        "C016",
+        "C051"
+      ],
+      "top10_ids": [
+        "D98d55907b4ae",
+        "C051",
+        "Df2927fe51959",
+        "D9bd4ea7d17eb",
+        "De9df0b09df65",
+        "De0929fa11607",
+        "Dbb7a003ff33b",
+        "D7fbae633230d",
+        "C016",
+        "Ddb6877367702"
+      ],
+      "first_expected_rank": 2,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q10",
+      "question": "残差是否就是表观遗传？",
+      "expected_claim_ids": [
+        "C041"
+      ],
+      "top10_ids": [
+        "C041",
+        "D67b2795b7e35",
+        "D312ed39c09e4",
+        "D45c52e13aedf",
+        "Df16d5594b00b",
+        "C013",
+        "Dd5fe487f13ad",
+        "C054",
+        "D2893195fcb29",
+        "D8cb5e4035825"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q11",
+      "question": "树的分支长度能直接当年吗？",
+      "expected_claim_ids": [
+        "C030",
+        "C037"
+      ],
+      "top10_ids": [
+        "D38b9a7e73de8",
+        "C019",
+        "D50d95d1a63d7",
+        "D746a65a4bfe5",
+        "D6dbdf258cce9",
+        "D46f7c8540fb8",
+        "Dade0fe1a9e77",
+        "C011",
+        "D77588916165f",
+        "De0f98aa4c181"
+      ],
+      "first_expected_rank": null,
+      "any_expected_at_5": false,
+      "any_expected_at_10": false
+    },
+    {
+      "question_id": "Q12",
+      "question": "1-Moran I 是可塑性比例吗？",
+      "expected_claim_ids": [
+        "C033"
+      ],
+      "top10_ids": [
+        "C033",
+        "D45c52e13aedf",
+        "C002",
+        "D82863ac2ac10",
+        "D46f7c8540fb8",
+        "Db2c93e72cb22",
+        "C034",
+        "D73ed42b6f91d",
+        "Ddb6877367702",
+        "C014"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q13",
+      "question": "常数状态的 Moran I 怎么解释？",
+      "expected_claim_ids": [
+        "C034"
+      ],
+      "top10_ids": [
+        "C033",
+        "D45c52e13aedf",
+        "C034",
+        "C060",
+        "D6dbdf258cce9",
+        "Dca1f2931e293",
+        "D5a04441b7806",
+        "D94d55437983a",
+        "Df6e387db39ae",
+        "D3e5ab183cc9c"
+      ],
+      "first_expected_rank": 3,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q14",
+      "question": "用推断 CNV 的基因再验证剂量效应有风险吗？",
+      "expected_claim_ids": [
+        "C027"
+      ],
+      "top10_ids": [
+        "C027",
+        "C060",
+        "Dca1f2931e293",
+        "Da65a30e0b703",
+        "D0859882a5cf6",
+        "D44e5ffdd4eb4",
+        "Dd432598142b7",
+        "Db05478997ede",
+        "D3c507bebe24b",
+        "C048"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q15",
+      "question": "CAF 邻近克隆A就是克隆A后代吗？",
+      "expected_claim_ids": [
+        "C044"
+      ],
+      "top10_ids": [
+        "C044",
+        "Dafa359e13eae",
+        "C043",
+        "D9793b3429a32",
+        "Daef346de2b5a",
+        "D9a09d1f4af4c",
+        "D4b824f496eb0",
+        "D95cfa0fdae16",
+        "C046",
+        "C052"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q16",
+      "question": "早中晚期不同动物等于细胞连续追踪吗？",
+      "expected_claim_ids": [
+        "C045"
+      ],
+      "top10_ids": [
+        "C045",
+        "De9df0b09df65",
+        "C051",
+        "Dad571d2e1427",
+        "D7fb64b608e96",
+        "D40c41ece3cfb",
+        "C042",
+        "D59ff7017655f",
+        "De0929fa11607",
+        "Df82094c5f668"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q17",
+      "question": "起始纯克隆能排除后期遗传变化吗？",
+      "expected_claim_ids": [
+        "C046"
+      ],
+      "top10_ids": [
+        "C046",
+        "De9df0b09df65",
+        "D5aa871c6fcb3",
+        "Db1cf49d40d15",
+        "Da65a30e0b703",
+        "Dbb7a003ff33b",
+        "C044",
+        "C024",
+        "Dd5fe487f13ad",
+        "D9b780dc934d6"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q18",
+      "question": "空间表达面板能直接得到未测 SNV 吗？",
+      "expected_claim_ids": [
+        "C047"
+      ],
+      "top10_ids": [
+        "C047",
+        "Dbb7ef9c5cc9a",
+        "D746a65a4bfe5",
+        "D0c7ee43806ab",
+        "C043",
+        "D6da4dbd823f2",
+        "D67b2795b7e35",
+        "Db6bc12a743a2",
+        "Dad571d2e1427",
+        "D9bd4ea7d17eb"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q19",
+      "question": "2×VAF 总是突变细胞比例吗？",
+      "expected_claim_ids": [
+        "C048"
+      ],
+      "top10_ids": [
+        "C048",
+        "Dc56f7df0b301",
+        "D9b780dc934d6",
+        "Dd29f52a51aab",
+        "D6e12549d784c",
+        "D3498beffa93c",
+        "Df6e387db39ae",
+        "D1c91a50a88f1",
+        "C013",
+        "C017"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q20",
+      "question": "如何区分状态转换和选择？",
+      "expected_claim_ids": [
+        "C036",
+        "C054"
+      ],
+      "top10_ids": [
+        "C036",
+        "C035",
+        "Df6e387db39ae",
+        "C049",
+        "De0929fa11607",
+        "Daef346de2b5a",
+        "D7f4fb31d8611",
+        "D77588916165f",
+        "Df2927fe51959",
+        "D13cce143fd3a"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q21",
+      "question": "alpha 默认是论文最终参数吗？",
+      "expected_claim_ids": [
+        "C022",
+        "C055"
+      ],
+      "top10_ids": [
+        "C055",
+        "C022",
+        "D378891571883",
+        "D4b26172734f6",
+        "D9283a4a22c71",
+        "Da87bcb56c601",
+        "Db47da75f26f4",
+        "Dfc83e51bc6c6",
+        "D694ad7a064ff",
+        "D8beb83f06b38"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q22",
+      "question": "你完整精读了这篇综述正文吗？",
+      "expected_claim_ids": [
+        "C001"
+      ],
+      "top10_ids": [
+        "Df349fbb6c9fe",
+        "C001",
+        "D572dbb3aea74",
+        "D8dfd9ac39786",
+        "D3f2e43a38cfe",
+        "C056",
+        "Dff7856287f58",
+        "D8b661285582f",
+        "D77536cf0dee4",
+        "D94dd14eac0c1"
+      ],
+      "first_expected_rank": 2,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q23",
+      "question": "测试通过意味着复现 PATH 吗？",
+      "expected_claim_ids": [
+        "C057"
+      ],
+      "top10_ids": [
+        "C057",
+        "D1a78c8c84b91",
+        "D3c507bebe24b",
+        "Dc2776d2a195e",
+        "D9a09d1f4af4c",
+        "Dd844cfde09c1",
+        "C054",
+        "Dbb7ef9c5cc9a",
+        "D9283a4a22c71",
+        "Da164c3ab0d20"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    },
+    {
+      "question_id": "Q24",
+      "question": "EPI-Clone 的甲基化信息可以直接当状态树吗？",
+      "expected_claim_ids": [
+        "C013",
+        "C060"
+      ],
+      "top10_ids": [
+        "C013",
+        "D312ed39c09e4",
+        "Df82094c5f668",
+        "Dd848efda2c6c",
+        "C060",
+        "D91ef1e4c8e7d",
+        "Df4a21c2e77c6",
+        "Dd844cfde09c1",
+        "D50d95d1a63d7",
+        "Dc2776d2a195e"
+      ],
+      "first_expected_rank": 1,
+      "any_expected_at_5": true,
+      "any_expected_at_10": true
+    }
+  ]
+}

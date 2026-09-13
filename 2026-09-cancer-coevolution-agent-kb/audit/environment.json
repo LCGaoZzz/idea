@@ -1,0 +1,14 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "core_runtime_dependencies": "Python standard library only",
+  "optional_reader_build_dependency": {
+    "markdown-it-py": "4.2.0"
+  },
+  "optional_browser_QA": {
+    "playwright": "1.57.0",
+    "chromium": "144.0.7559.96"
+  },
+  "author_packages_installed_or_run": [],
+  "network_model_calls": 0
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "id": "genotype",
+    "label_zh": "基因型",
+    "definition": "测得或推断的遗传状态；必须保留其证据来源。",
+    "aliases": [
+      "G",
+      "遗传",
+      "SNV"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "phenotype",
+    "label_zh": "表型",
+    "definition": "可测分子特征或状态，不等同于克隆。",
+    "aliases": [
+      "Y",
+      "state",
+      "细胞状态"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "lineage",
+    "label_zh": "谱系",
+    "definition": "祖先关系及其证据；不是表达相似度。",
+    "aliases": [
+      "T",
+      "phylogeny",
+      "祖先"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "environment",
+    "label_zh": "环境",
+    "definition": "组织与局部条件；可能与克隆空间分布混淆。",
+    "aliases": [
+      "E",
+      "TME",
+      "生态位"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "observation",
+    "label_zh": "观测",
+    "definition": "经取样和技术噪声得到的实际数据。",
+    "aliases": [
+      "O",
+      "measurement"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "dropout",
+    "label_zh": "掉落与缺失",
+    "definition": "没有读到不能直接当生物阴性。",
+    "aliases": [
+      "missing",
+      "unresolved"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "clone",
+    "label_zh": "克隆",
+    "definition": "在明确分辨率下共享遗传或谱系标记的群体。",
+    "aliases": [
+      "亚克隆",
+      "subclone"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "clock",
+    "label_zh": "分子钟",
+    "definition": "把变化量与时间连接的模型与校准。",
+    "aliases": [
+      "molecular clock",
+      "时间"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "heritability",
+    "label_zh": "谱系持续性",
+    "definition": "表型与亲缘的相关程度，不能自动当纯遗传方差占比。",
+    "aliases": [
+      "遗传性",
+      "h2",
+      "persistence"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "plasticity",
+    "label_zh": "可塑性",
+    "definition": "状态在特定时间条件下可变化的性质。",
+    "aliases": [
+      "转换",
+      "plastic"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "rate",
+    "label_zh": "转换速率",
+    "definition": "具有倒数时间单位的生成矩阵元素。",
+    "aliases": [
+      "Q",
+      "transition rate"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "probability",
+    "label_zh": "转换概率",
+    "definition": "在给定时间窗的转换概率矩阵。",
+    "aliases": [
+      "P",
+      "expm"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "selection",
+    "label_zh": "选择/差异增长",
+    "definition": "不同状态或克隆的相对增长使群体构成改变。",
+    "aliases": [
+      "fitness",
+      "增殖"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "pseudotime",
+    "label_zh": "拟时序",
+    "definition": "由状态数据推断的排序，不自动是祖先追踪。",
+    "aliases": [
+      "轨迹",
+      "trajectory"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "cna",
+    "label_zh": "拷贝数改变",
+    "definition": "需区分总拷贝、等位拷贝、相对与绝对值。",
+    "aliases": [
+      "CNV",
+      "CNA",
+      "WGD"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "epimutation",
+    "label_zh": "表观突变",
+    "definition": "适当筛选时可提供历史信息；不等于所有状态性甲基化。",
+    "aliases": [
+      "CpG",
+      "EPI-Clone"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "mtdna",
+    "label_zh": "线粒体标记",
+    "definition": "天然变异可提供克隆线索，不自动具有驱动作用。",
+    "aliases": [
+      "mitochondrial"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "donor",
+    "label_zh": "独立生物个体",
+    "definition": "患者/动物层面单位，不能用其细胞数替代。",
+    "aliases": [
+      "replicate",
+      "供体"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "spatial",
+    "label_zh": "空间",
+    "definition": "位置、邻接和环境分布，非直接因果作用。",
+    "aliases": [
+      "S",
+      "ROI",
+      "CAF"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "identifiability",
+    "label_zh": "可识别性",
+    "definition": "不同参数/机制能否由观测被区分。",
+    "aliases": [
+      "识别",
+      "inverse problem"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "causality",
+    "label_zh": "因果性",
+    "definition": "需要排除相应竞争解释的设计，不是共现的同义词。",
+    "aliases": [
+      "因果",
+      "intervention"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "imputation",
+    "label_zh": "插补",
+    "definition": "依据模型补出未直接测量量，须保留来源与不确定性。",
+    "aliases": [
+      "imputed"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "vaf",
+    "label_zh": "变异等位基因频率",
+    "definition": "其与细胞比例的关系依赖等位和拷贝数条件。",
+    "aliases": [
+      "VAF"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  },
+  {
+    "id": "moran",
+    "label_zh": "Moran 统计量",
+    "definition": "给定权重矩阵的自相关统计，不是通用 0–1 遗传比例。",
+    "aliases": [
+      "Moran's I"
+    ],
+    "provenance": "KB working definition; not a verbatim review glossary"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "gap_id": "G01",
+    "severity": "high",
+    "subject": "目标综述完整正文",
+    "status": "open",
+    "consequence": "不能重建所有章节、作者论证顺序、未公开的方法比较或限制。",
+    "resolution": "取得合法全文后按段落核验并追加来源定位。"
+  },
+  {
+    "gap_id": "G02",
+    "severity": "high",
+    "subject": "五幅图的完整图注和高分辨率细节",
+    "status": "open",
+    "consequence": "本版只能作概念导读，不能转录曲线数值、具体图例或方程。",
+    "resolution": "读取全文或独立完整图注；将 F1–F5 逐项升级。"
+  },
+  {
+    "gap_id": "G03",
+    "severity": "medium",
+    "subject": "全部参考文献与补充方法",
+    "status": "open",
+    "consequence": "只收录选定方法，不是全引用网络或综述全部技术目录。",
+    "resolution": "补全文献导出并逐一确认。"
+  },
+  {
+    "gap_id": "G04",
+    "severity": "high",
+    "subject": "作者软件端到端复现",
+    "status": "not_attempted",
+    "consequence": "只审读特定代码；生成的教学程序不是 GoT/PATH/TreeAlign 的替代实现。",
+    "resolution": "固定输入、版本、环境、随机种子后独立执行作者示例。"
+  },
+  {
+    "gap_id": "G05",
+    "severity": "medium",
+    "subject": "PATH 接口风险的下游影响",
+    "status": "open",
+    "consequence": "不能由 xcor 字段名不一致推断论文所有 p 值错误。",
+    "resolution": "核对调用方、绘图脚本和补充分析；使用 R 最小用例验证。"
+  }
+]

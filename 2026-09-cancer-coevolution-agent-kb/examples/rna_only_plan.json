@@ -1,0 +1,78 @@
+{
+  "project_id": "rna_only_example",
+  "scope_notice": "本库未取得目标综述订阅正文或完整图注。REVIEW 仅限公开已核验内容；PRIMARY/CODE 按各自来源范围；ANALYSIS/TRANSFER 为本库解释或建议。检索分数不是证据置信度；本工具不调用 LLM，不执行作者软件。",
+  "decisions": [
+    {
+      "goal": "genotype_phenotype_association",
+      "status": "blocked_for_claim",
+      "missing_requirements": [
+        {
+          "field": "has_genotype",
+          "state": "明确没有",
+          "requirement": "需要可信遗传标签；不能仅凭无突变 reads 填为 WT。"
+        }
+      ],
+      "candidate_method_cards": [
+        "M01",
+        "M02",
+        "M03"
+      ],
+      "note": "通过输入门槛不代表模型有效或机制得到证明；仍需检测、采样和模型验证。"
+    },
+    {
+      "goal": "lineage_heritability",
+      "status": "blocked_for_claim",
+      "missing_requirements": [
+        {
+          "field": "has_tree",
+          "state": "明确没有",
+          "requirement": "需要谱系证据支持的树，而非表达拟时序。"
+        },
+        {
+          "field": "tree_leaf_ids_matched",
+          "state": "未提供/未知",
+          "requirement": "树叶与表型必须一一对应。"
+        }
+      ],
+      "candidate_method_cards": [
+        "M09"
+      ],
+      "note": "通过输入门槛不代表模型有效或机制得到证明；仍需检测、采样和模型验证。"
+    },
+    {
+      "goal": "absolute_transition_rates",
+      "status": "blocked_for_claim",
+      "missing_requirements": [
+        {
+          "field": "has_tree",
+          "state": "明确没有",
+          "requirement": "需要谱系证据支持的树，而非表达拟时序。"
+        },
+        {
+          "field": "tree_leaf_ids_matched",
+          "state": "未提供/未知",
+          "requirement": "树叶与表型必须一一对应。"
+        },
+        {
+          "field": "time_calibrated",
+          "state": "明确没有",
+          "requirement": "绝对速率需要外部时间锚点和校准。"
+        },
+        {
+          "field": "branch_unit",
+          "state": "unknown",
+          "requirement": "本合同绝对速率指日历时间，单位须为 days 或 years。"
+        }
+      ],
+      "candidate_method_cards": [
+        "M09"
+      ],
+      "note": "通过输入门槛不代表模型有效或机制得到证明；仍需检测、采样和模型验证。"
+    }
+  ],
+  "warnings": [],
+  "unprovided_fields": [],
+  "execution_performed": false,
+  "clinical_recommendation": false,
+  "next_step": "先解决与目标结论直接相关的输入缺口，再按对应方法卡做最小验证。"
+}

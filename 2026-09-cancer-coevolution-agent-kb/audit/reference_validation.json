@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "errors": [],
+  "sources": 16,
+  "claims": 62,
+  "chunks": 171,
+  "methods": 9,
+  "integrity_files_checked": 0,
+  "scope": "local artifact integrity only; no author method or biological validation"
+}

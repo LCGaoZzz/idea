@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": [
+    "reader_loads_and_renders_markdown",
+    "scope_notice_visible",
+    "all_29_documents_navigable",
+    "all_16_sources_render",
+    "fixed_commit_source_dialog",
+    "agent_prompt_contains_expected_typed_claim",
+    "local_document_search",
+    "mobile_navigation",
+    "mobile_no_page_horizontal_overflow",
+    "no_browser_javascript_errors",
+    "no_external_network_requests"
+  ],
+  "check_count": 11,
+  "browser": "Chromium 144.0.7559.96",
+  "javascript_errors": [],
+  "external_requests": [],
+  "load_mode": "inline HTML via set_content",
+  "limitations": [
+    "UI checks do not evaluate LLM answers or scientific truth.",
+    "This environment blocks file:// navigation; generated HTML was loaded in memory, not by file://."
+  ]
+}

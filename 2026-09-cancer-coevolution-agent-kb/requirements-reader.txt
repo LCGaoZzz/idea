@@ -1,0 +1,2 @@
+# Optional: only required to regenerate START_HERE.html, not to open it or run core tools.
+markdown-it-py

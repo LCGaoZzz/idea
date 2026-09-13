@@ -1,0 +1,142 @@
+[
+  {
+    "source": "genotype",
+    "target": "phenotype",
+    "relation": "can_influence_hypothesis",
+    "claim_id": "C039",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "lineage",
+    "target": "heritability",
+    "relation": "supports_estimation",
+    "claim_id": "C032",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "environment",
+    "target": "phenotype",
+    "relation": "can_influence_hypothesis",
+    "claim_id": "C040",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "observation",
+    "target": "genotype",
+    "relation": "informs_measurement",
+    "claim_id": "C025",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "dropout",
+    "target": "observation",
+    "relation": "can_bias",
+    "claim_id": "C026",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "clone",
+    "target": "phenotype",
+    "relation": "not_equivalent",
+    "claim_id": "C024",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "pseudotime",
+    "target": "lineage",
+    "relation": "not_equivalent",
+    "claim_id": "C029",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "clock",
+    "target": "rate",
+    "relation": "calibrates_units",
+    "claim_id": "C037",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "rate",
+    "target": "probability",
+    "relation": "generates_given_time",
+    "claim_id": "C035",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "selection",
+    "target": "phenotype",
+    "relation": "changes_population_composition",
+    "claim_id": "C036",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "spatial",
+    "target": "lineage",
+    "relation": "can_confound",
+    "claim_id": "C040",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "donor",
+    "target": "observation",
+    "relation": "induces_dependence",
+    "claim_id": "C016",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "epimutation",
+    "target": "lineage",
+    "relation": "can_inform",
+    "claim_id": "C013",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "mtdna",
+    "target": "lineage",
+    "relation": "can_inform",
+    "claim_id": "C012",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "cna",
+    "target": "clone",
+    "relation": "can_inform",
+    "claim_id": "C010",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "imputation",
+    "target": "genotype",
+    "relation": "is_inferred_not_direct",
+    "claim_id": "C050",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "moran",
+    "target": "heritability",
+    "relation": "informs_not_equates",
+    "claim_id": "C033",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "vaf",
+    "target": "clone",
+    "relation": "not_direct_fraction",
+    "claim_id": "C048",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "identifiability",
+    "target": "rate",
+    "relation": "limits_estimation",
+    "claim_id": "C037",
+    "causal_status": "not_a_verified_causal_edge"
+  },
+  {
+    "source": "spatial",
+    "target": "causality",
+    "relation": "does_not_establish",
+    "claim_id": "C043",
+    "causal_status": "not_a_verified_causal_edge"
+  }
+]

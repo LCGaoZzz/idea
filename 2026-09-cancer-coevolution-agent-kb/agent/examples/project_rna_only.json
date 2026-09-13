@@ -1,0 +1,23 @@
+{
+  "project_id": "rna_only_example",
+  "modalities": [
+    "scRNA"
+  ],
+  "goals": [
+    "genotype_phenotype_association",
+    "lineage_heritability",
+    "absolute_transition_rates"
+  ],
+  "has_genotype": false,
+  "has_allele_counts": false,
+  "has_scDNA": false,
+  "has_tree": false,
+  "tree_leaf_ids_matched": null,
+  "time_calibrated": false,
+  "has_patient_id": true,
+  "has_spatial": false,
+  "genotype_origin": "none",
+  "branch_unit": "unknown",
+  "independent_units": 4,
+  "longitudinal_design": "none"
+}
