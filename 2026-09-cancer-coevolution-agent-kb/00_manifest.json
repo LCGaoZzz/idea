@@ -1,0 +1,71 @@
+{
+  "package_id": "cancer-coevolution-agent-kb",
+  "version": "0.9.0",
+  "edition": "evidence-bounded research and teaching edition",
+  "created_on": "2026-09-13",
+  "language": "zh-CN",
+  "target_doi": "10.1038/s41568-026-00970-8",
+  "target_published": "2026-09-08",
+  "full_text_verified": false,
+  "full_figure_legends_verified": false,
+  "author_software_executed": false,
+  "real_biological_data_analyzed": false,
+  "agent_platform_auto_registered": false,
+  "llm_bundled": false,
+  "network_model_calls": 0,
+  "entry_points": {
+    "human": "START_HERE.html",
+    "overview": "README.md",
+    "agent": "AGENTS.md",
+    "skill": "SKILL.md",
+    "cli": "tools/kb.py",
+    "protocol": "tools/tool_server.py"
+  },
+  "counts": {
+    "knowledge_chapters": 13,
+    "method_cards": 9,
+    "source_records": 16,
+    "atomic_claims": 62,
+    "knowledge_chunks": 171,
+    "concept_nodes": 24,
+    "graph_edges": 20,
+    "qa_cases": 24,
+    "markdown_characters": 33097
+  },
+  "validation": {
+    "unit_tests": {
+      "executed": 48,
+      "passed": 48,
+      "report": "audit/test_report.txt"
+    },
+    "browser_checks": {
+      "executed": 11,
+      "passed": 11,
+      "mode": "HTML set_content; file navigation blocked in runtime",
+      "report": "audit/browser_report.json"
+    },
+    "retrieval_smoke_test": {
+      "correct_expected_claim_at_10": 23,
+      "cases": 24,
+      "independent_benchmark": false,
+      "llm_answers_evaluated": false,
+      "report": "audit/retrieval_evaluation.json"
+    },
+    "integrity": "audit/SHA256SUMS; excludes itself and generated Python bytecode"
+  },
+  "provenance": [
+    "evidence/sources.json",
+    "evidence/claims.jsonl",
+    "evidence/access_log.json",
+    "evidence/gaps.json",
+    "evidence/code_audit.json",
+    "evidence/parameter_provenance.json"
+  ],
+  "limitations": [
+    "No licensed review full text or complete legends obtained.",
+    "Primary sources inspected only in individually recorded scopes.",
+    "Static code reading is not author-method replication.",
+    "Lexical retrieval can miss relevant claims; inspect neighboring sources and full chapters.",
+    "Original teaching mathematics is not an author method implementation."
+  ]
+}

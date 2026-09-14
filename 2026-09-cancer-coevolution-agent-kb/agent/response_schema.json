@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceBoundedAnswer",
+  "type": "object",
+  "required": [
+    "question",
+    "answer",
+    "evidence",
+    "assumptions",
+    "unsupported_claims",
+    "limitations"
+  ],
+  "properties": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "layer",
+          "text",
+          "claim_ids"
+        ],
+        "properties": {
+          "layer": {
+            "enum": [
+              "REVIEW",
+              "PRIMARY",
+              "CODE",
+              "ANALYSIS",
+              "TRANSFER"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "locator"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unsupported_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_discriminating_observation": {
+      "type": "string"
+    }
+  }
+}

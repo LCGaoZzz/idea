@@ -1,0 +1,24 @@
+{
+  "question": "没有突变 reads 可以判定 WT 吗？",
+  "answer": [
+    {
+      "layer": "ANALYSIS",
+      "text": "不能直接判定。没有位点覆盖和掉落模型时，未检出需要保留为 unresolved，而不是自动归为野生型。",
+      "claim_ids": [
+        "C025",
+        "C026"
+      ]
+    }
+  ],
+  "evidence": [],
+  "assumptions": [
+    "教学二项式例子仅在独立分子和已知等位概率条件下成立。"
+  ],
+  "unsupported_claims": [
+    "仅由零 alternate reads 判定 WT。"
+  ],
+  "limitations": [
+    "没有提供真实细胞等位计数或校准样本，不能执行基因型判定。"
+  ],
+  "next_discriminating_observation": "检查该位点独立分子覆盖与分型误差校准。"
+}

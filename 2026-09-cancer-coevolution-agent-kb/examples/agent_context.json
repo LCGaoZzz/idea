@@ -1,0 +1,179 @@
+{
+  "question": "PATH 的遗传性是否等于遗传决定性",
+  "scope_notice": "本库未取得目标综述订阅正文或完整图注。REVIEW 仅限公开已核验内容；PRIMARY/CODE 按各自来源范围；ANALYSIS/TRANSFER 为本库解释或建议。检索分数不是证据置信度；本工具不调用 LLM，不执行作者软件。",
+  "retrieval_only": true,
+  "model_called": false,
+  "hits": [
+    {
+      "id": "C032",
+      "kind": "claim",
+      "title": "谱系相关性不是经典遗传方差占比；高相关不证明表型由基因决定。",
+      "text": "谱系相关性不是经典遗传方差占比；高相关不证明表型由基因决定。",
+      "layer": "ANALYSIS",
+      "document_path": "knowledge/05_heritability_and_plasticity.md",
+      "source_ids": [],
+      "locator": [],
+      "tags": [
+        "heritability",
+        "遗传性",
+        "遗传决定性",
+        "h2",
+        "PATH"
+      ],
+      "limitations": "本库独立解释或建议；不是作者原文结论。",
+      "score": 36.614955
+    },
+    {
+      "id": "C015",
+      "kind": "claim",
+      "title": "PATH 原始研究报告 EMT 两端与中间态有不同的谱系持续性。",
+      "text": "PATH 原始研究报告 EMT 两端与中间态有不同的谱系持续性。",
+      "layer": "PRIMARY",
+      "document_path": "knowledge/09_cases_and_research_logic.md",
+      "source_ids": [
+        "S04"
+      ],
+      "locator": [
+        {
+          "source_id": "S04",
+          "locator": "Abstract"
+        }
+      ],
+      "tags": [
+        "PATH",
+        "EMT",
+        "胰腺癌"
+      ],
+      "limitations": "须遵守对应来源的核验范围。",
+      "score": 25.493918
+    },
+    {
+      "id": "Dd5fe487f13ad",
+      "kind": "document_chunk",
+      "title": "05｜遗传性与可塑性：一个相关结构问题，而不是一句形容词 / 1. “遗传性”在这里应先理解为谱系持续性",
+      "text": "## 1. “遗传性”在这里应先理解为谱系持续性\n\nPATH 将细胞状态与谱系上的亲缘结构联系，用系统发育相关衡量状态的持续性，并在模型约束下推断动态。[S04]\n\n这和数量遗传学中把表型方差分为遗传方差、环境方差后给出 h² 并非天然同一个估计量。近亲细胞状态相似，可能包含遗传变异效应，也可能包含传递的表观记忆、共享局部环境或未建模的技术结构。\n\n最稳妥的报告句式是“在给定树、状态定义和取样条件下检测到谱系相关”，而不是“证明此表型由基因决定”。",
+      "layer": "DOCUMENT_MIXED",
+      "document_path": "knowledge/05_heritability_and_plasticity.md",
+      "source_ids": [
+        "S04"
+      ],
+      "locator": {
+        "local_start_line": 5,
+        "local_end_line": 12
+      },
+      "tags": [],
+      "limitations": "本地课件段落含解释；按段内标签区分，不将全部文字归于引用来源。",
+      "score": 25.062847
+    },
+    {
+      "id": "C014",
+      "kind": "claim",
+      "title": "PATH 对表型标注的单细胞谱系分析状态持续性与转换/增殖动态。",
+      "text": "PATH 对表型标注的单细胞谱系分析状态持续性与转换/增殖动态。",
+      "layer": "PRIMARY",
+      "document_path": "methods/M09_PATH.md",
+      "source_ids": [
+        "S04"
+      ],
+      "locator": [
+        {
+          "source_id": "S04",
+          "locator": "Abstract; PMC11527590 indexed text on phylogenetic correlations, sampling and inference"
+        }
+      ],
+      "tags": [
+        "PATH",
+        "heritability",
+        "plasticity"
+      ],
+      "limitations": "须遵守对应来源的核验范围。",
+      "score": 24.362358
+    },
+    {
+      "id": "C060",
+      "kind": "claim",
+      "title": "用状态响应位点建树再验证同状态的遗传性，存在状态与历史信息不独立的风险。",
+      "text": "用状态响应位点建树再验证同状态的遗传性，存在状态与历史信息不独立的风险。",
+      "layer": "ANALYSIS",
+      "document_path": "knowledge/03_lineage_marks.md",
+      "source_ids": [],
+      "locator": [],
+      "tags": [
+        "CpG",
+        "甲基化",
+        "循环",
+        "state"
+      ],
+      "limitations": "本库独立解释或建议；不是作者原文结论。",
+      "score": 15.042429
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S04",
+      "title": "Defining heritability, plasticity, and transition dynamics of cellular phenotypes in somatic evolution",
+      "canonical_url": "https://www.nature.com/articles/s41588-024-01920-6",
+      "doi": "10.1038/s41588-024-01920-6",
+      "source_type": "primary_research",
+      "checked_on": "2026-09-13",
+      "inspection_scope": "abstract_and_indexed_method_excerpts",
+      "locator": "Abstract; PMC11527590 indexed text on phylogenetic correlations, sampling and inference",
+      "relation_to_review": "review_reference_103",
+      "limitations": [
+        "不是完整复现；检索到的 PMC 正文片段不等于所有正文和补充方法均读到。",
+        "以最终发表名称 Trait Heritability 为准，不混用旧预印本名称。"
+      ],
+      "year": 2024,
+      "author_repository": "https://github.com/landau-lab/PATH"
+    }
+  ],
+  "open_gaps": [
+    {
+      "gap_id": "G01",
+      "severity": "high",
+      "subject": "目标综述完整正文",
+      "status": "open",
+      "consequence": "不能重建所有章节、作者论证顺序、未公开的方法比较或限制。",
+      "resolution": "取得合法全文后按段落核验并追加来源定位。"
+    },
+    {
+      "gap_id": "G02",
+      "severity": "high",
+      "subject": "五幅图的完整图注和高分辨率细节",
+      "status": "open",
+      "consequence": "本版只能作概念导读，不能转录曲线数值、具体图例或方程。",
+      "resolution": "读取全文或独立完整图注；将 F1–F5 逐项升级。"
+    },
+    {
+      "gap_id": "G03",
+      "severity": "medium",
+      "subject": "全部参考文献与补充方法",
+      "status": "open",
+      "consequence": "只收录选定方法，不是全引用网络或综述全部技术目录。",
+      "resolution": "补全文献导出并逐一确认。"
+    },
+    {
+      "gap_id": "G04",
+      "severity": "high",
+      "subject": "作者软件端到端复现",
+      "status": "not_attempted",
+      "consequence": "只审读特定代码；生成的教学程序不是 GoT/PATH/TreeAlign 的替代实现。",
+      "resolution": "固定输入、版本、环境、随机种子后独立执行作者示例。"
+    },
+    {
+      "gap_id": "G05",
+      "severity": "medium",
+      "subject": "PATH 接口风险的下游影响",
+      "status": "open",
+      "consequence": "不能由 xcor 字段名不一致推断论文所有 p 值错误。",
+      "resolution": "核对调用方、绘图脚本和补充分析；使用 R 最小用例验证。"
+    }
+  ],
+  "answer_instructions": [
+    "事实引用 claim_id、source_id 与已核验 locator。",
+    "本地课件行号不是原文页码；DOCUMENT_MIXED 不能整体升级成 PRIMARY。",
+    "独立推导标记 ANALYSIS；迁移建议标记 TRANSFER。",
+    "未取得正文、未运行作者算法时明确说明；无法支持的结论列出边界。",
+    "检索无匹配时说本库未检得证据，不把无结果当作事实不存在。"
+  ]
+}

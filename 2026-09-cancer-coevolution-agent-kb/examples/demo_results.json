@@ -1,0 +1,116 @@
+{
+  "status": "executed_synthetic_teaching_only",
+  "author_software_executed": false,
+  "real_biological_data_used": false,
+  "dropout": {
+    "assumption": "m independent informative molecules; alternate probability p=0.5",
+    "values": [
+      {
+        "m": 0,
+        "p_no_alternate_given_mutant": 1.0
+      },
+      {
+        "m": 1,
+        "p_no_alternate_given_mutant": 0.5
+      },
+      {
+        "m": 4,
+        "p_no_alternate_given_mutant": 0.0625
+      },
+      {
+        "m": 10,
+        "p_no_alternate_given_mutant": 0.0009765625
+      }
+    ]
+  },
+  "same_proportions_different_rates": [
+    {
+      "a": 0.05,
+      "b": 0.05,
+      "stationary": [
+        0.5,
+        0.5
+      ],
+      "mean_dwell_time": 20.0,
+      "P_at_t_1": [
+        [
+          0.9524187090179798,
+          0.04758129098202024
+        ],
+        [
+          0.04758129098202024,
+          0.9524187090179798
+        ]
+      ]
+    },
+    {
+      "a": 5,
+      "b": 5,
+      "stationary": [
+        0.5,
+        0.5
+      ],
+      "mean_dwell_time": 0.2,
+      "P_at_t_1": [
+        [
+          0.5000226999648812,
+          0.49997730003511875
+        ],
+        [
+          0.49997730003511875,
+          0.5000226999648812
+        ]
+      ]
+    }
+  ],
+  "moran": {
+    "weights": "same synthetic 4-leaf group, zero diagonal",
+    "grouped_labels_I": 1.0,
+    "interleaved_labels_I": -0.3333333333333333,
+    "exact_permutations": 70,
+    "null_mean": -0.14285714285714285,
+    "expected_null_mean": -0.14285714285714285,
+    "exact_upper_tail_p": 0.02857142857142857,
+    "warning": "exact synthetic label permutation only; not an author PATH significance test"
+  },
+  "composition_confounding": {
+    "low_background_mean": 1,
+    "high_background_mean": 10,
+    "WT_low_high_counts": [
+      90,
+      10
+    ],
+    "mutant_low_high_counts": [
+      10,
+      90
+    ],
+    "WT_overall_mean": 1.9,
+    "mutant_overall_mean": 9.1,
+    "within_background_difference": 0
+  },
+  "normal_tail_at_Z_2": {
+    "one_sided_upper": 0.02275013194817922,
+    "two_sided": 0.04550026389635844,
+    "note": "arithmetic illustration of the audited xcor return-field naming issue; R not executed"
+  },
+  "vaf_assumptions": {
+    "diploid_normal_background": true,
+    "equal_per_copy_contribution": true
+  },
+  "vaf_examples": [
+    {
+      "true_tumor_fraction": 0.4,
+      "tumor_total_copy": 2,
+      "mutant_copy": 1,
+      "expected_vaf": 0.2,
+      "twice_vaf": 0.4
+    },
+    {
+      "true_tumor_fraction": 0.4,
+      "tumor_total_copy": 4,
+      "mutant_copy": 1,
+      "expected_vaf": 0.14285714285714288,
+      "twice_vaf": 0.28571428571428575
+    }
+  ]
+}

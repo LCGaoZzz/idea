@@ -1,0 +1,25 @@
+{
+  "project_id": "paired_tree_example",
+  "modalities": [
+    "scDNA",
+    "scRNA"
+  ],
+  "goals": [
+    "genotype_phenotype_association",
+    "lineage_heritability",
+    "relative_transition_dynamics",
+    "absolute_transition_rates"
+  ],
+  "has_genotype": true,
+  "has_allele_counts": true,
+  "has_scDNA": true,
+  "has_tree": true,
+  "tree_leaf_ids_matched": true,
+  "time_calibrated": false,
+  "has_patient_id": true,
+  "has_spatial": false,
+  "genotype_origin": "direct",
+  "branch_unit": "mutations",
+  "independent_units": 5,
+  "longitudinal_design": "none"
+}

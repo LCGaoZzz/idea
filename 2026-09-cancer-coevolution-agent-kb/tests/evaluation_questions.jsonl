@@ -1,0 +1,24 @@
+{"id": "Q01", "question": "没有突变 reads 就是野生型吗？", "expected_claim_ids": ["C025", "C026"], "required_concepts": ["未检出不等于野生型", "考虑覆盖与掉落"], "forbidden_overclaims": ["直接判定野生型"]}
+{"id": "Q02", "question": "PATH 的遗传性等于基因决定吗？", "expected_claim_ids": ["C032", "C033"], "required_concepts": ["谱系相关不是纯遗传方差", "共享环境可混淆"], "forbidden_overclaims": ["证明全部由基因决定"]}
+{"id": "Q03", "question": "TreeAlign 是同细胞实验共测吗？", "expected_claim_ids": ["C008"], "required_concepts": ["独立采集", "计算连接"], "forbidden_overclaims": ["直接共测"]}
+{"id": "Q04", "question": "GoT–ChA 的 DOGMA 扩展都是直接分型吗？", "expected_claim_ids": ["C006"], "required_concepts": ["插补", "区分来源"], "forbidden_overclaims": ["全部直接共测"]}
+{"id": "Q05", "question": "只有拟时序可以计算真实谱系遗传性吗？", "expected_claim_ids": ["C029"], "required_concepts": ["不能替代祖先证据"], "forbidden_overclaims": ["拟时序就是克隆树"]}
+{"id": "Q06", "question": "50/50 状态比例能判断切换速度吗？", "expected_claim_ids": ["C035"], "required_concepts": ["不能唯一识别", "快慢皆可"], "forbidden_overclaims": ["唯一确定速率"]}
+{"id": "Q07", "question": "PATH gamma=0 表示某状态不增殖吗？", "expected_claim_ids": ["C020"], "required_concepts": ["相对零点", "需要总量约束"], "forbidden_overclaims": ["完全不增殖"]}
+{"id": "Q08", "question": "one.sided.pvalue 真的是单侧吗？", "expected_claim_ids": ["C017"], "required_concepts": ["实际双侧", "不推断论文全错"], "forbidden_overclaims": ["已证明论文结论错误"]}
+{"id": "Q09", "question": "十万细胞来自一个患者有十万个生物重复吗？", "expected_claim_ids": ["C016", "C051"], "required_concepts": ["不等价", "个体层重复"], "forbidden_overclaims": ["细胞数就是患者数"]}
+{"id": "Q10", "question": "残差是否就是表观遗传？", "expected_claim_ids": ["C041"], "required_concepts": ["不自动等同", "多种来源"], "forbidden_overclaims": ["残差全是表观遗传"]}
+{"id": "Q11", "question": "树的分支长度能直接当年吗？", "expected_claim_ids": ["C030", "C037"], "required_concepts": ["单位", "校准"], "forbidden_overclaims": ["总是年"]}
+{"id": "Q12", "question": "1-Moran I 是可塑性比例吗？", "expected_claim_ids": ["C033"], "required_concepts": ["不是通用比例"], "forbidden_overclaims": ["总在0到1"]}
+{"id": "Q13", "question": "常数状态的 Moran I 怎么解释？", "expected_claim_ids": ["C034"], "required_concepts": ["未定义", "零方差"], "forbidden_overclaims": ["遗传性为零"]}
+{"id": "Q14", "question": "用推断 CNV 的基因再验证剂量效应有风险吗？", "expected_claim_ids": ["C027"], "required_concepts": ["循环", "独立验证"], "forbidden_overclaims": ["完全独立"]}
+{"id": "Q15", "question": "CAF 邻近克隆A就是克隆A后代吗？", "expected_claim_ids": ["C044"], "required_concepts": ["邻近不等于血统"], "forbidden_overclaims": ["共享肿瘤克隆"]}
+{"id": "Q16", "question": "早中晚期不同动物等于细胞连续追踪吗？", "expected_claim_ids": ["C045"], "required_concepts": ["群体比较", "非同细胞追踪"], "forbidden_overclaims": ["直接追踪每个细胞"]}
+{"id": "Q17", "question": "起始纯克隆能排除后期遗传变化吗？", "expected_claim_ids": ["C046"], "required_concepts": ["不能", "终点证据"], "forbidden_overclaims": ["终点必然均一"]}
+{"id": "Q18", "question": "空间表达面板能直接得到未测 SNV 吗？", "expected_claim_ids": ["C047"], "required_concepts": ["缺失等位信息", "不能硬推"], "forbidden_overclaims": ["无数据也可直接分型"]}
+{"id": "Q19", "question": "2×VAF 总是突变细胞比例吗？", "expected_claim_ids": ["C048"], "required_concepts": ["倍性与等位假设"], "forbidden_overclaims": ["永远成立"]}
+{"id": "Q20", "question": "如何区分状态转换和选择？", "expected_claim_ids": ["C036", "C054"], "required_concepts": ["竞争模型", "更多动态证据"], "forbidden_overclaims": ["仅比例即可唯一识别"]}
+{"id": "Q21", "question": "alpha 默认是论文最终参数吗？", "expected_claim_ids": ["C022", "C055"], "required_concepts": ["实际调用", "不同入口"], "forbidden_overclaims": ["底层默认必是论文参数"]}
+{"id": "Q22", "question": "你完整精读了这篇综述正文吗？", "expected_claim_ids": ["C001"], "required_concepts": ["正文未取得", "证据分层"], "forbidden_overclaims": ["已完整取得全文"]}
+{"id": "Q23", "question": "测试通过意味着复现 PATH 吗？", "expected_claim_ids": ["C057"], "required_concepts": ["教学工具测试", "没有执行作者包"], "forbidden_overclaims": ["已复现作者所有结果"]}
+{"id": "Q24", "question": "EPI-Clone 的甲基化信息可以直接当状态树吗？", "expected_claim_ids": ["C013", "C060"], "required_concepts": ["位点信息分工", "循环风险"], "forbidden_overclaims": ["所有CpG都是纯谱系"]}

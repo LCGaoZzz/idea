@@ -1,0 +1,259 @@
+[
+  {
+    "source_id": "S01",
+    "title": "A single-cell lens into the co-evolution of genotypes and phenotypes in cancer",
+    "canonical_url": "https://www.nature.com/articles/s41568-026-00970-8",
+    "doi": "10.1038/s41568-026-00970-8",
+    "source_type": "review",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "publisher_preview_and_low_resolution_figures",
+    "locator": "Abstract; public figure titles 1–5; Glossary; public reference list",
+    "relation_to_review": "target",
+    "limitations": [
+      "未取得订阅正文、完整图注或补充材料；不能声称逐段全文精读。",
+      "只看过公开缩略图，不以其中不清晰的标签或比例作为事实。"
+    ],
+    "authors": [
+      "Franco Izzo",
+      "Tamara Prieto",
+      "Catherine Potenski",
+      "Dan A. Landau"
+    ],
+    "published": "2026-09-08",
+    "journal": "Nature Reviews Cancer"
+  },
+  {
+    "source_id": "S02",
+    "title": "Somatic mutations and cell identity linked by Genotyping of Transcriptomes",
+    "canonical_url": "https://www.nature.com/articles/s41586-019-1367-0",
+    "doi": "10.1038/s41586-019-1367-0",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_selected_publisher_excerpts",
+    "locator": "Abstract; Data availability; Code availability",
+    "relation_to_review": "review_reference_29",
+    "limitations": [
+      "没有运行作者 GoT 管线；没有核对所有补充协议和样本级参数。"
+    ],
+    "year": 2019,
+    "author_repository": "https://github.com/landau-lab/IronThrone-GoT",
+    "data_accession": "GSE117826"
+  },
+  {
+    "source_id": "S03",
+    "title": "Mapping genotypes to chromatin accessibility profiles in single cells",
+    "canonical_url": "https://www.nature.com/articles/s41586-024-07388-y",
+    "doi": "10.1038/s41586-024-07388-y",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_author_institution_record",
+    "locator": "Abstract; PMID 38720070; author institutional abstract",
+    "relation_to_review": "review_reference_32",
+    "limitations": [
+      "正文和 DOGMA-seq 扩展的全部实验细节未逐项核验。",
+      "不能把线粒体辅助插补等同于所有模态直接同测。"
+    ],
+    "year": 2024,
+    "additional_url": "https://mdanderson.elsevierpure.com/en/publications/mapping-genotypes-to-chromatin-accessibility-profiles-in-single-c/"
+  },
+  {
+    "source_id": "S04",
+    "title": "Defining heritability, plasticity, and transition dynamics of cellular phenotypes in somatic evolution",
+    "canonical_url": "https://www.nature.com/articles/s41588-024-01920-6",
+    "doi": "10.1038/s41588-024-01920-6",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_indexed_method_excerpts",
+    "locator": "Abstract; PMC11527590 indexed text on phylogenetic correlations, sampling and inference",
+    "relation_to_review": "review_reference_103",
+    "limitations": [
+      "不是完整复现；检索到的 PMC 正文片段不等于所有正文和补充方法均读到。",
+      "以最终发表名称 Trait Heritability 为准，不混用旧预印本名称。"
+    ],
+    "year": 2024,
+    "author_repository": "https://github.com/landau-lab/PATH"
+  },
+  {
+    "source_id": "S05",
+    "title": "Allele-specific transcriptional effects of subclonal copy number alterations enable genotype-phenotype mapping in cancer cells",
+    "canonical_url": "https://www.nature.com/articles/s41467-024-46710-0",
+    "doi": "10.1038/s41467-024-46710-0",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_selected_methods_excerpts",
+    "locator": "Abstract; Methods on phylogeny input, recursive alignment and probabilistic assignment; Code availability",
+    "relation_to_review": "review_reference_60",
+    "limitations": [
+      "部分方法段已核验，不代表所有结果图和补充材料均已核验。",
+      "论文参数不自动等于所有数据集最终运行参数。"
+    ],
+    "year": 2024,
+    "author_repository": "https://github.com/shahcompbio/TreeAlign"
+  },
+  {
+    "source_id": "S06",
+    "title": "MEDICC2: whole-genome doubling aware copy-number phylogenies for cancer evolution",
+    "canonical_url": "https://link.springer.com/article/10.1186/s13059-022-02794-9",
+    "doi": "10.1186/s13059-022-02794-9",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_author_institution_record",
+    "locator": "Abstract; PMID 36376909",
+    "relation_to_review": "review_reference_110",
+    "limitations": [
+      "未审读软件实现或运行实例；不对性能作跨方法排名。"
+    ],
+    "year": 2022
+  },
+  {
+    "source_id": "S07",
+    "title": "Haplotype-aware analysis of somatic copy number variations from single-cell transcriptomes",
+    "canonical_url": "https://www.nature.com/articles/s41587-022-01468-y",
+    "doi": "10.1038/s41587-022-01468-y",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_repository_search_preview",
+    "locator": "Abstract; PMID 36163550",
+    "relation_to_review": "external_method_supplement",
+    "limitations": [
+      "本次未确认它在目标综述中的引用编号。",
+      "本卡限于 2022 年 Numbat 方法；不将后来 multiome 扩展并入原论文。"
+    ],
+    "year": 2022,
+    "author_repository": "https://github.com/kharchenkolab/numbat"
+  },
+  {
+    "source_id": "S08",
+    "title": "Lineage tracing in humans enabled by mitochondrial mutations and single-cell genomics",
+    "canonical_url": "https://www.mdc-berlin.de/research/publications/lineage-tracing-humans-enabled-mitochondrial-mutations-and-single-cell",
+    "doi": "10.1016/j.cell.2019.01.022",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "author_institution_abstract",
+    "locator": "Author institutional abstract",
+    "relation_to_review": "external_method_supplement",
+    "limitations": [
+      "未逐段核验原论文或其代码；不将 mtDNA 标记自动解释为功能性驱动。"
+    ],
+    "year": 2019
+  },
+  {
+    "source_id": "S09",
+    "title": "Clonal tracing with somatic epimutations reveals dynamics of blood ageing",
+    "canonical_url": "https://www.nature.com/articles/s41586-025-09041-8",
+    "doi": "10.1038/s41586-025-09041-8",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_selected_introduction_excerpts",
+    "locator": "Abstract; Introduction on EPI-Clone and stochastic epimutations",
+    "relation_to_review": "external_method_supplement",
+    "limitations": [
+      "本次未确认其在目标综述中的引用编号；不是完整方法复现。"
+    ],
+    "year": 2025
+  },
+  {
+    "source_id": "S10",
+    "title": "A practical solution to pseudoreplication bias in single-cell studies",
+    "canonical_url": "https://www.nature.com/articles/s41467-021-21038-1",
+    "doi": "10.1038/s41467-021-21038-1",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "abstract_and_selected_publisher_excerpts",
+    "locator": "Abstract; discussion of within-individual dependence and mixed effects",
+    "relation_to_review": "external_statistics_supplement",
+    "limitations": [
+      "不能由该文推出任意伪 bulk 方法在所有设计中都最优。"
+    ],
+    "year": 2021
+  },
+  {
+    "source_id": "S11",
+    "title": "G&T-seq: parallel sequencing of single-cell genomes and transcriptomes",
+    "canonical_url": "https://www.nature.com/articles/nmeth.3370",
+    "doi": "10.1038/nmeth.3370",
+    "source_type": "primary_research",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "publisher_abstract",
+    "locator": "Abstract",
+    "relation_to_review": "review_reference_33",
+    "limitations": [
+      "只有方法原则和直接同细胞配对已核验；湿实验详细步骤不在本库。"
+    ],
+    "year": 2015
+  },
+  {
+    "source_id": "S12",
+    "title": "GoT–ChA EGA study record",
+    "canonical_url": "https://ega-archive.org/studies/EGAS50000000164",
+    "doi": null,
+    "source_type": "data_registry",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "public_metadata",
+    "locator": "Study EGAS50000000164; dataset EGAD50000000234",
+    "relation_to_review": "supporting_data_registry",
+    "limitations": [
+      "受控访问数据；本次没有申请、下载或分析。"
+    ]
+  },
+  {
+    "source_id": "S13",
+    "title": "PATH pinned implementation: xcor.R",
+    "canonical_url": "https://github.com/landau-lab/PATH/blob/caffc5105678224f108b3dd61fea545f96235ffc/R/xcor.R",
+    "doi": null,
+    "source_type": "author_code",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "full_file_static_read",
+    "locator": "R/xcor.R::xcor",
+    "relation_to_review": "supporting_author_code",
+    "limitations": [
+      "仅静态审读；没有在 R 中执行，没有核验全部调用方和论文作图脚本。"
+    ],
+    "commit": "caffc5105678224f108b3dd61fea545f96235ffc"
+  },
+  {
+    "source_id": "S14",
+    "title": "PATH pinned implementation: PATHpro.R",
+    "canonical_url": "https://github.com/landau-lab/PATH/blob/caffc5105678224f108b3dd61fea545f96235ffc/R/PATHpro.R",
+    "doi": null,
+    "source_type": "author_code",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "full_primary_content_field_static_read",
+    "locator": "R/PATHpro.R::PATHpro_loss; fitPATHpro; PATHpro.XW; PATHpro",
+    "relation_to_review": "supporting_author_code",
+    "limitations": [
+      "读取返回内容中的这些函数；没有运行 R 包。",
+      "未读取所有被调用辅助函数，不能称全面代码审计。"
+    ],
+    "commit": "caffc5105678224f108b3dd61fea545f96235ffc"
+  },
+  {
+    "source_id": "S15",
+    "title": "TreeAlign pinned README",
+    "canonical_url": "https://github.com/shahcompbio/TreeAlign/blob/e8d011dd0ab4695c048a5b823227191938dbcab4/README.md",
+    "doi": null,
+    "source_type": "author_code",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "readme_only",
+    "locator": "README.md::Installation and dependencies; Usage",
+    "relation_to_review": "supporting_author_code",
+    "limitations": [
+      "只核对 README 与版本，不是 TreeAlign 算法源码审计或复现。"
+    ],
+    "commit": "e8d011dd0ab4695c048a5b823227191938dbcab4"
+  },
+  {
+    "source_id": "S16",
+    "title": "PATH official repository overview",
+    "canonical_url": "https://github.com/landau-lab/PATH",
+    "doi": null,
+    "source_type": "author_documentation",
+    "checked_on": "2026-09-13",
+    "inspection_scope": "repository_readme_search_preview",
+    "locator": "README::Introduction and Vignettes",
+    "relation_to_review": "supporting_author_documentation",
+    "limitations": [
+      "README 示例不代表本文数据的最终分析参数。"
+    ]
+  }
+]

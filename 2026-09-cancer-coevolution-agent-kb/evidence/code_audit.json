@@ -1,0 +1,55 @@
+{
+  "checked_on": "2026-09-13",
+  "author_software_executed": false,
+  "scope": "selected static reads only",
+  "entries": [
+    {
+      "source_id": "S13",
+      "function": "xcor",
+      "finding": "Returned one.sided.pvalue is calculated with a two-sided normal-tail expression.",
+      "classification": "verified_interface_semantics_mismatch",
+      "impact": "Downstream impact not established; not evidence that published conclusions are wrong.",
+      "claim_id": "C017"
+    },
+    {
+      "source_id": "S13",
+      "function": "xcor",
+      "finding": "Dense trait input and trait-by-trait intermediate matrices are constructed.",
+      "classification": "verified_static_read",
+      "impact": "Potential memory and input-degeneracy risks; not a measured production failure.",
+      "claim_id": "C018"
+    },
+    {
+      "source_id": "S14",
+      "function": "PATHpro_loss",
+      "finding": "P=expm(Q), and gamma is shifted by its minimum when no total_prolif constraint is provided.",
+      "classification": "verified_static_read",
+      "impact": "Time-scale and relative-growth semantics must be preserved.",
+      "claim_id": "C020"
+    },
+    {
+      "source_id": "S14",
+      "function": "PATHpro.XW",
+      "finding": "Default null guess_list creates one random initialization.",
+      "classification": "verified_static_read",
+      "impact": "One default start is not evidence of optimization robustness.",
+      "claim_id": "C021"
+    },
+    {
+      "source_id": "S14",
+      "function": "PATHpro / PATHpro_loss",
+      "finding": "Default regularization behavior differs across entry points.",
+      "classification": "verified_static_read",
+      "impact": "Do not infer paper-final parameters from a helper default.",
+      "claim_id": "C022"
+    },
+    {
+      "source_id": "S15",
+      "function": "README only",
+      "finding": "Python installation and tutorial links were read at a fixed commit.",
+      "classification": "readme_only",
+      "impact": "No model implementation or environment compatibility audit.",
+      "claim_id": "C023"
+    }
+  ]
+}

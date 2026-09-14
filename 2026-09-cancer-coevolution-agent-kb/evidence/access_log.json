@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-09-13",
+  "target_full_text_obtained": false,
+  "attempts": [
+    {
+      "route": "publisher_canonical_html",
+      "result": "公开预览可读取：摘要、图题、术语表、参考文献等；订阅正文未取得。"
+    },
+    {
+      "route": "publisher_pdf_link",
+      "result": "重定向至文章预览，没有取得 PDF 字节。"
+    },
+    {
+      "route": "public_search_author_and_repository",
+      "result": "未找到本次可获取的合法完整作者稿。"
+    },
+    {
+      "route": "user_library_exact_doi_and_title_search",
+      "result": "未返回与目标匹配的文件；没有使用无关私人文件。"
+    },
+    {
+      "route": "public_figure_thumbnails",
+      "result": "已查看 Fig1–5 低分辨率缩略图；完整图注不可得，不作细节转录。"
+    },
+    {
+      "route": "primary_literature",
+      "result": "已核对来源注册表所列摘要/方法片段，不统一宣称全文阅读。"
+    },
+    {
+      "route": "github_connector",
+      "result": "固定 PATH 和 TreeAlign 提交；读取 PATH 两个核心 R 文件及 TreeAlign README。"
+    }
+  ],
+  "not_performed": [
+    "作者软件或实际生物数据运行",
+    "目标综述全文精读",
+    "受控数据申请",
+    "对外提交仓库",
+    "在线大模型 API 调用"
+  ]
+}
