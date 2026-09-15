@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "CAF_SPATIAL_2025_AUDIT",
+  "coverage": "retrospective route groups, not exhaustive raw tool-event log",
+  "attempts": [
+    {
+      "acquisition_id": "ACQ01",
+      "kind": "paper",
+      "requested_locator": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(25)00083-2",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.open",
+      "resolved_locator": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(25)00083-2",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "publisher access error",
+      "identity_evidence": [
+        "DOI/PMID/PMCID matched in tool-visible metadata"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ02",
+      "kind": "paper",
+      "requested_locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12074878/",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.search_query targeted manuscript queries",
+      "resolved_locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12074878/",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [
+        "sources/curated/caption_fact_extract.json",
+        "sources/curated/critical_verbatim_fragments.txt",
+        "sources/curated/identity.json",
+        "sources/curated/parameter_facts.tsv"
+      ],
+      "capture_fingerprints": {
+        "sources/curated/caption_fact_extract.json": "sha256:74dac484a33ad30598182fe18487709a35dcbee5ad6fd8fb9626d6fc051afd2f",
+        "sources/curated/critical_verbatim_fragments.txt": "sha256:3b29a84e312a71b04ed43c32ce5f879e115dd3f83674c6ae89584302e53bb75c",
+        "sources/curated/identity.json": "sha256:1c041597de273367deafa7e7a47b21496f63aa0c7646bc45a7fc8bd2b1c6ff12",
+        "sources/curated/parameter_facts.tsv": "sha256:77abbfb177a33fdd75da464388f0dee2b93c576f5df3ee64d53cd155edb25378"
+      },
+      "status": "partial",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes",
+        "Final targeted lookups recovered SCTransform/RPCA and expression details; current capture is the updated manual extraction, not historical raw bytes."
+      ],
+      "blocker": "tool-visible text only; no complete original file",
+      "identity_evidence": [
+        "DOI/PMID/PMCID matched in tool-visible metadata"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ03",
+      "kind": "paper",
+      "requested_locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12074878/",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.open and web.find",
+      "resolved_locator": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12074878/",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "browser verification/captcha",
+      "identity_evidence": [
+        "DOI/PMID/PMCID matched in tool-visible metadata"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ04",
+      "kind": "paper",
+      "requested_locator": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12074878/fullTextXML",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "container download / web.open",
+      "resolved_locator": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12074878/fullTextXML",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "download rejected before URL viewed; subsequent web open safe-open error; no XML bytes",
+      "identity_evidence": [
+        "DOI/PMID/PMCID matched in tool-visible metadata"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ05",
+      "kind": "other",
+      "requested_locator": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274103",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.open",
+      "resolved_locator": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274103",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "browser verification/captcha",
+      "identity_evidence": [],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ06",
+      "kind": "other",
+      "requested_locator": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246011",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.open",
+      "resolved_locator": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246011",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "browser verification/captcha",
+      "identity_evidence": [],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ07",
+      "kind": "repository",
+      "requested_locator": "https://api.github.com/repos/liuyunho/Spatial_CAFs",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "GitHub.search_repositories; GitHub.fetch metadata and contents",
+      "resolved_locator": "https://api.github.com/repos/liuyunho/Spatial_CAFs",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [
+        "sources/curated/candidate_repository.json"
+      ],
+      "capture_fingerprints": {
+        "sources/curated/candidate_repository.json": "sha256:fa9040ccda8968b02390a215e1e3513872a67accb00268d4d79b350492ccfd6c"
+      },
+      "status": "partial",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "empty candidate repository; paper identity unverified; no commit",
+      "identity_evidence": [],
+      "identity_conflicts": [
+        "candidate ownership/paper linkage unverified"
+      ]
+    },
+    {
+      "acquisition_id": "ACQ08",
+      "kind": "other",
+      "requested_locator": "PubMed PMID 40154487; ScienceDirect PII S1535610825000832; institutional bibliographies",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.search_query",
+      "resolved_locator": "PubMed PMID 40154487; ScienceDirect PII S1535610825000832; institutional bibliographies",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "identity/abstract cross-check only; no separately preserved page bytes",
+      "identity_evidence": [],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ09",
+      "kind": "other",
+      "requested_locator": "https://lunaphore.com/resource-center/publications/conserved-spatial-subtypes-and-cellular-neighborhoods-of-cancer-associated-fibroblasts-revealed-by-single-cell-spatial-multi-omics/",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.open",
+      "resolved_locator": "https://lunaphore.com/resource-center/publications/conserved-spatial-subtypes-and-cellular-neighborhoods-of-cancer-associated-fibroblasts-revealed-by-single-cell-spatial-multi-omics/",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "form-gated download; no form submitted",
+      "identity_evidence": [],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ10",
+      "kind": "other",
+      "requested_locator": "Primary method references P02–P07 in evidence/references.tsv",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "web.search_query",
+      "resolved_locator": "Primary method references P02–P07 in evidence/references.tsv",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "method-context snippets; no original full-text files",
+      "identity_evidence": [],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ11",
+      "kind": "other",
+      "requested_locator": "PMC article local download and EBI network access",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "container.download / Python requests",
+      "resolved_locator": "PMC article local download and EBI network access",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "retrospective route-level record; original per-call timestamps not recorded",
+        "local fact capture is not original publisher source bytes"
+      ],
+      "blocker": "no successful source bytes; environment network/DNS/access limitations",
+      "identity_evidence": [],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_S1",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-1.pdf",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_TableS1",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-2.xlsx",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_TableS2",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-3.xlsx",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_TableS3",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-4.xlsx",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_TableS4",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-5.xlsx",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_TableS5",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-6.xlsx",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_TableS6",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-7.xlsx",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "SUPP_INDEX_TableS7",
+      "kind": "supplement",
+      "requested_locator": "NIHMS2063961-supplement-8.xlsx",
+      "started_at": null,
+      "finished_at": null,
+      "recorded_at": "2026-09-15T12:58:20.747069+00:00",
+      "retrieval_route": "PMC supplement index visible; individual bytes not retrieved",
+      "resolved_locator": null,
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "index is not file content",
+        "no exact file download request falsely asserted"
+      ],
+      "blocker": "individual supplement not acquired",
+      "identity_evidence": [
+        "listed in target manuscript supplement index"
+      ],
+      "identity_conflicts": []
+    }
+  ]
+}

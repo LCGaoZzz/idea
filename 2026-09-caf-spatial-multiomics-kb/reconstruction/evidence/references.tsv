@@ -1,0 +1,9 @@
+ref_id	title	doi	url	scope_and_limitations	tool_reference
+P01	Liu et al. Cancer Cell 2025	10.1016/j.ccell.2025.03.004	https://pmc.ncbi.nlm.nih.gov/articles/PMC12074878/	作者接受稿的搜索工具可见文本；非期刊排版 PDF；覆盖 Results 与部分 STAR Methods、图注，未连续取得全文和补充文件	turn338681search0;turn400723search0;turn587805search0;turn931373search0;turn406234search0;turn970419search0
+P02	Seurat FindClusters / RunLeiden documentation		https://satijalab.org/seurat/reference/findclusters	当前官方 API 说明；不能反推论文旧版本默认值	turn817008search1;turn817008search12
+P03	Zimmerman et al. Pseudoreplication bias	10.1038/s41467-021-21038-1	https://www.nature.com/articles/s41467-021-21038-1	原始方法研究；关于模型选择的争议同时见 P04	turn817008search0
+P04	Murphy and Skene. Pseudobulk methods	10.1038/s41467-022-35519-4	https://www.nature.com/articles/s41467-022-35519-4	针对 P03 的原始方法评论；不把混合模型与 pseudobulk 说成无条件优劣	turn817008search11
+P05	Ambroise and McLachlan. Selection bias	10.1073/pnas.102102699	https://pubmed.ncbi.nlm.nih.gov/11983868/	原始方法研究；仅借鉴验证隔离原则，不冒充本论文作者实现证据	turn817008search3
+P06	Cable et al. RCTD	10.1038/s41587-021-00830-w	https://www.nature.com/articles/s41587-021-00830-w	原始方法论文；上线 2021，卷期 2022	turn416559search0
+P07	iStar	10.1038/s41587-023-02019-9	https://www.nature.com/articles/s41587-023-02019-9	原始方法论文；高分辨率表达为模型预测，非直接测量	turn416559search1
+G01	候选仓库 liuyunho/Spatial_CAFs		https://api.github.com/repos/liuyunho/Spatial_CAFs	名称线索；description=null、size=0、无代码；身份尚未与论文正式建立	GitHub.fetch metadata and contents

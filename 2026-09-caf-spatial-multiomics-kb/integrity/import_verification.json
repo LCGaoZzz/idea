@@ -1,0 +1,18 @@
+{
+  "prepared_on": "2026-09-15",
+  "scope": "packaging_integrity_and_navigation_only",
+  "source_archive_sha256": "d6ffc84218db17dabc90c25f06b781e1b3f6dd3d99f48d3bef3177c6821ef53b",
+  "source_archive_bytes": 214770,
+  "safe_archive_paths": true,
+  "source_files_preserved_byte_for_byte": 46,
+  "original_sha256_entries_checked": 45,
+  "original_sha256_all_match": true,
+  "new_readme_local_links_checked": 21,
+  "new_readme_local_links_valid": true,
+  "machine_entrypoints_checked": 18,
+  "machine_entrypoints_valid": true,
+  "original_diagnostics_rerun_in_this_import": false,
+  "paper_biological_analyses_executed_in_this_import": 0,
+  "historical_receipt": "previous_delivery_verification.json",
+  "note": "Target repository metadata is not an upload receipt. Network publication must be verified separately."
+}

@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "archive_format": "zip",
+  "bundle_id": "workflow_pr630",
+  "extracted_artifact_root": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted",
+  "files": [
+    {
+      "bytes": 7725,
+      "path": "domains/biology/agents/reconstruct_bioinfo_protocol.md",
+      "sha256": "83e8d470d616f2e9640c174740d4de5879833980a40054865cd5c9ed8a04a2c9"
+    },
+    {
+      "bytes": 20416,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/SKILL.md",
+      "sha256": "29e74a963d423caa14df9e0c24c536873e875aa32514fb050403aee4c2113329"
+    },
+    {
+      "bytes": 21750,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/references/code-and-execution.md",
+      "sha256": "baaca7c5c212fe7454eff4b2166957015da681eaf7dbbbd3a62731efa809235c"
+    },
+    {
+      "bytes": 22876,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/references/evidence-contract.md",
+      "sha256": "b1a337c883c1faf468927227d0f9d2c6d86ad79d3ed9cf5fd052666bc3d3945e"
+    },
+    {
+      "bytes": 8616,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/references/modality-audit.md",
+      "sha256": "fbc393f2af834dfc32885222a275dd77e1c3a9b85fe8888f40555cf072f3d154"
+    },
+    {
+      "bytes": 3823,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/references/reuse-routing.md",
+      "sha256": "99fd75e65ec679c58e8fee4cbd6bc5998694f1b94d89dd2c7587210d565618d6"
+    },
+    {
+      "bytes": 8068,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/references/source-acquisition.md",
+      "sha256": "dd9b329d3e2ffd906f16947d6dff79f39bb607589c40a3b0c4f2498888a95ba3"
+    },
+    {
+      "bytes": 17402,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/references/workflow.md",
+      "sha256": "aa502678cf14cad3d20dbe61e7d75f36268bc4f5e433ea63d1132d21fa9d445b"
+    },
+    {
+      "bytes": 41531,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/schemas/reconstruction_manifest.schema.json",
+      "sha256": "8bad8dad34088f8519341c4cb4646567af3c8962fdd6d4fca61c3d0b3bc68003"
+    },
+    {
+      "bytes": 21801,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/scripts/audit_repository.py",
+      "sha256": "b820ef8b988a658614df36b8a7e0c5357d4be4fb0719bbff32c929f05d41a2e3"
+    },
+    {
+      "bytes": 40283,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/scripts/execution_contract.py",
+      "sha256": "5c8d8bf1f53b680068659eb9fa7b2eeb2d342eb3870afddcbd4706c70f4693e2"
+    },
+    {
+      "bytes": 54665,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/scripts/finalize_execution.py",
+      "sha256": "1ca7968f21b19a6008f922d6ea61a8e5fcae26fdf569a0f55ac571c9f30eb6a3"
+    },
+    {
+      "bytes": 15594,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/scripts/inspect_input_bundle.py",
+      "sha256": "d54061ea681685d1fb30875379d12b8dfb89dc089c9034e54d51297bfddda897"
+    },
+    {
+      "bytes": 17689,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/scripts/package_reconstruction.py",
+      "sha256": "8e4fb52f6bf978446e7d855f2a99eb882ef53ab0092f13c7fe7a83d2de3c064f"
+    },
+    {
+      "bytes": 20458,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/scripts/run_reconstruction.py",
+      "sha256": "ab80733dca051c05c4fb55c82b6b618dd47368dc2c11ed866a31ef570eab6409"
+    },
+    {
+      "bytes": 306170,
+      "path": "domains/biology/skills/reconstruct-bioinfo-protocol/scripts/validate_reconstruction.py",
+      "sha256": "3ba2875337b2430ec6d65894f42db71b8f46a3bbae3a34414eb5b438a9ce0b88"
+    }
+  ],
+  "inspected_at_utc": "2026-09-15T12:54:52.762453Z",
+  "limits": {
+    "max_files": 5000,
+    "max_member_bytes": 536870912,
+    "max_ratio": 200.0,
+    "max_total_bytes": 2147483648
+  },
+  "schema_version": "1.0.0",
+  "source_artifact_bytes": 156829,
+  "source_artifact_ref": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/source/reconstruct-bioinfo-protocol-pr630-4bdc4d0.zip",
+  "source_artifact_sha256": "66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f",
+  "status": "extracted",
+  "receipt_path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/bundle_receipt.json"
+}

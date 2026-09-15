@@ -1,0 +1,406 @@
+{
+  "derived_overall_status": "材料冲突",
+  "deterministic_timestamp_utc": "1980-01-01T00:00:00Z",
+  "excluded_files": [
+    {
+      "bytes": 526,
+      "path": "sources/curated/candidate_repository.json",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 1400,
+      "path": "sources/curated/caption_fact_extract.json",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 530,
+      "path": "sources/curated/critical_verbatim_fragments.txt",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 566,
+      "path": "sources/curated/identity.json",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 7292,
+      "path": "sources/curated/parameter_facts.tsv",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 4363,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/bundle_receipt.json",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 7725,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/agents/reconstruct_bioinfo_protocol.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 21750,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/references/code-and-execution.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 22876,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/references/evidence-contract.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 8616,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/references/modality-audit.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 3823,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/references/reuse-routing.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 8068,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/references/source-acquisition.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 17402,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/references/workflow.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 41531,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/schemas/reconstruction_manifest.schema.json",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 21801,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/scripts/audit_repository.py",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 40283,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/scripts/execution_contract.py",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 54665,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/scripts/finalize_execution.py",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 15594,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/scripts/inspect_input_bundle.py",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 17689,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/scripts/package_reconstruction.py",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 20458,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/scripts/run_reconstruction.py",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 306170,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/scripts/validate_reconstruction.py",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 20416,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/extracted/domains/biology/skills/reconstruct-bioinfo-protocol/SKILL.md",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 156829,
+      "path": "sources/user_bundles/workflow_pr630/66d407b3a8ea7cf3c30e5f5df4ccff143b6b54497588e67426d2fe543306483f/source/reconstruct-bioinfo-protocol-pr630-4bdc4d0.zip",
+      "reason": "inventoried source bytes excluded by default; provenance remains in source_inventory.json"
+    },
+    {
+      "bytes": 47237,
+      "path": "validation_tool/scripts/__pycache__/execution_contract.cpython-313.pyc",
+      "reason": "version-control, dependency, or cache path"
+    }
+  ],
+  "generated_files": [
+    "DELIVERY.md",
+    "package_manifest.json",
+    "SHA256SUMS"
+  ],
+  "included_files": [
+    {
+      "bytes": 18674,
+      "path": "acquisition_log.json",
+      "role": "structured_provenance",
+      "sha256": "b09053ec0b89d6059694d750f11e387547c7550c48dc6f9483ace04d04a4c187"
+    },
+    {
+      "bytes": 1269,
+      "path": "AGENTS.md",
+      "role": "project_artifact",
+      "sha256": "2245b392fecc6eadbae76050058721bb4e184272f38082485671ee7bd7a9249e"
+    },
+    {
+      "bytes": 15442,
+      "path": "ARTICLE_REVIEW_ZH.md",
+      "role": "project_artifact",
+      "sha256": "e0d89681203159e48cec5e95d20879a5222ad73df7b5881beb3b78b72e6a9c73"
+    },
+    {
+      "bytes": 2009,
+      "path": "data/DATA_ACCESS.md",
+      "role": "project_artifact",
+      "sha256": "b7e55d9f47f1e8edb6f893f12dedb0dbba358db270dac6cb9ea31bcee8da71a1"
+    },
+    {
+      "bytes": 325,
+      "path": "data/sample_manifest_template.tsv",
+      "role": "project_artifact",
+      "sha256": "0a945a3dd5e0fabdc684f568c55e337f5871e3ef2c6933685b17f047dd6dfa0f"
+    },
+    {
+      "bytes": 1077,
+      "path": "data/supplement_inventory.tsv",
+      "role": "project_artifact",
+      "sha256": "767950aa717c72f514741be77b0ceaac3d8e9ca47bfe62be20eb3d5924e91747"
+    },
+    {
+      "bytes": 909,
+      "path": "DELIVERY.md",
+      "role": "reader_entrypoint",
+      "sha256": "3ffee3e1d4752424f76084b355cdcc60344c8461af6da7182cb10d5d81e9fb6c"
+    },
+    {
+      "bytes": 9321,
+      "path": "diagnostics/diagnostic_examples.py",
+      "role": "project_artifact",
+      "sha256": "ba26ead25f79a49cf26b9c37b7218d4f9282696b0f32fc6a7c0be62eaf7067d4"
+    },
+    {
+      "bytes": 3148,
+      "path": "diagnostics/diagnostic_results.json",
+      "role": "project_artifact",
+      "sha256": "5af6b8c66d2664c852f3fc9ca5b6b28e8b3d5572e57109006d66d02513ee8a0b"
+    },
+    {
+      "bytes": 1697,
+      "path": "diagnostics/README.md",
+      "role": "project_artifact",
+      "sha256": "969cc75d220eb356960da4629364283f970305943f490b96b19a58d9c2f39606"
+    },
+    {
+      "bytes": 562,
+      "path": "diagnostics/run_receipt.json",
+      "role": "project_artifact",
+      "sha256": "bac0d32cc886a3694dce45e811f42c97b241607142e9acb4e9bbc078bbcd8b84"
+    },
+    {
+      "bytes": 0,
+      "path": "diagnostics/stderr.log",
+      "role": "project_artifact",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 526,
+      "path": "evidence/candidate_repository.json",
+      "role": "project_artifact",
+      "sha256": "fa9040ccda8968b02390a215e1e3513872a67accb00268d4d79b350492ccfd6c"
+    },
+    {
+      "bytes": 1400,
+      "path": "evidence/caption_fact_extract.json",
+      "role": "project_artifact",
+      "sha256": "74dac484a33ad30598182fe18487709a35dcbee5ad6fd8fb9626d6fc051afd2f"
+    },
+    {
+      "bytes": 530,
+      "path": "evidence/critical_verbatim_fragments.txt",
+      "role": "project_artifact",
+      "sha256": "3b29a84e312a71b04ed43c32ce5f879e115dd3f83674c6ae89584302e53bb75c"
+    },
+    {
+      "bytes": 566,
+      "path": "evidence/identity.json",
+      "role": "project_artifact",
+      "sha256": "1c041597de273367deafa7e7a47b21496f63aa0c7646bc45a7fc8bd2b1c6ff12"
+    },
+    {
+      "bytes": 7292,
+      "path": "evidence/parameter_facts.tsv",
+      "role": "project_artifact",
+      "sha256": "77abbfb177a33fdd75da464388f0dee2b93c576f5df3ee64d53cd155edb25378"
+    },
+    {
+      "bytes": 965,
+      "path": "evidence/READ_ME.md",
+      "role": "project_artifact",
+      "sha256": "364b631abf5b31db8cc891cf0dc522694844904255b924e6afce650985f1297b"
+    },
+    {
+      "bytes": 1836,
+      "path": "evidence/references.tsv",
+      "role": "project_artifact",
+      "sha256": "1f4147c2d050018057a360aa48ff611b1e647e94b3b958a261fb97905eb9a45b"
+    },
+    {
+      "bytes": 280,
+      "path": "integrity/html_render_check.json",
+      "role": "project_artifact",
+      "sha256": "e67a656dfd1cf729ebda20934f304479119c3791469bd073fe832395f410b27b"
+    },
+    {
+      "bytes": 4377,
+      "path": "integrity/user_bundle_inspection.json",
+      "role": "project_artifact",
+      "sha256": "18d367e81c324db37f2b81f0e2589c4c33bd54a9bbb1b9cc15233811b65c3c09"
+    },
+    {
+      "bytes": 1594,
+      "path": "integrity/validation_tool_origin.json",
+      "role": "project_artifact",
+      "sha256": "83f579401e211df85e6f54fff4250dd5ecf694654710855fa873be9befe1c0e0"
+    },
+    {
+      "bytes": 6615,
+      "path": "knowledge/01_research_logic.md",
+      "role": "project_artifact",
+      "sha256": "e62fcdd3e61ac6b31d806ad3a05cf7ce7b750e7ff0630d56305fc17d2ecac82a"
+    },
+    {
+      "bytes": 10803,
+      "path": "knowledge/02_statistics_audit.md",
+      "role": "project_artifact",
+      "sha256": "da4877cb4a4f969f218a952cc12c0ef3ab608e86a2c355bd441dad172c82c6c8"
+    },
+    {
+      "bytes": 7905,
+      "path": "knowledge/03_xenium_transfer.md",
+      "role": "project_artifact",
+      "sha256": "0208456eca18e6e6730bbe94dc8f0d561fb86fff1823e1c2ed2f6076e0105db9"
+    },
+    {
+      "bytes": 11725,
+      "path": "methods/01_mathematical_reconstruction.md",
+      "role": "project_artifact",
+      "sha256": "ed7366efc6e6338a29abae34e1ec317b339ed1c442a5a73c8aee49e1a0fefe2f"
+    },
+    {
+      "bytes": 4516,
+      "path": "methods/02_reproduction_blueprint.md",
+      "role": "project_artifact",
+      "sha256": "34c6a8f33ebfc417e7e628ed0c4a3c9b83889388089a36f54194b299d54037dd"
+    },
+    {
+      "bytes": 4259,
+      "path": "methods/03_preprocessing_and_expression.md",
+      "role": "project_artifact",
+      "sha256": "49b8aa3ff56aadb852544b7ef271616856962d60b5474d6f243b6c109302c93b"
+    },
+    {
+      "bytes": 2492,
+      "path": "methods/author_parameters.json",
+      "role": "project_artifact",
+      "sha256": "578ad8e6d8548051934b26e6f1cdc108bb30feeca2e2fb38d5c11060753eb4ec"
+    },
+    {
+      "bytes": 3117,
+      "path": "PROVENANCE.md",
+      "role": "project_artifact",
+      "sha256": "4ccf4e6628d79f281a368c50554bab5a4b582e93e4c67d0359f3e230e3440ba9"
+    },
+    {
+      "bytes": 84764,
+      "path": "READING_GUIDE.html",
+      "role": "project_artifact",
+      "sha256": "20ca6f52b60201911aa94175e0fac3fc4129e1bf35b23be1c2d1a37791999662"
+    },
+    {
+      "bytes": 241013,
+      "path": "reconstruction_manifest.json",
+      "role": "structured_provenance",
+      "sha256": "204ba3794bb680109ffe918e126419588fc6094c5e9210f695c157b6b2ce4cd9"
+    },
+    {
+      "bytes": 19329,
+      "path": "REPORT.md",
+      "role": "canonical_reconstruction_report",
+      "sha256": "2b24fc90616bac76875642aba37b507b1113868f840db428d848012e2e7e321a"
+    },
+    {
+      "bytes": 3104,
+      "path": "review/FABLE51_REVIEW_PROMPT.md",
+      "role": "project_artifact",
+      "sha256": "5af12bdd95271b8ec04da66fd58641dc6b22c61990f54799493a57a792503ef8"
+    },
+    {
+      "bytes": 3638,
+      "path": "REVIEW_GUIDE.md",
+      "role": "project_artifact",
+      "sha256": "a8d990ce2fd8b9072ece25541c2a8e28e4fc954b58f25f44fceaa4d95c0eb3b3"
+    },
+    {
+      "bytes": 3853,
+      "path": "source_inventory.json",
+      "role": "structured_provenance",
+      "sha256": "b709161c4318cc1249844de20109eea5d9359c625c33c45a414a05d20584fe52"
+    },
+    {
+      "bytes": 1668,
+      "path": "tools/restore_review_captures.py",
+      "role": "project_artifact",
+      "sha256": "5b2e98352293fdc7eff2d5197be62963900204746f5bc4391319db7c86fa73a6"
+    },
+    {
+      "bytes": 28599,
+      "path": "traceability.tsv",
+      "role": "traceability_table",
+      "sha256": "9a75c8bea95f3bb1aae28458d6bb431558d1b0cd213a2103262923fd6ef8e359"
+    },
+    {
+      "bytes": 14423,
+      "path": "validation_report.json",
+      "role": "structured_provenance",
+      "sha256": "934cdfaf699b28261c5b47889c88c33aeaf5f67db4258269b3fc5a30438b5db9"
+    },
+    {
+      "bytes": 41531,
+      "path": "validation_tool/schemas/reconstruction_manifest.schema.json",
+      "role": "project_artifact",
+      "sha256": "8bad8dad34088f8519341c4cb4646567af3c8962fdd6d4fca61c3d0b3bc68003"
+    },
+    {
+      "bytes": 40283,
+      "path": "validation_tool/scripts/execution_contract.py",
+      "role": "project_artifact",
+      "sha256": "5c8d8bf1f53b680068659eb9fa7b2eeb2d342eb3870afddcbd4706c70f4693e2"
+    },
+    {
+      "bytes": 17689,
+      "path": "validation_tool/scripts/package_reconstruction.py",
+      "role": "project_artifact",
+      "sha256": "8e4fb52f6bf978446e7d855f2a99eb882ef53ab0092f13c7fe7a83d2de3c064f"
+    },
+    {
+      "bytes": 306170,
+      "path": "validation_tool/scripts/validate_reconstruction.py",
+      "role": "project_artifact",
+      "sha256": "3ba2875337b2430ec6d65894f42db71b8f46a3bbae3a34414eb5b438a9ce0b88"
+    },
+    {
+      "bytes": 4976,
+      "path": "working_state.json",
+      "role": "structured_provenance",
+      "sha256": "7d985b872936fefa43382fcb83142eb0c48fdcf5a29ad9af31374cc6f3b0086a"
+    }
+  ],
+  "package_kind": "omicos_bioinformatics_reconstruction",
+  "project_id": "CAF_SPATIAL_2025_AUDIT",
+  "schema_version": "1.0.0",
+  "source_policy": {
+    "default": "exclude source bytes; retain source manifest and fingerprints",
+    "include_sources": false,
+    "source_redistribution_authorized": false
+  },
+  "validation_report_sha256": "934cdfaf699b28261c5b47889c88c33aeaf5f67db4258269b3fc5a30438b5db9"
+}

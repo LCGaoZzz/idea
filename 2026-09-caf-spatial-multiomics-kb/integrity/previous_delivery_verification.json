@@ -1,0 +1,47 @@
+{
+  "archive_path": "/mnt/data/CAF_spatial_2025_audit_v1.zip",
+  "archive_bytes": 214770,
+  "archive_sha256": "d6ffc84218db17dabc90c25f06b781e1b3f6dd3d99f48d3bef3177c6821ef53b",
+  "verified_at": "2026-09-15T13:22:43.139037+00:00",
+  "packed_files_sha256_checked": 45,
+  "all_file_hashes_match": true,
+  "clean_extraction_validation_passed": true,
+  "clean_extraction_validation_errors": [],
+  "clean_extraction_validation_warnings": [],
+  "synthetic_diagnostic_tests": 18,
+  "synthetic_diagnostic_passed": 18,
+  "paper_biological_analyses_executed": 0,
+  "source_restoration_scope": "four assistant-curated notes; no original paper/source/data reconstructed",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "tools/restore_review_captures.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "d2e6c3a978ffbe2d61f20741e3a36aaa089b946ad9293db711c5cc6e52cf4db4",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "validation_tool/scripts/validate_reconstruction.py",
+        "--project-dir",
+        ".",
+        "--write-report"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "851f8754f9cba21d07461bc21bf4563c9d876d9850309c39378631ebfa43f2e9",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "diagnostics/diagnostic_examples.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "5af6b8c66d2664c852f3fc9ca5b6b28e8b3d5572e57109006d66d02513ee8a0b",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "scope": "synthetic mathematical diagnostics only; NOT paper reproduction",
+  "python": "3.13.5",
+  "randomness": "none",
+  "third_party_dependencies": [],
+  "n_tests": 18,
+  "n_passed": 18,
+  "tests": [
+    {
+      "name": "empty_neighborhood_is_unassigned",
+      "passed": true
+    },
+    {
+      "name": "self_inclusion_is_explicit_and_changes_composition",
+      "passed": true
+    },
+    {
+      "name": "same_coordinates_other_sample_not_neighbor",
+      "passed": true
+    },
+    {
+      "name": "physical_radius_includes_boundary_only",
+      "passed": true
+    },
+    {
+      "name": "radius_does_not_force_fixed_neighbor_count",
+      "passed": true
+    },
+    {
+      "name": "duplicate_keys_rejected",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_coordinates_rejected",
+      "passed": true
+    },
+    {
+      "name": "nearest_five_are_averaged_not_minimized",
+      "passed": true
+    },
+    {
+      "name": "insufficient_targets_fail_explicitly",
+      "passed": true
+    },
+    {
+      "name": "overlap_duplicates_target_without_creating_new_cell",
+      "passed": true
+    },
+    {
+      "name": "closure_creates_negative_correlation_without_interaction",
+      "passed": true
+    },
+    {
+      "name": "nmf_product_is_scale_nonidentifiable",
+      "passed": true
+    },
+    {
+      "name": "same_nmf_product_can_have_different_factor_distances",
+      "passed": true
+    },
+    {
+      "name": "equal_local_fraction_different_relative_enrichment",
+      "passed": true
+    },
+    {
+      "name": "outcome_defined_groups_artificially_separate_survival",
+      "passed": true
+    },
+    {
+      "name": "comparison_rule_not_defined_by_survival_order_halves",
+      "passed": true
+    },
+    {
+      "name": "logrank_is_group_label_symmetric",
+      "passed": true
+    },
+    {
+      "name": "logrank_invalid_event_labels_rejected",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "overlapping_neighborhoods": {
+      "target_occurrences": 2,
+      "unique_targets": 1
+    },
+    "composition_only_correlation": -1.0,
+    "nmf_scaling": {
+      "product_before": [
+        [
+          1.0,
+          2.0
+        ],
+        [
+          3.0,
+          4.0
+        ]
+      ],
+      "product_after": [
+        [
+          1.0,
+          2.0
+        ],
+        [
+          3.0,
+          4.0
+        ]
+      ],
+      "W_distance_before": 2.8284271247461903,
+      "W_distance_after": 2.009975124224178
+    },
+    "background_normalization": {
+      "same_local_fraction": 0.2,
+      "background_A": 0.02,
+      "background_B": 0.2,
+      "enrichment_A": 10.0,
+      "enrichment_B": 1.0
+    },
+    "survival_toy": {
+      "n": 60,
+      "all_events_observed": true,
+      "outcome_defined_group": {
+        "chi2": 71.35108825823882,
+        "p": 2.989929271820772e-17,
+        "observed_minus_expected": -20.546498460940402,
+        "variance": 5.916638544846304
+      },
+      "alternating_group": {
+        "chi2": 0.12241923608305788,
+        "p": 0.7264253019031999,
+        "observed_minus_expected": -1.3411884237457707,
+        "variance": 14.693658002973004
+      },
+      "not_paper_data": true
+    }
+  }
+}

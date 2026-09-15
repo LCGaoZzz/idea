@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "id": "2026-09-caf-spatial-multiomics-kb",
+  "title_zh": "CAF 空间亚型与细胞邻域：Cancer Cell 2025 知识库",
+  "language": [
+    "zh-CN",
+    "en"
+  ],
+  "prepared_on": "2026-09-15",
+  "target_repository": "LCGaoZzz/idea",
+  "target_branch": "main",
+  "target_directory": "2026-09-caf-spatial-multiomics-kb",
+  "classification": [
+    "空间组学",
+    "CAF与肿瘤微环境",
+    "空间统计与方法学审计"
+  ],
+  "tags": [
+    "CAF",
+    "TME",
+    "Xenium",
+    "Visium",
+    "IMC",
+    "spatial-neighborhoods",
+    "NMF",
+    "pseudoreplication",
+    "survival-analysis"
+  ],
+  "article": {
+    "doi": "10.1016/j.ccell.2025.03.004",
+    "pmid": "40154487",
+    "pmcid": "PMC12074878",
+    "nihms": "NIHMS2063961",
+    "title": "Conserved spatial subtypes and cellular neighborhoods of cancer-associated fibroblasts revealed by single-cell spatial multi-omics",
+    "journal": "Cancer Cell",
+    "online_date": "2025-03-27",
+    "issue_date": "2025-05-12",
+    "volume": 43,
+    "issue": 5,
+    "pages": "905–924.e6",
+    "source_version": "author manuscript text surfaced by web search, not publisher PDF",
+    "capture_manifest_created_at": "2026-09-15T12:58:20.747069+00:00"
+  },
+  "evidence_status": "source_limited_reconstruction_and_audit_not_biological_replication",
+  "author_active_code_obtained": false,
+  "paper_biological_analyses_executed": 0,
+  "new_scientific_analysis_in_this_import": false,
+  "source_archive": {
+    "path": "archives/CAF_spatial_2025_audit_v1.zip",
+    "sha256": "d6ffc84218db17dabc90c25f06b781e1b3f6dd3d99f48d3bef3177c6821ef53b",
+    "bytes": 214770,
+    "extracted_files": 46,
+    "original_checksum_entries": 45
+  },
+  "entrypoints": {
+    "overview": "README.md",
+    "agent_contract": "AGENTS.md",
+    "provenance": "reconstruction/PROVENANCE.md",
+    "article_review": "reconstruction/ARTICLE_REVIEW_ZH.md",
+    "research_logic": "reconstruction/knowledge/01_research_logic.md",
+    "mathematical_methods": "reconstruction/methods/01_mathematical_reconstruction.md",
+    "preprocessing": "reconstruction/methods/03_preprocessing_and_expression.md",
+    "statistics_audit": "reconstruction/knowledge/02_statistics_audit.md",
+    "xenium_transfer": "reconstruction/knowledge/03_xenium_transfer.md",
+    "reproduction_blueprint": "reconstruction/methods/02_reproduction_blueprint.md",
+    "parameter_facts": "reconstruction/evidence/parameter_facts.tsv",
+    "traceability": "reconstruction/traceability.tsv",
+    "reconstruction_manifest": "reconstruction/reconstruction_manifest.json",
+    "data_access": "reconstruction/data/DATA_ACCESS.md",
+    "reviewer_prompt": "reconstruction/review/FABLE51_REVIEW_PROMPT.md",
+    "html_reading_guide": "reconstruction/READING_GUIDE.html",
+    "previous_delivery_verification": "integrity/previous_delivery_verification.json",
+    "import_verification": "integrity/import_verification.json"
+  },
+  "usage_constraints": [
+    "Separate paper facts, author implementation, mathematical interpretation, and proposed transfer.",
+    "Do not interpret validation of a manifest or a synthetic example as biological replication.",
+    "Preserve source conflicts and missing evidence; revise conclusions when new evidence arrives.",
+    "Repository target fields describe the intended destination, not proof of upload."
+  ]
+}
