@@ -1,0 +1,104 @@
+name: Import CAF knowledge base
+on:
+  push:
+    branches: ['upload/caf-kb-20260915']
+    paths: ['.caf-kb-transfer/READY.json']
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Restore and publish verified knowledge-base files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          IMPORT_SHA: ${{ github.sha }}
+        shell: python
+        run: |
+          import base64, hashlib, io, json, lzma, os, time, urllib.error, urllib.request, zipfile
+          repo = os.environ['REPO']
+          assert repo == 'LCGaoZzz/idea'
+          root = '2026-09-caf-spatial-multiomics-kb'
+          api = 'https://api.github.com/repos/' + repo
+          headers = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'caf-kb-verified-import'}
+          def call(path, body=None, method=None):
+              data = None if body is None else json.dumps(body, ensure_ascii=False).encode('utf-8')
+              req = urllib.request.Request(api + path, data=data, headers={**headers, 'Content-Type': 'application/json'}, method=method or ('GET' if body is None else 'POST'))
+              with urllib.request.urlopen(req, timeout=60) as response:
+                  return json.load(response)
+          def gitsha(data):
+              return hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+          ready = call('/contents/.caf-kb-transfer/READY.json?ref=' + os.environ['IMPORT_SHA'])
+          ready = json.loads(base64.b64decode(ready['content']))
+          parts = []
+          for part in ready['parts']:
+              response = call('/git/blobs/' + part['git_blob_sha'])
+              data = base64.b64decode(response['content'])
+              assert gitsha(data) == part['git_blob_sha']
+              assert hashlib.sha256(data).hexdigest() == part['sha256']
+              parts.append(data)
+          packed = b''.join(parts)
+          assert hashlib.sha256(packed).hexdigest() == ready['payload_sha256']
+          payload = json.loads(lzma.decompress(packed))
+          files = {path: text.encode('utf-8') for path, text in payload['files'].items()}
+          archive = payload['archive']
+          output = io.BytesIO()
+          with zipfile.ZipFile(output, 'w') as target:
+              target.comment = base64.b64decode(archive['comment'])
+              for entry in archive['members']:
+                  info = zipfile.ZipInfo(entry['filename'], tuple(entry['date_time']))
+                  for key in ['compress_type', 'create_system', 'create_version', 'extract_version', 'flag_bits', 'volume', 'internal_attr', 'external_attr']:
+                      setattr(info, key, entry[key])
+                  info.comment = base64.b64decode(entry['comment'])
+                  info.extra = base64.b64decode(entry['extra'])
+                  target.writestr(info, files[root + '/reconstruction/' + entry['filename']], compresslevel=9)
+          files[archive['path']] = output.getvalue()
+          expected = payload['expected']
+          assert set(files) == set(expected) and len(files) == 53
+          for path, data in files.items():
+              assert path.startswith(root + '/') and '..' not in path.split('/')
+              assert len(data) == expected[path]['bytes'], path
+              assert hashlib.sha256(data).hexdigest() == expected[path]['sha256'], path
+              assert gitsha(data) == expected[path]['git_blob_sha'], path
+          print('Restored and locally verified all 53 original files, including original archive.')
+          elements = []
+          for path, data in sorted(files.items()):
+              response = call('/git/blobs', {'content': base64.b64encode(data).decode(), 'encoding': 'base64'})
+              assert response['sha'] == expected[path]['git_blob_sha'], path
+              elements.append({'path': path, 'mode': '100644', 'type': 'blob', 'sha': response['sha']})
+          for attempt in range(4):
+              head = call('/git/ref/heads/main')['object']['sha']
+              commit = call('/git/commits/' + head)
+              tree = call('/git/trees/' + commit['tree']['sha'] + '?recursive=1')
+              assert not tree.get('truncated'), 'Incomplete base tree'
+              before = {e['path']: e['sha'] for e in tree['tree'] if e['type'] == 'blob'}
+              for path in files:
+                  if path in before:
+                      assert before[path] == expected[path]['git_blob_sha'], 'Refusing to overwrite differing content: ' + path
+              if all(before.get(path) == expected[path]['git_blob_sha'] for path in files):
+                  final_sha = head
+                  break
+              new_tree = call('/git/trees', {'base_tree': commit['tree']['sha'], 'tree': elements})
+              new_commit = call('/git/commits', {'message': 'docs: publish complete CAF spatial multiomics knowledge base (53 checksum-verified files)', 'tree': new_tree['sha'], 'parents': [head]})
+              try:
+                  call('/git/refs/heads/main', {'sha': new_commit['sha'], 'force': False}, method='PATCH')
+                  final_sha = new_commit['sha']
+                  break
+              except urllib.error.HTTPError as exc:
+                  if exc.code not in (409, 422) or attempt == 3:
+                      raise
+                  time.sleep(2)
+          else:
+              raise RuntimeError('No fast-forward publication completed')
+          final_commit = call('/git/commits/' + final_sha)
+          final_tree = call('/git/trees/' + final_commit['tree']['sha'] + '?recursive=1')
+          assert not final_tree.get('truncated')
+          after = {e['path']: e['sha'] for e in final_tree['tree'] if e['type'] == 'blob'}
+          for path in files:
+              assert after.get(path) == expected[path]['git_blob_sha'], path
+          for path, sha in before.items():
+              if not path.startswith(root + '/'):
+                  assert after.get(path) == sha, 'Unrelated file changed: ' + path
+          print(json.dumps({'status': 'published_and_verified', 'repository': repo, 'branch': 'main', 'commit_sha': final_sha, 'directory': root, 'verified_file_count': len(files), 'archive_sha256': hashlib.sha256(files[archive['path']]).hexdigest(), 'unrelated_existing_files_unchanged': True}, ensure_ascii=False))
