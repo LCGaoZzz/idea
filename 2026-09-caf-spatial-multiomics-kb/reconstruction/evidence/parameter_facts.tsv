@@ -1,0 +1,51 @@
+fact_id	branch	field	reported_value	unit	source_locator
+F001	Identity	doi	10.1016/j.ccell.2025.03.004	identifier	P01 bibliographic metadata
+F002	Discovery CosMx	sections;genes;cells;CAFs	8;980;728540;100272	counts	P01 Results / Identification of Four Spatial CAF Subtypes; Fig1; Tables S1-S2 referenced
+F003	Discovery MERSCOPE	sections;genes;cells;CAFs	16;500;5011551;469249	counts	P01 Results / Identification of Four Spatial CAF Subtypes; Fig3; Tables S1-S2 referenced
+F004	Neighborhood	radius	80	um	P01 STAR Methods / Identification of spatial CAF subtypes
+F005	Neighborhood	neighbor_count	approximately 100, not fixed k	cells	P01 STAR Methods / Identification of spatial CAF subtypes
+F006	NMF	R_package;version;function;rank	NMF;0.27;nmf;5	not_recorded	P01 STAR Methods / Identification of spatial CAF subtypes
+F007	Leiden	Seurat_version;resolution	4.3;0.1	not_recorded	P01 STAR Methods / Identification of spatial CAF subtypes
+F008	Fitting unit	CosMx_MERSCOPE_Xenium	independent per sample; n=29	samples	P01 STAR Methods / Identification of spatial CAF subtypes
+F009	Fitting unit	CODEX_IMC	combined within each platform	not_recorded	P01 STAR Methods / Identification of spatial CAF subtypes
+F010	Cross-sample comparison	normalization;metric	neighborhood subtype composition / tissue composition; Pearson	not_recorded	P01 STAR Methods / Identification of spatial CAF subtypes; FigS5
+F011	Visium RCTD	version;mode	2.0.0;multi	not_recorded	P01 STAR Methods / RCTD deconvolution
+F012	Visium centroid	CAF_weight_threshold	>0.37	fraction	P01 STAR Methods / Identification of spatial CAF subtypes
+F013	Visium neighborhood	centroid_plus_adjacent	1+6=7; average composition	spots	P01 STAR Methods / Identification of spatial CAF subtypes
+F014	Visium reduction	method;PCs	PCA;5	not_recorded	P01 STAR Methods / Identification of spatial CAF subtypes
+F015	Distance	target_neighbors;aggregation	5;mean Euclidean distance	cells;um	P01 STAR Methods / Quantifying Cell–Cell Distances and Annotating Tumor Regions
+F016	Tumor margin	width	100	um	P01 STAR Methods / Quantifying Cell–Cell Distances and Annotating Tumor Regions
+F017	Density rendering	grid	120 x 120	um x um	P01 QUANTIFICATION AND STATISTICAL ANALYSIS
+F018	CAF labels	spatial_semantics	s1 tumor-adjacent;s2 stromal;s3 myeloid-rich;s4 lymphoid-rich	not_recorded	P01 Results / Identification; Fig1
+F019	Cross-platform marker overlap	molecular_signatures	s1 and s2:myCAF;s3:iCAF;s4:apCAF	not_recorded	P01 Results / Conserved Spatial Subtypes; FigS5B
+F020	Detection frequency	s1;s2;s3;s4	19/24;24/24;9/24;21/24	sections	P01 Results / Conserved Spatial Subtypes; Fig4A
+F021	Xenium validation	sections;cancers	5;4	counts	P01 Results / Validation using Xenium 5K; Fig5A; FigS7
+F022	COMET	LUAD_patients;PDAC_patients;panels	2;5;20-plex and 17-plex	counts	P01 Results / COMET; Fig6; TableS7 referenced
+F023	CODEX	patients;TMAs;proteins	35;70;56	counts	P01 Results / CODEX; Fig7A-E
+F024	IMC results	patients;cores	1070;2070	counts	P01 Results / CODEX and IMC
+F025	IMC methods	patients;TMA_regions	1072;2072	counts	P01 STAR Methods / public IMC dataset description
+F026	IMC survival	LUAD;LUSC	618;401	patients	P01 Results / CODEX and IMC
+F027	Survival	dichotomy;Cox	group median;univariable	not_recorded	P01 Survival Analyses; Fig7E,L
+F028	Survival groups	hclust_inputs	CAF composition AND survival time	not_recorded	P01 Survival Analyses; compare Fig7M-N
+F029	CODEX contrasts	s4_CLR_DII_p;s1_survival_p;s4_survival_p	0.064;0.091;0.018	p-value	P01 Results / CODEX; Fig7D-E
+F030	GEO	LUAD;PDAC	GSE246011;GSE274103	accession	P01 Data availability; GEO pages blocked on direct access
+F031	Code availability	route	author request; no public repository specified in retrieved statement	not_recorded	P01 Data/code availability
+F032	Cell annotation	expression_cluster_resolution;low_feature_cluster_rule	0.5;mean<100 features per cell or lacks lineage markers	not_recorded	P01 STAR Methods / preprocessing excerpt
+F033	T-state annotation	method;version;matrix;assignment	GSVA;1.52;log10-transformed and scaled;maximum signature score	not_recorded	P01 STAR Methods / Spatial Profiling of T Cells
+F034	Communication	methods;CPDB_input;combination	CellChat and CellPhoneDB;gene-by-cell count matrix;combined results	not_recorded	P01 STAR Methods / cell communications; TableS4 referenced
+F035	Statistics	sidedness;adjustment;threshold	two-sided;BH;p or FDR<0.05	not_recorded	P01 QUANTIFICATION AND STATISTICAL ANALYSIS
+F036	Serial sections	Lung5;Lung9	3 serial;2 non-serial	sections	P01 Results / frequency and tissue architecture
+F037	Tumor state example	sample;clusters	Ovarian xe1;3	not_recorded	P01 Results / Xenium; Fig5B-D
+F038	Fig5 distance caption fragment	tumor_cells_per_group;test	273898;Wilcoxon	count;not_recorded	P01 Figure5 caption fragment; panel letter not fully retrieved
+F039	iStar	input;function;interpretation	ST + H&E;marker_score.py;predicted signature-enriched regions	not_recorded	P01 STAR Methods / Gene signature expression and cell type deconvolution; FigS6; final lookup turn931373search0
+F040	Xenium panel	reported_missing_marker_examples	ACTA2;TAGLN;collagen markers;CD74;HLA class II; paper-specific panel statement, not independent panel-file audit	gene identifiers	P01 Results / Xenium 5K; Limitations; turn931373search0
+F041	Initial QC	low_quality_rule	fewer than 20 feature counts per cell; exact column/feature-vs-molecule semantics not recovered	author wording	P01 Single-cell ST data processing, QC, and analysis; turn587805search0
+F042	Initial normalization	Seurat_version;normalization;PCA_features;resolution	4.3.1;SCTransform;all genes;0.5	not_recorded	P01 Single-cell ST data processing, QC, and analysis; turn587805search0
+F043	Batch correction	excluded_compartment;method;batch_key	epithelial/tumor cells excluded BEFORE stromal batch correction;RPCA;sample	not_recorded	P01 Single-cell ST data processing, QC, and analysis; turn970419search0
+F044	Batch correction	reported_call_sequence	SplitObject;NormalizeData;SelectIntegrationFeatures;ScaleData;RunPCA;FindIntegrationAnchors;IntegrateData	functions	P01 Single-cell ST data processing, QC, and analysis; turn970419search0
+F045	DEGs	function	Seurat FindAllMarkers; exact test, assay, thresholds and replicate treatment not recovered	function	P01 Single-cell ST data processing, QC, and analysis; turn406234search0
+F046	Xenium QC	high_quality_cells;mean_detected_genes	2531470;309	counts	P01 Single-cell ST data processing, QC, and analysis; turn587805search0
+F047	Xenium tumor states	State1_genes;State2_genes;State3_genes	CD47/CD44/CCL28/NT5E;TERT/ALK/SESN3;S1PR3/TMEM100; author reported	genes	P01 Results / Xenium 5K; Fig5E; turn931373search0
+F048	Xenium proximity	State1_near_vs_far_percent	61.4;15.4; region threshold not recovered	percent	P01 Results / Xenium 5K; Fig5F; turn931373search0
+F049	Xenium cross-section DEGs	three_of_four;all_four	55;7; neither treated as patient-level meta-analysis here	genes	P01 Results / Xenium 5K; Fig5G; TableS6 not acquired; turn931373search0
+F050	Xenium communication	reported_highest_probability_pair	THBS1-CD47; model-derived communication probability, not functional effect size	not_recorded	P01 Results / Xenium 5K; Fig5H; TableS6 not acquired; turn931373search0

@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "CAF_SPATIAL_2025_AUDIT",
+  "sources": [
+    {
+      "source_id": "SRC001",
+      "roles": [
+        "main_text",
+        "results_text",
+        "methods_text",
+        "metadata_table"
+      ],
+      "location": "sources/curated/parameter_facts.tsv",
+      "availability": "available",
+      "fingerprint": "sha256:77abbfb177a33fdd75da464388f0dee2b93c576f5df3ee64d53cd155edb25378",
+      "locator_type": "mixed",
+      "limitations": [
+        "manually structured extraction from tool-visible author-manuscript text, not original source bytes",
+        "hash binds local extraction only; original-source grounding requires recheck",
+        "publisher final PDF and supplements not fully acquired"
+      ]
+    },
+    {
+      "source_id": "SRC002",
+      "roles": [
+        "figure_caption"
+      ],
+      "location": "sources/curated/caption_fact_extract.json",
+      "availability": "available",
+      "fingerprint": "sha256:74dac484a33ad30598182fe18487709a35dcbee5ad6fd8fb9626d6fc051afd2f",
+      "locator_type": "mixed",
+      "limitations": [
+        "caption-derived structured facts only; no original figure images",
+        "partial coverage explicitly marked"
+      ]
+    },
+    {
+      "source_id": "SRC003",
+      "roles": [
+        "methods_text",
+        "results_text"
+      ],
+      "location": "sources/curated/critical_verbatim_fragments.txt",
+      "availability": "available",
+      "fingerprint": "sha256:3b29a84e312a71b04ed43c32ce5f879e115dd3f83674c6ae89584302e53bb75c",
+      "locator_type": "mixed",
+      "limitations": [
+        "manually structured extraction from tool-visible author-manuscript text, not original source bytes",
+        "hash binds local extraction only; original-source grounding requires recheck",
+        "publisher final PDF and supplements not fully acquired"
+      ]
+    },
+    {
+      "source_id": "SRC004",
+      "roles": [
+        "code",
+        "environment"
+      ],
+      "location": "UNAVAILABLE/author_code",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "No author implementation, immutable commit or environment lock acquired; candidate empty repository is not implementation"
+      ]
+    },
+    {
+      "source_id": "SRC005",
+      "roles": [
+        "input_data",
+        "raw_data_manifest"
+      ],
+      "location": "UNAVAILABLE/paper_input_data",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "No original matrices/cell tables/clinical objects acquired; accession is not input bytes"
+      ]
+    },
+    {
+      "source_id": "SRC006",
+      "roles": [
+        "supplement_text",
+        "metadata_table"
+      ],
+      "location": "UNAVAILABLE/supplement_contents",
+      "availability": "unreadable",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "Supplement index seen; none of individual files acquired"
+      ]
+    },
+    {
+      "source_id": "SRC007",
+      "roles": [
+        "figure_visual",
+        "main_text"
+      ],
+      "location": "UNAVAILABLE/publisher_pdf",
+      "availability": "unreadable",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "No publisher PDF or full original figure set captured"
+      ]
+    },
+    {
+      "source_id": "SRC008",
+      "roles": [
+        "unknown"
+      ],
+      "location": "sources/curated/candidate_repository.json",
+      "availability": "available",
+      "fingerprint": "sha256:fa9040ccda8968b02390a215e1e3513872a67accb00268d4d79b350492ccfd6c",
+      "locator_type": "mixed",
+      "limitations": [
+        "Repository is a name-only candidate; not linked to paper by DOI or official code statement"
+      ]
+    }
+  ]
+}

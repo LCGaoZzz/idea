@@ -1,0 +1,173 @@
+# Reconstruction report
+## Status
+- A01: 受阻
+- A02: 受阻
+- A03: 受阻
+- A04: 受阻
+- A05: 受阻
+- A06: 受阻
+- A07: 受阻
+- A08: 受阻
+- A09: 受阻
+- A10: 受阻
+- A11: 受阻
+- A12: 受阻
+- A13: 受阻
+- A14: 受阻
+- A15: 受阻
+- A16: 受阻
+- A17: 受阻
+- A18: 受阻
+- A19: 受阻
+- A20: 受阻
+- A21: 受阻
+- A22: 受阻
+- A23: 受阻
+- A24: 受阻
+- A25: 材料冲突
+- A26: 受阻
+- A27: 受阻
+## Direct evidence/observation
+- none
+## Paper claim
+- A01: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A01_PAPER_CLAIM]
+- A02: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A02_PAPER_CLAIM]
+- A03: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A03_PAPER_CLAIM]
+- A04: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A04_PAPER_CLAIM]
+- A05: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A05_PAPER_CLAIM]
+- A06: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A06_PAPER_CLAIM]
+- A07: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A07_PAPER_CLAIM]
+- A08: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A08_PAPER_CLAIM]
+- A09: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A09_PAPER_CLAIM]
+- A10: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A10_PAPER_CLAIM]
+- A11: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A11_PAPER_CLAIM]
+- A12: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A12_PAPER_CLAIM]
+- A13: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A13_PAPER_CLAIM]
+- A14: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A14_PAPER_CLAIM]
+- A15: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A15_PAPER_CLAIM]
+- A16: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A16_PAPER_CLAIM]
+- A17: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A17_PAPER_CLAIM]
+- A18: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A18_PAPER_CLAIM]
+- A19: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A19_PAPER_CLAIM]
+- A20: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A20_PAPER_CLAIM]
+- A21: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A21_PAPER_CLAIM]
+- A22: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A22_PAPER_CLAIM]
+- A23: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A23_PAPER_CLAIM]
+- A24: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A24_PAPER_CLAIM]
+- A25: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A25_PAPER_CLAIM]
+- A26: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A26_PAPER_CLAIM]
+- A27: 论文包含与本目标相关的分析及结果陈述；本包保留其来源限定。 [evidence: EV_A27_PAPER_CLAIM]
+## Reconstructed support
+- none
+## Reasonable inference
+- A01: 合理推断：切片覆盖与独立患者数量决定结论外推范围，不能由细胞规模替代。 [evidence: EV_A01_METHOD, EV_A01_PAPER_CLAIM]
+- A02: 合理推断：注释误差会同时改变中心细胞集合与邻域组成，应先于空间结论审查。 [evidence: EV_A02_METHOD, EV_A02_PAPER_CLAIM]
+- A03: 合理推断：固定半径和固定邻居数具有不同估计对象，不应互换。 [evidence: EV_A03_METHOD, EV_A03_PAPER_CLAIM]
+- A04: 合理推断：相同矩阵乘积可以有不同因子尺度；后续距离依赖尺度处理。 [evidence: EV_A04_METHOD, EV_A04_PAPER_CLAIM]
+- A05: 合理推断：分辨率无法单独决定标签，图构造同样是结果定义的一部分。 [evidence: EV_A05_METHOD, EV_A05_PAPER_CLAIM]
+- A06: 合理推断：标签描述局部环境，不等价于稳定细胞谱系。 [evidence: EV_A06_METHOD, EV_A06_PAPER_CLAIM]
+- A07: 合理推断：分子表型与邻域情境应保留为不同轴，不能一一替换。 [evidence: EV_A07_METHOD, EV_A07_PAPER_CLAIM]
+- A08: 合理推断：强制最高分赋型需要关注低覆盖和模糊状态的误分类。 [evidence: EV_A08_METHOD, EV_A08_PAPER_CLAIM]
+- A09: 合理推断：表达配对与相伴可用于假说排序，仍需要独立功能测量。 [evidence: EV_A09_METHOD, EV_A09_PAPER_CLAIM]
+- A10: 合理推断：重复拟合后的同名模式相似不等于冻结分类器外推。 [evidence: EV_A10_METHOD, EV_A10_PAPER_CLAIM]
+- A11: 合理推断：未检出应区分生物缺失与取材/检测机会不足。 [evidence: EV_A11_METHOD, EV_A11_PAPER_CLAIM]
+- A12: 合理推断：中心单位是富集 spot，不是直接观测到的单个 CAF。 [evidence: EV_A12_METHOD, EV_A12_PAPER_CLAIM]
+- A13: 合理推断：spot 层路径与单细胞 NMF 路径必须分别重建。 [evidence: EV_A13_METHOD, EV_A13_PAPER_CLAIM]
+- A14: 合理推断：预测高分辨率表达与原始单细胞测量是不同证据。 [evidence: EV_A14_METHOD, EV_A14_PAPER_CLAIM]
+- A15: 合理推断：距离与目标类型供给共同变化，需要区分密度与趋近。 [evidence: EV_A15_METHOD, EV_A15_PAPER_CLAIM]
+- A16: 合理推断：独立掩模及内外边界区分是免疫进入解释的前提。 [evidence: EV_A16_METHOD, EV_A16_PAPER_CLAIM]
+- A17: 合理推断：组成约束与组织几何可产生相似关联，需要合适分母和重复单位。 [evidence: EV_A17_METHOD, EV_A17_PAPER_CLAIM]
+- A18: 合理推断：平滑图支持位置描述，不能单独替代正式统计检验。 [evidence: EV_A18_METHOD, EV_A18_PAPER_CLAIM]
+- A19: 合理推断：肿瘤聚团是 CAF 与免疫关联的竞争解释，而非应删除的反例。 [evidence: EV_A19_METHOD, EV_A19_PAPER_CLAIM]
+- A20: 合理推断：相同细胞的距离应审查配对，组织内重复还需独立处理。 [evidence: EV_A20_METHOD, EV_A20_PAPER_CLAIM]
+- A21: 合理推断：模态正交性增加支撑，但不消除 ROI 选择与阈值不确定性。 [evidence: EV_A21_METHOD, EV_A21_PAPER_CLAIM]
+- A22: 合理推断：患者与核心应分开；名义趋势不能写成确定显著结果。 [evidence: EV_A22_METHOD, EV_A22_PAPER_CLAIM]
+- A23: 合理推断：未控制已知临床因素的模型不能单独确立独立预后价值。 [evidence: EV_A23_METHOD, EV_A23_PAPER_CLAIM]
+- A24: 合理推断：若结局参与分组，随后同结局比较不属于独立验证；实现仍需核实。 [evidence: EV_A24_METHOD, EV_A24_PAPER_CLAIM]
+- A25: 合理推断：计数差异需要纳入表或版本记录解释，不应擅自猜测过滤原因。 [evidence: EV_A25_METHOD, EV_A25_PAPER_CLAIM]
+- A26: 合理推断：未检测与未被测量必须区分；旧面板描述不能外推到所有现行面板。 [evidence: EV_A26_METHOD, EV_A26_PAPER_CLAIM]
+- A27: 合理推断：相邻切片的形态重复不等于新增独立生物重复。 [evidence: EV_A27_METHOD, EV_A27_PAPER_CLAIM]
+## Unverified
+- A01: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A01_CODE, A01_INPUT]
+- A02: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A02_CODE, A02_INPUT]
+- A03: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A03_CODE, A03_INPUT]
+- A04: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A04_CODE, A04_INPUT]
+- A05: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A05_CODE, A05_INPUT]
+- A06: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A06_CODE, A06_INPUT]
+- A07: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A07_CODE, A07_INPUT]
+- A08: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A08_CODE, A08_INPUT]
+- A09: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A09_CODE, A09_INPUT]
+- A10: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A10_CODE, A10_INPUT]
+- A11: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A11_CODE, A11_INPUT]
+- A12: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A12_CODE, A12_INPUT]
+- A13: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A13_CODE, A13_INPUT]
+- A14: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A14_CODE, A14_INPUT]
+- A15: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A15_CODE, A15_INPUT]
+- A16: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A16_CODE, A16_INPUT]
+- A17: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A17_CODE, A17_INPUT]
+- A18: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A18_CODE, A18_INPUT]
+- A19: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A19_CODE, A19_INPUT]
+- A20: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A20_CODE, A20_INPUT]
+- A21: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A21_CODE, A21_INPUT]
+- A22: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A22_CODE, A22_INPUT]
+- A23: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A23_CODE, A23_INPUT]
+- A24: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A24_CODE, A24_INPUT]
+- A25: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A25_CODE, A25_INPUT]
+- A26: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A26_CODE, A26_INPUT]
+- A27: 目前无法验证作者活动实现与原始结果；自写数学诊断不属于论文生物学复现。 [evidence: EV_A27_CODE, A27_INPUT]
+## Conflicts or gaps
+- A01/A01_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A01_CODE, A01_INPUT, EV_A01_METHOD]
+- A01/A01_G_DETAIL (gap): 患者-标本-切片映射和完整样本表未取得。 [evidence: EV_A01_PAPER_CLAIM, EV_A01_METHOD]
+- A02/A02_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A02_CODE, A02_INPUT, EV_A02_METHOD]
+- A02/A02_G_DETAIL (gap): 主要步骤已补全；实际 assay/slot、QC变量语义、RPCA参数、肿瘤标签回填及代码未取得。 [evidence: EV_A02_PAPER_CLAIM, EV_A02_METHOD]
+- A03/A03_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A03_CODE, A03_INPUT, EV_A03_METHOD]
+- A03/A03_G_DETAIL (gap): 自身纳入、边缘截断、零邻居和空间分块规则未核实。 [evidence: EV_A03_PAPER_CLAIM, EV_A03_METHOD]
+- A04/A04_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A04_CODE, A04_INPUT, EV_A04_METHOD]
+- A04/A04_G_DETAIL (gap): NMF 算法、损失、初始化、种子和因子尺度处理未取得。 [evidence: EV_A04_PAPER_CLAIM, EV_A04_METHOD]
+- A05/A05_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A05_CODE, A05_INPUT, EV_A05_METHOD]
+- A05/A05_G_DETAIL (gap): 建图、实际函数调用和标签合并规则未取得。 [evidence: EV_A05_PAPER_CLAIM, EV_A05_METHOD]
+- A06/A06_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A06_CODE, A06_INPUT, EV_A06_METHOD]
+- A06/A06_G_DETAIL (gap): 原始 cluster 到最终语义类别的映射表未取得。 [evidence: EV_A06_PAPER_CLAIM, EV_A06_METHOD]
+- A07/A07_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A07_CODE, A07_INPUT, EV_A07_METHOD]
+- A07/A07_G_DETAIL (gap): 完整 DEG 表、签名和患者层检验实现未取得。 [evidence: EV_A07_PAPER_CLAIM, EV_A07_METHOD]
+- A08/A08_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A08_CODE, A08_INPUT, EV_A08_METHOD]
+- A08/A08_G_DETAIL (gap): TableS5、历史 API 调用和缺失基因处理未取得。 [evidence: EV_A08_PAPER_CLAIM, EV_A08_METHOD]
+- A09/A09_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A09_CODE, A09_INPUT, EV_A09_METHOD]
+- A09/A09_G_DETAIL (gap): 数据库、输入尺度、复合体规则和合并逻辑未核实。 [evidence: EV_A09_PAPER_CLAIM, EV_A09_METHOD]
+- A10/A10_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A10_CODE, A10_INPUT, EV_A10_METHOD]
+- A10/A10_G_DETAIL (gap): 稀有类别处理、匹配规则与全套相似矩阵未取得。 [evidence: EV_A10_PAPER_CLAIM, EV_A10_METHOD]
+- A11/A11_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A11_CODE, A11_INPUT, EV_A11_METHOD]
+- A11/A11_G_DETAIL (gap): 患者层检出率、面积与最小检测机会未核实。 [evidence: EV_A11_PAPER_CLAIM, EV_A11_METHOD]
+- A12/A12_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A12_CODE, A12_INPUT, EV_A12_METHOD]
+- A12/A12_G_DETAIL (gap): scRNA 参考对象、权重校验和中心选择代码未取得。 [evidence: EV_A12_PAPER_CLAIM, EV_A12_METHOD]
+- A13/A13_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A13_CODE, A13_INPUT, EV_A13_METHOD]
+- A13/A13_G_DETAIL (gap): 边缘 spot 邻接、PCA缩放与后续图参数未取得。 [evidence: EV_A13_PAPER_CLAIM, EV_A13_METHOD]
+- A14/A14_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A14_CODE, A14_INPUT, EV_A14_METHOD]
+- A14/A14_G_DETAIL (gap): 签名、图像输入、配置和独立验证材料未取得。 [evidence: EV_A14_PAPER_CLAIM, EV_A14_METHOD]
+- A15/A15_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A15_CODE, A15_INPUT, EV_A15_METHOD]
+- A15/A15_G_DETAIL (gap): 不足目标细胞数、边界和抽样单位实现未取得。 [evidence: EV_A15_PAPER_CLAIM, EV_A15_METHOD]
+- A16/A16_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A16_CODE, A16_INPUT, EV_A16_METHOD]
+- A16/A16_G_DETAIL (gap): 肿瘤掩模算法、空洞/坏死和边界方向未核实。 [evidence: EV_A16_PAPER_CLAIM, EV_A16_METHOD]
+- A17/A17_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A17_CODE, A17_INPUT, EV_A17_METHOD]
+- A17/A17_G_DETAIL (gap): 完整设计矩阵、患者嵌套与空间依赖处理未取得。 [evidence: EV_A17_PAPER_CLAIM, EV_A17_METHOD]
+- A18/A18_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A18_CODE, A18_INPUT, EV_A18_METHOD]
+- A18/A18_G_DETAIL (gap): 网格原点、组织掩模和可视化输入对象未取得。 [evidence: EV_A18_PAPER_CLAIM, EV_A18_METHOD]
+- A19/A19_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A19_CODE, A19_INPUT, EV_A19_METHOD]
+- A19/A19_G_DETAIL (gap): 肿瘤聚团定义、状态参数和条件比较对象未取得。 [evidence: EV_A19_PAPER_CLAIM, EV_A19_METHOD]
+- A20/A20_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A20_CODE, A20_INPUT, EV_A20_METHOD]
+- A20/A20_G_DETAIL (gap): 完整图注、原始比较表与 paired 参数未取得。 [evidence: EV_A20_PAPER_CLAIM, EV_A20_METHOD]
+- A21/A21_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A21_CODE, A21_INPUT, EV_A21_METHOD]
+- A21/A21_G_DETAIL (gap): TableS7、原图、抗体阈值及盲法记录未取得。 [evidence: EV_A21_PAPER_CLAIM, EV_A21_METHOD]
+- A22/A22_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A22_CODE, A22_INPUT, EV_A22_METHOD]
+- A22/A22_G_DETAIL (gap): 核心合并、终点、协变量和检验家族未核实。 [evidence: EV_A22_PAPER_CLAIM, EV_A22_METHOD]
+- A23/A23_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A23_CODE, A23_INPUT, EV_A23_METHOD]
+- A23/A23_G_DETAIL (gap): 完整 Cox 公式、终点、事件数与比例风险诊断未取得。 [evidence: EV_A23_PAPER_CLAIM, EV_A23_METHOD]
+- A24/A24_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A24_CODE, A24_INPUT, EV_A24_METHOD]
+- A24/A24_G_DETAIL (gap): 需要作者输入矩阵与脚本区分真实聚类、排序或文字误写。 [evidence: EV_A24_PAPER_CLAIM, EV_A24_METHOD]
+- A25/A25_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A25_CODE, A25_INPUT, EV_A25_METHOD]
+- A25/A25_G_DETAIL (gap): 作者接受稿与最终稿、筛选表之间的对应关系未取得。 [evidence: EV_A25_PAPER_CLAIM, EV_A25_METHOD]
+- A25/A25_C_IMC (conflict): Results 报告 1070 患者/2070 核心；Methods 报告 1072 患者/2072 区域。 [evidence: EV_A25_PAPER_CLAIM, EV_A25_METHOD]
+- A26/A26_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A26_CODE, A26_INPUT, EV_A26_METHOD]
+- A26/A26_G_DETAIL (gap): 精确面板文件与版本、基因映射和签名覆盖表未取得。 [evidence: EV_A26_PAPER_CLAIM, EV_A26_METHOD]
+- A27/A27_G_CODE (gap): 作者活动代码和带哈希的输入对象未取得。 [evidence: EV_A27_CODE, A27_INPUT, EV_A27_METHOD]
+- A27/A27_G_DETAIL (gap): 完整切片来源、间距、对应标本与重抽样单位未取得。 [evidence: EV_A27_PAPER_CLAIM, EV_A27_METHOD]

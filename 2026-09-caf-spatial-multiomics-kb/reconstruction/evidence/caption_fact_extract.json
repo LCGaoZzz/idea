@@ -1,0 +1,56 @@
+{
+  "CAP01": {
+    "panels": [
+      "Fig1A",
+      "Fig1B",
+      "Fig1C",
+      "Fig1D",
+      "Fig1E",
+      "Fig1F"
+    ],
+    "caption_fact": "workflow; spatial CAF/neighbor maps; cell-type UMAP/composition; CAF DEGs; markers; marker spatial maps",
+    "source": "P01 Figure 1 caption",
+    "visual_acquired": false
+  },
+  "CAP03": {
+    "panels": [
+      "Fig3A",
+      "Fig3B",
+      "Fig3C",
+      "Fig3D",
+      "Fig3E"
+    ],
+    "caption_fact": "MERSCOPE spatial maps/composition/markers; Visium workflow and annotated maps",
+    "source": "P01 Figure 3 caption",
+    "visual_acquired": false
+  },
+  "CAP07a": {
+    "panels": [
+      "Fig7A",
+      "Fig7B",
+      "Fig7C",
+      "Fig7D",
+      "Fig7E"
+    ],
+    "caption_fact": "CODEX neighborhoods/composition/protein markers; patient group comparison; survival",
+    "source": "P01 Figure 7 A–E caption",
+    "visual_acquired": false
+  },
+  "CAP07b": {
+    "panels": [
+      "Fig7M",
+      "Fig7N"
+    ],
+    "caption_fact": "CAF-composition patient groups; survival across groups",
+    "source": "P01 Figure 7 M–N caption",
+    "visual_acquired": false
+  },
+  "CAP05partial": {
+    "panels": [
+      "Fig5 panel not recovered"
+    ],
+    "caption_fact": "tumor-cell distance comparison fragment; Wilcoxon; per-group n in F038",
+    "source": "P01 Figure 5 partial caption; letter not recovered",
+    "visual_acquired": false
+  }
+}

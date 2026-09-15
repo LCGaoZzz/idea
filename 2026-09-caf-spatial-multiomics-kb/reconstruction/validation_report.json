@@ -1,0 +1,276 @@
+{
+  "validator": "reconstruct-bioinfo-protocol/1.4.0",
+  "project_dir": "/mnt/data/CAF_spatial_2025_reconstruction",
+  "valid": true,
+  "schema_validation": "passed",
+  "derived_statuses": {
+    "A01": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input"
+      ]
+    },
+    "A02": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: assay_transition_and_full_preprocessing_call"
+      ]
+    },
+    "A03": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: self_inclusion, edge_policy"
+      ]
+    },
+    "A04": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: nmf_objective, nmf_seed, factor_scaling"
+      ]
+    },
+    "A05": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: graph_k, graph_metric"
+      ]
+    },
+    "A06": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input"
+      ]
+    },
+    "A07": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: DEG_test_and_unit"
+      ]
+    },
+    "A08": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: signature_coverage_policy"
+      ]
+    },
+    "A09": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: database_version, combination_rule"
+      ]
+    },
+    "A10": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: zero_denominator_policy"
+      ]
+    },
+    "A11": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A12": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: reference_sha256"
+      ]
+    },
+    "A13": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: edge_spot_policy"
+      ]
+    },
+    "A14": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: iStar_config"
+      ]
+    },
+    "A15": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: insufficient_target_policy"
+      ]
+    },
+    "A16": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: tumor_mask_algorithm"
+      ]
+    },
+    "A17": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: independent_unit_model"
+      ]
+    },
+    "A18": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: grid_origin_and_mask"
+      ]
+    },
+    "A19": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: tumor_state_clustering"
+      ]
+    },
+    "A20": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: paired_test_setting"
+      ]
+    },
+    "A21": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: antibody_thresholds"
+      ]
+    },
+    "A22": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: patient_core_aggregation"
+      ]
+    },
+    "A23": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: covariates_verified"
+      ]
+    },
+    "A24": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency",
+        "missing required material: active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: hclust_actual_columns"
+      ]
+    },
+    "A25": {
+      "declared": "材料冲突",
+      "derived": "材料冲突",
+      "reasons": [
+        "one or more unresolved cross-material conflicts exist"
+      ]
+    },
+    "A26": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: exact_panel_file_sha256"
+      ]
+    },
+    "A27": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct figure/caption evidence, active code/config, existing fingerprinted input",
+        "unreported/inferred parameters remain unresolved: patient_section_mapping"
+      ]
+    }
+  },
+  "derived_overall_status": "材料冲突",
+  "errors": [],
+  "warnings": [],
+  "scope_note": "Contract, receipt, on-disk path, SHA-256, linkage, and provenance validation only. The receipt is not signed: a writer controlling the whole project can fabricate it. A passing validator therefore does not prove process-to-artifact causality or scientific correctness; retain independent runtime/job logs and expert review."
+}

@@ -1,0 +1,1 @@
+patient_id	specimen_id	section_id	region_id	platform	cancer	histology	stage	timepoint	treatment	panel_version	segmentation_version	coordinate_unit	origin_x	origin_y	parent_section	serial_or_nonserial	tissue_mask_path	cell_table_path	raw_counts_path	raw_sha256	survival_time	survival_event	survival_endpoint	inclusion_reason
