@@ -1,0 +1,17 @@
+test_chinese_lookup (test_kb.KnowledgeBaseTests.test_chinese_lookup) ... ok
+test_claim_count (test_kb.KnowledgeBaseTests.test_claim_count) ... ok
+test_cli (test_kb.KnowledgeBaseTests.test_cli) ... ok
+test_covarnet_lookup (test_kb.KnowledgeBaseTests.test_covarnet_lookup) ... ok
+test_empty (test_kb.KnowledgeBaseTests.test_empty) ... ok
+test_figures (test_kb.KnowledgeBaseTests.test_figures) ... ok
+test_invalid_limit (test_kb.KnowledgeBaseTests.test_invalid_limit) ... ok
+test_show_boundary (test_kb.KnowledgeBaseTests.test_show_boundary) ... ok
+test_source_count (test_kb.KnowledgeBaseTests.test_source_count) ... ok
+test_source_detail (test_kb.KnowledgeBaseTests.test_source_detail) ... ok
+test_structure (test_kb.KnowledgeBaseTests.test_structure) ... ok
+test_unknown (test_kb.KnowledgeBaseTests.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.678s
+
+OK

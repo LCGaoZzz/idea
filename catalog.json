@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "updated_on": "2026-09-15",
+  "classification_type": "curatorial_navigation_not_quality_ranking",
+  "entries": [
+    {
+      "path": "2026-09-multicellular-ecosystems-xenium-kb",
+      "title": "多细胞生态系统 Xenium 知识库",
+      "primary_classification": [
+        "spatial-omics",
+        "multicellular-ecosystems"
+      ],
+      "tags": [
+        "Xenium",
+        "TME",
+        "CAF",
+        "myeloid",
+        "fibro-inflammation",
+        "spatial-statistics",
+        "workflow",
+        "agent-kb"
+      ]
+    },
+    {
+      "path": "2026-09-serpin-myeloid-spatial-niches",
+      "title": "serpin–ECM–myeloid 研究框架",
+      "primary_classification": [
+        "spatial-omics",
+        "tumor-microenvironment"
+      ],
+      "tags": [
+        "PDAC",
+        "ECM",
+        "myeloid",
+        "spatial-niches"
+      ]
+    },
+    {
+      "path": "Xenium-based-SpatioTemporal-Evolution-Profiling",
+      "title": "Xenium 时空演进",
+      "primary_classification": [
+        "cancer-evolution",
+        "spatiotemporal"
+      ],
+      "tags": [
+        "Xenium",
+        "TME",
+        "time-series"
+      ]
+    },
+    {
+      "path": "Xenium-CNV",
+      "title": "Xenium-CNV",
+      "primary_classification": [
+        "cancer-evolution",
+        "clonal-heterogeneity"
+      ],
+      "tags": [
+        "Xenium",
+        "CNV",
+        "spatial-niches"
+      ]
+    },
+    {
+      "path": "2026-09-cancer-coevolution-agent-kb",
+      "title": "癌症基因型—表型共同演化",
+      "primary_classification": [
+        "cancer-evolution",
+        "genotype-phenotype"
+      ],
+      "tags": [
+        "coevolution",
+        "agent-kb",
+        "methodology"
+      ]
+    },
+    {
+      "path": "nise-lasermpnn-2026",
+      "title": "NISE / LASErMPNN 闭环蛋白设计",
+      "primary_classification": [
+        "molecular-engineering",
+        "protein-design"
+      ],
+      "tags": [
+        "protein-design",
+        "reproducibility"
+      ]
+    }
+  ]
+}

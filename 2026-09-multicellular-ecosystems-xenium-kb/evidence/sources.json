@@ -1,0 +1,167 @@
+[
+  {
+    "id": "R01",
+    "title": "Multicellular ecosystems: Linking cellular diversity to tissue function and disease",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42342504/",
+    "doi": "10.1016/j.tcb.2026.06.005",
+    "kind": "target_review",
+    "inspection_scope": "metadata_abstract_and_publisher_indexed_passages",
+    "locator": "Abstract; Emerging approaches to dissect multicellular coordination; Identification of coordinated multicellular ecosystems / indexed Table 2",
+    "limitations": "No complete full-text or figure inspection",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R02",
+    "title": "Cross-tissue multicellular coordination and its rewiring in cancer",
+    "url": "https://www.nature.com/articles/s41586-025-09053-4",
+    "doi": "10.1038/s41586-025-09053-4",
+    "kind": "primary_research",
+    "inspection_scope": "selected_publisher_html_and_indexed_passages",
+    "locator": "Identification of cross-tissue CMs; Multicellular rewiring in cancer",
+    "limitations": "No code audit or execution",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R03",
+    "title": "DIALOGUE maps multicellular programs in tissue from single-cell or spatial transcriptomics data",
+    "url": "https://www.nature.com/articles/s41587-022-01288-0",
+    "doi": "10.1038/s41587-022-01288-0",
+    "kind": "primary_method",
+    "inspection_scope": "abstract_and_figure_captions",
+    "locator": "Abstract; Fig. 1 caption",
+    "limitations": "No implementation audit",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R04",
+    "title": "CellCharter reveals spatial cell niches associated with tissue remodeling and cell plasticity",
+    "url": "https://www.nature.com/articles/s41588-023-01588-4",
+    "doi": "10.1038/s41588-023-01588-4",
+    "kind": "primary_method",
+    "inspection_scope": "selected_publisher_html",
+    "locator": "Abstract",
+    "limitations": "No implementation audit",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R05",
+    "title": "NicheCompass documentation",
+    "url": "https://nichecompass.readthedocs.io/en/latest/",
+    "doi": null,
+    "kind": "official_documentation",
+    "inspection_scope": "documentation_landing_page",
+    "locator": "Documentation overview",
+    "limitations": "Latest page is mutable; no installed-version verification",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R06",
+    "title": "Explainable multiview framework for dissecting spatial relationships from highly multiplexed data",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35422018/",
+    "doi": "10.1186/s13059-022-02663-5",
+    "kind": "primary_method",
+    "inspection_scope": "abstract_and_figure_captions",
+    "locator": "Abstract; MISTy overview",
+    "limitations": "No implementation audit",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R07",
+    "title": "Cell simulation as cell segmentation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40404994/",
+    "doi": "10.1038/s41592-025-02697-0",
+    "kind": "primary_method",
+    "inspection_scope": "abstract",
+    "locator": "Abstract",
+    "limitations": "No local resegmentation or benchmark",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R08",
+    "title": "squidpy.gr.nhood_enrichment",
+    "url": "https://squidpy.readthedocs.io/en/stable/api/squidpy.gr.nhood_enrichment.html",
+    "doi": null,
+    "kind": "official_documentation",
+    "inspection_scope": "api_documentation",
+    "locator": "API description and arguments",
+    "limitations": "Stable page is mutable; default is not a paper parameter",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R09",
+    "title": "LIANA+ provides an all-in-one framework for cell-cell communication inference",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39223377/",
+    "doi": "10.1038/s41556-024-01469-w",
+    "kind": "primary_method",
+    "inspection_scope": "abstract_and_metadata",
+    "locator": "Abstract",
+    "limitations": "No local inference",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R10",
+    "title": "NicheNet: modeling intercellular communication by linking ligands to target genes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31819264/",
+    "doi": "10.1038/s41592-019-0667-5",
+    "kind": "primary_method",
+    "inspection_scope": "abstract_and_metadata",
+    "locator": "Abstract",
+    "limitations": "No local inference",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R11",
+    "title": "Confronting false discoveries in single-cell differential expression",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34584091/",
+    "doi": "10.1038/s41467-021-25960-2",
+    "kind": "primary_method",
+    "inspection_scope": "abstract_and_figure_captions",
+    "locator": "Abstract; Fig. 2a and Fig. 3 captions",
+    "limitations": "No raw-data reanalysis",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R12",
+    "title": "scCODA is a Bayesian model for compositional single-cell data analysis",
+    "url": "https://doi.org/10.1038/s41467-021-27150-6",
+    "doi": "10.1038/s41467-021-27150-6",
+    "kind": "primary_method",
+    "inspection_scope": "publisher_metadata_and_author_institution_abstract",
+    "locator": "Abstract",
+    "limitations": "No installation or model fit",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R13",
+    "title": "IL1-Induced JAK/STAT Signaling Is Antagonized by TGFβ to Shape CAF Heterogeneity in Pancreatic Ductal Adenocarcinoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30366930/",
+    "doi": "10.1158/2159-8290.CD-18-0710",
+    "kind": "primary_research",
+    "inspection_scope": "abstract_and_metadata",
+    "locator": "Abstract",
+    "limitations": "Context-specific PDAC models; not a universal CAF rule",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R14",
+    "title": "Depletion of carcinoma-associated fibroblasts and fibrosis induces immunosuppression and accelerates pancreas cancer with reduced survival",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24856586/",
+    "doi": "10.1016/j.ccr.2014.04.005",
+    "kind": "primary_research",
+    "inspection_scope": "abstract_and_metadata_with_erratum_metadata",
+    "locator": "Abstract; erratum PMID 28843279",
+    "limitations": "Erratum details not audited; no exact experimental parameters restated",
+    "checked_on": "2026-09-15"
+  },
+  {
+    "id": "R15",
+    "title": "Understanding Xenium Outputs",
+    "url": "https://www.10xgenomics.com/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-understanding-outputs",
+    "doi": null,
+    "kind": "official_documentation",
+    "inspection_scope": "selected_official_documentation_sections",
+    "locator": "Cell summary; Cell and nucleus segmentation files; Cell-feature matrix; Gene panel file",
+    "limitations": "Version-dependent outputs; no user panel inspected",
+    "checked_on": "2026-09-15"
+  }
+]

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">相同组成不唯一决定空间结构</title><desc id="desc">本知识库原创教学示意，不是论文原图或真实数据。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#17303d} .title{font-size:30px;font-weight:700}.head{font-size:24px;font-weight:700}.body{font-size:20px}.note{font-size:17px;fill:#536774}.card{fill:#f1f6f8;stroke:#cad8de;stroke-width:2}.line{fill:none;stroke:#758b94;stroke-width:2}</style>
+<rect width="1200" height="680" fill="white"/>
+<text x="48" y="58" class="title">相同的细胞组成，可以有不同的局部空间组织</text>
+<text x="48" y="94" class="note">原创示意｜两侧均为 3 个 CAF、3 个巨噬细胞、3 个肿瘤细胞｜不是实测空间坐标</text>
+<rect x="48" y="125" width="530" height="425" rx="14" class="card"/>
+<rect x="622" y="125" width="530" height="425" rx="14" class="card"/>
+<text x="76" y="170" class="head">A｜不同类型分隔较远</text>
+<text x="650" y="170" class="head">B｜局部紧密排列</text>
+<g fill="#d6e9e5" stroke="#397a70" stroke-width="2"><circle cx="150" cy="245" r="25"/><circle cx="150" cy="350" r="25"/><circle cx="150" cy="455" r="25"/><circle cx="790" cy="285" r="25"/><circle cx="790" cy="350" r="25"/><circle cx="790" cy="415" r="25"/></g>
+<g fill="#e4e7f1" stroke="#637197" stroke-width="2"><circle cx="310" cy="245" r="25"/><circle cx="310" cy="350" r="25"/><circle cx="310" cy="455" r="25"/><circle cx="855" cy="285" r="25"/><circle cx="855" cy="350" r="25"/><circle cx="855" cy="415" r="25"/></g>
+<g fill="#f2e2d6" stroke="#a87954" stroke-width="2"><circle cx="475" cy="245" r="25"/><circle cx="475" cy="350" r="25"/><circle cx="475" cy="455" r="25"/><circle cx="920" cy="285" r="25"/><circle cx="920" cy="350" r="25"/><circle cx="920" cy="415" r="25"/></g>
+<g class="body" text-anchor="middle"><text x="150" y="252">F</text><text x="150" y="357">F</text><text x="150" y="462">F</text><text x="310" y="252">M</text><text x="310" y="357">M</text><text x="310" y="462">M</text><text x="475" y="252">T</text><text x="475" y="357">T</text><text x="475" y="462">T</text><text x="790" y="292">F</text><text x="790" y="357">F</text><text x="790" y="422">F</text><text x="855" y="292">M</text><text x="855" y="357">M</text><text x="855" y="422">M</text><text x="920" y="292">T</text><text x="920" y="357">T</text><text x="920" y="422">T</text></g>
+<text x="76" y="518" class="note">比例相同，并不意味着邻近机会相同。</text>
+<text x="650" y="518" class="note">局部邻近仍不能证明真实通讯或功能协同。</text>
+<text x="48" y="600" class="body">F：CAF　 M：巨噬细胞　 T：肿瘤细胞</text>
+<text x="48" y="640" class="note">需要分别测量组成、几何结构和细胞内状态，并指定合理的空间零假设。</text>
+</svg>

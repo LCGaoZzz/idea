@@ -1,0 +1,42 @@
+{
+  "id": "multicellular-ecosystems-xenium-2026",
+  "version": "1.0.0",
+  "created_on": "2026-09-15",
+  "language": "zh-CN",
+  "primary_classification": [
+    "spatial-omics",
+    "multicellular-ecosystems"
+  ],
+  "tags": [
+    "Xenium",
+    "TME",
+    "CAF",
+    "myeloid",
+    "fibro-inflammation",
+    "spatial-statistics",
+    "workflow",
+    "agent-kb"
+  ],
+  "source_doi": "10.1016/j.tcb.2026.06.005",
+  "reading_status": "partial_full_text_access",
+  "science_execution": "not_performed",
+  "code_audit": "external_algorithms_not_audited",
+  "evidence_labels": [
+    "ARTICLE_FACT",
+    "EXTERNAL_FACT",
+    "DOC_FACT",
+    "ANALYSIS",
+    "TRANSFER",
+    "CODE_AUDIT"
+  ],
+  "entrypoint": "README.md",
+  "agent_entrypoint": "AGENTS.md",
+  "claims": "evidence/claims.jsonl",
+  "sources": "evidence/sources.json",
+  "figures": [
+    "figures/01-evidence-framework.svg",
+    "figures/02-niche-geometry.svg",
+    "figures/03-replication.svg",
+    "figures/04-workflow.svg"
+  ]
+}

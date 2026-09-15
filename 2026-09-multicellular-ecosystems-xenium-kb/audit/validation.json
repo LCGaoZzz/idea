@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "claim_count": 24,
+  "source_count": 15,
+  "figure_count": 4,
+  "internal_links_checked": 45,
+  "external_repository_links_not_checked_locally": [
+    "../../2026-09-cancer-coevolution-agent-kb/README.md",
+    "../../2026-09-serpin-myeloid-spatial-niches/README.md",
+    "../../Xenium-CNV/",
+    "../../Xenium-based-SpatioTemporal-Evolution-Profiling/",
+    "../2026-09-cancer-coevolution-agent-kb/README.md",
+    "../2026-09-serpin-myeloid-spatial-niches/README.md",
+    "../CATALOG.md",
+    "../Xenium-CNV/",
+    "../Xenium-based-SpatioTemporal-Evolution-Profiling/"
+  ],
+  "errors": [],
+  "scope": "structural checks only; no scientific replication or HTTP link checking"
+}

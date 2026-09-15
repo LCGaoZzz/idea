@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">观测单位和生物学重复</title><desc id="desc">本知识库原创教学示意，不是论文原图或真实数据。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#17303d} .title{font-size:30px;font-weight:700}.head{font-size:24px;font-weight:700}.body{font-size:20px}.note{font-size:17px;fill:#536774}.card{fill:#f1f6f8;stroke:#cad8de;stroke-width:2}.line{fill:none;stroke:#758b94;stroke-width:2}</style>
+<rect width="1200" height="680" fill="white"/>
+<text x="48" y="58" class="title">更多细胞，不会自动创造更多独立生物学重复</text>
+<text x="48" y="94" class="note">原创示意｜虚构例子：2 只动物，每只 2 张切片，切片内有多个 ROI 和细胞</text>
+<rect x="190" y="134" width="250" height="66" rx="12" class="card"/><rect x="760" y="134" width="250" height="66" rx="12" class="card"/>
+<text x="315" y="176" text-anchor="middle" class="head">动物 A</text><text x="885" y="176" text-anchor="middle" class="head">动物 B</text>
+<path d="M315 200V222H175V244M315 222H455V244M885 200V222H745V244M885 222H1025V244" class="line"/>
+<rect x="75" y="244" width="200" height="64" rx="10" class="card"/><rect x="355" y="244" width="200" height="64" rx="10" class="card"/><rect x="645" y="244" width="200" height="64" rx="10" class="card"/><rect x="925" y="244" width="200" height="64" rx="10" class="card"/>
+<g class="body" text-anchor="middle"><text x="175" y="284">A 的切片 1</text><text x="455" y="284">A 的切片 2</text><text x="745" y="284">B 的切片 1</text><text x="1025" y="284">B 的切片 2</text></g>
+<path d="M175 308V350M455 308V350M745 308V350M1025 308V350" class="line"/>
+<g class="body" text-anchor="middle"><text x="175" y="383">多个 ROI</text><text x="455" y="383">多个 ROI</text><text x="745" y="383">多个 ROI</text><text x="1025" y="383">多个 ROI</text><text x="175" y="435">很多细胞</text><text x="455" y="435">很多细胞</text><text x="745" y="435">很多细胞</text><text x="1025" y="435">很多细胞</text></g>
+<rect x="48" y="487" width="1104" height="91" rx="12" class="card"/>
+<text x="76" y="525" class="head">本例的生物学重复是 2，不是 4，也不是细胞总数。</text>
+<text x="76" y="558" class="body">组别推断、重采样与训练/测试划分，应尊重实验单位和配对结构。</text>
+<text x="48" y="632" class="note">更多观测可提高同一标本的测量精度；伪重复则会错误增加独立信息的表观数量。</text>
+</svg>

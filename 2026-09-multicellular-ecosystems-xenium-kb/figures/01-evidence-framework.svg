@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">四种证据不能自动互相替代</title><desc id="desc">本知识库原创教学示意，不是论文原图或真实数据。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#17303d} .title{font-size:30px;font-weight:700}.head{font-size:24px;font-weight:700}.body{font-size:20px}.note{font-size:17px;fill:#536774}.card{fill:#f1f6f8;stroke:#cad8de;stroke-width:2}.line{fill:none;stroke:#758b94;stroke-width:2}</style>
+<rect width="1200" height="680" fill="white"/>
+<text x="48" y="58" class="title">多细胞生态位：四种证据，四个不同问题</text>
+<text x="48" y="94" class="note">原创教学示意｜组成、空间与状态关联都不能自动推出因果</text>
+<rect x="48" y="130" width="530" height="205" rx="14" class="card"/>
+<text x="76" y="174" class="head">01 组成｜谁变多、谁变少？</text>
+<text x="76" y="218" class="body">各细胞比例、单位面积检测密度</text>
+<text x="76" y="259" class="body">CAF 和巨噬细胞同时增加</text>
+<text x="76" y="304" class="note">不等于：相邻、交流或共同驱动疾病</text>
+<rect x="622" y="130" width="530" height="205" rx="14" class="card"/>
+<text x="650" y="174" class="head">02 空间｜如何排列、相隔多远？</text>
+<text x="650" y="218" class="body">邻近、接触代理、边界距离和组织区室</text>
+<text x="650" y="259" class="body">候选细胞在肿瘤边界共同出现</text>
+<text x="650" y="304" class="note">不等于：排除了共同位置偏好或分割错误</text>
+<rect x="48" y="368" width="530" height="205" rx="14" class="card"/>
+<text x="76" y="412" class="head">03 状态｜哪些程序共同变化？</text>
+<text x="76" y="456" class="body">不同细胞内部的表达程序协调</text>
+<text x="76" y="497" class="body">区分样本内关联与样本间差异</text>
+<text x="76" y="542" class="note">不等于：已排除缺氧等共同驱动因素</text>
+<rect x="622" y="368" width="530" height="205" rx="14" class="card"/>
+<text x="650" y="412" class="head">04 因果｜改变关系会改变功能吗？</text>
+<text x="650" y="456" class="body">特异干预、接收端反应与独立功能</text>
+<text x="650" y="497" class="body">验证目标关系，而非仅减少细胞</text>
+<text x="650" y="542" class="note">仍需考虑干预多效性与模型适用范围</text>
+<text x="48" y="634" class="body">研究报告要说明实际具备哪些证据，不把“共同出现”写成“驱动”。</text>
+</svg>

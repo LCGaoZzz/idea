@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">可复查的 Xenium 生态位分析工作流</title><desc id="desc">本知识库原创教学示意，不是论文原图或真实数据。</desc>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#17303d} .title{font-size:30px;font-weight:700}.head{font-size:24px;font-weight:700}.body{font-size:20px}.note{font-size:17px;fill:#536774}.card{fill:#f1f6f8;stroke:#cad8de;stroke-width:2}.line{fill:none;stroke:#758b94;stroke-width:2}</style>
+<rect width="1200" height="680" fill="white"/>
+<text x="48" y="58" class="title">Xenium 生态位研究：从测量边界到机制验证</text>
+<text x="48" y="94" class="note">原创工作流建议｜按 1–8 顺序；不是作者原始流程，也不是已运行的项目结果</text>
+<rect x="48" y="125" width="530" height="104" rx="12" class="card"/><rect x="622" y="125" width="530" height="104" rx="12" class="card"/>
+<text x="76" y="166" class="head">1｜设计与实验单位</text><text x="76" y="204" class="body">假说、分组依据、主终点和样本层级</text>
+<text x="650" y="166" class="head">2｜测量与空间质控</text><text x="650" y="204" class="body">面板、分割、配准、病理和缺失证据</text>
+<rect x="48" y="248" width="530" height="104" rx="12" class="card"/><rect x="622" y="248" width="530" height="104" rx="12" class="card"/>
+<text x="76" y="289" class="head">3｜细胞身份与状态分开</text><text x="76" y="327" class="body">注释置信度、可测程序、实测/预测分离</text>
+<text x="650" y="289" class="head">4｜建立病理坐标系</text><text x="650" y="327" class="body">肿瘤、间质、坏死、边界和距离定义</text>
+<rect x="48" y="371" width="530" height="104" rx="12" class="card"/><rect x="622" y="371" width="530" height="104" rx="12" class="card"/>
+<text x="76" y="412" class="head">5｜空间结构发现</text><text x="76" y="450" class="body">透明邻域基线、一个 niche 方法、稳定性</text>
+<text x="650" y="412" class="head">6｜样本层统计推断</text><text x="650" y="450" class="body">效应量、空间零模型、组成与状态协调</text>
+<rect x="48" y="494" width="530" height="104" rx="12" class="card"/><rect x="622" y="494" width="530" height="104" rx="12" class="card"/>
+<text x="76" y="535" class="head">7｜候选机制证据链</text><text x="76" y="573" class="body">发送端、接收条件、空间与下游反应</text>
+<text x="650" y="535" class="head">8｜独立与功能验证</text><text x="650" y="573" class="body">未参与定义的证据、失败结果与适用边界</text>
+<text x="48" y="650" class="note">每步保存输入、版本、参数、状态和产物；未测量、阴性、失败、未执行必须分开。</text>
+</svg>
