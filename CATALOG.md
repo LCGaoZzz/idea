@@ -8,6 +8,7 @@
 |---|---|---|
 | [多细胞生态系统 Xenium 知识库](2026-09-multicellular-ecosystems-xenium-kb/README.md) | 通用概念、方法选择、空间统计、工作流、配图与 Agent 读取 | Xenium、TME、CAF、髓系、促纤维炎症、统计 |
 | [serpin–ECM–myeloid 研究框架](2026-09-serpin-myeloid-spatial-niches/README.md) | 局部肿瘤状态与髓系生态位的具体机制案例 | PDAC、基质、空间生态位 |
+| [CAF 空间多组学：Cancer Cell 2025 知识库](2026-09-caf-spatial-multiomics-cancercell-2025-kb/README.md) | 研究逻辑、邻域/NMF/Visium方法重建、统计审计、Xenium迁移与独立审核；来源受限，非生物学复现 | CAF、Xenium、Visium、TME、空间统计、agent-kb |
 
 ## 肿瘤演化 → 时空变化、克隆与基因型—表型
 

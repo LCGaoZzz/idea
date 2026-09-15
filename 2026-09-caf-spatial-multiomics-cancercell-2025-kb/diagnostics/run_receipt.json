@@ -1,0 +1,15 @@
+{
+  "scope": "assistant-authored deterministic diagnostic examples; not scientific reconstruction",
+  "command": [
+    "python",
+    "diagnostics/diagnostic_examples.py"
+  ],
+  "exit_code": 0,
+  "captured_at": "2026-09-15T13:12:36.150656+00:00",
+  "seed": "not_applicable: deterministic; no random module",
+  "python": "3.13.5",
+  "code_sha256": "ba26ead25f79a49cf26b9c37b7218d4f9282696b0f32fc6a7c0be62eaf7067d4",
+  "stdout_sha256": "5af6b8c66d2664c852f3fc9ca5b6b28e8b3d5572e57109006d66d02513ee8a0b",
+  "biological_inputs": [],
+  "paper_figure_reproduced": []
+}

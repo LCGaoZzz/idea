@@ -1,0 +1,10 @@
+SOURCE: P01; primary URL in references.tsv. Tool-visible manuscript text; short fragments only.
+LOCATOR: QUANTIFICATION AND STATISTICAL ANALYSIS / Survival Analyses
+CAF subtype composition and survival time
+LOCATOR: Results / Validation of Spatial CAF Subtypes and Clinical Relevance using CODEX and IMC Assays
+1,070 NSCLC patients
+2,070 cores
+LOCATOR: STAR Methods / public IMC dataset description
+1,072 patients
+2,072 TMA regions
+NOTE: This is a manually captured short excerpt, not an original article file. See PROVENANCE.md.

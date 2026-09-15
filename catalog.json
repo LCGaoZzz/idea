@@ -85,6 +85,28 @@
         "protein-design",
         "reproducibility"
       ]
+    },
+    {
+      "path": "2026-09-caf-spatial-multiomics-cancercell-2025-kb",
+      "title": "CAF 空间多组学：Cancer Cell 2025 知识库",
+      "primary_classification": [
+        "spatial-omics",
+        "tumor-microenvironment"
+      ],
+      "tags": [
+        "CAF",
+        "Xenium",
+        "Visium",
+        "TME",
+        "spatial-statistics",
+        "methodology-audit",
+        "agent-kb"
+      ],
+      "doi": "10.1016/j.ccell.2025.03.004",
+      "edition": "knowledge_reading_core_not_complete_audit_archive",
+      "evidence_status": "source-limited reconstruction and audit; no biological reproduction",
+      "entrypoint": "README.md",
+      "scope_document": "IMPORT_SCOPE.md"
     }
   ]
 }

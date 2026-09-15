@@ -1,0 +1,90 @@
+{
+  "provenance": "Methods-reported values only; not author config; never execute with unresolved null values",
+  "single_cell": {
+    "radius_um": 80,
+    "nmf_package": "NMF",
+    "nmf_version": "0.27",
+    "rank": 5,
+    "seurat_version": "4.3",
+    "leiden_resolution": 0.1,
+    "fit_unit": "per_sample for CosMx/MERSCOPE/Xenium; within-platform combined for CODEX/IMC",
+    "objective": null,
+    "nmf_algorithm": null,
+    "initialization": null,
+    "seed": null,
+    "nrun": null,
+    "max_iter": null,
+    "factor_scaling": null,
+    "graph_k": null,
+    "graph_metric": null,
+    "self_inclusion": null,
+    "edge_policy": null,
+    "zero_neighbor_policy": null,
+    "cluster_label_mapping": null
+  },
+  "visium": {
+    "RCTD_version": "2.0.0",
+    "doublet_mode": "multi",
+    "caf_centroid_weight_gt": 0.37,
+    "adjacent_spots": 6,
+    "include_centroid": true,
+    "neighborhood_aggregation": "mean over seven spots",
+    "reduction": "PCA",
+    "n_pcs": 5,
+    "edge_policy": null,
+    "reference_sha256": null,
+    "leiden_graph": null
+  },
+  "distance": {
+    "nearest_target_cells": 5,
+    "aggregation": "mean",
+    "unit": "um",
+    "insufficient_target_policy": null
+  },
+  "region": {
+    "margin_um": 100,
+    "tumor_mask_definition_implementation": null
+  },
+  "survival": {
+    "cox_reported": "univariable",
+    "dichotomy_reported": "within-group median",
+    "hclust_inputs_reported": [
+      "CAF subtype composition",
+      "survival time"
+    ],
+    "actual_hclust_columns": null,
+    "survival_endpoint": null,
+    "censoring_definition": null,
+    "covariates": null,
+    "patient_aggregation": null
+  },
+  "runtime": "not executed on paper data",
+  "preprocessing": {
+    "reported_Seurat_version": "4.3.1",
+    "initial_low_feature_counts_lt": 20,
+    "feature_counts_exact_column": null,
+    "initial_normalization": "SCTransform",
+    "initial_PCA_features": "all genes",
+    "expression_clustering_resolution": 0.5,
+    "stromal_integration_excluded_types": [
+      "epithelial",
+      "tumor"
+    ],
+    "batch_key": "sample",
+    "integration": "RPCA",
+    "reported_integration_functions": [
+      "SplitObject",
+      "NormalizeData",
+      "SelectIntegrationFeatures",
+      "ScaleData",
+      "RunPCA",
+      "FindIntegrationAnchors",
+      "IntegrateData"
+    ],
+    "cluster_mean_features_lt": 100,
+    "DEG_function": "FindAllMarkers",
+    "DEG_test": null,
+    "assay_and_slot_transitions": null,
+    "tumor_annotation_rejoin_code": null
+  }
+}

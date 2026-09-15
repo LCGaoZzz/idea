@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-15T14:15:00.494700+00:00",
+  "source_zip": "CAF_spatial_2025_audit_v1.zip",
+  "source_zip_sha256": "d6ffc84218db17dabc90c25f06b781e1b3f6dd3d99f48d3bef3177c6821ef53b",
+  "source_zip_bytes": 214770,
+  "source_zip_files": 46,
+  "verified_original_content_subtree": "c1bbaffea172557eea8577c73fad2f305518b1a3",
+  "verification_method": "Compute Git blob SHA1 from each original ZIP file bytes; compare with recursive tree entries fetched from GitHub connector. Additionally retain SHA256 checksums.",
+  "imported_original_files": 24,
+  "all_imported_files_byte_identical": true,
+  "mismatches": [],
+  "checksums_path": "integrity/IMPORTED_SHA256SUMS",
+  "synthetic_test_command": "python diagnostics/diagnostic_examples.py",
+  "synthetic_test_execution_location": "local container, exact imported source bytes",
+  "synthetic_test_exit_code": 0,
+  "synthetic_tests": 18,
+  "synthetic_passed": 18,
+  "biological_analyses_executed": 0,
+  "original_generic_validator_rerun_in_this_upload": false,
+  "github_actions_ci_run": false,
+  "scope": "Original-file import integrity and deterministic mathematical diagnostics only. New navigation files are not covered by the original-file checksums. Not scientific reproduction."
+}

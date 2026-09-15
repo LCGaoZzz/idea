@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base_id": "caf-spatial-multiomics-cancercell-2025",
+  "title": "CAF空间多组学：研究逻辑、方法重建与证据审计",
+  "edition": "knowledge_reading_core_not_complete_audit_archive",
+  "created_on": "2026-09-15",
+  "language": "zh-CN",
+  "paper_doi": "10.1016/j.ccell.2025.03.004",
+  "source_archive": {"filename": "CAF_spatial_2025_audit_v1.zip", "bytes": 214770, "sha256": "d6ffc84218db17dabc90c25f06b781e1b3f6dd3d99f48d3bef3177c6821ef53b", "uploaded_in_this_directory": false},
+  "entrypoints": {"human": "README.md", "agent": "AGENTS.md", "scope": "IMPORT_SCOPE.md", "provenance": "PROVENANCE.md", "review": "review/README.md"},
+  "routes": {
+    "paper_story": ["ARTICLE_REVIEW_ZH.md", "knowledge/01_research_logic.md"],
+    "mathematics": ["methods/01_mathematical_reconstruction.md", "methods/author_parameters.json"],
+    "preprocessing": ["methods/03_preprocessing_and_expression.md"],
+    "statistics": ["knowledge/02_statistics_audit.md", "diagnostics/README.md"],
+    "xenium_transfer": ["knowledge/03_xenium_transfer.md"],
+    "reproduction_requirements": ["methods/02_reproduction_blueprint.md", "data/DATA_ACCESS.md"],
+    "evidence": ["evidence/READ_ME.md", "evidence/parameter_facts.tsv", "evidence/references.tsv", "evidence/analysis_index.json"],
+    "audit": ["review/README.md", "review/FABLE51_REVIEW_PROMPT.md", "integrity/import_verification.json"]
+  },
+  "claim_channels": ["paper_reported", "author_code_evidence", "independent_reasoning", "proposed_transfer"],
+  "author_code_acquired": false,
+  "complete_paper_and_supplements_acquired": false,
+  "biological_analyses_executed": 0,
+  "original_analysis_status_counts": {"受阻": 26, "材料冲突": 1},
+  "imported_original_files": 24,
+  "not_included": ["complete audit manifest and traceability", "generic workflow validator", "merged HTML", "original ZIP"],
+  "synthetic_diagnostics_command": "python diagnostics/diagnostic_examples.py",
+  "synthetic_tests_are_paper_reproduction": false,
+  "unknown_parameters_must_remain_unknown": true
+}
