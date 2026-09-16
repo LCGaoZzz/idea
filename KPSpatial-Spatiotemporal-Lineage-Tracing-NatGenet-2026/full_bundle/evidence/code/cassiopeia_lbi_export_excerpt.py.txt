@@ -1,0 +1,16 @@
+# Verbatim contiguous excerpt; not a full source file.
+# Repository: YosefLab/Cassiopeia
+# Commit: 1ee5959eb9d3f8d4d26e2af5678234493bf54d6d
+# Path: cassiopeia/tools/fitness_estimator/_lbi_jungle.py
+# Upstream lines 114-124 (file Git blob cdb92499835c1bc868eb7c7a175a1b974ddbe4d3)
+            T_empirical.annotate_standard_node_features()
+            T_empirical.infer_fitness(params={})
+            res_df = T_empirical.node_features()
+            node_names = res_df.name
+            node_fitnesses = res_df.mean_fitness
+            for v, f in zip(node_names, node_fitnesses):
+                if v != "" and v[0] != "_":
+                    tree.set_attribute(v, "fitness", f)
+                elif v != "" and v[0] == "_":
+                    # (Non-root) internal node!
+                    tree.set_attribute(v[1:], "fitness", f)

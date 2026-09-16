@@ -1,0 +1,145 @@
+{
+  "scope": "audit_only_not_scientific_reproduction",
+  "created_at_utc": "2026-09-16T02:33:00.363148+00:00",
+  "python": "3.13.5",
+  "commit": "c2fa7568ee48a9e35bbc6ecd88378c6768b23e00",
+  "all_detection_checks_passed": true,
+  "n_checks": 10,
+  "checks": [
+    {
+      "id": "metadata_git_blob_identity",
+      "passed": true,
+      "observed": {
+        "git_blob_sha1": "75b5f677202c1655fba4a7281df9cdd82261d403",
+        "bytes": 2043
+      },
+      "scope": "Full metadata file; byte-identity verification"
+    },
+    {
+      "id": "metadata_array_hierarchy",
+      "passed": true,
+      "observed": {
+        "arrays": 49,
+        "slide_seq": 44,
+        "slide_tags": 5,
+        "unique_mouse_ids": 24,
+        "slide_tags_mouse_ids": [
+          "SPC-11"
+        ]
+      },
+      "scope": "Counts from this pinned metadata only, not total paper cohorts"
+    },
+    {
+      "id": "imputation_interface_source_signals",
+      "passed": true,
+      "observed": {
+        "caller": "two-value destructuring",
+        "callee": "three return values"
+      },
+      "scope": "Source excerpts; no original function execution"
+    },
+    {
+      "id": "imputation_arity_counterexample",
+      "passed": true,
+      "observed": "ValueError",
+      "scope": "Synthetic Python tuple demonstration, not the author pipeline"
+    },
+    {
+      "id": "group_pruning_counterexample",
+      "passed": true,
+      "observed": {
+        "as_written_remove": [],
+        "desired_complement_to_keep_group": [
+          "c",
+          "d"
+        ]
+      },
+      "scope": "Synthetic set example; assumes API removes the supplied leaves"
+    },
+    {
+      "id": "group_pruning_source_and_caller",
+      "passed": true,
+      "observed": {
+        "utility_branch_seen": true,
+        "Figure3_grouped_caller_seen": true
+      },
+      "scope": "Recorded active call, not proof of version used for final published outputs"
+    },
+    {
+      "id": "spot_threshold_counterexample",
+      "passed": true,
+      "observed": {
+        "as_written_accepts": true,
+        "spot_threshold_would_accept": false
+      },
+      "scope": "Synthetic threshold fixture; not estimates of cells affected"
+    },
+    {
+      "id": "uncut_filter_overwrite_counterexample",
+      "passed": true,
+      "observed": {
+        "first_overlap": [
+          "a"
+        ],
+        "overwritten_overlap": [
+          "a",
+          "b"
+        ]
+      },
+      "scope": "Synthetic set example reflecting the two assignments in the excerpt"
+    },
+    {
+      "id": "literal_path_not_interpolated",
+      "passed": true,
+      "observed": {
+        "literal_braces_path_present": true
+      },
+      "scope": "Source string; no file-loading attempt"
+    },
+    {
+      "id": "producer_consumer_delimiter_counterexample",
+      "passed": true,
+      "observed": {
+        "tab_reader_header_columns": 1
+      },
+      "scope": "Synthetic file format; an unobserved conversion step could explain workflow differences"
+    }
+  ],
+  "source_fingerprints": [
+    {
+      "path": "evidence/community_scoring_excerpt.txt",
+      "sha256": "fba2c2b8d1dd41f8c90f547f260af43f5e9e36d4924d9235c38f6ddcf55cf13c"
+    },
+    {
+      "path": "evidence/de_excerpt.txt",
+      "sha256": "b6bf6ae4470ec87e6db72f81bc209a491107961db9bf0e29fb1764a9e8fd6095"
+    },
+    {
+      "path": "evidence/fitness_entrypoint_excerpt.txt",
+      "sha256": "4a8ab484fca81c35f47b7593558acd87ac0019b0f97e8f4a0df83ecf00018790"
+    },
+    {
+      "path": "evidence/neighborhood_excerpt.txt",
+      "sha256": "ad675b6eb6c1cda1f1cf074769bddaec9d96580efe922a7a84042d183215c1b5"
+    },
+    {
+      "path": "evidence/phylodynamics_excerpt.txt",
+      "sha256": "178c6b8010a926b5e263a68a845ff9e9722edce5eed50ced0f0d39058bafe05b"
+    },
+    {
+      "path": "evidence/puck_meta.txt",
+      "sha256": "f7aa374c7ead061592e4276bd827f54951da598a55b58915a00bb75f6e8e1e09"
+    },
+    {
+      "path": "evidence/reconstruct_excerpt.txt",
+      "sha256": "6205d0193da69e1334f12df0e8a4733c9ff09e174193b8e081eb5bab730210d5"
+    },
+    {
+      "path": "evidence/target_site_excerpt.txt",
+      "sha256": "d4ee7dc096192dec7fb6f620a6be5d884789f696e89e13e2cf9c520e50d4faab"
+    }
+  ],
+  "interpretation": "A passed detection check means the specified risk/identity was verified, not that the upstream pipeline is correct.",
+  "upstream_pipeline_executed": false,
+  "paper_results_reproduced": false
+}

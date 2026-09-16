@@ -1,0 +1,15 @@
+# Source: mattjones315/KPSpatial-release, commit c2fa7568ee48a9e35bbc6ecd88378c6768b23e00
+# File: utilities/target_site_utilities.py; function impute_single_state, selected statements
+# Source Git blob: c45362338234eec8534c54fe9c410c5512468a3c; excerpt, not complete source
+    for _, node in nx.bfs_edges(neighborhood_graph, cell, depth_limit=number_of_hops):
+        state = character_matrix.loc[node].iloc[character]
+        if distance <= max_neighbor_distance and state != -1:
+            if type(state) == tuple:
+                for _state in state:
+                    votes.append(_state)
+            else:
+                votes.append(state)
+    if len(votes) > 0:
+        values, counts = np.unique(votes, return_counts=True)
+        return values[np.argmax(counts)], np.max(counts) / np.sum(counts), np.max(counts)
+    return -1, 0, 0

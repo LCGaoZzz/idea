@@ -1,0 +1,13 @@
+{
+  "default_bundled_browser": "unavailable",
+  "browser_used": "/usr/bin/chromium",
+  "rendering": "set_content of self-contained generated HTML; file navigation blocked by browser policy",
+  "checks": {
+    "desktop_no_horizontal_overflow": true,
+    "mobile_no_horizontal_overflow": true,
+    "javascript_no_page_errors": true,
+    "inline_svg_count_four": true,
+    "equations_two": true
+  },
+  "page_errors": []
+}

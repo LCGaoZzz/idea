@@ -1,0 +1,46 @@
+# Source: mattjones315/KPSpatial-release, commit c2fa7568ee48a9e35bbc6ecd88378c6768b23e00
+# File: utilities/reconstruct.py, create_character_matrix, original source window L365-L560
+# Selected noncontiguous statements; NOT a full source file; source Git blob: a6acdbf92bc830dcd4067ba7ef2f1e763dc873ec
+    minimum_spot_umi_support: int = typer.Option(
+        2, help="Minimum number of UMIs necessary for a spot"
+    ),
+    minimum_intbc_umi_support: int = typer.Option(
+        1, help="Minimum number of UMIs necessary for a given intBC."
+    ),
+    imputation_concordance: float = typer.Option(
+        0.7, help="Minimum agreement for imputation.",
+    ),
+    umi_per_cell = allele_table.groupby('cellBC').agg({'UMI': sum})
+    keep_cells = umi_per_cell[umi_per_cell['UMI'] >= minimum_intbc_umi_support].index.values
+    allele_table = allele_table[allele_table['cellBC'].isin(keep_cells)]
+
+    overlapping_cells = np.intersect1d(
+        adata[
+            (adata.obs["PercentUncut"] <= minimum_percent_uncut)
+        ].obs_names,
+        allele_table["cellBC"].values,
+    )
+
+    pre_filtered_cells = np.intersect1d(adata.obs_names, allele_table["cellBC"].unique())
+    overlapping_cells = np.intersect1d(
+        adata.obs_names,
+        allele_table[allele_table["UMI"] >= minimum_intbc_umi_support]["cellBC"].unique(),
+    )
+    allele_table = allele_table[allele_table["cellBC"].isin(overlapping_cells)]
+
+                (
+                    imputed_value,
+                    prop_votes,
+                ) = target_site_utilities.impute_single_state(
+                    prev_character_matrix_imputed.index.values[i],
+                    j,
+                    prev_character_matrix_imputed,
+                    neighborhood_graph=spatial_graph,
+                    number_of_hops=imputation_hops,
+                )
+                if (
+                    prop_votes >= imputation_concordance
+                    and imputed_value != -1
+                    and imputed_value != 0
+                ):
+                    character_matrix_imputed.iloc[i, j] = imputed_value

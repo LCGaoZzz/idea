@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-16",
+  "scientific_analysis_status_counts": {
+    "已执行验证": 0,
+    "材料完整但未执行": 0,
+    "受阻": 7,
+    "材料冲突": 8
+  },
+  "scientific_execution_records": 0,
+  "original_pipeline_executed": false,
+  "new_audit_checks": 22,
+  "inherited_checks_rerun": 10,
+  "all_checks_passed": true,
+  "material_limitations": [
+    "Full final Results/Main Methods not acquired",
+    "All full-resolution main panels not reviewed",
+    "Original data and complete code archives not downloaded",
+    "No paper biological results re-estimated"
+  ],
+  "workflow_note": "Formal source-closure stages remain gated. Literature reader, selected code review and bounded audits are separate from validated scientific executions."
+}
