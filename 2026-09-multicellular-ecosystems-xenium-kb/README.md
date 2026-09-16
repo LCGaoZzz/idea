@@ -1,5 +1,17 @@
 # 多细胞生态系统：Xenium 癌症、TME 与促纤维炎症知识库
 
+**文章标题：** Multicellular ecosystems: Linking cellular diversity to tissue function and disease
+
+**文章链接：** [期刊原文](https://www.sciencedirect.com/science/article/pii/S0962892426001042) · [DOI](https://doi.org/10.1016/j.tcb.2026.06.005)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S0962892426001042-gr1_lrg.jpg)](https://www.sciencedirect.com/science/article/pii/S0962892426001042#fig1)
+
+*来源：[Trends in Cell Biology · Figure 1](https://www.sciencedirect.com/science/article/pii/S0962892426001042#fig1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 > 基于 Shi, Tang, Chen & Zhang, *Trends in Cell Biology* (2026), **Multicellular ecosystems: Linking cellular diversity to tissue function and disease**。DOI：[10.1016/j.tcb.2026.06.005](https://doi.org/10.1016/j.tcb.2026.06.005)。
 >
 > **这是证据分层的研究与教学知识库，不是作者官方资源，也不是完成的科学复现。** 本次核验覆盖摘要、出版社可检索正文片段及所列原始研究/官方文档；未取得目标综述完整可逐页核读的正文和全部图表。访问范围见[阅读边界](evidence/reading-scope-and-gaps.md)。

@@ -1,5 +1,17 @@
 # Reyes et al., Cell 2026｜从癌前细胞状态到局部生态位的形成、持续与消退
 
+**文章标题：** Oncogenic and tumor-suppressive forces converge on a progenitor niche at the benign-to-malignant transition
+
+**文章链接：** [期刊原文](https://www.sciencedirect.com/science/article/pii/S0092867426003338) · [DOI](https://doi.org/10.1016/j.cell.2026.03.032)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S0092867426003338-gr1_lrg.jpg)](https://www.sciencedirect.com/science/article/pii/S0092867426003338#fig1)
+
+*来源：[Cell · Figure 1](https://www.sciencedirect.com/science/article/pii/S0092867426003338#fig1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 > **一个可独立阅读、可追溯、可迁移但不冒充复现的完整研究 idea。**
 >
 > 论文：*Oncogenic and tumor-suppressive forces converge on a progenitor niche at the benign-to-malignant transition*。DOI：[10.1016/j.cell.2026.03.032](https://doi.org/10.1016/j.cell.2026.03.032)。正式版书目信息及图注见 [PubMed 41990751](https://pubmed.ncbi.nlm.nih.gov/41990751/)。整理日期：2026-09-11。

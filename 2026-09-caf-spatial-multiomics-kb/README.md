@@ -1,5 +1,17 @@
 # CAF 空间亚型与细胞邻域｜Cancer Cell 2025 知识库
 
+**文章标题：** Conserved spatial subtypes and cellular neighborhoods of cancer-associated fibroblasts revealed by single-cell spatial multi-omics
+
+**文章链接：** [期刊原文](https://www.sciencedirect.com/science/article/pii/S1535610825000832) · [DOI](https://doi.org/10.1016/j.ccell.2025.03.004)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S1535610825000832-gr1_lrg.jpg)](https://www.sciencedirect.com/science/article/pii/S1535610825000832#fig1)
+
+*来源：[Cancer Cell · Figure 1](https://www.sciencedirect.com/science/article/pii/S1535610825000832#fig1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 **分类：空间组学 → CAF / 肿瘤微环境 → 空间邻域、统计审计与 Xenium 迁移。**
 
 对象：Liu et al., *Conserved spatial subtypes and cellular neighborhoods of cancer-associated fibroblasts revealed by single-cell spatial multi-omics*. **Cancer Cell (2025)**，DOI：[10.1016/j.ccell.2025.03.004](https://doi.org/10.1016/j.ccell.2025.03.004)。论文身份元数据沿用原包的 [identity.json](reconstruction/evidence/identity.json)，本次归档没有重新审阅原论文。

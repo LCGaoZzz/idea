@@ -1,5 +1,17 @@
 # KPSpatial｜从空间谱系研究到可检验的肿瘤时空演进 idea
 
+**文章标题：** Spatiotemporal lineage tracing reveals the dynamic spatial architecture of tumor growth and metastasis
+
+**文章链接：** [期刊原文](https://www.nature.com/articles/s41588-026-02739-z) · [DOI](https://doi.org/10.1038/s41588-026-02739-z)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41588-026-02739-z/MediaObjects/41588_2026_2739_Fig1_HTML.png)](https://www.nature.com/articles/s41588-026-02739-z/figures/1)
+
+*来源：[Nature Genetics · Figure 1](https://www.nature.com/articles/s41588-026-02739-z/figures/1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 **论文：** Jones MG, Sun D, Min KHJ, et al. *Spatiotemporal lineage tracing reveals the dynamic spatial architecture of tumor growth and metastasis*. **Nature Genetics** 58, 2398–2410 (2026). DOI：[10.1038/s41588-026-02739-z](https://www.nature.com/articles/s41588-026-02739-z)。正式发表日期：2026-09-02。
 
 **整理日期：2026-09-11。性质：论文精读＋研究设计重建＋固定版本代码审计＋项目迁移方案；不是已完成的科学复现。**

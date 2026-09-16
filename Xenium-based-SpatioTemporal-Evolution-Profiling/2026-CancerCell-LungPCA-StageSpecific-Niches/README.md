@@ -1,5 +1,17 @@
 # LungPCA：从肺癌前病变研究提炼可检验的时空演进idea
 
+**文章标题：** Multimodal spatial-omics reveal co-evolution of alveolar progenitors and proinflammatory niches in progression of lung precursor lesions
+
+**文章链接：** [期刊原文](https://www.sciencedirect.com/science/article/pii/S1535610825004453) · [DOI](https://doi.org/10.1016/j.ccell.2025.10.004)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S1535610825004453-gr1_lrg.jpg)](https://www.sciencedirect.com/science/article/pii/S1535610825004453#fig1)
+
+*来源：[Cancer Cell · Figure 1](https://www.sciencedirect.com/science/article/pii/S1535610825004453#fig1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 **核心问题：同一种环境因素的作用，是否取决于目标细胞状态、局部位置和疾病阶段？**
 
 本目录将Peng等的文章故事、竞争解释、关键设计、主图1–7方法与代码、五条可迁移启发，以及“纯起始肿瘤克隆＋早中晚期小鼠Xenium”项目方案连成一个可独立阅读的研究档案。重点是帮助改变研究判断，而不是把算法列表拼成一个没有证据边界的流水线。

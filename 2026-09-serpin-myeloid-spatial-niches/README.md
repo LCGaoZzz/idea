@@ -1,5 +1,17 @@
 # 稀有肿瘤状态如何组织局部免疫抑制
 
+**文章标题：** A serpin–myeloid axis in pancreatic cancer heterogeneity and immune evasion
+
+**文章链接：** [期刊原文](https://www.nature.com/articles/s41586-026-11002-8) · [DOI](https://doi.org/10.1038/s41586-026-11002-8)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-11002-8/MediaObjects/41586_2026_11002_Fig1_HTML.png)](https://www.nature.com/articles/s41586-026-11002-8/figures/1)
+
+*来源：[Nature · Figure 1](https://www.nature.com/articles/s41586-026-11002-8/figures/1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 ## 从 serpin–myeloid 研究到可检验、可编码、可迁移的空间肿瘤学 idea
 
 **核心问题：少数恶性细胞能否通过改变局部胞外材料环境，重塑周围髓系细胞与 T 细胞，进而获得不成比例的生态位优势？**

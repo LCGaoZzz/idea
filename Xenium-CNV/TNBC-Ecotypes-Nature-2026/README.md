@@ -1,5 +1,17 @@
 # TNBC 生态型：从信号来源到空间组织，再到可检验的研究设计
 
+**文章标题：** Ecotypes of triple-negative breast cancer in response to chemotherapy
+
+**文章链接：** [期刊原文](https://www.nature.com/articles/s41586-026-10469-9) · [DOI](https://doi.org/10.1038/s41586-026-10469-9)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-10469-9/MediaObjects/41586_2026_10469_Fig1_HTML.png)](https://www.nature.com/articles/s41586-026-10469-9/figures/1)
+
+*来源：[Nature · Figure 1](https://www.nature.com/articles/s41586-026-10469-9/figures/1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 > **论文**：Yan、Lin、Kumar 等，*Ecotypes of triple-negative breast cancer in response to chemotherapy*，Nature 654, 1088–1097 (2026)，DOI [10.1038/s41586-026-10469-9](https://www.nature.com/articles/s41586-026-10469-9)。本目录是完整文献 idea、方法重建与代码审计，不是患者数据的端到端复现报告。
 >
 > **目录边界**：放在 `Xenium-CNV` 中，是为克隆—状态—生态位研究提供方法论参照。本文的 CNA 主要用于恶性身份识别；表达 archetype/metaprogram 不等于 DNA 克隆，空间 niche 不等于谱系。不能把本文当作“Xenium 已恢复肿瘤克隆树”的实例。

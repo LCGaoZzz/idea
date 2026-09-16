@@ -1,5 +1,17 @@
 # LungPCA：从肺癌前病变的空间共现，到可检验的演进与生态位模型
 
+**文章标题：** Multimodal spatial-omics reveal co-evolution of alveolar progenitors and proinflammatory niches in progression of lung precursor lesions
+
+**文章链接：** [期刊原文](https://www.sciencedirect.com/science/article/pii/S1535610825004453) · [DOI](https://doi.org/10.1016/j.ccell.2025.10.004)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S1535610825004453-gr1_lrg.jpg)](https://www.sciencedirect.com/science/article/pii/S1535610825004453#fig1)
+
+*来源：[Cancer Cell · Figure 1](https://www.sciencedirect.com/science/article/pii/S1535610825004453#fig1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 **Peng et al.｜Cancer Cell｜完整 idea / 论文研究逻辑重建 / 数学统计与代码审计**
 
 论文：*Multimodal spatial-omics reveal co-evolution of alveolar progenitors and proinflammatory niches in progression of lung precursor lesions*。DOI：[10.1016/j.ccell.2025.10.004](https://doi.org/10.1016/j.ccell.2025.10.004)。在线发表 **2025-11-06**，正式卷期 **2026-02-09，44(2):321–339.e13**；日期依据 [PubMed](https://pubmed.ncbi.nlm.nih.gov/41202811/)。整理日期：**2026-09-12**。
