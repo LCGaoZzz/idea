@@ -1,0 +1,63 @@
+{
+  "schema": "thin_knowledge_index_v1",
+  "date": "2026-09-16",
+  "entry": "README.md",
+  "scope_file": "audit/delivery_scope.json",
+  "source_catalog": "sources_catalog.json",
+  "chapters": [
+    {
+      "path": "docs/01_范围版本与结论.md",
+      "title": "01｜阅读范围、版本与结论"
+    },
+    {
+      "path": "docs/02_研究故事与竞争解释.md",
+      "title": "02｜研究故事：为什么要把历史、状态和空间放在一起"
+    },
+    {
+      "path": "docs/03_逐图证据地图.md",
+      "title": "03｜五幅主图与十幅扩展图：问题、证据和复核入口"
+    },
+    {
+      "path": "docs/04_计算主干与数学对象.md",
+      "title": "04｜计算主干：输入、输出、算法与数学对象"
+    },
+    {
+      "path": "docs/05_空间社区的完整解释.md",
+      "title": "05｜空间社区到底怎么计算：不是先统计邻居细胞类型再聚类"
+    },
+    {
+      "path": "docs/06_代码审计与修复边界.md",
+      "title": "06｜代码审计：确定缺陷、语义风险与尚未确定的影响"
+    },
+    {
+      "path": "docs/07_实际执行与反例.md",
+      "title": "07｜实际执行了什么：原函数反例、表重数与回归检查"
+    },
+    {
+      "path": "docs/08_统计学与因果推断.md",
+      "title": "08｜统计与因果：即使全部代码跑通，也不能跳过的检查"
+    },
+    {
+      "path": "docs/09_转移来源与相互作用.md",
+      "title": "09｜转移来源、跨层匹配和空间相互作用：最容易被过度解读的部分"
+    },
+    {
+      "path": "docs/10_可复现实施与输入输出.md",
+      "title": "10｜怎样把准备包推进为真正可复现的分析"
+    },
+    {
+      "path": "docs/11_迁移到分期Xenium.md",
+      "title": "11｜迁移到早／中／晚期 Xenium：借研究设计，不伪造谱系证据"
+    },
+    {
+      "path": "docs/12_审阅交接与问题清单.md",
+      "title": "12｜交给独立审阅者：如何反驳本包，而不是只检查写作"
+    }
+  ],
+  "prohibited_inferences": [
+    "audit_pass_implies_paper_reproduction",
+    "current_commit_equals_paper_freeze",
+    "expression_similarity_implies_lineage",
+    "array_count_equals_independent_animals"
+  ]
+}
