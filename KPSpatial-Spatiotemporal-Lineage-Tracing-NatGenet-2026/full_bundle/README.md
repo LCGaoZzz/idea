@@ -1,68 +1,58 @@
-# KPSpatial｜空间谱系论文深度重建与局部审计
+# KPSpatial｜空间谱系论文 DeepAudit 知识库
 
-Jones、Sun 等 · Nature Genetics (2026) · DOI 10.1038/s41588-026-02739-z  
-交付日期：2026-09-16
+Jones、Sun 等 · *Nature Genetics* (2026) · DOI `10.1038/s41588-026-02739-z`  
+镜像整理日期：2026-09-16
 
-**入口：[打开离线图文阅读器](KPSpatial_深度解析.html)。完整正文也在 [Markdown 合集](KPSpatial_深度解析.md)。**
+这是从用户提供的 `KPSpatial_DeepAudit_2026-09-16(1).zip` 整理到 GitHub 的**深度审计知识库镜像**，不是前一版只有结论摘要的目录。源 ZIP 的范围与 SHA256 见 [`BUNDLE_INVENTORY.md`](BUNDLE_INVENTORY.md)。
 
-这是文献研究逻辑重建、固定提交的选定代码审读、真实运行的局部反例检验和复现准备包；**不是整篇论文的端到端复现**。未取得完整终刊 Results／主 Methods、全部高清主图、完整代码归档及原始分析输入；没有重估论文的生物学结果。查看 [实际执行范围](audit/delivery_scope.json)。
+它包含研究逻辑重建、固定提交的代码审读、真实运行的局部反例检验、空间统计与因果边界、转移分析，以及分期 Xenium 的迁移框架。**不是整篇论文的端到端复现。** 当前范围约束见 [`audit/delivery_scope.json`](audit/delivery_scope.json)。
 
-本包的科学内容分为 12 章：研究问题与竞争解释，五幅主图及十幅扩展图的证据地图，计算对象与输入输出，Hotspot 空间社区，fitness／plasticity／转移推断，代码与统计审计，以及分期 Xenium 的迁移边界。附 4 幅原创解释图、来源与参数登记、审阅交接文件。
+## 推荐入口
 
-## 先看哪三处
+1. [`docs/01_范围版本与结论.md`](docs/01_范围版本与结论.md) — 范围、版本和结论边界。
+2. [`docs/02_研究故事与竞争解释.md`](docs/02_研究故事与竞争解释.md) — 从“共同祖先 vs 共同环境”重建研究故事。
+3. [`docs/04_计算主干与数学对象.md`](docs/04_计算主干与数学对象.md) — lineage、fitness、plasticity、邻域的输入输出与数学对象。
+4. [`docs/05_空间社区的完整解释.md`](docs/05_空间社区的完整解释.md) — Hotspot → 跨样本共识 → spot score；不是简单 cell-type KNN 聚类。
+5. [`docs/06_代码审计与修复边界.md`](docs/06_代码审计与修复边界.md) — CNV permutation、fitness、插补、过滤和接口问题。
+6. [`docs/07_实际执行与反例.md`](docs/07_实际执行与反例.md) — 实际运行了什么、没有运行什么。
+7. [`docs/08_统计学与因果推断.md`](docs/08_统计学与因果推断.md) — 伪重复、空间依赖、组成/状态分离。
+8. [`docs/09_转移来源与相互作用.md`](docs/09_转移来源与相互作用.md) — 转移来源、跨层匹配、LARIS 与因果上限。
+9. [`docs/11_迁移到分期Xenium.md`](docs/11_迁移到分期Xenium.md) — 迁移到早/中/晚期 Xenium 的可反驳分析框架。
+10. [`review/FABLE_REVIEW_PROMPT.md`](review/FABLE_REVIEW_PROMPT.md) — 给独立模型做反驳式审核的完整交接。
 
-**科学阅读**：先读第 02、04、05、08、09 章；先分清“谱系—状态—空间”再解释生态位。
+其余章节：[`03`](docs/03_逐图证据地图.md) · [`10`](docs/10_可复现实施与输入输出.md) · [`12`](docs/12_审阅交接与问题清单.md)。
 
-**代码复核**：先读第 06、07 章及 [代码定位](CODE_LOCATORS.md)，核查 CNV 置换并列值、fitness 输出语义和分组剪树；不得把所有风险写成已经影响终刊结果。
+## 审计与证据层
 
-**独立审阅**：直接使用 [FABLE_REVIEW_PROMPT.md](review/FABLE_REVIEW_PROMPT.md)，先验证材料范围和反例，再评价叙事完整性。
+- [`audit/deep_audit_results.json`](audit/deep_audit_results.json)：22 项新增局部检测/回归检查的收据。
+- [`audit/inherited_checks_rerun.json`](audit/inherited_checks_rerun.json)：旧包 10 项检查的本次重跑。
+- [`audit/delivery_checks.json`](audit/delivery_checks.json)：交付结构/导航/浏览器等检查。
+- [`audit/reader_browser_check.json`](audit/reader_browser_check.json)：离线阅读器渲染检查。
+- [`REPORT.md`](REPORT.md)：15 项原论文分析的严格状态表；0 项被标记为“已执行验证”。
+- [`SOURCES.md`](SOURCES.md) / [`sources_catalog.json`](sources_catalog.json)：论文、补充材料、代码、数据记录与固定版本来源。
+- [`CODE_LOCATORS.md`](CODE_LOCATORS.md)：关键函数、脚本和表的定位。
+- [`evidence/`](evidence/)：CNV 检验完整脚本、样本元数据、公开结果表、Cassiopeia 输出链及其他审计代码节选。
 
-## 本次实际执行
+## 图与工具
 
-旧包的 10 项检查重新运行；新增 22 项检测和回归检查，合计 32 项通过。其中包括作者源文件身份校验、作者五个函数在合成树上的执行、完整枚举置换分布、公开表重计数，以及独立 helper 的回归测试。**这不是 32 个独立漏洞，也不是 32 项论文结果验证。**
+`figures/` 保存 4 幅**可编辑 SVG**解释图：证据架构、Hotspot 社区流程、四叶树 permutation 反例、Xenium 迁移边界。它们是本次原创解释图，不是论文原图。
 
-```bash
-# 在本包根目录运行；这两个脚本仅依赖 Python 标准库。
-# 另存输出，不覆盖首次交付的审计收据。
-python tools/inherited_audit_checks.py --output /tmp/kpspatial_inherited_rerun.json
-python tools/deep_audit.py --output /tmp/kpspatial_deep_rerun.json
-```
+`tools/permutation_nn.py` 是独立的固定邻居图标签置换 helper，使用包含并列值的上尾概率、Monte Carlo `+1` 校正、显式种子和可选分块；它不构建谱系树，也不自动保证调用者定义的置换总体可交换。`tools/check_delivery.py` 只检查交付结构，不认证论文科学结果。
 
-`tools/permutation_nn.py` 是独立的固定邻居图标签置换 helper，使用包含并列值的上尾概率、Monte Carlo +1 校正、显式种子和可选分块。它不构建谱系树，不选择生物学重复，不读取 pickle，也不保证调用者定义的置换总体可交换。它不是官方代码的完整替代。
+## Agent 入口
 
-## 文档与证据导航
+- [`agent/SKILL.md`](agent/SKILL.md)
+- [`agent/knowledge_index.json`](agent/knowledge_index.json)
 
-- [01｜阅读范围、版本与结论](docs/01_范围版本与结论.md)
-- [02｜研究故事：为什么要把历史、状态和空间放在一起](docs/02_研究故事与竞争解释.md)
-- [03｜五幅主图与十幅扩展图：问题、证据和复核入口](docs/03_逐图证据地图.md)
-- [04｜计算主干：输入、输出、算法与数学对象](docs/04_计算主干与数学对象.md)
-- [05｜空间社区到底怎么计算：不是先统计邻居细胞类型再聚类](docs/05_空间社区的完整解释.md)
-- [06｜代码审计：确定缺陷、语义风险与尚未确定的影响](docs/06_代码审计与修复边界.md)
-- [07｜实际执行了什么：原函数反例、表重数与回归检查](docs/07_实际执行与反例.md)
-- [08｜统计与因果：即使全部代码跑通，也不能跳过的检查](docs/08_统计学与因果推断.md)
-- [09｜转移来源、跨层匹配和空间相互作用：最容易被过度解读的部分](docs/09_转移来源与相互作用.md)
-- [10｜怎样把准备包推进为真正可复现的分析](docs/10_可复现实施与输入输出.md)
-- [11｜迁移到早／中／晚期 Xenium：借研究设计，不伪造谱系证据](docs/11_迁移到分期Xenium.md)
-- [12｜交给独立审阅者：如何反驳本包，而不是只检查写作](docs/12_审阅交接与问题清单.md)
+Agent 应始终区分：**论文报告 [P]、代码实现 [C]、本次解释 [I]、迁移/假说 [H]**。禁止把 audit 通过等同于论文复现成功，也禁止把普通 Xenium 的表达相似性直接升级为真实谱系。
 
-## 文件合同
+## 二进制镜像边界
 
-`sources_catalog.json`、`SOURCES.md`：人类可读的来源及取得范围。  
-`CODE_LOCATORS.md`、`evidence/`：固定版本源文件／明确标记的选段与完整小表。  
-`config/parameter_registry.tsv`：121 条参数记录，其中 103 条继承记录与 18 条新增记录有明确标记；不是 121 个终刊最终参数。  
-`audit/`：真实局部执行、身份核查、输入检查与交付范围。  
-`reconstruction_manifest.json`、`source_inventory.json`、`traceability.tsv`、`working_state.json`：原重建工作流的正式证据合同。  
-`REPORT.md`：由正式 manifest 导出的严格状态报告，**不是图文阅读器**。  
-`validation_report.json`：结构验证通过只代表合同和记录一致，不证明科学结果正确。  
-`agent/`：薄知识入口；`review/`：独立审阅交接；`workflow/`：本次使用的原始工作流文件。  
-`SHA256SUMS.txt`：除会被打包器重写的验证报告、哈希文件本身之外的文件哈希；ZIP 内另附打包器生成的完整文件清单。
+当前 GitHub 写入通道以文本/Git-data 操作为主，因此本次提交不声称源 ZIP 容器、原始合并 HTML/Markdown 阅读器以及四张 PNG 均已按原始字节逐一镜像。源 ZIP 的 SHA256 已记录；仓库已经提交完整 12 章正文、核心代码/表/审计收据和全部四张 SVG 等价图源。详见 [`BUNDLE_INVENTORY.md`](BUNDLE_INVENTORY.md)。
 
-正式合同中的 15 项原论文分析为 8 项“材料冲突”、7 项“受阻”、0 项“已执行验证”。这里的“冲突”是分析任务状态，不等于 8 个独立缺陷；局部审计并不冒充已执行的原论文分析。
+## 固定审计版本
 
-## 版本与版权
+- KPSpatial-release: `c2fa7568ee48a9e35bbc6ecd88378c6768b23e00`
+- Cassiopeia: `1ee5959eb9d3f8d4d26e2af5678234493bf54d6d`
 
-KPSpatial 固定提交：`c2fa7568ee48a9e35bbc6ecd88378c6768b23e00`。  
-Cassiopeia 固定提交：`1ee5959eb9d3f8d4d26e2af5678234493bf54d6d`。  
-二者均未证明与终刊运行环境、完整 Zenodo 代码 ZIP 逐字节等同。
-
-本包不包含论文全文 PDF、原始生物学数据或完整作者仓库。第三方材料的来源与声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。所有示意图均为本次解释图，不是论文原图或论文结果重绘。没有向 GitHub 写入或提交 PR。
+二者均未证明与终刊全部结果的最终运行环境逐字节等同。第三方来源与许可边界见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
