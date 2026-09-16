@@ -1,5 +1,17 @@
 # KPSpatial｜Spatiotemporal lineage tracing in lung cancer
 
+**文章标题：** Spatiotemporal lineage tracing reveals the dynamic spatial architecture of tumor growth and metastasis
+
+**文章链接：** [期刊原文](https://www.nature.com/articles/s41588-026-02739-z) · [DOI](https://doi.org/10.1038/s41588-026-02739-z)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41588-026-02739-z/MediaObjects/41588_2026_2739_Fig1_HTML.png)](https://www.nature.com/articles/s41588-026-02739-z/figures/1)
+
+*来源：[Nature Genetics · Figure 1](https://www.nature.com/articles/s41588-026-02739-z/figures/1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 Jones、Sun 等，Nature Genetics (2026)  
 DOI: `10.1038/s41588-026-02739-z`
 

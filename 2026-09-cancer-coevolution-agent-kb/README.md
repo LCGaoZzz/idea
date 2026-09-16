@@ -1,5 +1,17 @@
 # 癌症基因型—表型共同演化：研究型知识库
 
+**文章标题：** A single-cell lens into the co-evolution of genotypes and phenotypes in cancer
+
+**文章链接：** [期刊原文](https://www.nature.com/articles/s41568-026-00970-8) · [DOI](https://doi.org/10.1038/s41568-026-00970-8)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41568-026-00970-8/MediaObjects/41568_2026_970_Fig1_HTML.png)](https://www.nature.com/articles/s41568-026-00970-8/figures/1)
+
+*来源：[Nature Reviews Cancer · Figure 1](https://www.nature.com/articles/s41568-026-00970-8/figures/1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 **版本：0.9.0｜证据分层版｜核验日期：2026-09-13**
 
 目标文章：Izzo、Prieto、Potenski、Landau，*A single-cell lens into the co-evolution of genotypes and phenotypes in cancer*，Nature Reviews Cancer，2026-09-08，DOI 10.1038/s41568-026-00970-8。[S01]

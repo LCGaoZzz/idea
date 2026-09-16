@@ -1,5 +1,17 @@
 # 从空间遗传身份到肿瘤界面与三维生态：一个可审查、可迁移的研究 idea
 
+**文章标题：** Tumour evolution and microenvironment interactions in 2D and 3D space
+
+**文章链接：** [期刊原文](https://www.nature.com/articles/s41586-024-08087-4) · [DOI](https://doi.org/10.1038/s41586-024-08087-4)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-024-08087-4/MediaObjects/41586_2024_8087_Fig1_HTML.png)](https://www.nature.com/articles/s41586-024-08087-4/figures/1)
+
+*来源：[Nature · Figure 1](https://www.nature.com/articles/s41586-024-08087-4/figures/1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 **原始研究**：Mo, C.-K., Liu, J., Chen, S. et al. *Tumour evolution and microenvironment interactions in 2D and 3D space*. Nature **634**, 1178–1186 (2024). DOI: [10.1038/s41586-024-08087-4](https://www.nature.com/articles/s41586-024-08087-4)。在线发表：2024-10-30。
 
 **本文档定位**：重建研究问题、设计、证据链、计算方法和代码实现，并据此提出能够改变研究判断的迁移方案。它不是原论文翻译，也不是已完成的患者数据复现。整理及补充核查日期：2026-09-12。

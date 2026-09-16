@@ -1,5 +1,17 @@
 # 从 NISE / LASErMPNN 到可信的闭环蛋白设计
 
+**文章标题：** Zero-shot design of drug-binding proteins via neural iterative selection−expansion
+
+**文章链接：** [期刊原文](https://www.nature.com/articles/s41586-026-10670-w) · [DOI](https://doi.org/10.1038/s41586-026-10670-w)
+
+**第一张主图（Figure 1）：**
+
+[![论文 Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-026-10670-w/MediaObjects/41586_2026_10670_Fig1_HTML.png)](https://www.nature.com/articles/s41586-026-10670-w/figures/1)
+
+*来源：[Nature · Figure 1](https://www.nature.com/articles/s41586-026-10670-w/figures/1)。图片由出版社网站外链展示，版权归原作者及出版方。*
+
+---
+
 ## 一篇论文的完整故事、方法拆解、研究见解与可执行分析
 
 **核心问题：能否把「生成一个看起来合理的蛋白」升级为「在有限预算内，得到结构、结合与目标功能均有独立证据支持的蛋白」？**
