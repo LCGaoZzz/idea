@@ -1,0 +1,18 @@
+# Verbatim contiguous excerpt; not a full source file.
+# Repository: YosefLab/Cassiopeia
+# Commit: 1ee5959eb9d3f8d4d26e2af5678234493bf54d6d
+# Path: cassiopeia/tools/fitness_estimator/_jungle/jungle/resources/FitnessInference/prediction_src/node_ranking.py
+# Locator: node_ranking.compute_rankings; upstream file Git blob 2e0b1b5f770b36fbeafd579514d9f051f2ea7bfb
+    def compute_rankings(self):
+        """
+        infer ancestral fitness and evaluate the scores for each method provided
+        """
+        if "mean_fitness" in self.methods:
+            if verbose:
+                tmp_t = time.time()
+                print("node_ranking: inferring ancestral fitness...", end=" ")
+            self.infer_ancestral_fitness()
+            if verbose:
+                print("done in ", np.round(time.time() - tmp_t, 2), "s")
+        if "polarizer" in self.methods:
+            self.calculate_polarizers()

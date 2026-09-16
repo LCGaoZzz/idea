@@ -1,0 +1,13 @@
+# Source: mattjones315/KPSpatial-release, commit c2fa7568ee48a9e35bbc6ecd88378c6768b23e00
+# File: reproducibility/Figure2/scripts/score_consensus_hotspot.py, selected statements
+# Source Git blob: f4b9891b5920141545c38d158a15531a233471e2
+    target_sum = np.median(np.array(adata_raw.X.sum(axis=1)))
+    sc.pp.normalize_total(adata_raw, target_sum=target_sum)
+    sc.pp.filter_genes(adata_raw, min_cells=10)
+    sc.pp.log1p(adata_raw)
+    sc.pp.scale(adata_raw)
+        unique_modules = group['Module'].unique()
+        genes = group['Gene'].value_counts()
+        module_genes = np.intersect1d(adata_raw.var_names, genes[genes > int(0.25 * len(unique_modules))].index.values)
+        sc.tl.score_genes(adata_raw, module_genes, ctrl_size=100, n_bins=30, score_name=program_name, use_raw=False)
+community_module_summary.to_csv("/Users/matthewjones/projects/kptc_spatial/data/hotspot_modules_consensus.scores.v2.tsv", sep=' ')

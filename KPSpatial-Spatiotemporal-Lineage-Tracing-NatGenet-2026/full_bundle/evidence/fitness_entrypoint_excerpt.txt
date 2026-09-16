@@ -1,0 +1,9 @@
+# Source: mattjones315/KPSpatial-release, commit c2fa7568ee48a9e35bbc6ecd88378c6768b23e00
+# File: reproducibility/Figure3/scripts/slidetags_fitness.py, selected statements
+# Source Git blob: 2a94e8ff969b1a5dadf36707c3fd1e2922e5e219
+from utilities import phylodynamics
+    tree = phylodynamics.score_fitness(tree_path, adata_path, None, 'lbi', 'tumor_id', None, True)
+    tree.cell_meta[['cell_type', 'tumor_id']] = _adata.obs.loc[tree.leaves, ['cell_type', 'tumor_id']]
+    non_tumor_cells = np.setdiff1d(tree.leaves, tree.cell_meta[tree.cell_meta['cell_type'].isin(tumor_states)].index.values)
+    tree.remove_leaves_and_prune_lineages(non_tumor_cells)
+fitness_df.to_csv('./data/slidetags_fitness.tsv', sep='\t')

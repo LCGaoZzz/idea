@@ -1,0 +1,19 @@
+# Source: mattjones315/KPSpatial-release, commit c2fa7568ee48a9e35bbc6ecd88378c6768b23e00
+# File: utilities/differential_expression.py, selected statements
+# Source Git blob: 103460a4eff3e5cd1f986a06575ccb513ec789a3
+    de_method: str = typer.Option("wilcoxon", help="DE method"),
+    n_top_genes: int = typer.Option(2000, help='Number of top genes to find for each cluster.'),
+    layer: int = typer.Option("logged", help="Layer of preprocessed data to use."),
+    adata_raw = adata.raw.to_adata()
+    adata_raw.layers['counts'] = adata_raw.X.copy()
+    adata_raw.layers['logged'] = adata_raw.X.copy()
+    scale_factor = np.median(np.array(adata_raw.X.sum(axis=1)))
+    sc.pp.normalize_total(adata_raw, target_sum=scale_factor, layer='logged')
+    sc.pp.log1p(adata_raw, layer='logged')
+    sc.tl.rank_genes_groups(adata_raw,
+                            cluster_labels,
+                            method=de_method,
+                            layer = layer,
+                            use_raw=False,
+                            n_genes=n_top_genes,
+                            pos_only=True)

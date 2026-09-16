@@ -1,0 +1,21 @@
+# Source: mattjones315/KPSpatial-release, commit c2fa7568ee48a9e35bbc6ecd88378c6768b23e00
+# File: utilities/phylodynamics.py, function score_fitness (selected original statements, not a complete executable file)
+# Retrieved via GitHub.fetch_file; source Git blob SHA: 81ea9209e116a59cdb1661bfef678cf803dfe597
+        overlapping_cells = np.intersect1d(adata.obs_names, tree.leaves)
+        adata = adata[overlapping_cells,:]
+
+        for sample_name, group in adata.obs.groupby(grouping_var):
+            query_cells = group.index.values
+            subtree = tree.copy()
+            subtree.remove_leaves_and_prune_lineages(np.setdiff1d(query_cells, tree.leaves))
+            subtree.collapse_mutationless_edges(infer_ancestral_characters=True)
+            _fitnesses = _fitness_wrapper(subtree, infer_branch_lengths)
+            to_merge.append(_fitnesses)
+
+            branch_length_estimator = cas.tools.branch_length_estimator.IIDExponentialMLE(minimum_branch_length=0.01)
+            branch_length_estimator.estimate_branch_lengths(_tree)
+                branch_length = len(_tree.get_mutations_along_edge(edge[0], edge[1]))
+                _tree.set_branch_length(edge[0], edge[1], min(1, branch_length))
+            fitness_estimator = cas.tools.fitness_estimator.LBIJungle()
+        fitness_estimator.estimate_fitness(_tree)
+        fitnesses /= np.max(fitnesses)
