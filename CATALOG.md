@@ -1,6 +1,6 @@
 # idea｜主题分类与知识库导航
 
-更新：2026-09-15。分类是导航安排，不是对各项目证据质量或完成度的重新评定。保留旧目录与链接，不移动文件；允许一项内容具有多个交叉标签。
+更新：2026-09-17。分类是导航安排，不是对各项目证据质量或完成度的重新评定。保留旧目录与链接，不移动文件；允许一项内容具有多个交叉标签。
 
 ## 空间组学 → 多细胞生态系统、TME 与促纤维炎症
 
@@ -9,6 +9,7 @@
 | [多细胞生态系统 Xenium 知识库](2026-09-multicellular-ecosystems-xenium-kb/README.md) | 通用概念、方法选择、空间统计、工作流、配图与 Agent 读取 | Xenium、TME、CAF、髓系、促纤维炎症、统计 |
 | [serpin–ECM–myeloid 研究框架](2026-09-serpin-myeloid-spatial-niches/README.md) | 局部肿瘤状态与髓系生态位的具体机制案例 | PDAC、基质、空间生态位 |
 | [CAF 空间多组学：Cancer Cell 2025 知识库](2026-09-caf-spatial-multiomics-cancercell-2025-kb/README.md) | 研究逻辑、邻域/NMF/Visium方法重建、统计审计、Xenium迁移与独立审核；来源受限，非生物学复现 | CAF、Xenium、Visium、TME、空间统计、agent-kb |
+| [MDR 肿瘤—基质界面生态位：Cell Reports Medicine 2026](2026-09-mdr-tumor-stroma-niche-crm-2026-kb/README.md) | 完整23文件证据归档、固定源码审读、Xenium定义与统计审计；全文与受控数据未取得，非生物学复现 | MDR、Xenium、Visium、TME、CAF、髓系、TREM2、AXL、空间统计、agent-kb |
 
 ## 肿瘤演化 → 时空变化、克隆与基因型—表型
 

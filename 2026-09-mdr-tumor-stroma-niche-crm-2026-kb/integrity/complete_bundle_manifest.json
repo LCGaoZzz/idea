@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "imported_on": "2026-09-17",
+  "edition": "complete_evidence_bundle_with_browsable_mirrors",
+  "original_zip": {
+    "filename": "MDR_CellReportsMedicine_code_evidence_20260917.zip",
+    "size_bytes": 70143,
+    "sha256": "18974d1fbeeb0eaef1ab5357349bcde47042da4e4013e5ffda7f46fbabb70550"
+  },
+  "repository_archive": {
+    "path": "archives/MDR_CellReportsMedicine_complete_evidence_20260917.tar.xz",
+    "format": "tar.xz",
+    "size_bytes": 37408,
+    "sha256": "5776e22a68766255b9739f02bfa633bf662304afafe279ba554816f4480fecea",
+    "git_blob_sha1": "a4b5945502b47b7826c3e0d6a85d8a5a2513ce32"
+  },
+  "preservation": {
+    "scope": "all regular-file members of the delivered ZIP",
+    "file_count": 23,
+    "uncompressed_bytes": 303116,
+    "all_member_paths_preserved": true,
+    "all_member_bytes_identical": true,
+    "archive_container_changed": true,
+    "zip_metadata_not_preserved": true,
+    "omitted_delivered_members": []
+  },
+  "browsable_byte_identical_mirrors": [
+    "knowledge/DEEP_REVIEW_ZH.md",
+    "REPORT.md",
+    "evidence/scope_boundary.json",
+    "evidence/repository_file_manifest.json",
+    "evidence/required_inputs.tsv"
+  ],
+  "members": [
+    {
+      "path": "DELIVERY.md",
+      "size_bytes": 929,
+      "sha256": "8647697ca98927c294a25d7a182e78dd655c8b8a8c7c7ea9873651dfd19c546d"
+    },
+    {
+      "path": "MDR_deep_review.html",
+      "size_bytes": 44653,
+      "sha256": "2e59821f14733d7c5d7abec293414bb97aa3e6a6ff52ae7900bbfd63cf98096e"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1004,
+      "sha256": "25996d07d78ff973bbc8755ebbf01085fa0819442a982a677ab8555c61793705"
+    },
+    {
+      "path": "REPORT.md",
+      "size_bytes": 5173,
+      "sha256": "3dd96b66f17f9fe1d055ae493a7762386febec80287da01a7906541a0bf15994"
+    },
+    {
+      "path": "SHA256SUMS",
+      "size_bytes": 1987,
+      "sha256": "dedc879184008ae812ee240bb46a31fd351fda59e08eb337ef274271e189c2f0"
+    },
+    {
+      "path": "acquisition_log.json",
+      "size_bytes": 12898,
+      "sha256": "4b67c2ff2f932910aa0e0c5c6b09e39a7092a7034bcecdcbc8781f088a73c559"
+    },
+    {
+      "path": "agent/README.md",
+      "size_bytes": 2551,
+      "sha256": "dda935f2a5541c050c251526bf13029cc232a2e423e4a0625848be082ccc3b91"
+    },
+    {
+      "path": "code_audit/document_quality.json",
+      "size_bytes": 555,
+      "sha256": "6616dd00f36e6f52380053e610cf1a8dfa517f4ca2a0f426f68a3f05bb2acc6b"
+    },
+    {
+      "path": "code_audit/manual_adjudication.json",
+      "size_bytes": 1256,
+      "sha256": "390f8ae0695e47d10a59c74d78237f6e504ac44783e270daf1b7f9feca659f55"
+    },
+    {
+      "path": "code_audit/semantic_checks.json",
+      "size_bytes": 2218,
+      "sha256": "8174df57b95391e10e2939171e5fe2d2ed532ca885d89aed7a9306ceee7d3cc0"
+    },
+    {
+      "path": "code_audit/semantic_examples.py",
+      "size_bytes": 3822,
+      "sha256": "f255b7089b8c3d0071ce20b7af40ca744f9a438992f8c1b49631960b1b49b3a8"
+    },
+    {
+      "path": "evidence/repository_capture.json",
+      "size_bytes": 931,
+      "sha256": "785c3633495451f969c8ee6f4d5a97187329a3876793cb4349da6035f8d9384a"
+    },
+    {
+      "path": "evidence/repository_file_manifest.json",
+      "size_bytes": 3872,
+      "sha256": "9fc86ec3c486aa6e07942946cb5bfabd9631219a467ae1f5425229ac8dbaeee4"
+    },
+    {
+      "path": "evidence/required_inputs.tsv",
+      "size_bytes": 2072,
+      "sha256": "79dd369c76e9aa29a60be69cb0768291159ee239aae01ce8753aff90dffe149c"
+    },
+    {
+      "path": "evidence/scope_boundary.json",
+      "size_bytes": 991,
+      "sha256": "5f3cd0729a4df4094012e0d50c9e37c6eb4296f546053ffaf85eed6bd31e050a"
+    },
+    {
+      "path": "knowledge/DEEP_REVIEW_ZH.md",
+      "size_bytes": 34564,
+      "sha256": "e96dbf8ed02ae744b65f66827ba2b7614cdf06b522b53db8cff0130511301cbb"
+    },
+    {
+      "path": "package_manifest.json",
+      "size_bytes": 13113,
+      "sha256": "39764d0b97352f9366c2fbf86fed018514db2a56eb5e45b2ab72b320c8add719"
+    },
+    {
+      "path": "reconstruction_manifest.json",
+      "size_bytes": 120236,
+      "sha256": "940e8d16a78c4fb82f51de44798322b5890c4abeca5b5229a4ed9e00f065a765"
+    },
+    {
+      "path": "repository_audit.json",
+      "size_bytes": 11641,
+      "sha256": "2605566b06ec23001fcb1edb97fb7d5d4420b2bcdc9a22d183dd4d59e8a64fdd"
+    },
+    {
+      "path": "source_inventory.json",
+      "size_bytes": 6969,
+      "sha256": "ab267c88c26d9d421e7e64061d055445bf9704b09f1ed7de1d67c63bc9814d81"
+    },
+    {
+      "path": "traceability.tsv",
+      "size_bytes": 22376,
+      "sha256": "43ee64c55c053d4362328c6682ec6fc6388998f26caf9e9ead5c91d9351e6140"
+    },
+    {
+      "path": "validation_report.json",
+      "size_bytes": 6593,
+      "sha256": "dc2fc20f039c972deb2d8dce15ba2ae58f3c493cdc58ac31b3ddfd4f4538483b"
+    },
+    {
+      "path": "working_state.json",
+      "size_bytes": 2712,
+      "sha256": "330109f71cd9f7b9b357b759a2b9bc3962046bc3ed33f2f5ea6d17646030f5b7"
+    }
+  ],
+  "validation_scope": "Archive/member integrity only; does not validate paper results, execute author code, or fill missing source materials."
+}

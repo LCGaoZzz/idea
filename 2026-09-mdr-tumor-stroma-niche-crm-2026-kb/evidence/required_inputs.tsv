@@ -1,0 +1,24 @@
+file	used_by	in_repository	data_semantics_status
+CAF.rds	Figure 6.R	no	object/file not available; semantics require provenance
+CXCL14CAF_enrich.csv	Figure 6.R	no	object/file not available; semantics require provenance
+Dedifferentiated_enrich.csv	Figure 4.R	no	object/file not available; semantics require provenance
+MDR_HCC_data.csv	Xenium.R	no	object/file not available; semantics require provenance
+MDR_MM.rds	Xenium.R	no	object/file not available; semantics require provenance
+MDR_MM_data.csv	Xenium.R	no	object/file not available; semantics require provenance
+Naive_MM_data.csv	Xenium.R	no	object/file not available; semantics require provenance
+ST.rds	Figure 1.R;Figure 2.R;Figure 5.R	no	object/file not available; semantics require provenance
+ST_tumor.rds	Figure 4.R	no	object/file not available; semantics require provenance
+TREM2TAM_enrich.csv	Figure 2.R	no	object/file not available; semantics require provenance
+TREM2marker.csv	Figure 2.R	no	object/file not available; semantics require provenance
+all.rds	Figure 1.R	no	object/file not available; semantics require provenance
+cellchat.rds	Figure 3.R	no	object/file not available; semantics require provenance
+clinical_input.txt	Figure 7.R	no	object/file not available; semantics require provenance
+data.csv	Figure 5.R	no	object/file not available; semantics require provenance
+label.csv	Figure 5.R	no	object/file not available; semantics require provenance
+mac.rds	Figure 5.R	no	object/file not available; semantics require provenance
+major_marker_for_scoring.csv	Figure 1.R	no	object/file not available; semantics require provenance
+pancancer_cor.csv	Figure 7.R	no	object/file not available; semantics require provenance
+pathways.csv	Figure 3.R	no	object/file not available; semantics require provenance
+proportions.csv	Figure 3.R;Figure 6.R	no	object/file not available; semantics require provenance
+spata_obj.rds	Figure 2.R;Figure 4.R;Figure 6.R	no	object/file not available; semantics require provenance
+tumor.rds	Figure 4.R	no	object/file not available; semantics require provenance

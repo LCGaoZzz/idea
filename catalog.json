@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-09-15",
+  "updated_on": "2026-09-17",
   "classification_type": "curatorial_navigation_not_quality_ranking",
   "entries": [
     {
@@ -107,6 +107,40 @@
       "evidence_status": "source-limited reconstruction and audit; no biological reproduction",
       "entrypoint": "README.md",
       "scope_document": "IMPORT_SCOPE.md"
+    },
+    {
+      "path": "2026-09-mdr-tumor-stroma-niche-crm-2026-kb",
+      "title": "多药耐药的肿瘤—基质界面生态位：完整代码证据包",
+      "primary_classification": [
+        "spatial-omics",
+        "tumor-microenvironment"
+      ],
+      "tags": [
+        "MDR",
+        "Xenium",
+        "Visium",
+        "scRNA-seq",
+        "TME",
+        "CAF",
+        "myeloid",
+        "TREM2",
+        "AXL",
+        "tumor-stroma-interface",
+        "spatial-statistics",
+        "methodology-audit",
+        "agent-kb"
+      ],
+      "paper_url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00469-6",
+      "pii": "S2666-3791(26)00469-6",
+      "edition": "complete_evidence_bundle_with_browsable_mirrors",
+      "evidence_status": "source-limited static code audit; A01-A12 blocked; no author code execution or biological reproduction",
+      "entrypoint": "README.md",
+      "knowledge_entry": "knowledge/DEEP_REVIEW_ZH.md",
+      "knowledge_index": "knowledge_index.json",
+      "agent_entry": "AGENTS.md",
+      "scope_document": "IMPORT_SCOPE.md",
+      "complete_archive": "archives/MDR_CellReportsMedicine_complete_evidence_20260917.tar.xz",
+      "delivered_member_count": 23
     }
   ]
 }

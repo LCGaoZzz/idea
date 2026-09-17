@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "updated_on": "2026-09-17",
+  "id": "2026-09-mdr-tumor-stroma-niche-crm-2026-kb",
+  "title": "多药耐药的肿瘤—基质界面生态位：完整代码证据包",
+  "paper": {
+    "title": "Single-cell and spatial multi-omics reveal a recurrent multicellular niche at the tumor-stroma interface in multidrug resistance",
+    "journal": "Cell Reports Medicine",
+    "pii": "S2666-3791(26)00469-6",
+    "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00469-6",
+    "figure_1_status": "not_acquired_or_verified"
+  },
+  "primary_classification": [
+    "spatial-omics",
+    "tumor-microenvironment"
+  ],
+  "tags": [
+    "MDR",
+    "Xenium",
+    "Visium",
+    "scRNA-seq",
+    "tumor-stroma-interface",
+    "CAF",
+    "myeloid",
+    "TREM2",
+    "AXL",
+    "spatial-statistics",
+    "methodology-audit",
+    "agent-kb"
+  ],
+  "source_repository": {
+    "url": "https://github.com/KangjieShen/MDR_Code",
+    "commit": "f0fd6fc17654541fa97e49dbaf93cde583ee55a7"
+  },
+  "edition": "complete_evidence_bundle_with_browsable_mirrors",
+  "entrypoint": "README.md",
+  "knowledge_entry": "knowledge/DEEP_REVIEW_ZH.md",
+  "agent_entry": "AGENTS.md",
+  "scope_document": "IMPORT_SCOPE.md",
+  "complete_archive": "archives/MDR_CellReportsMedicine_complete_evidence_20260917.tar.xz",
+  "archive_manifest": "integrity/complete_bundle_manifest.json",
+  "archive_verifier": "integrity/verify_archive.py",
+  "scientific_status": {
+    "paper_reconstruction": "blocked_at_source_acquisition",
+    "analysis_ids": "A01-A12",
+    "author_code_executed": false,
+    "study_data_used": false,
+    "synthetic_checks_reported": 9,
+    "synthetic_checks_are_biological_validation": false,
+    "missing": [
+      "publisher full text",
+      "STAR Methods",
+      "original figures and captions",
+      "supplementary materials",
+      "controlled-access matrices"
+    ]
+  },
+  "archive_entrypoints": {
+    "html_reader": "MDR_deep_review.html",
+    "agent": "agent/README.md",
+    "working_state": "working_state.json",
+    "reconstruction": "reconstruction_manifest.json",
+    "traceability": "traceability.tsv",
+    "sources": "source_inventory.json",
+    "acquisition": "acquisition_log.json",
+    "static_audit": "repository_audit.json",
+    "original_tests": "code_audit/semantic_examples.py",
+    "original_test_report": "code_audit/semantic_checks.json",
+    "validation": "validation_report.json"
+  },
+  "reading_order": [
+    "IMPORT_SCOPE.md",
+    "evidence/scope_boundary.json",
+    "knowledge/DEEP_REVIEW_ZH.md",
+    "REPORT.md",
+    "AGENTS.md"
+  ],
+  "all_delivered_members_preserved": true,
+  "member_count": 23
+}

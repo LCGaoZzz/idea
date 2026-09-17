@@ -1,0 +1,22 @@
+{
+  "main_request": "Faithful full paper reconstruction",
+  "main_status": "blocked at source acquisition",
+  "reduced_scope": "Read-only static audit of immutable repository snapshot, repository metadata validation, and explicitly authored methodological reasoning",
+  "reduced_scope_disclosure": "Reduced scope is not represented as completed paper reconstruction, empirical replication, or confirmed author conclusions.",
+  "scientific_execution_performed": false,
+  "operational_actions_performed": [
+    "Safe archive inspection/extraction",
+    "Git-blob and SHA-256 fingerprint checks",
+    "Official static repository auditor",
+    "Manifest validator",
+    "Packaging"
+  ],
+  "paper_result_claims_generated": false,
+  "source_limited_companion_notes": "knowledge/DEEP_REVIEW_ZH.md",
+  "synthetic_semantics_examples": {
+    "script": "code_audit/semantic_examples.py",
+    "result": "code_audit/semantic_checks.json",
+    "author_code_run": false,
+    "study_data_used": false
+  }
+}

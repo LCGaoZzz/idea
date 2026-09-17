@@ -12,3 +12,4 @@ lots of goods
 完整主题分类见 [CATALOG.md](CATALOG.md)，机器可读索引见 [catalog.json](catalog.json)。保留现有目录位置，采用主分类与交叉标签组织内容。
 
 - [多细胞生态系统：Xenium 癌症、TME 与促纤维炎症知识库](2026-09-multicellular-ecosystems-xenium-kb/README.md)：空间生态位、CAF–髓系关系、测量边界、空间统计、工作流与 Agent 检索；含四张原创可编辑 SVG 教学图。目标综述全文访问仍有缺口，未进行真实数据复现。
+- [多药耐药的肿瘤—基质界面生态位：完整代码证据包](2026-09-mdr-tumor-stroma-niche-crm-2026-kb/README.md)：Cell Reports Medicine 2026 论文的固定源码审读、Xenium定义与空间统计审计；保全原交付23个文件，提供完整归档、逐文件哈希及人类/Agent入口。全文与受控数据尚未取得，非生物学复现。
