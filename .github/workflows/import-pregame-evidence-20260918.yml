@@ -1,0 +1,33 @@
+name: One-off verified PreGame evidence import
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '2026-09-pregame-gammadelta-tcr-nature-2026-kb/transfer/READY.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pregame-evidence-import-20260918
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 1
+      - name: Restore and verify the delivered evidence bundle
+        run: python3 2026-09-pregame-gammadelta-tcr-nature-2026-kb/transfer/import_bundle.py
+      - name: Commit verified files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 2026-09-pregame-gammadelta-tcr-nature-2026-kb README.md CATALOG.md catalog.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'docs: archive complete PreGame evidence bundle and register knowledge base'
+          git push origin HEAD:main
