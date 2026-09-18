@@ -1,0 +1,18 @@
+id	classification	topic	observation	interpretation	resolution
+C01	明确文本冲突	DE iterations	Fig4e 100 vs Methods 1000	Same analysis; cannot choose a value by preference	Obtain active caller and run log; preserve both reported values
+C02	明确边界文字差异	TR threshold	Fig2b >15 vs Methods >=15; borderline 13-15	Exact endpoints need deterministic label contract	Retrieve label code and unrounded fluorescence values
+C03	未解决的术语差异	Multiplicity	Bonferroni vs FDR-adjusted wording	Do not silently substitute BH or assume Seurat default	Identify exported p-value columns and transformation
+G01	实现缺口	PreGame availability	Zenodo bytes/model unavailable in this session	No source-level implementation claim permitted	Acquire deposited archive; hash and inspect safely
+G02	评估口径不同	Model AUROC	Internal .864 vs donor/batch-held-out .7229	Not contradictory measurements of identical estimand	Nested grouped re-evaluation on same registered splits
+G03	信息泄漏风险	Feature selection	Selected before split; review confirms whole dataset	Group splitting alone does not make full pipeline nested	Feature selection inside each outer training fold
+G04	映射缺口	Clinical missing baseline	ALQ-19-019 baseline sequencing failed; Fig5 n13	Do not invent imputation or accuse fabricated sample	Patient-time-analysis inclusion matrix
+G05	计数定义未对齐	Clonotypes	S4 766 paired sequences vs text672 paired clonotypes	Sequence key/pipeline difference may explain	Recover key dictionary and pipeline-stage count ledger
+G06	选择偏倚	Validation	High scores selected; expression failures replaced	21/25 is conditional hit rate	Track all attempted and untested candidates; stratified random validation
+G07	聚合规则未对齐	Clone score	max ranking; median>0.6 in ED6e	Clone size and actual selection sequence unresolved	Recover selection code; size-matched sensitivity
+G08	统计单位风险	Repeated cells and visits	Cells nested in clones/donors; multiple blood visits	Independent-cell tests underestimate uncertainty when dependence exists	Use patient/clone hierarchy and grouped uncertainty
+G09	键非唯一	cfDNA matching	S3 TCR40 and65 share delta; gamma differs	Delta-only matching may collapse paired receptors	Explicit one-to-many map and functional-label concordance check
+G10	输出语义风险	Morisita-Horn	Caption similarity higher=more similar; vegdist horn returns dissimilarity	May be correctly transformed in missing code; not proven bug	Check whether 1-distance applied
+G11	报告异常	Bootstrap intervals	Review no-cycle and no-SMOTE show identical lower/upper printed limits	Cannot infer exact coding error without implementation	Audit resampling vectors, aggregation and rounding
+G12	时间窗异质性	Fig5d	C2D1 or C6D1	Later observations must not silently count as same early landmark	Predefine timepoint selection and sensitivity
+G13	机制外推边界	Safety	KIR/Bw4 context-dependent in tested systems	Not clinical safety or universal normal-tissue sparing	Primary cells with matched normal targets; broader genotypes; in-vivo evaluation
+G14	模态迁移缺口	MCC RNA-only application	Full model uses ADT; handling unavailable	Zero-imputation/retraining cannot be presumed	Retrieve branch-specific preprocessing and feature schema

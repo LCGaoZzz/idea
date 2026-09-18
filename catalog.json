@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-09-17",
+  "updated_on": "2026-09-18",
   "classification_type": "curatorial_navigation_not_quality_ranking",
   "entries": [
     {
@@ -141,6 +141,29 @@
       "scope_document": "IMPORT_SCOPE.md",
       "complete_archive": "archives/MDR_CellReportsMedicine_complete_evidence_20260917.tar.xz",
       "delivered_member_count": 23
+    },
+    {
+      "path": "2026-09-pregame-gammadelta-tcr-nature-2026-kb",
+      "title": "PreGame γδ TCR：骨髓瘤广谱肿瘤反应性受体完整证据包",
+      "primary_classification": [
+        "immunology",
+        "gd-tcr"
+      ],
+      "tags": [
+        "gamma-delta-TCR",
+        "multiple-myeloma",
+        "PreGame",
+        "random-forest",
+        "TCR-mining",
+        "methodology-audit",
+        "evidence-bundle",
+        "agent-kb"
+      ],
+      "doi": "10.1038/s41586-026-11055-9",
+      "edition": "complete_evidence_bundle_archive",
+      "evidence_status": "source-limited literature reconstruction; author code/data not obtained; no biological reproduction",
+      "entrypoint": "README.md",
+      "delivered_member_count": 44
     }
   ]
 }

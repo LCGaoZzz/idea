@@ -1,0 +1,14 @@
+evaluation	unit_split	metric	value	lower_95	upper_95	source_locator	interpretation_limit
+Main internal CV	cell-level tenfold repeated 100	AUROC	0.864			Main Fig3b; Methods PreGame development	Feature selection before split; donor/clone dependence
+Review held-out	donor; multiplexed donors grouped; clone-disjoint	AUROC	0.7229	0.6588	0.7826	Peer review physical p69 Revisions Fig3.7	Feature selection not demonstrated fully nested
+Review held-out	same	AUPR	0.4407	0.3407	0.554	Peer review physical p69 Revisions Fig3.7	2000 bootstrap resamples; resampling unit unclear
+Review held-out	same	F1_at_0.5	0.4722			Peer review physical p69 Revisions Fig3.7	Different endpoint from candidate hit rate
+Review genes only	donor held-out clone-disjoint	AUROC	0.7441	0.6866	0.7966	Peer review physical p70 Revisions Fig3.8	Not a significant paired superiority test
+Review proteins only	donor held-out clone-disjoint	AUROC	0.6094	0.5315	0.6784	Peer review physical p70 Revisions Fig3.8	Parsed text read; this page image unavailable
+Review cell cycle only	donor held-out clone-disjoint	AUROC	0.4653	0.4016	0.529	Peer review physical p70 Revisions Fig3.8	Parsed text read; this page image unavailable
+Review without cell cycle	not demonstrated same held-out scheme	AUROC	0.8592	0.8592	0.8592	Peer review physical p70 Revisions Fig3.9	Printed zero-width interval requires implementation audit
+Review no SMOTE	not demonstrated same held-out scheme	AUROC	0.8467	0.8467	0.8467	Peer review physical p71 Revisions Fig3.10	Printed zero-width interval requires implementation audit
+Validation1	top 25 assayable candidates / six donors	selected_hit_rate	0.84			Fig3c and ED6e	Replacement of expression failures; not full-population accuracy
+Validation1 top15	retrospective highest-score subset	selected_hit_rate	1			Results; Fig3f	Used to choose approximately 0.85 threshold
+Validation2	five highest and five lowest / eight donors	selected_extreme_agreement	1			Fig3d	Not random candidate sampling
+ALGONQUIN confirmation	11 selected receptors	selected_agreement	0.9090909090909091			Results Fig5; ED8c	Selected subset; not whole clinical biomarker validation

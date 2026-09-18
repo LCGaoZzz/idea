@@ -1,0 +1,4310 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "pregame_nature_2026_11055_reconstruction",
+  "task": {
+    "mode": "full_reconstruction",
+    "request": "根据用户上传protocol深入重建Nature s41586-026-11055-9；允许文献层独立评议，作者源码与数据获取受阻时不执行作者分析。",
+    "execution_requested": false,
+    "execution_scope": "none",
+    "target_ids": [
+      "A01_ClinicalDelta",
+      "A02_SingleCell",
+      "A03_CustomVDJ",
+      "A04_Repertoire",
+      "A05_FunctionalLabels",
+      "A06_TargetSpecificity",
+      "A07_TransferKilling",
+      "A08_PreGameTraining",
+      "A09_ProspectiveValidation",
+      "A10_PhenotypeDE",
+      "A11_SequenceDiversity",
+      "A12_PrimaryBlockade",
+      "A13_ClinicalCloneDynamics",
+      "A14_BloodCloneLinkage",
+      "A15_HLADependence",
+      "A16_HLAResidue",
+      "A17_KIRContext",
+      "A18_KIRGate",
+      "A19_CellLinePanel"
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "SRC001",
+      "roles": [
+        "main_text",
+        "results_text",
+        "methods_text",
+        "figure_caption"
+      ],
+      "location": "sources/paper/final_article.html",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "mixed",
+      "limitations": [
+        "Browser text read; original publisher HTML/PDF bytes could not be captured locally."
+      ]
+    },
+    {
+      "source_id": "SRC002",
+      "roles": [
+        "supplement_text",
+        "figure_caption"
+      ],
+      "location": "sources/supplement/peer_review.pdf",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "page",
+      "limitations": [
+        "Relevant review text and physical p69 screenshot read; original PDF not captured."
+      ]
+    },
+    {
+      "source_id": "SRC003",
+      "roles": [
+        "supplement_text",
+        "metadata_table"
+      ],
+      "location": "sources/supplement/tables.pdf",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "page",
+      "limitations": [
+        "Parsed text read; S4 manually transcribed; original PDF/page image not captured."
+      ]
+    },
+    {
+      "source_id": "SRC004",
+      "roles": [
+        "supplement_text",
+        "environment"
+      ],
+      "location": "sources/supplement/reporting_summary.pdf",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "page",
+      "limitations": [
+        "Physical pp1-3 screenshots read; original PDF not captured."
+      ]
+    },
+    {
+      "source_id": "SRC005",
+      "roles": [
+        "code",
+        "environment"
+      ],
+      "location": "sources/code/zenodo_20028241",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "Code DOI from paper; record/API/download attempts failed; no author code or model inspected."
+      ]
+    },
+    {
+      "source_id": "SRC006",
+      "roles": [
+        "input_data",
+        "raw_data_manifest"
+      ],
+      "location": "sources/data/ALGONQUIN",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "EGA study/dataset metadata viewed; controlled individual-level matrices and outcomes not obtained."
+      ]
+    },
+    {
+      "source_id": "SRC007",
+      "roles": [
+        "input_data",
+        "raw_data_manifest"
+      ],
+      "location": "sources/data/PreGame",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "EGA study/dataset metadata viewed; raw/processed expression and labels not obtained."
+      ]
+    },
+    {
+      "source_id": "SRC008",
+      "roles": [
+        "input_data",
+        "metadata_table"
+      ],
+      "location": "sources/data/source_data.xlsx",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "sheet_cell",
+      "limitations": [
+        "Publisher workbook linked; file bytes not obtained."
+      ]
+    },
+    {
+      "source_id": "SRC009",
+      "roles": [
+        "figure_visual"
+      ],
+      "location": "sources/figures/original_panels",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "figure_panel",
+      "limitations": [
+        "Main/ED figures not obtained as inspectable local images; caption-only interpretation."
+      ]
+    },
+    {
+      "source_id": "SRC010",
+      "roles": [
+        "code"
+      ],
+      "location": "sources/code/legacy_TCRmodel",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "Historical bigmaklab/TCRmodel lead: connected GitHub GET returned404; not evidence about current Zenodo contents."
+      ]
+    }
+  ],
+  "stage_state": [
+    {
+      "stage": "evidence_inventory",
+      "status": "partial",
+      "input_fingerprint": "sha256:bc49b32c7e3e61a9d2fa8ff818fa093805ea5a6a7d7a863967840e08a70fa1f5",
+      "artifacts": [
+        "acquisition_log.json",
+        "source_inventory.json"
+      ],
+      "blockers": [
+        "A01_ClinicalDelta_gap",
+        "A01_ClinicalDelta_parameters_gap",
+        "A02_SingleCell_gap",
+        "A02_SingleCell_parameters_gap",
+        "A03_CustomVDJ_gap",
+        "A03_CustomVDJ_parameters_gap",
+        "A04_Repertoire_gap",
+        "A04_Repertoire_parameters_gap",
+        "A05_FunctionalLabels_conflict",
+        "A05_FunctionalLabels_gap",
+        "A05_FunctionalLabels_parameters_gap",
+        "A06_TargetSpecificity_gap",
+        "A06_TargetSpecificity_parameters_gap",
+        "A07_TransferKilling_gap",
+        "A07_TransferKilling_parameters_gap",
+        "A08_PreGameTraining_gap",
+        "A08_PreGameTraining_parameters_gap",
+        "A09_ProspectiveValidation_gap",
+        "A09_ProspectiveValidation_parameters_gap",
+        "A10_PhenotypeDE_conflict",
+        "A10_PhenotypeDE_gap",
+        "A10_PhenotypeDE_parameters_gap",
+        "A11_SequenceDiversity_gap",
+        "A11_SequenceDiversity_parameters_gap",
+        "A12_PrimaryBlockade_gap",
+        "A12_PrimaryBlockade_parameters_gap",
+        "A13_ClinicalCloneDynamics_gap",
+        "A13_ClinicalCloneDynamics_parameters_gap",
+        "A14_BloodCloneLinkage_gap",
+        "A14_BloodCloneLinkage_parameters_gap",
+        "A15_HLADependence_gap",
+        "A15_HLADependence_parameters_gap",
+        "A16_HLAResidue_gap",
+        "A16_HLAResidue_parameters_gap",
+        "A17_KIRContext_gap",
+        "A17_KIRContext_parameters_gap",
+        "A18_KIRGate_gap",
+        "A18_KIRGate_parameters_gap",
+        "A19_CellLinePanel_gap",
+        "A19_CellLinePanel_parameters_gap"
+      ]
+    },
+    {
+      "stage": "cross_material_alignment",
+      "status": "not_started",
+      "input_fingerprint": null,
+      "artifacts": [],
+      "blockers": []
+    },
+    {
+      "stage": "reproducibility_audit",
+      "status": "not_started",
+      "input_fingerprint": null,
+      "artifacts": [],
+      "blockers": []
+    },
+    {
+      "stage": "execution_or_guidance",
+      "status": "not_started",
+      "input_fingerprint": null,
+      "artifacts": [],
+      "blockers": []
+    },
+    {
+      "stage": "biological_interpretation",
+      "status": "not_started",
+      "input_fingerprint": null,
+      "artifacts": [],
+      "blockers": []
+    },
+    {
+      "stage": "validation",
+      "status": "completed",
+      "input_fingerprint": "sha256:bc49b32c7e3e61a9d2fa8ff818fa093805ea5a6a7d7a863967840e08a70fa1f5",
+      "artifacts": [
+        "validation_report.json"
+      ],
+      "blockers": []
+    }
+  ],
+  "analyses": [
+    {
+      "analysis_id": "A01_ClinicalDelta",
+      "modality": "clinical_survival",
+      "paper_claim": {
+        "summary": "论文报告治疗后血浆delta链丰度变化与PFS有关",
+        "evidence": [
+          {
+            "evidence_id": "A01_ClinicalDelta_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig1b,ED1c,ED1d,ED1e,ED1f,ED1g",
+            "evidence_class": "无法验证",
+            "summary": "论文报告治疗后血浆delta链丰度变化与PFS有关；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig1b",
+          "ED1c",
+          "ED1d",
+          "ED1e",
+          "ED1f",
+          "ED1g"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig1b,ED1c,ED1d,ED1e,ED1f,ED1g；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A01_ClinicalDelta_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig1b,ED1c,ED1d,ED1e,ED1f,ED1g",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "CapTCR; baseline-C2D1 RF difference; median split; Gehan-Breslow-Wilcoxon",
+        "evidence": [
+          {
+            "evidence_id": "A01_ClinicalDelta_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: CapTCR; baseline-C2D1 RF difference; median split; Gehan-Breslow-Wilcoxon",
+            "evidence_class": "无法验证",
+            "summary": "CapTCR; baseline-C2D1 RF difference; median split; Gehan-Breslow-Wilcoxon；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A01_ClinicalDelta_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A01_ClinicalDelta_IN",
+            "path": "sources/data/A01_ClinicalDelta_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A01_ClinicalDelta_OUT",
+            "path": "expected_author_outputs/A01_ClinicalDelta_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：CapTCR; baseline-C2D1 RF difference; median split; Gehan-Breslow-Wilcoxon；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：患者；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的患者存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；切分阈值、landmark、删失和完整病例定义需患者级表。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；CapTCR; baseline-C2D1 RF difference; median split; Gehan-Breslow-Wilcoxon的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；切分阈值、landmark、删失和完整病例定义需患者级表。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告治疗后血浆delta链丰度变化与PFS有关；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A01_ClinicalDelta_P",
+              "A01_ClinicalDelta_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A01_ClinicalDelta_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "切分阈值、landmark、删失和完整病例定义需患者级表；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_P",
+            "A01_ClinicalDelta_M",
+            "A01_ClinicalDelta_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A01_ClinicalDelta_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A01_ClinicalDelta_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A02_SingleCell",
+      "modality": "single_cell_multimodal",
+      "paper_claim": {
+        "summary": "论文报告骨髓gamma-delta细胞的表达状态与组成",
+        "evidence": [
+          {
+            "evidence_id": "A02_SingleCell_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig1c,Fig4a,ED2g,ED2h,ED2i,ED2j,ED2k,ED2l,ED4c,ED4d,ED4e,ED4f",
+            "evidence_class": "无法验证",
+            "summary": "论文报告骨髓gamma-delta细胞的表达状态与组成；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig1c",
+          "Fig4a",
+          "ED2g",
+          "ED2h",
+          "ED2i",
+          "ED2j",
+          "ED2k",
+          "ED2l",
+          "ED4c",
+          "ED4d",
+          "ED4e",
+          "ED4f"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig1c,Fig4a,ED2g,ED2h,ED2i,ED2j,ED2k,ED2l,ED4c,ED4d,ED4e,ED4f；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A02_SingleCell_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig1c,Fig4a,ED2g,ED2h,ED2i,ED2j,ED2k,ED2l,ED4c,ED4d,ED4e,ED4f",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "QC;SCTransform;CLR;Harmony;WNN;VDJ-assisted annotation",
+        "evidence": [
+          {
+            "evidence_id": "A02_SingleCell_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: QC;SCTransform;CLR;Harmony;WNN;VDJ-assisted annotation",
+            "evidence_class": "无法验证",
+            "summary": "QC;SCTransform;CLR;Harmony;WNN;VDJ-assisted annotation；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A02_SingleCell_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A02_SingleCell_IN",
+            "path": "sources/data/A02_SingleCell_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A02_SingleCell_OUT",
+            "path": "expected_author_outputs/A02_SingleCell_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：QC;SCTransform;CLR;Harmony;WNN;VDJ-assisted annotation；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：患者内细胞；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的患者内细胞存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；原始ADT异常规则、PC和resolution及分选后分母未能代码核验。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；QC;SCTransform;CLR;Harmony;WNN;VDJ-assisted annotation的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；原始ADT异常规则、PC和resolution及分选后分母未能代码核验。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告骨髓gamma-delta细胞的表达状态与组成；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A02_SingleCell_P",
+              "A02_SingleCell_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A02_SingleCell_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "原始ADT异常规则、PC和resolution及分选后分母未能代码核验；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A02_SingleCell_P",
+            "A02_SingleCell_M",
+            "A02_SingleCell_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A02_SingleCell_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A02_SingleCell_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A03_CustomVDJ",
+      "modality": "immune_repertoire_alignment",
+      "paper_claim": {
+        "summary": "论文提出自定义gamma-delta受体配对与合并流程",
+        "evidence": [
+          {
+            "evidence_id": "A03_CustomVDJ_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; ED4b",
+            "evidence_class": "无法验证",
+            "summary": "论文提出自定义gamma-delta受体配对与合并流程；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "ED4b"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：ED4b；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A03_CustomVDJ_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: ED4b",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "G/M/GM;chain-reference rewrite;paired/dual/source/frequency priority",
+        "evidence": [
+          {
+            "evidence_id": "A03_CustomVDJ_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: G/M/GM;chain-reference rewrite;paired/dual/source/frequency priority",
+            "evidence_class": "无法验证",
+            "summary": "G/M/GM;chain-reference rewrite;paired/dual/source/frequency priority；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A03_CustomVDJ_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A03_CustomVDJ_IN",
+            "path": "sources/data/A03_CustomVDJ_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A03_CustomVDJ_OUT",
+            "path": "expected_author_outputs/A03_CustomVDJ_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：G/M/GM;chain-reference rewrite;paired/dual/source/frequency priority；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：barcode和paired clone；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的barcode和paired clone存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；全长序列键、clone键和双链竞争需逐分支中间表。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；G/M/GM;chain-reference rewrite;paired/dual/source/frequency priority的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；全长序列键、clone键和双链竞争需逐分支中间表。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文提出自定义gamma-delta受体配对与合并流程；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A03_CustomVDJ_P",
+              "A03_CustomVDJ_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A03_CustomVDJ_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "全长序列键、clone键和双链竞争需逐分支中间表；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A03_CustomVDJ_P",
+            "A03_CustomVDJ_M",
+            "A03_CustomVDJ_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A03_CustomVDJ_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A03_CustomVDJ_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A04_Repertoire",
+      "modality": "immune_repertoire_statistics",
+      "paper_claim": {
+        "summary": "论文报告骨髓与血液免疫受体库的重塑和重叠",
+        "evidence": [
+          {
+            "evidence_id": "A04_Repertoire_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; ED3a,ED3b,ED3c,ED3d",
+            "evidence_class": "无法验证",
+            "summary": "论文报告骨髓与血液免疫受体库的重塑和重叠；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "ED3a",
+          "ED3b",
+          "ED3c",
+          "ED3d"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：ED3a,ED3b,ED3c,ED3d；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A04_Repertoire_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: ED3a,ED3b,ED3c,ED3d",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Shannon;richness;Morisita-Horn;matched compartment comparison",
+        "evidence": [
+          {
+            "evidence_id": "A04_Repertoire_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Shannon;richness;Morisita-Horn;matched compartment comparison",
+            "evidence_class": "无法验证",
+            "summary": "Shannon;richness;Morisita-Horn;matched compartment comparison；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A04_Repertoire_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A04_Repertoire_IN",
+            "path": "sources/data/A04_Repertoire_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A04_Repertoire_OUT",
+            "path": "expected_author_outputs/A04_Repertoire_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Shannon;richness;Morisita-Horn;matched compartment comparison；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：患者内时点及克隆；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的患者内时点及克隆存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；vegdist horn距离到相似度方向转换未核验。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Shannon;richness;Morisita-Horn;matched compartment comparison的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；vegdist horn距离到相似度方向转换未核验。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告骨髓与血液免疫受体库的重塑和重叠；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A04_Repertoire_P",
+              "A04_Repertoire_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A04_Repertoire_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "vegdist horn距离到相似度方向转换未核验；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A04_Repertoire_P",
+            "A04_Repertoire_M",
+            "A04_Repertoire_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A04_Repertoire_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A04_Repertoire_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A05_FunctionalLabels",
+      "modality": "functional_screening",
+      "paper_claim": {
+        "summary": "论文通过报告细胞筛选定义肿瘤反应性受体",
+        "evidence": [
+          {
+            "evidence_id": "A05_FunctionalLabels_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig2a,Fig2b,ED5d,ED5e,ED5f,ED5g",
+            "evidence_class": "无法验证",
+            "summary": "论文通过报告细胞筛选定义肿瘤反应性受体；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig2a",
+          "Fig2b",
+          "ED5d",
+          "ED5e",
+          "ED5f",
+          "ED5g"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig2a,Fig2b,ED5d,ED5e,ED5f,ED5g；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A05_FunctionalLabels_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig2a,Fig2b,ED5d,ED5e,ED5f,ED5g",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "NUR77-GFP absolute increase;target panel;construct QC",
+        "evidence": [
+          {
+            "evidence_id": "A05_FunctionalLabels_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: NUR77-GFP absolute increase;target panel;construct QC",
+            "evidence_class": "无法验证",
+            "summary": "NUR77-GFP absolute increase;target panel;construct QC；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A05_FunctionalLabels_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A05_FunctionalLabels_IN",
+            "path": "sources/data/A05_FunctionalLabels_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A05_FunctionalLabels_OUT",
+            "path": "expected_author_outputs/A05_FunctionalLabels_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：NUR77-GFP absolute increase;target panel;construct QC；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：受体和独立实验；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的受体和独立实验存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；TR边界比较符、borderline和构建失败处置未核验。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；NUR77-GFP absolute increase;target panel;construct QC的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；TR边界比较符、borderline和构建失败处置未核验。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文通过报告细胞筛选定义肿瘤反应性受体；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A05_FunctionalLabels_P",
+              "A05_FunctionalLabels_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A05_FunctionalLabels_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "TR边界比较符、borderline和构建失败处置未核验；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_P",
+            "A05_FunctionalLabels_M",
+            "A05_FunctionalLabels_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A05_FunctionalLabels_conflict",
+          "kind": "conflict",
+          "topic": "reported_parameter_conflict",
+          "description": "TR标签边界在正文图注与Methods存在比较符差异。",
+          "impact": "两种报告值必须分别保留，不能静默选择或平均。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_F",
+            "A05_FunctionalLabels_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A05_FunctionalLabels_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A05_FunctionalLabels_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "材料冲突"
+    },
+    {
+      "analysis_id": "A06_TargetSpecificity",
+      "modality": "functional_screening",
+      "paper_claim": {
+        "summary": "论文报告部分受体识别患者匹配MM及多个癌种靶细胞",
+        "evidence": [
+          {
+            "evidence_id": "A06_TargetSpecificity_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig2c,Fig2d,Fig2e,ED5h",
+            "evidence_class": "无法验证",
+            "summary": "论文报告部分受体识别患者匹配MM及多个癌种靶细胞；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig2c",
+          "Fig2d",
+          "Fig2e",
+          "ED5h"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig2c,Fig2d,Fig2e,ED5h；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A06_TargetSpecificity_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig2c,Fig2d,Fig2e,ED5h",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Donor-matched tumors;healthy targets;per-cancer maximum response",
+        "evidence": [
+          {
+            "evidence_id": "A06_TargetSpecificity_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Donor-matched tumors;healthy targets;per-cancer maximum response",
+            "evidence_class": "无法验证",
+            "summary": "Donor-matched tumors;healthy targets;per-cancer maximum response；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A06_TargetSpecificity_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A06_TargetSpecificity_IN",
+            "path": "sources/data/A06_TargetSpecificity_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A06_TargetSpecificity_OUT",
+            "path": "expected_author_outputs/A06_TargetSpecificity_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Donor-matched tumors;healthy targets;per-cancer maximum response；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：受体、靶供者、独立实验；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的受体、靶供者、独立实验存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；健康靶读出与肿瘤靶不同；最大值不等于癌种覆盖率。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Donor-matched tumors;healthy targets;per-cancer maximum response的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；健康靶读出与肿瘤靶不同；最大值不等于癌种覆盖率。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告部分受体识别患者匹配MM及多个癌种靶细胞；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A06_TargetSpecificity_P",
+              "A06_TargetSpecificity_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A06_TargetSpecificity_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "健康靶读出与肿瘤靶不同；最大值不等于癌种覆盖率；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_P",
+            "A06_TargetSpecificity_M",
+            "A06_TargetSpecificity_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A06_TargetSpecificity_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A06_TargetSpecificity_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A07_TransferKilling",
+      "modality": "functional_perturbation",
+      "paper_claim": {
+        "summary": "论文报告导入gamma-delta受体可赋予原代T细胞杀伤",
+        "evidence": [
+          {
+            "evidence_id": "A07_TransferKilling_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig2f",
+            "evidence_class": "无法验证",
+            "summary": "论文报告导入gamma-delta受体可赋予原代T细胞杀伤；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig2f"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig2f；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A07_TransferKilling_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig2f",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Alpha-beta TCR depleted primary T cells;luciferase killing;RM-ANOVA",
+        "evidence": [
+          {
+            "evidence_id": "A07_TransferKilling_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Alpha-beta TCR depleted primary T cells;luciferase killing;RM-ANOVA",
+            "evidence_class": "无法验证",
+            "summary": "Alpha-beta TCR depleted primary T cells;luciferase killing;RM-ANOVA；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A07_TransferKilling_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A07_TransferKilling_IN",
+            "path": "sources/data/A07_TransferKilling_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A07_TransferKilling_OUT",
+            "path": "expected_author_outputs/A07_TransferKilling_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Alpha-beta TCR depleted primary T cells;luciferase killing;RM-ANOVA；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：原代细胞供者；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的原代细胞供者存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；工程构建、供者配对和杀伤归一化需原始数据。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Alpha-beta TCR depleted primary T cells;luciferase killing;RM-ANOVA的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；工程构建、供者配对和杀伤归一化需原始数据。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告导入gamma-delta受体可赋予原代T细胞杀伤；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A07_TransferKilling_P",
+              "A07_TransferKilling_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A07_TransferKilling_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "工程构建、供者配对和杀伤归一化需原始数据；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A07_TransferKilling_P",
+            "A07_TransferKilling_M",
+            "A07_TransferKilling_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A07_TransferKilling_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A07_TransferKilling_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A08_PreGameTraining",
+      "modality": "machine_learning",
+      "paper_claim": {
+        "summary": "论文报告多模态表型模型可优先识别反应性细胞",
+        "evidence": [
+          {
+            "evidence_id": "A08_PreGameTraining_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig3a,Fig3b,ED6a,ED6b,ED6c",
+            "evidence_class": "无法验证",
+            "summary": "论文报告多模态表型模型可优先识别反应性细胞；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig3a",
+          "Fig3b",
+          "ED6a",
+          "ED6b",
+          "ED6c"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig3a,Fig3b,ED6a,ED6b,ED6c；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A08_PreGameTraining_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig3a,Fig3b,ED6a,ED6b,ED6c",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "RNA/ADT/cell-cycle;RF;SMOTENC;cell CV;review donor/batch holdout",
+        "evidence": [
+          {
+            "evidence_id": "A08_PreGameTraining_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: RNA/ADT/cell-cycle;RF;SMOTENC;cell CV;review donor/batch holdout",
+            "evidence_class": "无法验证",
+            "summary": "RNA/ADT/cell-cycle;RF;SMOTENC;cell CV;review donor/batch holdout；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          },
+          {
+            "evidence_id": "A08_PreGameTraining_R",
+            "lane": "method",
+            "source_id": "SRC002",
+            "locator": "Physical PDF pp69-71;Revisions Fig3.7-3.10",
+            "evidence_class": "无法验证",
+            "summary": "供者/共混批次留出、特征筛选与ablation补充；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A08_PreGameTraining_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A08_PreGameTraining_IN",
+            "path": "sources/data/A08_PreGameTraining_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A08_PreGameTraining_OUT",
+            "path": "expected_author_outputs/A08_PreGameTraining_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：RNA/ADT/cell-cycle;RF;SMOTENC;cell CV;review donor/batch holdout；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：细胞嵌套clone/donor/batch；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的细胞嵌套clone/donor/batch存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；全数据特征筛选、跨fold依赖、最终模型列顺序和权重缺失。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；RNA/ADT/cell-cycle;RF;SMOTENC;cell CV;review donor/batch holdout的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；全数据特征筛选、跨fold依赖、最终模型列顺序和权重缺失。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告多模态表型模型可优先识别反应性细胞；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A08_PreGameTraining_P",
+              "A08_PreGameTraining_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A08_PreGameTraining_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "全数据特征筛选、跨fold依赖、最终模型列顺序和权重缺失；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A08_PreGameTraining_P",
+            "A08_PreGameTraining_M",
+            "A08_PreGameTraining_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A08_PreGameTraining_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A08_PreGameTraining_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A09_ProspectiveValidation",
+      "modality": "machine_learning_validation",
+      "paper_claim": {
+        "summary": "论文报告新队列候选经过实验验证支持排序效用",
+        "evidence": [
+          {
+            "evidence_id": "A09_ProspectiveValidation_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig3c,Fig3d,Fig3e,Fig3f,ED6d,ED6e,ED6f,ED6g,ED6h,ED6i,ED6j,ED6k,ED6l,ED6m",
+            "evidence_class": "无法验证",
+            "summary": "论文报告新队列候选经过实验验证支持排序效用；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig3c",
+          "Fig3d",
+          "Fig3e",
+          "Fig3f",
+          "ED6d",
+          "ED6e",
+          "ED6f",
+          "ED6g",
+          "ED6h",
+          "ED6i",
+          "ED6j",
+          "ED6k",
+          "ED6l",
+          "ED6m"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig3c,Fig3d,Fig3e,Fig3f,ED6d,ED6e,ED6f,ED6g,ED6h,ED6i,ED6j,ED6k,ED6l,ED6m；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A09_ProspectiveValidation_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig3c,Fig3d,Fig3e,Fig3f,ED6d,ED6e,ED6f,ED6g,ED6h,ED6i,ED6j,ED6k,ED6l,ED6m",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Top candidate selection;max score;expression-failure replacement;thresholding",
+        "evidence": [
+          {
+            "evidence_id": "A09_ProspectiveValidation_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Top candidate selection;max score;expression-failure replacement;thresholding",
+            "evidence_class": "无法验证",
+            "summary": "Top candidate selection;max score;expression-failure replacement;thresholding；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A09_ProspectiveValidation_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A09_ProspectiveValidation_IN",
+            "path": "sources/data/A09_ProspectiveValidation_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A09_ProspectiveValidation_OUT",
+            "path": "expected_author_outputs/A09_ProspectiveValidation_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Top candidate selection;max score;expression-failure replacement;thresholding；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：被选择克隆及供者；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的被选择克隆及供者存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；高低分抽样、回顾性阈值和max/median选择关系需核查。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Top candidate selection;max score;expression-failure replacement;thresholding的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；高低分抽样、回顾性阈值和max/median选择关系需核查。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告新队列候选经过实验验证支持排序效用；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A09_ProspectiveValidation_P",
+              "A09_ProspectiveValidation_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A09_ProspectiveValidation_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "高低分抽样、回顾性阈值和max/median选择关系需核查；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_P",
+            "A09_ProspectiveValidation_M",
+            "A09_ProspectiveValidation_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A09_ProspectiveValidation_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A09_ProspectiveValidation_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A10_PhenotypeDE",
+      "modality": "single_cell_differential_expression",
+      "paper_claim": {
+        "summary": "论文报告反应性细胞更常具有NK样表型",
+        "evidence": [
+          {
+            "evidence_id": "A10_PhenotypeDE_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig4b,Fig4c,Fig4d,Fig4e,ED7i,ED7j,ED7k,ED7l",
+            "evidence_class": "无法验证",
+            "summary": "论文报告反应性细胞更常具有NK样表型；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig4b",
+          "Fig4c",
+          "Fig4d",
+          "Fig4e",
+          "ED7i",
+          "ED7j",
+          "ED7k",
+          "ED7l"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig4b,Fig4c,Fig4d,Fig4e,ED7i,ED7j,ED7k,ED7l；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A10_PhenotypeDE_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig4b,Fig4c,Fig4d,Fig4e,ED7i,ED7j,ED7k,ED7l",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Clone-capped repeated FindMarkers;RNA/ADT;V-gene frequency tests",
+        "evidence": [
+          {
+            "evidence_id": "A10_PhenotypeDE_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Clone-capped repeated FindMarkers;RNA/ADT;V-gene frequency tests",
+            "evidence_class": "无法验证",
+            "summary": "Clone-capped repeated FindMarkers;RNA/ADT;V-gene frequency tests；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A10_PhenotypeDE_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A10_PhenotypeDE_IN",
+            "path": "sources/data/A10_PhenotypeDE_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A10_PhenotypeDE_OUT",
+            "path": "expected_author_outputs/A10_PhenotypeDE_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Clone-capped repeated FindMarkers;RNA/ADT;V-gene frequency tests；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：细胞嵌套克隆供者；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的细胞嵌套克隆供者存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；图注与Methods迭代数冲突；P值平均、校正和供者混杂需审计。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Clone-capped repeated FindMarkers;RNA/ADT;V-gene frequency tests的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；图注与Methods迭代数冲突；P值平均、校正和供者混杂需审计。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告反应性细胞更常具有NK样表型；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A10_PhenotypeDE_P",
+              "A10_PhenotypeDE_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A10_PhenotypeDE_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "图注与Methods迭代数冲突；P值平均、校正和供者混杂需审计；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_P",
+            "A10_PhenotypeDE_M",
+            "A10_PhenotypeDE_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A10_PhenotypeDE_conflict",
+          "kind": "conflict",
+          "topic": "reported_parameter_conflict",
+          "description": "同一差异分析的下采样迭代数在图注与Methods不一致。",
+          "impact": "两种报告值必须分别保留，不能静默选择或平均。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_F",
+            "A10_PhenotypeDE_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A10_PhenotypeDE_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A10_PhenotypeDE_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "材料冲突"
+    },
+    {
+      "analysis_id": "A11_SequenceDiversity",
+      "modality": "immune_repertoire_statistics",
+      "paper_claim": {
+        "summary": "论文报告受体扩增、长度与共享模式",
+        "evidence": [
+          {
+            "evidence_id": "A11_SequenceDiversity_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; ED7a,ED7b,ED7c,ED7d,ED7e,ED7f,ED7g,ED7h",
+            "evidence_class": "无法验证",
+            "summary": "论文报告受体扩增、长度与共享模式；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "ED7a",
+          "ED7b",
+          "ED7c",
+          "ED7d",
+          "ED7e",
+          "ED7f",
+          "ED7g",
+          "ED7h"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：ED7a,ED7b,ED7c,ED7d,ED7e,ED7f,ED7g,ED7h；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A11_SequenceDiversity_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: ED7a,ED7b,ED7c,ED7d,ED7e,ED7f,ED7g,ED7h",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Shannon;CDR3 lengths;V-gene tests;private sequence overlaps",
+        "evidence": [
+          {
+            "evidence_id": "A11_SequenceDiversity_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Shannon;CDR3 lengths;V-gene tests;private sequence overlaps",
+            "evidence_class": "无法验证",
+            "summary": "Shannon;CDR3 lengths;V-gene tests;private sequence overlaps；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A11_SequenceDiversity_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A11_SequenceDiversity_IN",
+            "path": "sources/data/A11_SequenceDiversity_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A11_SequenceDiversity_OUT",
+            "path": "expected_author_outputs/A11_SequenceDiversity_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Shannon;CDR3 lengths;V-gene tests;private sequence overlaps；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：患者内受体或独立序列；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的患者内受体或独立序列存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；长度和私有序列不直接测量抗原多样性。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Shannon;CDR3 lengths;V-gene tests;private sequence overlaps的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；长度和私有序列不直接测量抗原多样性。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告受体扩增、长度与共享模式；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A11_SequenceDiversity_P",
+              "A11_SequenceDiversity_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A11_SequenceDiversity_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "长度和私有序列不直接测量抗原多样性；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_P",
+            "A11_SequenceDiversity_M",
+            "A11_SequenceDiversity_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A11_SequenceDiversity_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A11_SequenceDiversity_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A12_PrimaryBlockade",
+      "modality": "functional_perturbation",
+      "paper_claim": {
+        "summary": "论文报告原代gamma-delta细胞反应被TCR阻断降低",
+        "evidence": [
+          {
+            "evidence_id": "A12_PrimaryBlockade_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig4f,Fig4g,Fig4h",
+            "evidence_class": "无法验证",
+            "summary": "论文报告原代gamma-delta细胞反应被TCR阻断降低；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig4f",
+          "Fig4g",
+          "Fig4h"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig4f,Fig4g,Fig4h；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A12_PrimaryBlockade_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig4f,Fig4g,Fig4h",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "GPR56/CD94 sorting;4-1BB activation;killing;paired tests",
+        "evidence": [
+          {
+            "evidence_id": "A12_PrimaryBlockade_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: GPR56/CD94 sorting;4-1BB activation;killing;paired tests",
+            "evidence_class": "无法验证",
+            "summary": "GPR56/CD94 sorting;4-1BB activation;killing;paired tests；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A12_PrimaryBlockade_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A12_PrimaryBlockade_IN",
+            "path": "sources/data/A12_PrimaryBlockade_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A12_PrimaryBlockade_OUT",
+            "path": "expected_author_outputs/A12_PrimaryBlockade_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：GPR56/CD94 sorting;4-1BB activation;killing;paired tests；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：患者内阻断/同型重复；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的患者内阻断/同型重复存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；分选为富集而非所有TR纯群；TCR贡献不能外推临床必要性。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；GPR56/CD94 sorting;4-1BB activation;killing;paired tests的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；分选为富集而非所有TR纯群；TCR贡献不能外推临床必要性。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告原代gamma-delta细胞反应被TCR阻断降低；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A12_PrimaryBlockade_P",
+              "A12_PrimaryBlockade_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A12_PrimaryBlockade_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "分选为富集而非所有TR纯群；TCR贡献不能外推临床必要性；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_P",
+            "A12_PrimaryBlockade_M",
+            "A12_PrimaryBlockade_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A12_PrimaryBlockade_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A12_PrimaryBlockade_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A13_ClinicalCloneDynamics",
+      "modality": "clinical_survival",
+      "paper_claim": {
+        "summary": "论文报告TR克隆变化与应答和PFS有关",
+        "evidence": [
+          {
+            "evidence_id": "A13_ClinicalCloneDynamics_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig5a,Fig5b,Fig5c,ED8a,ED8b,ED8c,ED8d",
+            "evidence_class": "无法验证",
+            "summary": "论文报告TR克隆变化与应答和PFS有关；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig5a",
+          "Fig5b",
+          "Fig5c",
+          "ED8a",
+          "ED8b",
+          "ED8c",
+          "ED8d"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig5a,Fig5b,Fig5c,ED8a,ED8b,ED8c,ED8d；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A13_ClinicalCloneDynamics_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig5a,Fig5b,Fig5c,ED8a,ED8b,ED8c,ED8d",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Alluvial;TR/all-gd fold-change;log-rank;selected receptor screening",
+        "evidence": [
+          {
+            "evidence_id": "A13_ClinicalCloneDynamics_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Alluvial;TR/all-gd fold-change;log-rank;selected receptor screening",
+            "evidence_class": "无法验证",
+            "summary": "Alluvial;TR/all-gd fold-change;log-rank;selected receptor screening；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A13_ClinicalCloneDynamics_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A13_ClinicalCloneDynamics_IN",
+            "path": "sources/data/A13_ClinicalCloneDynamics_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A13_ClinicalCloneDynamics_OUT",
+            "path": "expected_author_outputs/A13_ClinicalCloneDynamics_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Alluvial;TR/all-gd fold-change;log-rank;selected receptor screening；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：患者与患者内克隆；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的患者与患者内克隆存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；已知缺失基线与图注病例数需要入组矩阵解释。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Alluvial;TR/all-gd fold-change;log-rank;selected receptor screening的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；已知缺失基线与图注病例数需要入组矩阵解释。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告TR克隆变化与应答和PFS有关；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A13_ClinicalCloneDynamics_P",
+              "A13_ClinicalCloneDynamics_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A13_ClinicalCloneDynamics_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "已知缺失基线与图注病例数需要入组矩阵解释；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_P",
+            "A13_ClinicalCloneDynamics_M",
+            "A13_ClinicalCloneDynamics_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A13_ClinicalCloneDynamics_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A13_ClinicalCloneDynamics_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A14_BloodCloneLinkage",
+      "modality": "multicompartment_repertoire",
+      "paper_claim": {
+        "summary": "论文报告血浆可捕捉骨髓匹配受体信号",
+        "evidence": [
+          {
+            "evidence_id": "A14_BloodCloneLinkage_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig5d,ED2a,ED2b,ED2c,ED2d,ED2e,ED2f,ED8e,ED8f,ED5i",
+            "evidence_class": "无法验证",
+            "summary": "论文报告血浆可捕捉骨髓匹配受体信号；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig5d",
+          "ED2a",
+          "ED2b",
+          "ED2c",
+          "ED2d",
+          "ED2e",
+          "ED2f",
+          "ED8e",
+          "ED8f",
+          "ED5i"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig5d,ED2a,ED2b,ED2c,ED2d,ED2e,ED2f,ED8e,ED8f,ED5i；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A14_BloodCloneLinkage_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig5d,ED2a,ED2b,ED2c,ED2d,ED2e,ED2f,ED8e,ED8f,ED5i",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "CapTCR RF;delta matching;patient-time aggregation;Spearman",
+        "evidence": [
+          {
+            "evidence_id": "A14_BloodCloneLinkage_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: CapTCR RF;delta matching;patient-time aggregation;Spearman",
+            "evidence_class": "无法验证",
+            "summary": "CapTCR RF;delta matching;patient-time aggregation;Spearman；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A14_BloodCloneLinkage_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A14_BloodCloneLinkage_IN",
+            "path": "sources/data/A14_BloodCloneLinkage_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A14_BloodCloneLinkage_OUT",
+            "path": "expected_author_outputs/A14_BloodCloneLinkage_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：CapTCR RF;delta matching;patient-time aggregation;Spearman；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：患者内collection和delta序列；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的患者内collection和delta序列存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；delta一对多、C2D1/C6D1与重复访视需要显式处理。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；CapTCR RF;delta matching;patient-time aggregation;Spearman的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；delta一对多、C2D1/C6D1与重复访视需要显式处理。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告血浆可捕捉骨髓匹配受体信号；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A14_BloodCloneLinkage_P",
+              "A14_BloodCloneLinkage_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A14_BloodCloneLinkage_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "delta一对多、C2D1/C6D1与重复访视需要显式处理；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_P",
+            "A14_BloodCloneLinkage_M",
+            "A14_BloodCloneLinkage_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A14_BloodCloneLinkage_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A14_BloodCloneLinkage_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A15_HLADependence",
+      "modality": "genetic_perturbation",
+      "paper_claim": {
+        "summary": "论文报告部分受体的反应依赖B2M或特定HLA",
+        "evidence": [
+          {
+            "evidence_id": "A15_HLADependence_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig6a,Fig6b,Fig6c,Fig6d,ED9a,ED9b,ED9l,ED9m",
+            "evidence_class": "无法验证",
+            "summary": "论文报告部分受体的反应依赖B2M或特定HLA；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig6a",
+          "Fig6b",
+          "Fig6c",
+          "Fig6d",
+          "ED9a",
+          "ED9b",
+          "ED9l",
+          "ED9m"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig6a,Fig6b,Fig6c,Fig6d,ED9a,ED9b,ED9l,ED9m；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A15_HLADependence_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig6a,Fig6b,Fig6c,Fig6d,ED9a,ED9b,ED9l,ED9m",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "B2M/CD1D/HLA/BTN3A KO/OE;single HLA presentation",
+        "evidence": [
+          {
+            "evidence_id": "A15_HLADependence_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: B2M/CD1D/HLA/BTN3A KO/OE;single HLA presentation",
+            "evidence_class": "无法验证",
+            "summary": "B2M/CD1D/HLA/BTN3A KO/OE;single HLA presentation；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A15_HLADependence_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A15_HLADependence_IN",
+            "path": "sources/data/A15_HLADependence_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A15_HLADependence_OUT",
+            "path": "expected_author_outputs/A15_HLADependence_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：B2M/CD1D/HLA/BTN3A KO/OE;single HLA presentation；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：受体和独立实验；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的受体和独立实验存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；KO效率、归一化和重复数据重用需要原始表。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；B2M/CD1D/HLA/BTN3A KO/OE;single HLA presentation的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；KO效率、归一化和重复数据重用需要原始表。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告部分受体的反应依赖B2M或特定HLA；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A15_HLADependence_P",
+              "A15_HLADependence_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A15_HLADependence_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "KO效率、归一化和重复数据重用需要原始表；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A15_HLADependence_P",
+            "A15_HLADependence_M",
+            "A15_HLADependence_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A15_HLADependence_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A15_HLADependence_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A16_HLAResidue",
+      "modality": "genetic_perturbation",
+      "paper_claim": {
+        "summary": "论文报告HLA-C关键位点替换可恢复功能识别",
+        "evidence": [
+          {
+            "evidence_id": "A16_HLAResidue_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig6e,ED9d,ED9e,ED9f",
+            "evidence_class": "无法验证",
+            "summary": "论文报告HLA-C关键位点替换可恢复功能识别；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig6e",
+          "ED9d",
+          "ED9e",
+          "ED9f"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig6e,ED9d,ED9e,ED9f；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A16_HLAResidue_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig6e,ED9d,ED9e,ED9f",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "HLA sequence alignment;single-residue rescue;RM-ANOVA",
+        "evidence": [
+          {
+            "evidence_id": "A16_HLAResidue_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: HLA sequence alignment;single-residue rescue;RM-ANOVA",
+            "evidence_class": "无法验证",
+            "summary": "HLA sequence alignment;single-residue rescue;RM-ANOVA；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A16_HLAResidue_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A16_HLAResidue_IN",
+            "path": "sources/data/A16_HLAResidue_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A16_HLAResidue_OUT",
+            "path": "expected_author_outputs/A16_HLAResidue_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：HLA sequence alignment;single-residue rescue;RM-ANOVA；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：allele构建与独立实验；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的allele构建与独立实验存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；功能位点不自动证明结构接触或肽完全无关。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；HLA sequence alignment;single-residue rescue;RM-ANOVA的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；功能位点不自动证明结构接触或肽完全无关。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文报告HLA-C关键位点替换可恢复功能识别；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A16_HLAResidue_P",
+              "A16_HLAResidue_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A16_HLAResidue_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "功能位点不自动证明结构接触或肽完全无关；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A16_HLAResidue_P",
+            "A16_HLAResidue_M",
+            "A16_HLAResidue_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A16_HLAResidue_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A16_HLAResidue_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A17_KIRContext",
+      "modality": "single_cell_differential_expression",
+      "paper_claim": {
+        "summary": "论文从受体克隆表型与靶HLA背景提出抑制候选",
+        "evidence": [
+          {
+            "evidence_id": "A17_KIRContext_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig6f,Fig6g,ED9c,ED9g,ED9h",
+            "evidence_class": "无法验证",
+            "summary": "论文从受体克隆表型与靶HLA背景提出抑制候选；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig6f",
+          "Fig6g",
+          "ED9c",
+          "ED9g",
+          "ED9h"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig6f,Fig6g,ED9c,ED9g,ED9h；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A17_KIRContext_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig6f,Fig6g,ED9c,ED9g,ED9h",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "Clone-specific DE;HLA genotype/expression;Bw4 context",
+        "evidence": [
+          {
+            "evidence_id": "A17_KIRContext_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: Clone-specific DE;HLA genotype/expression;Bw4 context",
+            "evidence_class": "无法验证",
+            "summary": "Clone-specific DE;HLA genotype/expression;Bw4 context；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A17_KIRContext_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A17_KIRContext_IN",
+            "path": "sources/data/A17_KIRContext_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A17_KIRContext_OUT",
+            "path": "expected_author_outputs/A17_KIRContext_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：Clone-specific DE;HLA genotype/expression;Bw4 context；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：一个关键克隆及供者背景；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的一个关键克隆及供者背景存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；克隆特异与供者混杂；RNA低表达不等于表面配体缺失。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；Clone-specific DE;HLA genotype/expression;Bw4 context的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；克隆特异与供者混杂；RNA低表达不等于表面配体缺失。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文从受体克隆表型与靶HLA背景提出抑制候选；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A17_KIRContext_P",
+              "A17_KIRContext_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A17_KIRContext_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "克隆特异与供者混杂；RNA低表达不等于表面配体缺失；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A17_KIRContext_P",
+            "A17_KIRContext_M",
+            "A17_KIRContext_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A17_KIRContext_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A17_KIRContext_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A18_KIRGate",
+      "modality": "functional_perturbation",
+      "paper_claim": {
+        "summary": "论文提出KIR与HLA共同限制受体效应的条件门",
+        "evidence": [
+          {
+            "evidence_id": "A18_KIRGate_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; Fig6h,Fig6i,ED9i,ED9j,ED9k",
+            "evidence_class": "无法验证",
+            "summary": "论文提出KIR与HLA共同限制受体效应的条件门；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "Fig6h",
+          "Fig6i",
+          "ED9i",
+          "ED9j",
+          "ED9k"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：Fig6h,Fig6i,ED9i,ED9j,ED9k；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A18_KIRGate_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: Fig6h,Fig6i,ED9i,ED9j,ED9k",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "KIR3DL1/CD8a;Bw4 targets;blocking/OE;CD69",
+        "evidence": [
+          {
+            "evidence_id": "A18_KIRGate_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: KIR3DL1/CD8a;Bw4 targets;blocking/OE;CD69",
+            "evidence_class": "无法验证",
+            "summary": "KIR3DL1/CD8a;Bw4 targets;blocking/OE;CD69；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A18_KIRGate_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A18_KIRGate_IN",
+            "path": "sources/data/A18_KIRGate_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A18_KIRGate_OUT",
+            "path": "expected_author_outputs/A18_KIRGate_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：KIR3DL1/CD8a;Bw4 targets;blocking/OE;CD69；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：工程细胞、靶细胞与独立实验；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的工程细胞、靶细胞与独立实验存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；正常组织安全性尚无本次验证证据，所测条件的外推范围需限制。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；KIR3DL1/CD8a;Bw4 targets;blocking/OE;CD69的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；正常组织安全性尚无本次验证证据，所测条件的外推范围需限制。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文提出KIR与HLA共同限制受体效应的条件门；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A18_KIRGate_P",
+              "A18_KIRGate_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A18_KIRGate_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "正常组织安全性尚无本次验证证据，所测条件的外推范围需限制；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A18_KIRGate_P",
+            "A18_KIRGate_M",
+            "A18_KIRGate_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A18_KIRGate_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A18_KIRGate_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    },
+    {
+      "analysis_id": "A19_CellLinePanel",
+      "modality": "bulk_expression",
+      "paper_claim": {
+        "summary": "论文利用表达异质性选择MM靶细胞面板",
+        "evidence": [
+          {
+            "evidence_id": "A19_CellLinePanel_P",
+            "lane": "paper_claim",
+            "source_id": "SRC001",
+            "locator": "Results; ED5a,ED5b,ED5c",
+            "evidence_class": "无法验证",
+            "summary": "论文利用表达异质性选择MM靶细胞面板；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "figure_panel": {
+        "ids": [
+          "ED5a",
+          "ED5b",
+          "ED5c"
+        ],
+        "source_mode": "caption_only",
+        "display_summary": "图注层重建：ED5a,ED5b,ED5c；原图、坐标与原作者作图代码未取得。",
+        "evidence": [
+          {
+            "evidence_id": "A19_CellLinePanel_F",
+            "lane": "figure",
+            "source_id": "SRC001",
+            "locator": "Final captions: ED5a,ED5b,ED5c",
+            "evidence_class": "无法验证",
+            "summary": "最终图注的展示描述，原图像素未取得；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ]
+      },
+      "method_parameters": {
+        "summary": "FPKM;filter;UMAP;ligand expression",
+        "evidence": [
+          {
+            "evidence_id": "A19_CellLinePanel_M",
+            "lane": "method",
+            "source_id": "SRC001",
+            "locator": "Methods: FPKM;filter;UMAP;ligand expression",
+            "evidence_class": "无法验证",
+            "summary": "FPKM;filter;UMAP;ligand expression；浏览阅读已完成但缺少本地原始字节，按该协议不能升级为直接证据。"
+          }
+        ],
+        "parameters": []
+      },
+      "code_locations": [
+        {
+          "evidence_id": "A19_CellLinePanel_C",
+          "source_id": "SRC005",
+          "snapshot": null,
+          "path": null,
+          "locator": null,
+          "scope": "missing",
+          "evidence_status": "missing"
+        }
+      ],
+      "code_guidance": null,
+      "inputs_outputs": {
+        "inputs": [
+          {
+            "artifact_id": "A19_CellLinePanel_IN",
+            "path": "sources/data/A19_CellLinePanel_input_missing",
+            "semantic_type": "未取得的作者分析输入与身份表",
+            "fingerprint": null
+          }
+        ],
+        "outputs": [
+          {
+            "artifact_id": "A19_CellLinePanel_OUT",
+            "path": "expected_author_outputs/A19_CellLinePanel_not_generated",
+            "semantic_type": "未生成的原作者分析结果；不可当观察证据",
+            "fingerprint": null
+          }
+        ]
+      },
+      "execution_record_ids": [],
+      "scientific_audit": [
+        {
+          "topic": "preprocessing",
+          "status": "blocked",
+          "finding": "该模块需按作者描述恢复：FPKM;filter;UMAP;ligand expression；缺乏输入矩阵和源码，无法确认实际数据变换。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "statistical_unit",
+          "status": "blocked",
+          "finding": "应逐项保留统计单位：MM细胞系及患者；缺少分析入组表，无法核对实际分母及独立样本数量。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "replication_pseudoreplication",
+          "status": "blocked",
+          "finding": "该模块的MM细胞系及患者存在层级或配对结构；需原始样本键核实，不能用细胞或事件数替代生物重复。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "batch_confounding",
+          "status": "blocked",
+          "finding": "该模块必须保留供者、测序/实验批次、靶细胞或时点身份；bulk与single-cell语义、UMAP参数和靶选择需固定。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "multiple_testing",
+          "status": "blocked",
+          "finding": "须核对实际contrast、效应方向、校正范围和不确定性估计；FPKM;filter;UMAP;ligand expression的真实输出与调用尚未获得。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "species_gene_ids",
+          "status": "blocked",
+          "finding": "研究以人类材料为主，需保留GRCh38、基因/蛋白及受体配对命名空间；未取得相应输入，不能核实标识映射。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "parameter_consistency",
+          "status": "blocked",
+          "finding": "现有信息仅为论文和审稿文字；bulk与single-cell语义、UMAP参数和靶选择需固定。未知参数不得填入默认值作为作者设置。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        },
+        {
+          "topic": "claim_strength",
+          "status": "blocked",
+          "finding": "论文利用表达异质性选择MM靶细胞面板；这一作者主张不能由文献阅读升级为本次已验证结论，需各自输入、输出和实验证据。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M"
+          ],
+          "claim_ceiling": "not_assessable"
+        }
+      ],
+      "interpretation": {
+        "direct_observation": [],
+        "paper_claim": [],
+        "reconstructed_support": [],
+        "reasonable_inference": [],
+        "unverified": [
+          {
+            "statement": "尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。",
+            "evidence_refs": [
+              "A19_CellLinePanel_P",
+              "A19_CellLinePanel_M"
+            ],
+            "quantitative_claims": []
+          }
+        ]
+      },
+      "conflicts_gaps": [
+        {
+          "issue_id": "A19_CellLinePanel_gap",
+          "kind": "gap",
+          "topic": "acquisition_execution",
+          "description": "bulk与single-cell语义、UMAP参数和靶选择需固定；未取得原作者源码、相关原始输入与运行输出。",
+          "impact": "阻止代码审读、参数实现核对与真实复现；只保留文献层重建。",
+          "evidence_refs": [
+            "A19_CellLinePanel_P",
+            "A19_CellLinePanel_M",
+            "A19_CellLinePanel_C"
+          ],
+          "blocking": true,
+          "resolved": false
+        },
+        {
+          "issue_id": "A19_CellLinePanel_parameters_gap",
+          "kind": "gap",
+          "topic": "parameter_registry",
+          "description": "参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。",
+          "impact": "不可据摘录自动执行或声称参数实现一致。",
+          "evidence_refs": [
+            "A19_CellLinePanel_M"
+          ],
+          "blocking": true,
+          "resolved": false
+        }
+      ],
+      "reproduction_status": "受阻"
+    }
+  ],
+  "execution_records": [],
+  "overall_status": "材料冲突"
+}

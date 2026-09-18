@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "pregame_nature_2026_11055_reconstruction",
+  "sources": [
+    {
+      "source_id": "SRC001",
+      "roles": [
+        "main_text",
+        "results_text",
+        "methods_text",
+        "figure_caption"
+      ],
+      "location": "sources/paper/final_article.html",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "mixed",
+      "limitations": [
+        "Browser text read; original publisher HTML/PDF bytes could not be captured locally."
+      ]
+    },
+    {
+      "source_id": "SRC002",
+      "roles": [
+        "supplement_text",
+        "figure_caption"
+      ],
+      "location": "sources/supplement/peer_review.pdf",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "page",
+      "limitations": [
+        "Relevant review text and physical p69 screenshot read; original PDF not captured."
+      ]
+    },
+    {
+      "source_id": "SRC003",
+      "roles": [
+        "supplement_text",
+        "metadata_table"
+      ],
+      "location": "sources/supplement/tables.pdf",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "page",
+      "limitations": [
+        "Parsed text read; S4 manually transcribed; original PDF/page image not captured."
+      ]
+    },
+    {
+      "source_id": "SRC004",
+      "roles": [
+        "supplement_text",
+        "environment"
+      ],
+      "location": "sources/supplement/reporting_summary.pdf",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "page",
+      "limitations": [
+        "Physical pp1-3 screenshots read; original PDF not captured."
+      ]
+    },
+    {
+      "source_id": "SRC005",
+      "roles": [
+        "code",
+        "environment"
+      ],
+      "location": "sources/code/zenodo_20028241",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "Code DOI from paper; record/API/download attempts failed; no author code or model inspected."
+      ]
+    },
+    {
+      "source_id": "SRC006",
+      "roles": [
+        "input_data",
+        "raw_data_manifest"
+      ],
+      "location": "sources/data/ALGONQUIN",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "EGA study/dataset metadata viewed; controlled individual-level matrices and outcomes not obtained."
+      ]
+    },
+    {
+      "source_id": "SRC007",
+      "roles": [
+        "input_data",
+        "raw_data_manifest"
+      ],
+      "location": "sources/data/PreGame",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "EGA study/dataset metadata viewed; raw/processed expression and labels not obtained."
+      ]
+    },
+    {
+      "source_id": "SRC008",
+      "roles": [
+        "input_data",
+        "metadata_table"
+      ],
+      "location": "sources/data/source_data.xlsx",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "sheet_cell",
+      "limitations": [
+        "Publisher workbook linked; file bytes not obtained."
+      ]
+    },
+    {
+      "source_id": "SRC009",
+      "roles": [
+        "figure_visual"
+      ],
+      "location": "sources/figures/original_panels",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "figure_panel",
+      "limitations": [
+        "Main/ED figures not obtained as inspectable local images; caption-only interpretation."
+      ]
+    },
+    {
+      "source_id": "SRC010",
+      "roles": [
+        "code"
+      ],
+      "location": "sources/code/legacy_TCRmodel",
+      "availability": "missing",
+      "fingerprint": null,
+      "locator_type": "unavailable",
+      "limitations": [
+        "Historical bigmaklab/TCRmodel lead: connected GitHub GET returned404; not evidence about current Zenodo contents."
+      ]
+    }
+  ]
+}

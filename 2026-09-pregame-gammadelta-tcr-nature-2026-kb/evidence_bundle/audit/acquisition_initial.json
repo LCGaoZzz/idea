@@ -1,0 +1,20 @@
+[
+  {
+    "source_id": "paper.html",
+    "original_locator": "https://www.nature.com/articles/s41586-026-11055-9",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.nature.com', port=443): Max retries exceeded with url: /articles/s41586-026-11055-9 (Caused by NameResolutionError(\"HTTPSConnection(host='www.nature.com', port=443): Failed to resolve 'www.nature.com' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "source_id": "zenodo_record.json",
+    "original_locator": "https://zenodo.org/api/records/20028241",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='zenodo.org', port=443): Max retries exceeded with url: /api/records/20028241 (Caused by NameResolutionError(\"HTTPSConnection(host='zenodo.org', port=443): Failed to resolve 'zenodo.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  },
+  {
+    "source_id": "zenodo_record.html",
+    "original_locator": "https://zenodo.org/records/20028241",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='zenodo.org', port=443): Max retries exceeded with url: /records/20028241 (Caused by NameResolutionError(\"HTTPSConnection(host='zenodo.org', port=443): Failed to resolve 'zenodo.org' ([Errno -3] Temporary failure in name resolution)\"))"
+  }
+]

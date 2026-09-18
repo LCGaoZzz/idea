@@ -1,0 +1,61 @@
+{
+  "identity": "independent arithmetic; not author pipeline execution",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "input_sha256": "f838da95be7260103e9508261f43ff992c675219d711a863aade8dc02fff0a7d",
+  "S4": {
+    "rows": 22,
+    "total_gd_cells": 9574,
+    "sum_unique_paired_sequences": 766,
+    "MM15_cells": 6879,
+    "MM15_fraction": 0.7185084604136203,
+    "first_eight_paired_sequences_sum": 151,
+    "limits": "S4 manual parsed-text transcription; sequence counts not assumed identical to main-text clonotype definition."
+  },
+  "ideal_independent_binomial_95_intervals": [
+    {
+      "successes": 21,
+      "n": 25,
+      "fraction": 0.84,
+      "lower": 0.6391715455407279,
+      "upper": 0.9546205476282905
+    },
+    {
+      "successes": 15,
+      "n": 15,
+      "fraction": 1.0,
+      "lower": 0.7819806390894659,
+      "upper": 1.0
+    },
+    {
+      "successes": 10,
+      "n": 10,
+      "fraction": 1.0,
+      "lower": 0.6915028921812392,
+      "upper": 1.0
+    }
+  ],
+  "binomial_limit": "Illustrative independent-trial intervals; NOT donor-clustered or selection-adjusted study confidence intervals.",
+  "hypothetical_max_bias": {
+    "per_cell_false_exceedance_assumption": 0.01,
+    "independent_cells_assumption": true,
+    "values": [
+      {
+        "clone_size": 1,
+        "probability": 0.010000000000000009
+      },
+      {
+        "clone_size": 10,
+        "probability": 0.09561792499119559
+      },
+      {
+        "clone_size": 30,
+        "probability": 0.2602996266117198
+      },
+      {
+        "clone_size": 100,
+        "probability": 0.6339676587267709
+      }
+    ],
+    "limits": "Mathematical example; not empirical FPR for PreGame; actual clone cells are correlated."
+  }
+}

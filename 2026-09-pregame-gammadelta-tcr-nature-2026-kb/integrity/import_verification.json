@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "tool": "2026-09-pregame-gammadelta-tcr-nature-2026-kb/transfer/import_bundle.py",
+  "run_utc": "2026-09-18T10:04:04Z",
+  "bundle_file": "PreGame_Nature_2026_evidence_bundle.zip",
+  "bundle_sha256": "4700b548e0d245598366e80f0f527ea9e46862a40e587abdd75587533b5d207f",
+  "bundle_size_bytes": 447834,
+  "zip_member_count": 44,
+  "internal_sha256sums_entries_verified": 43,
+  "internal_sha256sums_self_entry_declared": null,
+  "internal_sha256sums_self_entry_note": "SHA256SUMS lists the 43 non-self members only; coverage is complete",
+  "restored_tree": "evidence_bundle/",
+  "staged_documents": [
+    "README.md",
+    "AGENTS.md"
+  ],
+  "root_files_registered": [
+    "README.md",
+    "CATALOG.md",
+    "catalog.json"
+  ],
+  "verified_by": "github-actions one-off import workflow (import-pregame-evidence-20260918)"
+}

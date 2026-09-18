@@ -1,0 +1,75 @@
+analysis	parameter	value	evidence_status	locator
+single_cell	R	4.2.1	reported	Methods Quality control
+single_cell	Seurat	4.3.0	reported	same
+single_cell	sctransform	0.3.5	reported	same
+single_cell	SCTransform.method	glmGamPoi	reported	same
+single_cell	SCTransform.vst.flavor	v2	reported	same
+single_cell	SCTransform.variable.features.n	3000	reported	same
+single_cell	SCTransform.vars.to.regress	percent.mt	reported	same
+single_cell	ADT_normalization	CLR across cells	reported	same
+single_cell	harmony	0.1.1	reported	same
+single_cell	harmony.theta	0	reported	same
+single_cell	harmony.group_by	batch or sample	reported_not_resolved_per_cohort	same
+single_cell	minimum_features	200	reported	same
+single_cell	maximum_mt_percent	10	reported	same
+single_cell	minimum_cells_per_gene	3	reported	same
+single_cell	low_ADT_outlier_rule		unreported_in_read_material	same
+single_cell	PC_dimensions		unreported_in_read_material	same
+single_cell	clustering_resolution		unreported_in_read_material	same
+alignment	CellRanger_main	7.0.1	reported	Methods Alignment
+alignment	CellRanger_melanoma	8.0.1	reported	same
+alignment	CellRanger_NSCLC	6.1.2	reported	same
+alignment	GEX_reference	GRCh38-2020-A	reported	same
+alignment	VDJ_reference	vdj-GRCh38-alts-ensembl-7.0.0	reported	same
+alignment	force_cells	number recovered from earlier alignment	reported_dynamic	same
+gamma_delta_VDJ	branches	G;M;GM	reported	Methods custom alignment
+gamma_delta_VDJ	chain_reference_rewrite	TRG->TRA;TRD->TRB;restore after alignment	reported	same
+gamma_delta_VDJ	tie_break	paired;dual;source support order;frequency	reported	same
+ML	feature_count	27	reported	Methods PreGame
+ML	gene_feature_count	19	reported	same
+ML	protein_feature_count	5	reported	same
+ML	metadata_features	S.Score;G2M.Score;Phase	reported	same
+ML	ordered_feature_names		not_recovered	ED6b; author code inaccessible
+ML	training_TR_cells	88	reported	Results PreGame
+ML	training_NTR_cells	361	reported	same
+ML	cross_validation_folds	10	reported	Methods PreGame
+ML	cross_validation_repeats	100	reported	same
+ML	oversampling	SMOTENC;training fold only	reported	same; Review p71
+ML	feature_selection_scope	before train/test split	reported	same
+ML	random_seed		not_recovered	author code inaccessible
+ML	RF_hyperparameters		not_recovered	author code inaccessible
+ML	threshold	0.85	reported_retrospective	Fig3f
+ML	clone_score	maximum per clone	reported	Fig3f; ED6e
+ML	selection_median_rule	median >0.6	reported_unresolved_relation_to_max	ED6e
+ML	Python	3.9.6	reported	Reporting Summary p1
+ML	numpy	1.26.3	reported	same
+ML	pandas	2.2.0	reported	same
+ML	scikit-learn	1.1.3	reported	same
+ML	imbalanced-learn	0.11.0	reported	same
+functional_labels	TR_results	>15 percentage-point increase	conflicting_reported	Fig2b
+functional_labels	TR_methods	>=15 percentage-point increase	conflicting_reported	Methods Jurkat screening
+functional_labels	borderline	13-15 percentage points	reported_boundary_ambiguous	same
+functional_labels	NTR	0-13 percentage points	reported_boundary_ambiguous	same
+functional_labels	threshold_background	3 SD;98 control measurements	reported	Methods Jurkat screening
+DE	clone_cap	30 cells	reported	Fig4e; Methods DE
+DE	iterations_caption	100	conflicting_reported	Fig4e
+DE	iterations_methods	1000	conflicting_reported	Methods DE
+DE	adjustment_caption	Bonferroni	reported	Fig4e
+DE	adjustment_methods_wording	FDR-adjusted P values	unresolved_terminology	Methods DE
+DE	significance_cutoff	mean adjusted P <0.05	reported	Methods DE
+repertoire	vegan	2.6-4	reported	Methods TCR repertoire
+repertoire	similarity_function	vegdist(method=horn)	reported_direction_needs_code	same
+cfDNA	MiXCR	4.6.0	reported	Methods CapTCR
+cfDNA	MiXCR_preset	rna-seq;partial_alignments_allowed	reported	same
+cfDNA	molecule_vs_read_counts		not_resolved	same
+clinical	clinical_cutoff	2025-10-28	reported	Methods Clinical trial
+clinical	C2D1	28 days after treatment start	reported	Fig1a
+clinical	blood_stratification	median delta abundance change	reported	Fig1b
+clinical	blood_survival_test	two-sided Gehan-Breslow-Wilcoxon	reported	Fig1b
+clinical	BM_survival_test	log-rank;FC>1 vs <=1	reported	Fig5c
+clinical	missing_baseline	ALQ-19-019	reported_unresolved_in_FC	Methods Acquisition
+clinical	cfDNA_TR_comparison_time	C2D1 or C6D1	reported	Fig5d
+cellline_selection	bulk_MM_cell_lines	66	reported	ED5a
+cellline_selection	bulk_expression	FPKM	reported	Methods bulk analysis
+cellline_selection	UMAP.n_neighbors	6	reported	same
+cellline_selection	UMAP.min_dist	0.5	reported	same

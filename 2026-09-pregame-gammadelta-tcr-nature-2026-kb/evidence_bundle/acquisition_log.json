@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "pregame_nature_2026_11055_reconstruction",
+  "logged_at": "2026-09-18T08:20:54.917597+00:00",
+  "precision_note": "Grouped retrospective access ledger, not a complete per-call transport receipt. Original exact-timestamp attempts remain in audit/acquisition_initial.json.",
+  "records": [
+    {
+      "acquisition_id": "ACQ001",
+      "kind": "paper",
+      "requested_locator": "https://www.nature.com/articles/s41586-026-11055-9",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "web.open/search; container download/requests",
+      "resolved_locator": "https://www.nature.com/articles/s41586-026-11055-9",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "Text read; original bytes not captured",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ002",
+      "kind": "supplement",
+      "requested_locator": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-11055-9/MediaObjects/41586_2026_11055_MOESM1_ESM.pdf",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "web.open/screenshot; container download",
+      "resolved_locator": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-11055-9/MediaObjects/41586_2026_11055_MOESM1_ESM.pdf",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "Parsed text read; page screenshot and download failed",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ003",
+      "kind": "supplement",
+      "requested_locator": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-11055-9/MediaObjects/41586_2026_11055_MOESM2_ESM.pdf",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "web.open/screenshot; container download",
+      "resolved_locator": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-11055-9/MediaObjects/41586_2026_11055_MOESM2_ESM.pdf",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "Screenshots pp1-3 read; original bytes unavailable",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ004",
+      "kind": "supplement",
+      "requested_locator": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-11055-9/MediaObjects/41586_2026_11055_MOESM3_ESM.pdf",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "web.open/find/screenshot; container download",
+      "resolved_locator": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-11055-9/MediaObjects/41586_2026_11055_MOESM3_ESM.pdf",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "Text and physical p69 screenshot read; some later screenshots failed; original bytes unavailable",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ005",
+      "kind": "other",
+      "requested_locator": "https://doi.org/10.5281/zenodo.20028241",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "web.open/search; requests record/API; plugin search",
+      "resolved_locator": "https://doi.org/10.5281/zenodo.20028241",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "Zenodo acquisition blocked; no author code or weights obtained",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ006",
+      "kind": "repository",
+      "requested_locator": "https://github.com/bigmaklab/TCRmodel",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "Connected GitHub.fetch GET repository",
+      "resolved_locator": "https://github.com/bigmaklab/TCRmodel",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "blocked",
+      "limitations": [
+        "404; no repository snapshot",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ007",
+      "kind": "other",
+      "requested_locator": "https://ega-archive.org/studies/EGAS50000001889",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "web.open",
+      "resolved_locator": "https://ega-archive.org/studies/EGAS50000001889",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "Official metadata read; controlled data not downloaded",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    },
+    {
+      "acquisition_id": "ACQ008",
+      "kind": "other",
+      "requested_locator": "https://ega-archive.org/studies/EGAS50000001888",
+      "started_at": null,
+      "finished_at": null,
+      "retrieval_route": "web.open",
+      "resolved_locator": "https://ega-archive.org/studies/EGAS50000001888",
+      "requested_ref": null,
+      "resolved_ref": null,
+      "resolved_commit": null,
+      "capture_paths": [],
+      "capture_fingerprints": {},
+      "status": "partial",
+      "limitations": [
+        "Official metadata read; controlled data not downloaded",
+        "Grouped attempt summary reconstructed from tool results; exact per-call UTC times were not exposed. Null times are deliberate, not fabricated timestamps."
+      ],
+      "blocker": "No fingerprinted original bytes available locally.",
+      "identity_evidence": [
+        "DOI and source link read in final Nature paper or its review file."
+      ],
+      "identity_conflicts": []
+    }
+  ]
+}

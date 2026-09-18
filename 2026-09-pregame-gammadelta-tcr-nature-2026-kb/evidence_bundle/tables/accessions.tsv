@@ -1,0 +1,14 @@
+accession	role	verification	local_data_status
+10.1038/s41586-026-11055-9	Final paper	Nature text read; publication 2026-09-16	Original HTML/PDF not captured
+10.5281/zenodo.20028241	Author code PreGame	Cited by paper; acquisition failed	Not obtained or executed
+NCT03715478	ALGONQUIN clinical trial	Reported in paper	No patient clinical table obtained
+EGAS50000001889	ALGONQUIN study	Official EGA study page read	Controlled access, raw not obtained
+EGAD50000002742	BM scCITE+VDJ; 25 samples	Official EGA metadata read	Raw not obtained
+EGAD50000002743	CapTCR;141 samples	Official EGA metadata read	Raw not obtained
+EGAS50000001888	PreGame study	Official EGA study page read	Controlled access, raw not obtained
+EGAD50000002744	Serial buffy coat;20 samples	Official EGA metadata read	Raw not obtained
+EGAD50000002745	scCITE+VDJ;11 archive samples	Official EGA metadata read	Archive samples are not necessarily biological donors
+EGAD50000000137	Prior MCC data	Paper-reported accession only	Not independently downloaded
+EGAS00001003280	Healthy cfDNA	Paper-reported accession only	Not independently downloaded
+GSE235090	Prior MCC single cell	Paper-reported accession only	Not independently downloaded
+bigmaklab/TCRmodel	Historical review code lead	Connected GitHub GET returned404	Not obtained; not proof of absent current Zenodo code

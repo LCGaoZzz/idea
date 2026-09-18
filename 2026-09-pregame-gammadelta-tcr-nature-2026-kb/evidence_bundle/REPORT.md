@@ -1,0 +1,90 @@
+# Reconstruction report
+## Status
+- A01_ClinicalDelta: 受阻
+- A02_SingleCell: 受阻
+- A03_CustomVDJ: 受阻
+- A04_Repertoire: 受阻
+- A05_FunctionalLabels: 材料冲突
+- A06_TargetSpecificity: 受阻
+- A07_TransferKilling: 受阻
+- A08_PreGameTraining: 受阻
+- A09_ProspectiveValidation: 受阻
+- A10_PhenotypeDE: 材料冲突
+- A11_SequenceDiversity: 受阻
+- A12_PrimaryBlockade: 受阻
+- A13_ClinicalCloneDynamics: 受阻
+- A14_BloodCloneLinkage: 受阻
+- A15_HLADependence: 受阻
+- A16_HLAResidue: 受阻
+- A17_KIRContext: 受阻
+- A18_KIRGate: 受阻
+- A19_CellLinePanel: 受阻
+## Direct evidence/observation
+- none
+## Paper claim
+- none
+## Reconstructed support
+- none
+## Reasonable inference
+- none
+## Unverified
+- A01_ClinicalDelta: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A01_ClinicalDelta_P, A01_ClinicalDelta_M]
+- A02_SingleCell: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A02_SingleCell_P, A02_SingleCell_M]
+- A03_CustomVDJ: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A03_CustomVDJ_P, A03_CustomVDJ_M]
+- A04_Repertoire: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A04_Repertoire_P, A04_Repertoire_M]
+- A05_FunctionalLabels: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A05_FunctionalLabels_P, A05_FunctionalLabels_M]
+- A06_TargetSpecificity: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A06_TargetSpecificity_P, A06_TargetSpecificity_M]
+- A07_TransferKilling: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A07_TransferKilling_P, A07_TransferKilling_M]
+- A08_PreGameTraining: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A08_PreGameTraining_P, A08_PreGameTraining_M]
+- A09_ProspectiveValidation: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A09_ProspectiveValidation_P, A09_ProspectiveValidation_M]
+- A10_PhenotypeDE: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A10_PhenotypeDE_P, A10_PhenotypeDE_M]
+- A11_SequenceDiversity: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A11_SequenceDiversity_P, A11_SequenceDiversity_M]
+- A12_PrimaryBlockade: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A12_PrimaryBlockade_P, A12_PrimaryBlockade_M]
+- A13_ClinicalCloneDynamics: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A13_ClinicalCloneDynamics_P, A13_ClinicalCloneDynamics_M]
+- A14_BloodCloneLinkage: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A14_BloodCloneLinkage_P, A14_BloodCloneLinkage_M]
+- A15_HLADependence: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A15_HLADependence_P, A15_HLADependence_M]
+- A16_HLAResidue: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A16_HLAResidue_P, A16_HLAResidue_M]
+- A17_KIRContext: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A17_KIRContext_P, A17_KIRContext_M]
+- A18_KIRGate: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A18_KIRGate_P, A18_KIRGate_M]
+- A19_CellLinePanel: 尚未取得原作者源码与相关输入，本次未执行该分析，不能核实实现、数值结果或结论。 [evidence: A19_CellLinePanel_P, A19_CellLinePanel_M]
+## Conflicts or gaps
+- A01_ClinicalDelta/A01_ClinicalDelta_gap (gap): 切分阈值、landmark、删失和完整病例定义需患者级表；未取得原作者源码、相关原始输入与运行输出。 [evidence: A01_ClinicalDelta_P, A01_ClinicalDelta_M, A01_ClinicalDelta_C]
+- A01_ClinicalDelta/A01_ClinicalDelta_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A01_ClinicalDelta_M]
+- A02_SingleCell/A02_SingleCell_gap (gap): 原始ADT异常规则、PC和resolution及分选后分母未能代码核验；未取得原作者源码、相关原始输入与运行输出。 [evidence: A02_SingleCell_P, A02_SingleCell_M, A02_SingleCell_C]
+- A02_SingleCell/A02_SingleCell_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A02_SingleCell_M]
+- A03_CustomVDJ/A03_CustomVDJ_gap (gap): 全长序列键、clone键和双链竞争需逐分支中间表；未取得原作者源码、相关原始输入与运行输出。 [evidence: A03_CustomVDJ_P, A03_CustomVDJ_M, A03_CustomVDJ_C]
+- A03_CustomVDJ/A03_CustomVDJ_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A03_CustomVDJ_M]
+- A04_Repertoire/A04_Repertoire_gap (gap): vegdist horn距离到相似度方向转换未核验；未取得原作者源码、相关原始输入与运行输出。 [evidence: A04_Repertoire_P, A04_Repertoire_M, A04_Repertoire_C]
+- A04_Repertoire/A04_Repertoire_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A04_Repertoire_M]
+- A05_FunctionalLabels/A05_FunctionalLabels_gap (gap): TR边界比较符、borderline和构建失败处置未核验；未取得原作者源码、相关原始输入与运行输出。 [evidence: A05_FunctionalLabels_P, A05_FunctionalLabels_M, A05_FunctionalLabels_C]
+- A05_FunctionalLabels/A05_FunctionalLabels_conflict (conflict): TR标签边界在正文图注与Methods存在比较符差异。 [evidence: A05_FunctionalLabels_F, A05_FunctionalLabels_M]
+- A05_FunctionalLabels/A05_FunctionalLabels_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A05_FunctionalLabels_M]
+- A06_TargetSpecificity/A06_TargetSpecificity_gap (gap): 健康靶读出与肿瘤靶不同；最大值不等于癌种覆盖率；未取得原作者源码、相关原始输入与运行输出。 [evidence: A06_TargetSpecificity_P, A06_TargetSpecificity_M, A06_TargetSpecificity_C]
+- A06_TargetSpecificity/A06_TargetSpecificity_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A06_TargetSpecificity_M]
+- A07_TransferKilling/A07_TransferKilling_gap (gap): 工程构建、供者配对和杀伤归一化需原始数据；未取得原作者源码、相关原始输入与运行输出。 [evidence: A07_TransferKilling_P, A07_TransferKilling_M, A07_TransferKilling_C]
+- A07_TransferKilling/A07_TransferKilling_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A07_TransferKilling_M]
+- A08_PreGameTraining/A08_PreGameTraining_gap (gap): 全数据特征筛选、跨fold依赖、最终模型列顺序和权重缺失；未取得原作者源码、相关原始输入与运行输出。 [evidence: A08_PreGameTraining_P, A08_PreGameTraining_M, A08_PreGameTraining_C]
+- A08_PreGameTraining/A08_PreGameTraining_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A08_PreGameTraining_M]
+- A09_ProspectiveValidation/A09_ProspectiveValidation_gap (gap): 高低分抽样、回顾性阈值和max/median选择关系需核查；未取得原作者源码、相关原始输入与运行输出。 [evidence: A09_ProspectiveValidation_P, A09_ProspectiveValidation_M, A09_ProspectiveValidation_C]
+- A09_ProspectiveValidation/A09_ProspectiveValidation_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A09_ProspectiveValidation_M]
+- A10_PhenotypeDE/A10_PhenotypeDE_gap (gap): 图注与Methods迭代数冲突；P值平均、校正和供者混杂需审计；未取得原作者源码、相关原始输入与运行输出。 [evidence: A10_PhenotypeDE_P, A10_PhenotypeDE_M, A10_PhenotypeDE_C]
+- A10_PhenotypeDE/A10_PhenotypeDE_conflict (conflict): 同一差异分析的下采样迭代数在图注与Methods不一致。 [evidence: A10_PhenotypeDE_F, A10_PhenotypeDE_M]
+- A10_PhenotypeDE/A10_PhenotypeDE_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A10_PhenotypeDE_M]
+- A11_SequenceDiversity/A11_SequenceDiversity_gap (gap): 长度和私有序列不直接测量抗原多样性；未取得原作者源码、相关原始输入与运行输出。 [evidence: A11_SequenceDiversity_P, A11_SequenceDiversity_M, A11_SequenceDiversity_C]
+- A11_SequenceDiversity/A11_SequenceDiversity_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A11_SequenceDiversity_M]
+- A12_PrimaryBlockade/A12_PrimaryBlockade_gap (gap): 分选为富集而非所有TR纯群；TCR贡献不能外推临床必要性；未取得原作者源码、相关原始输入与运行输出。 [evidence: A12_PrimaryBlockade_P, A12_PrimaryBlockade_M, A12_PrimaryBlockade_C]
+- A12_PrimaryBlockade/A12_PrimaryBlockade_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A12_PrimaryBlockade_M]
+- A13_ClinicalCloneDynamics/A13_ClinicalCloneDynamics_gap (gap): 已知缺失基线与图注病例数需要入组矩阵解释；未取得原作者源码、相关原始输入与运行输出。 [evidence: A13_ClinicalCloneDynamics_P, A13_ClinicalCloneDynamics_M, A13_ClinicalCloneDynamics_C]
+- A13_ClinicalCloneDynamics/A13_ClinicalCloneDynamics_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A13_ClinicalCloneDynamics_M]
+- A14_BloodCloneLinkage/A14_BloodCloneLinkage_gap (gap): delta一对多、C2D1/C6D1与重复访视需要显式处理；未取得原作者源码、相关原始输入与运行输出。 [evidence: A14_BloodCloneLinkage_P, A14_BloodCloneLinkage_M, A14_BloodCloneLinkage_C]
+- A14_BloodCloneLinkage/A14_BloodCloneLinkage_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A14_BloodCloneLinkage_M]
+- A15_HLADependence/A15_HLADependence_gap (gap): KO效率、归一化和重复数据重用需要原始表；未取得原作者源码、相关原始输入与运行输出。 [evidence: A15_HLADependence_P, A15_HLADependence_M, A15_HLADependence_C]
+- A15_HLADependence/A15_HLADependence_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A15_HLADependence_M]
+- A16_HLAResidue/A16_HLAResidue_gap (gap): 功能位点不自动证明结构接触或肽完全无关；未取得原作者源码、相关原始输入与运行输出。 [evidence: A16_HLAResidue_P, A16_HLAResidue_M, A16_HLAResidue_C]
+- A16_HLAResidue/A16_HLAResidue_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A16_HLAResidue_M]
+- A17_KIRContext/A17_KIRContext_gap (gap): 克隆特异与供者混杂；RNA低表达不等于表面配体缺失；未取得原作者源码、相关原始输入与运行输出。 [evidence: A17_KIRContext_P, A17_KIRContext_M, A17_KIRContext_C]
+- A17_KIRContext/A17_KIRContext_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A17_KIRContext_M]
+- A18_KIRGate/A18_KIRGate_gap (gap): 正常组织安全性尚无本次验证证据，所测条件的外推范围需限制；未取得原作者源码、相关原始输入与运行输出。 [evidence: A18_KIRGate_P, A18_KIRGate_M, A18_KIRGate_C]
+- A18_KIRGate/A18_KIRGate_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A18_KIRGate_M]
+- A19_CellLinePanel/A19_CellLinePanel_gap (gap): bulk与single-cell语义、UMAP参数和靶选择需固定；未取得原作者源码、相关原始输入与运行输出。 [evidence: A19_CellLinePanel_P, A19_CellLinePanel_M, A19_CellLinePanel_C]
+- A19_CellLinePanel/A19_CellLinePanel_parameters_gap (gap): 参数已在独立文献摘录表中整理，但正式证据行缺少可指纹核对的原始来源，未注册为直接参数证据。 [evidence: A19_CellLinePanel_M]

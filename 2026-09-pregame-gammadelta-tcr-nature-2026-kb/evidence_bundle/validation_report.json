@@ -1,0 +1,179 @@
+{
+  "validator": "reconstruct-bioinfo-protocol/1.4.0",
+  "project_dir": "/mnt/data/PreGame_Nature_2026_reconstruction",
+  "valid": true,
+  "schema_validation": "passed",
+  "derived_statuses": {
+    "A01_ClinicalDelta": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A02_SingleCell": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A03_CustomVDJ": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A04_Repertoire": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A05_FunctionalLabels": {
+      "declared": "材料冲突",
+      "derived": "材料冲突",
+      "reasons": [
+        "one or more unresolved cross-material conflicts exist"
+      ]
+    },
+    "A06_TargetSpecificity": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A07_TransferKilling": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A08_PreGameTraining": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A09_ProspectiveValidation": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A10_PhenotypeDE": {
+      "declared": "材料冲突",
+      "derived": "材料冲突",
+      "reasons": [
+        "one or more unresolved cross-material conflicts exist"
+      ]
+    },
+    "A11_SequenceDiversity": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A12_PrimaryBlockade": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A13_ClinicalCloneDynamics": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A14_BloodCloneLinkage": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A15_HLADependence": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A16_HLAResidue": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A17_KIRContext": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A18_KIRGate": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    },
+    "A19_CellLinePanel": {
+      "declared": "受阻",
+      "derived": "受阻",
+      "reasons": [
+        "one or more unresolved blocking gaps exist",
+        "scientific audit is blocked: preprocessing, statistical_unit, replication_pseudoreplication, batch_confounding, multiple_testing, species_gene_ids, parameter_consistency, claim_strength",
+        "missing required material: direct paper claim, direct figure/caption evidence, direct Methods evidence, active code/config, existing fingerprinted input"
+      ]
+    }
+  },
+  "derived_overall_status": "材料冲突",
+  "errors": [],
+  "warnings": [],
+  "scope_note": "Contract, receipt, on-disk path, SHA-256, linkage, and provenance validation only. The receipt is not signed: a writer controlling the whole project can fabricate it. A passing validator therefore does not prove process-to-artifact causality or scientific correctness; retain independent runtime/job logs and expert review."
+}
